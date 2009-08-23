@@ -1,0 +1,7 @@
+--- 
+title: We apologize for the inconvenience, and will be with you shortly...
+layout: post
+---
+"TextDrive":http://textdrive.com implemented process limits on their shared servers this weekend. It turns out that editing @dispatch.fcgi@ and explicitly setting the garbage collector is a very bad idea for typo... memory usage goes from 51MB to over 100MB, and then the fcgi process gets killed for exceeding the memory limit.
+
+Figuring this out took two days. Sorry about that.

@@ -1,0 +1,5 @@
+--- 
+title: hero worship
+layout: post
+---
+Ahhhh. Sitting around and watching the rails team finish up the last outstanding issues on 1.0 == very super cool. I can probably die happy now.

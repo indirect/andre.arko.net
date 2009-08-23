@@ -1,0 +1,7 @@
+--- 
+title: Server Software, Evolved
+layout: post
+---
+"Postgres":www.postgresql.com. "Lighttpd":www.lighttpd.net. "Rails":www.rubyonrails.com. "Subversion":subversion.tigris.org. Watch your life become interesting and happy as you embrace the coolest toys around. ;)
+
+And now, with even less continuous effort, thanks to "SwitchTower":http://manuals.rubyonrails.com/read/book/17. Yay.

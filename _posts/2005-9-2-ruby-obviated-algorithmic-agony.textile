@@ -1,0 +1,70 @@
+--- 
+title: Ruby-obviated Algorithmic Agony
+layout: post
+---
+Theory of Algorithms requires that we code up the basic "stable matching" algorithm ourselves. After much confused discussion in class today about whether to represent people as arrays, or vectors, or three-dimensional arrays (?!), I went to implement it in ruby. In a happy recurrence of what seems always happen, it was easier and faster than I thought it would be.
+
+The algorithm worked out to this:
+<typo:code lang="ruby">
+while m = men.detect{|m| (!m.mate and m.proposals < women.size) } do
+
+  # Let W equal the highest ranked woman 
+  # whom M has not yet proposed to
+  w = women.find{|w| w.name==m.list[m.proposals] }
+  m.proposals+=1
+
+  # If W is free
+  if !w.mate then
+    m.engage(w)
+  # If W in engaged but prefers M
+  elsif w.prefer?(m, w.mate) == -1
+    # Engage W and M
+    w.engage(m)
+  end
+
+end
+</typo:code>
+
+The classes employed to make the algorithm so happily brief:
+<typo:code lang="ruby">
+class Person
+	attr_accessor :name, :list, :mate
+
+  def initialize(name, *list)
+    @name = name
+    @list = list
+  end
+
+  # Disengage any current entaglements, engage _self_ to _other_
+  def engage(other)
+    # Clear previous engagements
+    other.mate.mate=nil if other.mate
+    self.mate.mate=nil if self.mate
+    # Set the new engagement
+    self.mate = other
+    other.mate = self
+  end
+
+  # Return -1 if A is prefered, 1 if B is prefered
+  def prefer?(a, b)
+    (@list.join=~/#{a.name}/)<=>(@list.join=~/#{b.name}/)
+  end
+  
+end
+
+
+class Man < Person
+	attr_accessor :proposals
+
+  def initialize(name, *list)
+    @proposals=0
+    super
+  end
+  
+end
+
+class Woman < Person
+end
+</typo:code>
+
+Whee. Yet another 10 hours of agonizing C++ debugging avoided.

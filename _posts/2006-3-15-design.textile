@@ -1,0 +1,30 @@
+--- 
+title: Design
+layout: post
+---
+*Warning:* This post is contentless. Just so you know.
+
+So I have a new design (pretty, eh? I like it). I really wanted "Jamis' design":http://jamis.jamisbuck.org/, but it's not public, and ripping it off, while tempting, is just a bad idea. And writing my own would simply take forever. I do have hopes about working something up in the future, but it's really not going to happen right now.
+
+Sadly, I haven't posted for a long time because I haven't really had anything to say. I'm not done enough with any projects to want to post them, and most of my intellectual efforts has been pushed into my _Death and Resurrection_ class. While it's terribly interesting, I'm not sure enough yet about what I've learned from it to really have anything to say about it.
+
+On the subject of my broken bones, they are recovering admirably; soon they may even return to the positions that they were in before the accident. While they are not quite there yet, I'm hopeful.
+
+While I'm talking about books I have to read for school, I will make a terrible example of a book I sincerely believe should:
+
+* be burned wherever it may be
+* might have been okay if it were written as a work of non-fiction
+
+Let me give you an example. The book begins thus:
+
+bq. "This board meeting is adjourned," announces Daniel Pullman, the domineering chairman and CEO or Genemodem. The elegant conference room hums with conversation as the directors start to depart. The last quarter was the best in the history of the company.
+
+The entire book is written in the present tense, and alternates seemingly at random between first-person and third-person perspectives. Better yet, the author's amazing grasp of the art of phrase-prepending results in sentences like these:
+
+bq. It was no small effort, and it did not come cheap, but at last, a week ago, they had received the four-hundred-page report.
+
+Try reading that out loud three times fast.
+
+So, to tie this mini-rant back to the subject of the post, deliberate and conscious design would really have benefited this book I have to read.
+
+I told you this post didn't have any content. Should've listened.

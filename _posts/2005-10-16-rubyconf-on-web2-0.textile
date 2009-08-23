@@ -1,0 +1,17 @@
+--- 
+title: "#rubyconf on Web2.0"
+layout: post
+---
+<pre>vinbarne1: can we skip web 2.0? i mean, really, its a bit overhyped - point/counterpoint
+JamesBritt: yakoro: Good question
+JamesBritt: I'm on Web 2.1
+paulymer5: Let's pull a TextPattern and just jump to version 4.
+yakoro: web 2.2 here
+JamesBritt: Damn
+court3na1: 2.1.5rc2
+vinbarne1: wha? I'm still on 1.65 :(
+yakoro: hopefully we'll make web 2.2 in two weeks, and by the end of november we'll be on web 2.4
+bricolage: The magic version will be Web3.11 for workgroups
+danp: i'm running web 3.0 in beta right now
+JamesBritt: I can't wait.  I have ideas that really need Web 2.4 or better
+twifkak: problem is 3.0 breaks too many APIs</pre>

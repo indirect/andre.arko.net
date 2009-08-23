@@ -1,0 +1,19 @@
+--- 
+title: rubyconf qotd
+layout: post
+---
+jauricchio: Matz is a singleton.
+
+matz: ruby2.0... maybe is like perl6
+
+jimweirich: the fun part of ruby is really figuring out how to make it behave like it really shouldn't.
+
+anonymous methods, maybe, at the keynote:<br /><code><pre>_why = def (x=5)
+  ...
+end</pre></code>
+
+DHH: poking in the eyes of java developers is a fun bandwagon to jump on!
+
+obiejuan: getting the go ahead to deploy from your project manager: good<br />
+typing rake deploy while he's telling you: great<br />
+the look on his face when you say "done" : priceless

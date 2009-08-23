@@ -1,0 +1,11 @@
+--- 
+title: Phokus Theme Tweaks
+layout: post
+---
+After the dismaying realization that posting a comment made the entire site explode, I went and tweaked my new theme (Phokus, by "John Serris":http://phonophunk.com/typo-themes/). After getting it working with the newest version of typo, I discovered that (of course) "someone else":http://paul.annesley.cc/articles/2006/04/03/patch-for-phokus-typo-theme had beaten me to it. However, in the course of editing, I discovered that comment previewing was disabled, so I added it as well. The comment box now includes a  "Preview Comment" link, and by clicking it you can see what your comment will look like before you commit.
+
+If you're interested, feel free to download the "phokus patch file":http://arko.net/files/phokus.diff or the "updated version of phokus":http://arko.net/files/phokus.zip.
+
+*Update:* "Paul Annesley":http://paul.annesley.cc/ pointed out (thanks, Paul) that I was inadvertently preventing extended content from showing up, even in the detailed view. That bug is now fixed, so please download the updated Phokus again if you had done so already.
+
+*Update redux:* Metadata for my version of the theme is changed, so you can tell Phokus-tweaked apart from the original Phokus. Additionally, the javascript that adds a feed icon to rss and atom links also operates on links to .ics iCalendar files.

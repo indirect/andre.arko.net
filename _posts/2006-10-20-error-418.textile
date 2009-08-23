@@ -1,0 +1,9 @@
+--- 
+title: error 418
+layout: post
+---
+*Q:* Under what circumstances should you return error number 418: "I'm a teapot"?
+
+*A:* Any attempt to brew coffee with a teapot according to RFC 2324, "Hyper Text Coffee Pot Control Protocol."
+
+"The TCP/IP Drinking Game":http://infohost.nmt.edu/~val/tcpip.html

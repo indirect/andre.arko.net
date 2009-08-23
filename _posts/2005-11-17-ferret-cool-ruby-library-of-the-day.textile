@@ -1,0 +1,7 @@
+--- 
+title: "Ferret: Cool Ruby Library of the Day"
+layout: post
+---
+A direct port of "Lucene":http://lucene.apache.org/ to Ruby, "Ferret":http://ferret.davebalmain.com/trac makes indexed searching as easy as it ought to be. That's just very, very cool.
+
+Now if I could only figure out how to easily incorporate Ferret, "Sentry":http://sentry.rubyforge.org/, and "SwitchTower":http://manuals.rubyonrails.com/read/book/17 into my rails apps, I'd think I was getting good at this.

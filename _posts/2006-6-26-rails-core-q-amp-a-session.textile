@@ -1,0 +1,11 @@
+--- 
+title: Rails Core Q&amp;A Session
+layout: post
+---
+"it's like brain calisthenics" - marcel
+
+"education through patches, please" - david
+
+"i hate fixtures" - marcel
+
+"rails _does_ have to talk to the database" - jeremy

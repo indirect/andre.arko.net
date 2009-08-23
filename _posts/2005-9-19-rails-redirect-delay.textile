@@ -1,0 +1,7 @@
+--- 
+title: Rails Redirect Delay
+layout: post
+---
+The "30 second delay":http://www.stupidsimple.org/articles/2005/09/14/running-rails-on-lighttpd-behind-apache2 when you try to proxy lighty through apache and your rails app sends a redirect is really annoying.
+
+And there's no way to fix it short of modifying ActionController. Suck.

@@ -1,0 +1,76 @@
+--- 
+title: Rails Newbie Bootstrapping Guide
+layout: post
+---
+h3. Help! What is rails, anyway?
+
+h4. Aren't those for trains?
+
+Wondering what the "Ruby on Rails" thing is, and wondering if you might like it, but feeling lost when people say you should "just gem install rails and the database server of your choice"? You're probably at the right place.
+
+This post aims to be a guidebook that help you find the obvious (and not so obvious) online and real-world resources you need to get going with Ruby on Rails. Even if you don't really understand web development, the resources listed here will help you come to an understanding of web sites, web development, Ruby, and Ruby on Rails.
+
+If there are any steps on this list that you already know, just skip them and move on to the next section and you should be fine. Okay, here we go.
+
+
+h3. The Vast Internet Wasteland
+
+<div class="sidebar">
+<h4>Designer's note</h4>
+<p>
+If you're primarily a designer, or want to be, some suggested further reading includes "_The Zen of CSS Design_":http://www.amazon.com/gp/product/0321303474/, "_Web Standards Solutions_":http://www.amazon.com/gp/product/1590593812/, and "_Eric Myer on CSS_":http://www.amazon.com/gp/product/073571245X/. Then, you'll want to read "A Designer's Guide to Rails":http://glu.ttono.us/articles/2006/03/21/rails-for-designers. After that, while it's a good idea to check out the Rails material, you won't need to worry so much about the Ruby stuff, if you have coder(s) on your team to do that.
+</p></div>
+
+Before you learn Rails, you'll need to have a pretty good grasp of some other things. The biggest ones are HTML/XHTML and CSS, the foundational standards of the world wide web. A good place to start learning about them is at the W3C Schools "XHTML tutorial":http://www.w3schools.com/xhtml/ and "CSS Tutorial":http://www.w3schools.com/css/. Once you've completed those tutorials, you should have enough of an understanding to experiment, learn things, and move on to Ruby and Rails.
+
+If you want a more in-depth treatment, or like dead-tree reference material, try the books on the subject published by O'Reilly publishers: "_HTML & XHTML_":http://www.amazon.com/gp/product/059600026X/ and "_Cascading Style Sheets_":http://www.amazon.com/gp/product/0596005253/.
+
+h3. Make Your Choice
+
+Once you've got a grasp on the basics of web pages, you can choose whether you want to learn Ruby or Rails next. Although Rails makes heavy use of Ruby, you can still construct relatively simple webapps without knowing Ruby. I'll put the Ruby material first, but feel free to skip them and come back to them later, when you want to do more complicated programming inside Rails.
+
+h3. Ruby
+
+h4. Making programmers smile, all over the world
+
+<div class="sidebar" style="float: left;">
+<h4>Installing Ruby</h4>
+<p>Installing Ruby can be a pain, but some nice ruby-fans have gone to the trouble to package it up as an installer for most operating systems. If you are running WindowsXP, you can use the "RubyInstaller":http://rubyinstaller.rubyforge.org/. If you're running Mac OS X, Ruby comes with your computer, and you can start using it just by opening the Terminal program and running the command "irb".</p>
+</div>
+
+To learn Ruby, there are two main starting points: "Why's Poignant Guide":http://poignantguide.net/ruby/, and "_Programming Ruby: The Pragmatic Guide_":http://www.rubycentral.com/book/. The Poignant Guide to Ruby is a very readable (and amusing) introduction to the Ruby language. Why has also written an interactive website that allows you to start writing ruby programs without even installing it on your computer, called "Try Ruby":http://tryruby.hobix.com Programming Ruby is more straightforward (pragmatic, even), and approaches Ruby more systematically. The complete text of the first edition is online, and is a great resource for getting started.
+
+Once you've become acquainted with Ruby, you'll probably want to refer to the "Ruby language documentation":http://ruby-doc.org/core/ and the "Ruby Standard Library Docs":http://ruby-doc.org/stdlib/. 
+
+For further reading, reference, and physical-experience addicts, the second edition of Programming Ruby (updated for Ruby 1.8, the latest) is available as a paper or PDF book at "the Programming Ruby website":http://pragmaticprogrammer.com/titles/ruby/index.html.
+
+h3. Rails
+
+<div class="sidebar">
+<h4>Installing Rails</h4>
+<p>Installing Rails on your computer is surprisingly easy. There are two software projects, one for Windows and one for Mac, that have produced one-click installers for Rails. The Windows package is called "Instant Rails":http://instantrails.rubyforge.org, and the Mac package is called "Locomotive":http://locomotive.raaum.org/. If you're running Linux, just install your distro's "Rails" package.</p>
+</div>
+
+"Finally," you're thinking, "the actual thing I wanted to learn about in the first place." And here it is. Ruby on Rails has been praised in many ways, so I won't repeat any of that here, but you can find out a lot about it at the "Ruby on Rails homepage":http://rubyonrails.org.
+
+Once you've got Rails installed on your computer, and you've read the documentation that came with the installer package, start with a very basic introductory tutorial, like "Rolling with Instant Rails":http://instantrails.rubyforge.org/tutorial/index.html. Next, try a tutorial with a bit more content, like "Four Days on Rails":http://rails.homelinux.org/ or the "Creating a Depot" chapters of the excellent _Agile Development with Ruby on Rails_ book.
+
+"_Agile Development with Rails_":http://pragmaticprogrammer.com/titles/rails/index.html is the authoritative book on the subject, and also contains an excellent reference section on the various parts of the Rails framework. It was co-written by Dave Thomas (author of _Programming Ruby_) and David Heinemeier Hansson (creator of Ruby on Rails). It is well written, easy to read, and very thorough. Go buy it.
+
+To learn more about Rails, you can read _ADwR_ (all of it, not just the tutorial section), watch the "Rails screencasts":http://rubyonrails.org/screencasts that show just how easy it is, read "_Rails Recipies_":http://pragmaticprogrammer.com/titles/fr_rr/index.html, and (you really should do this the whole time you're learning) write applications in Rails yourself.
+
+
+h3. Deployment
+
+h4. This is so cool! Where do I put it?
+
+Having made it all the way, and written you new cucumber-life-process-tracking application, you are now probably wondering how you let everyone else on the internet benefit from your hard work. For that, you'll need a webhost that supports Rails.
+
+I recommend "TextDrive":http://textdrive.com, as they are not only amazingly skilled and helpful, they will even contribute a portion of each payment you make to the Ruby on Rails team if you ask them to. If you set up an account with them, there is a "manual for setting up Rails apps on TextDrive":http://manuals.textdrive.com/read/book/9, and a "Capistrano deployment task":http://nubyonrails.com/pages/shovel that attempts to automate sending your Rails app to your TextDrive account.
+
+If you want to explore your options, check out "Ruby on Rails Web Hosting":http://www.rubyonrailswebhost.com/, where they have a writeup of several webhosts that support Ruby on Rails and "Planet Argon Rails hosting":http://www.planetargon.com/hosting.html.
+
+Lastly, of course, you could be one of those people who simply has to host their application on their own server. In that case, you probably want to check out "FLPR":http://www.flpr.org/articles/2005/08/20/intro-to-flpr (FreeBSD, Lighttpd, PostgreSQL, Rails), or "The Perfect Rails Debian server":http://brainspl.at/pages/perfect_vps (Debian, Lighttpd, Mysql, Rails), depending on your distribution.
+
+
+At this point, you should be able to write Rails applications, upload them to your webhost, and show everyone you know what cool and amazing things you've done. If you have any questions, corrections, suggestions, or other feedback, please leave a comment. Thanks, and good luck!

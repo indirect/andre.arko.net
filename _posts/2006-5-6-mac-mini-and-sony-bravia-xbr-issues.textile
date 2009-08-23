@@ -1,0 +1,12 @@
+--- 
+title: Mac Mini and Sony Bravia XBR issues
+layout: post
+---
+A lot of people seem to be having ever so much trouble getting their Mac Minis to use their Sony Bravia LCD Televisions as displays. For some reason, when connected to a Mini via an HDMI-to-DVI cable, the Bravia appears to the Mini to have a native resolution of 1280x720. While that is, in fact, a 16:9 resolution, it leaves anyone wanting a good-looking picture in the dust. Unfortunately, the Mini only has two options: overscan mode, which pushes the menu bar and the dock off the screen, or no overscan, which makes the picture significantly smaller than the television is, leaving a couple of inches of black all around.
+
+After downloading SwitchResX and DisplayConfigX, and a couple of hours of Googling, I discovered that HDMI ports on Bravia TVs just don't seem to like any resolutions except 1280x720. After the third attempt that just resulted in a black screen, it occurred to me that I might try using the "RGB/PC" input on the Bravia, which is actually a standard VGA port. After plugging the VGA cable into the TV on one end and the Mini's DVI to VGA adapter on the other end, I restarted the Mini to discover... a perfect screen. At 1366x768, the Bravia's native resolution, no less. The computer is sending 1 pixel for every pixel on the TV. Front Row is beautiful, and DVD Player fills the whole screen. Hurrah.
+
+Hopefully this will help all the people out there looking for instructions on how to set up a custom resolution to force their TV to work with their Mini, since it turns out you don't need to at all.
+
+Here's a picture of the full-resolution, full-screen result:
+!http://arko.net/files/bravia.jpg!

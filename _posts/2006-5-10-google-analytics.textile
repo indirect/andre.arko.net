@@ -1,0 +1,5 @@
+--- 
+title: Google Analytics
+layout: post
+---
+Finally, finally, Google has seen fit (or gotten around to installing enough servers) that they sent me a Google Analytics invitation code. Soon, I will again have access to all the web site statistics I... already had 8 months ago, until Google "took them away":http://simplicio.com/index.php?id=4. Bah.
