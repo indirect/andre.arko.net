@@ -4,17 +4,17 @@ layout: post
 ---
 *Update:* This was definitely not the best solution. As Rick Olsen points out below, it's possible to change the permalink style to /articles/:year/:month/:day in the settings. If you want to use Mephisto style URLs, but have Mephisto redirect Typo style permalinks, you add one line at the bottom of your @environment.rb@ file:
 
-<filter:code>
+{% highlight ruby %}
 Mephisto::Routing.redirect 'articles/*' => '$1'
-</filter:code>
+{% endhighlight %}
 
 
 It turns out that "Mephisto 0.7":http://mephistoblog.com adds a highly sophisticated (and pretty damn confusing) dispatching system. This means that simply adding a route that matches Typo permalinks isn't enough anymore. I wound up having to edit the lib/mephisto/dispatch.rb file, like so:
 
-<filter:code>
+{% highlight ruby %}
   def self.recognize_permalink(site, path)
     path.shift if path[0] == "articles"
     full_path = path.join('/')
-</filter:code>
+{% endhighlight %}
 
 The center line is the only new one. Hopefully that helps.

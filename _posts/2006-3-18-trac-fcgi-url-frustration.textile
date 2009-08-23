@@ -12,7 +12,7 @@ Your sincere admirer,<br />
 Andre
 
 P.S. Here is the lightty configuration, just in case it might help:
-<typo:code>
+{% highlight lighty %}
 $HTTP["host"] =~ "^trac.arko.net$" {    
   fastcgi.server = ("/trac" =>
    ("trac" =>
@@ -21,6 +21,6 @@ $HTTP["host"] =~ "^trac.arko.net$" {
        "check-local" => "disable",
        "bin-environment" => ("TRAC_ENV" => "/home/username/domains/arko.net/web/trac") )))
 }
-</typo:code>
+{% endhighlight %}
 
 *Update:* I am not alone! I am just bad at searching this new-fangled intar-web thingy. Behold, "the Trac ticket for my very problem":http://projects.edgewall.com/trac/ticket/2418. The downside is that no one's touched it for months. Grr.

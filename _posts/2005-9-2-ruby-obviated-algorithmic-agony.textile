@@ -5,7 +5,7 @@ layout: post
 Theory of Algorithms requires that we code up the basic "stable matching" algorithm ourselves. After much confused discussion in class today about whether to represent people as arrays, or vectors, or three-dimensional arrays (?!), I went to implement it in ruby. In a happy recurrence of what seems always happen, it was easier and faster than I thought it would be.
 
 The algorithm worked out to this:
-<typo:code lang="ruby">
+{% highlight ruby %}
 while m = men.detect{|m| (!m.mate and m.proposals < women.size) } do
 
   # Let W equal the highest ranked woman 
@@ -23,10 +23,10 @@ while m = men.detect{|m| (!m.mate and m.proposals < women.size) } do
   end
 
 end
-</typo:code>
+{% endhighlight %}
 
 The classes employed to make the algorithm so happily brief:
-<typo:code lang="ruby">
+{% highlight ruby %}
 class Person
 	attr_accessor :name, :list, :mate
 
@@ -65,6 +65,6 @@ end
 
 class Woman < Person
 end
-</typo:code>
+{% endhighlight %}
 
 Whee. Yet another 10 hours of agonizing C++ debugging avoided.
