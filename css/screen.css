@@ -1,0 +1,81 @@
+body {
+  font-family: skia, verdana, sans-serif;
+  line-height: 1.3em;
+  margin: 4em auto;
+  max-width: 35em;
+}
+
+
+
+a {
+  color: #4C4C4C;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+a:visited { border: 0; }
+a:hover, a:visited:hover { border-bottom: 2px solid; }
+
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.clear { clear: both; }
+
+
+
+#header {
+  margin: 0 2em;
+}
+
+#content {
+  margin: 0 5em;
+}
+
+#footer {
+  margin: 0 5em;
+  font-size: 70%;
+  text-align: right;
+}
+
+
+
+.post-list {
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style: none outside;
+}
+
+.post-list li {
+  min-height: 1.4em;
+  clear: left;
+}
+
+.post-list .post-date {
+  position: absolute;
+  font-family: courier;
+}
+
+.post-list .post-name {
+  float: left;
+  margin-left: 5em;
+}
+
+
+
+.post-date {
+  float: right;
+  margin: 0;
+}
+
+.post-title {
+  clear: right;
+}
+
+.last-post {
+  float: left;
+}
+
+.next-post {
+  float: right;
+}
