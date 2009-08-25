@@ -40,23 +40,23 @@ h1, h2 {
 
 
 
-.post-list {
+.posts {
   margin: 0 0 2em 0;
   padding: 0;
   list-style: none outside;
 }
 
-.post-list li {
+.posts li {
   min-height: 1.4em;
   clear: left;
 }
 
-.post-list .post-date {
+.posts .post-date {
   position: absolute;
   font-family: courier;
 }
 
-.post-list .post-name {
+.posts .post-name {
   float: left;
   margin-left: 5em;
 }
