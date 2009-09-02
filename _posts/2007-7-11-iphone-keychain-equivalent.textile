@@ -1,0 +1,13 @@
+--- 
+title: iPhone keychain (equivalent)
+layout: post
+---
+So, I got an iPhone. Yay. And then I was utterly crushed, because it dosen&#8217;t have Keychain. At all. No password remembering for you, Safari Mobile user!
+
+I was even more crushed when I realized that almost all of my passwords are unique per-site jumbles of numbers and letters, thanks to Nic Wolff&#8217;s "Password Generator":http://angel.net/~nic/passwd.html. But! (And this is a really, amazingly huge but!) The password generator bookmarklet that I already use in Safari, in the Bookmarks bar, works on my iPhone!
+
+So, I don&#8217;t actually have to remember my passwords. All I have to do is hit the bookmarks button and then tap on my bookmarklet (which synced over from Safari on my laptop). The bookmarklet does the JavaScript magic needed to generate my per-site password from my master password and the site&#8217;s domain name, and fills it in to the password blank for me. Totally awesome.
+
+So after all that, it turns out that the sites I _don&#8217;t_ use a unique password for are the ones that are going to suck, since I&#8217;ll have to type it in every time. Figures.
+
+*Update:* Okay, sorry, the bookmarklet is near the bottom of "this page":http://angel.net/~nic/passwdlet.html. You want the &#8220;master password&#8221; version, so you can fill in passwords on your iPhone without lots of typing.
