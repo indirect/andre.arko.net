@@ -17,6 +17,8 @@ class Generate < Thor::Group
     $stdout.sync = true
     pubdir = "/home/arko.net/domains/andre.arko.net/web/public/"
     Dir.chdir(pubdir)
+
+    system %{jekyll}
     Dir["*/"].each do |d|
       o = pubdir + d.chop
       n = "/home/arko.net/web/public/#{d.chop}"
