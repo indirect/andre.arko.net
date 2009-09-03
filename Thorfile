@@ -4,6 +4,7 @@ class Deploy < Thor::Group
   # everything squeezed into one method so it only sshes once
   def run_deploy
     $stdout.sync = true
+    system %{git push}
     system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && thor generate"}
   end
 end
