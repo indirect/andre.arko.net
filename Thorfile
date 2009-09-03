@@ -5,20 +5,18 @@ class Deploy < Thor::Group
   def run_deploy
     $stdout.sync = true
     system %{git push}
-    system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && thor generate"}
+    system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && jekyll && thor link_arko"}
   end
 end
 
-class Generate < Thor::Group
-  desc "Runs jekyll and symlinks year directories into arko.net"
+class LinkArko < Thor::Group
+  desc "symlinks year directories into arko.net"
 
   # everything squeezed into one method so it only sshes once
-  def run_generate
+  def run_link_arko
     $stdout.sync = true
     pubdir = "/home/arko.net/domains/andre.arko.net/web/public/"
     Dir.chdir(pubdir)
-
-    system %{jekyll}
     Dir["*/"].each do |d|
       o = pubdir + d.chop
       n = "/home/arko.net/web/public/#{d.chop}"
