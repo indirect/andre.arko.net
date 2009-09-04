@@ -10,11 +10,11 @@ class Deploy < Thor::Group
 end
 
 class LinkArko < Thor::Group
-  desc "symlinks year directories into arko.net"
+  desc "symlinks year directories into arko.net to maintain links and such"
 
-  # everything squeezed into one method so it only sshes once
   def run_link_arko
     $stdout.sync = true
+    system %{cd /home/arko.net/web && git clean -f}
     pubdir = "/home/arko.net/domains/andre.arko.net/web/public/"
     Dir.chdir(pubdir)
     Dir["*/"].each do |d|
