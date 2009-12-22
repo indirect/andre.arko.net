@@ -17,7 +17,7 @@ Then you need an app. Assuming that your app is named "myapp" (which is a pretty
 
     mkdir myapp
     cd myapp
-    curl -O http://gist.github.com/raw/261585/df74acf911145aa3f12c42a6d2d330ba3e14108a/Gemfile
+    curl -O http://gist.github.com/raw/261585/9cbbe27ee9d5d0bc97a353a106c11829c437c1f9/Gemfile
     gem bundle
 
 That creates a new directory for your app, pulls down a (sort of) minimal Gemfile, and then tells the bundler to bundle up Rails and all its dependencies for you to use in this app.
