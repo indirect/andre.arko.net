@@ -1,7 +1,7 @@
 destination: ./public
 auto:        false
 lsi:         false
-server_port: 4000
+server_port: 4444
 pygments:    true
 markdown:    maruku
 permalink:   pretty
