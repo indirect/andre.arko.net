@@ -36,7 +36,7 @@ class Post < Thor::Group
     end
 
     date = Date.today.strftime('%Y-%m-%d')
-    name = title.downcase.gsub(/ /, '-')
+    name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
     ext = (format || "md")
     filename = File.join("_posts", "#{date}-#{name}.#{ext}")
     File.open(filename, "w") do |f|
