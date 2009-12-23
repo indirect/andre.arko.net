@@ -25,21 +25,21 @@ h1, h2 {
 
 
 #header {
-  margin: 0 2em;
+  margin: 0 1em;
 }
 
 #content {
-  margin: 0 5em;
+  margin: 0 4em;
 }
 
 #footer {
-  margin: 0 5em;
+  margin: 0 4em;
   font-size: 70%;
   text-align: right;
 }
 
 
-
+/** Posts list page **/
 .posts {
   margin: 0 0 2em 0;
   padding: 0;
@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 
-
+/** Post show page **/
 .post-date {
   float: right;
   margin: 0;
@@ -78,4 +78,14 @@ h1, h2 {
 
 .next-post {
   float: right;
+}
+
+pre {
+  overflow: hidden;
+  border-right: 1px dashed #CCC;
+}
+
+pre:hover {
+  overflow: visible;
+  border-right: none;
 }
