@@ -17,7 +17,7 @@ Then you need an app. Assuming that your app is named "myapp" (which is a pretty
 
     mkdir myapp
     cd myapp
-    curl -O http://gist.github.com/raw/261585/9cbbe27ee9d5d0bc97a353a106c11829c437c1f9/Gemfile
+    curl -O http://j.mp/Gemfile
     gem bundle
 
 That creates a new directory for your app, pulls down a (sort of) minimal Gemfile, and then tells the bundler to bundle up Rails and all its dependencies for you to use in this app.
@@ -63,7 +63,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
   5. Thor needs a Thorfile, and can replace the Rakefile that Rails included with your app.
 
-        curl -O http://gist.github.com/raw/261585/93e7a7418ee5beea2b25fe6081624d9b72a9d1de/Thorfile
+        curl -O http://j.mp/Thorfile
         rm Rakefile
         thor -T
 
@@ -71,7 +71,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
         script/plugin install git://github.com/josevalim/rack-bug.git
 
-    Then, in `config/development.rb`, add this line:
+  Then, in `config/development.rb`, add this line:
 
         config.middleware.use "Rack::Bug"
 
@@ -80,12 +80,12 @@ At this point, you are pretty much set, and can run off and make your app do wha
 This is probably a good time to start tracking your app in source control:
 
     git init
-    curl -O http://gist.github.com/raw/261585/64dac697f992b54c019b5709e6fa673a1a71ca9f/.gitignore
+    curl -O http://j.mp/gitignore
     git add .
     git commit -m "Fresh new Rails 3 app"
 
 
-### TextMate with Rspec Bundle (obviously very optional)
+### TextMate with Rspec Bundle
 
 Lastly, if you want to use RSpec from TextMate in the manner to which you have (likely) become accustomed, you will need to install a new version of RSpec.tmbundle that has support for libraries installed via the bundler.
 
@@ -96,4 +96,4 @@ Lastly, if you want to use RSpec from TextMate in the manner to which you have (
 
 ### Phew.
 
-If you've actually made it all the way here, I'm terribly impressed. If for some reason you want to follow along with these steps, you can check out [my blank Rails 3 app](http://github.com/indirect/rails3-app) repository at Github. Have fun with Rails 3!
+If you've actually made it all the way here, I'm terribly impressed. If for some reason you want to follow along with these steps, you can check out my [blank Rails 3 app](http://github.com/indirect/rails3-app) repository at Github. Have fun with Rails 3!
