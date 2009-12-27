@@ -17,7 +17,7 @@ Then you need an app. Assuming that your app is named "myapp" (which is a pretty
 
     mkdir myapp
     cd myapp
-    curl -O http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Gemfile
+    curl -o Gemfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Gemfile.example
     gem bundle
 
 That creates a new directory for your app, pulls down a (sort of) minimal Gemfile, and then tells the bundler to bundle up Rails and all its dependencies for you to use in this app.
@@ -63,7 +63,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
   5. Thor needs a Thorfile, and can replace the Rakefile that Rails included with your app.
 
-        curl -O http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile
+        curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile
         rm Rakefile
         thor -T
 
@@ -80,7 +80,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 This is probably a good time to start tracking your app in source control:
 
     git init
-    curl -O http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/.gitignore
+    curl -o .gitignore http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/gitignore.example
     git add .
     git commit -m "Fresh new Rails 3 app"
 
