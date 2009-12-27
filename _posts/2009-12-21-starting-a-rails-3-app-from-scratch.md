@@ -63,17 +63,19 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
   5. Thor needs a Thorfile, and can replace the Rakefile that Rails included with your app.
 
-        curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile
+        curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile.example
         rm Rakefile
         thor -T
 
-  6. Rack::Bug is just a plugin, so it's pretty easy (although it may or may not be working with Rails 3 at the exact moment that you are reading this).
+  6. Rack::Bug is just a plugin, so it's pretty easy.
 
-        script/plugin install git://github.com/josevalim/rack-bug.git
+        script/plugin install git://github.com/brynary/rack-bug.git
 
   Then, in `config/development.rb`, add this line:
 
         config.middleware.use "Rack::Bug"
+  
+  Because ActionView#render_templates has been removed, I had to comment out the TemplatesPanel in `rack/bug/options.rb:80` for rack-bug to work. I imagine the bug will be fixed relatively quickly, though.
 
 ### Git it done already
 
@@ -82,7 +84,7 @@ This is probably a good time to start tracking your app in source control:
     git init
     curl -o .gitignore http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/gitignore.example
     git add .
-    git commit -m "Fresh new Rails 3 app"
+    git commit -m "New Rails 3 app with bundled gems"
 
 
 ### TextMate with Rspec Bundle
