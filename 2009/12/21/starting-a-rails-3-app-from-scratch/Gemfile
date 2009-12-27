@@ -1,0 +1,20 @@
+# Edit this Gemfile to bundle your application's dependencies.
+
+## Bundle edge rails:
+gem "rails", "3.0.pre", :git => "git://github.com/rails/rails.git"
+gem "arel", "0.2.pre", :git => "git://github.com/rails/arel.git"
+gem "rack", "1.1.0", :git => "git://github.com/rails/rack.git"
+
+
+## Bundle the gems you use:
+gem "sqlite3-ruby", :require_as => "sqlite3"
+# gem "thor"
+# gem "data_mapper"
+# gem "data_objects"
+# gem "do_sqlite3"
+#
+# ## Bundle gems used only in certain environments:
+# only :test do
+#   gem "rspec"
+#   gem "webrat"
+# end
