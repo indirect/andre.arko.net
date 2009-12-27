@@ -4,7 +4,7 @@
 gem "rails", "3.0.pre", :git => "git://github.com/rails/rails.git"
 gem "arel", "0.2.pre", :git => "git://github.com/rails/arel.git"
 gem "rack", "1.1.0", :git => "git://github.com/rails/rack.git"
-
+gem "i18n"
 
 ## Bundle the gems you use:
 gem "sqlite3-ruby", :require_as => "sqlite3"
