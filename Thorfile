@@ -5,10 +5,10 @@ class Default < Thor
     $stdout.sync = true
     system %{git push}
     # everything squeezed into one system call so it only sshes once
-    system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && jekyll && thor link_arko"}
+    system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && jekyll && thor :symlink"}
   end
 
-  desc "symlink", "symlinks year directories into arko.net to maintain links and such"
+  desc "symlink", "server command to symlink year directories into arko.net to maintain links and such"
   def symlink
     $stdout.sync = true
     system %{cd /home/arko.net/web && git clean -f}
@@ -22,8 +22,6 @@ class Default < Thor
     end
   end
 
-  # argument :title, :type => :string, :desc => "The title of your new post"
-  # argument :format, :type => :string, :desc => "The format your post is in", :optional => true
   desc "post TITLE [FORMAT]", "Create a new post"
   def post(title, format = nil)
     date = Date.today.strftime('%Y-%m-%d')
