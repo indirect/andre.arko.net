@@ -23,6 +23,11 @@ When you're done, you can install your gems and record the specific versions tha
     bundle install
     bundle lock
 
+After you have installed and locked your bundle, you can run Rails scripts directly. However, you _must_ run all other commands via `bundle exec`. For example:
+
+    ./script/server
+    bundle exec rake db:migrate
+
 When you deploy your application, you will need to run `bundle install` as part of your deploy process, typically after your code has been updated but before you restart your app servers. If you have development gems that you can't (or don't want to) install on your production machine, you can run `bundle install --without development`.
 
 There are a lot more things you can do with the Bundler. If you want to read about them, I suggest checking out the [Bundler README](http://github.com/carlhuda/bundler/tree/master/README.markdown).
