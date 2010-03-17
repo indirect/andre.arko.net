@@ -44,6 +44,7 @@ h1, h2, h3 {
   margin: 0 0 2em 0;
   padding: 0;
   list-style: none outside;
+  position: relative;
 }
 
 .posts li {
@@ -52,8 +53,9 @@ h1, h2, h3 {
 }
 
 .posts .post-date {
-  position: absolute;
   font-family: courier;
+  position: absolute;
+  left: 0;
 }
 
 .posts .post-name {
