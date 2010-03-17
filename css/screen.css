@@ -89,3 +89,7 @@ pre:hover {
   overflow: visible;
   border-right: none;
 }
+
+.gist {
+  font-size: 12px;
+}
