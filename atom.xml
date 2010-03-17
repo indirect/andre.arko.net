@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>André Arko</title>
+ <link href="http://andre.arko.net/atom.xml" rel="self"/>
+ <link href="http://andre.arko.net/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://andre.arko.net/</id>
+ <author>
+   <name>André Arko</name>
+   <email>andre@arko.net</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://andre.arko.net{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://andre.arko.net{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>

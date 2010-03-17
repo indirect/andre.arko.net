@@ -3,17 +3,22 @@
 <head>
   <title>{{ page.title }}</title>
   <meta name="author" content="Andre Arko">
+  <link href="/atom.xml" rel="alternate" title="Andre Arko" type="application/atom+xml" />
+
   <link rel="stylesheet" href="/css/syntax.css" type="text/css">
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen">
+
+  <link rel="openid.server" href="http://www.myopenid.com/server" />
+  <link rel="openid.delegate" href="http://indirect.myopenid.com/" />
+  <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=indirect.myopenid.com" />
 </head>
 <body>
   <script type="text/javascript">
-    // Async Google Analytics
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-306556-1']);
-    _gaq.push(['_setDomainName', 'andre.arko.net']);
-    _gaq.push(['_trackPageview']);
     _gaq.push(['_setDomainName', '.arko.net']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setDomainName', 'andre.arko.net']);
     _gaq.push(['_trackPageview']);
 
     (function() {
