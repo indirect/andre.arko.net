@@ -39,41 +39,41 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
   2. Export the generators into `lib/generators`:
 
-      git clone git://github.com/indirect/rails3-generators.git lib/generators
-      rm -rf lib/generators/.git
+         git clone git://github.com/indirect/rails3-generators.git lib/generators
+         rm -rf lib/generators/.git
 
   3. To enable the generators, put these lines into your `config/application.rb`:
-
-        config.generators do |g|
-          g.scaffold_controller :responders_controller
-          g.orm                 :datamapper
-          g.template_engine     :erb, :layout => true
-          g.test_framework      :rspec,
-                                :fixtures => true,
-                                :integration_tool => false,
-                                :routes => true,
-                                :views => false
-          g.integration_tool    :rspec
-        end
+        
+         config.generators do |g|
+           g.scaffold_controller :responders_controller
+           g.orm                 :datamapper
+           g.template_engine     :erb, :layout => true
+           g.test_framework      :rspec,
+                                 :fixtures => true,
+                                 :integration_tool => false,
+                                 :routes => true,
+                                 :views => false
+           g.integration_tool    :rspec
+         end
 
   4. Switching to RSpec is then pretty easy:
 
-      ./script/generate rspec:install
-      rm -rf test
+         ./script/generate rspec:install
+         rm -rf test
 
   5. Thor needs a Thorfile, and can replace the Rakefile that Rails included with your app.
 
-        curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile.example
-        rm Rakefile
-        thor -T
+         curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile.example
+         rm Rakefile
+         thor -T
 
   6. Rack::Bug is just a plugin, so it's pretty easy.
 
-        script/plugin install git://github.com/brynary/rack-bug.git
+         script/plugin install git://github.com/brynary/rack-bug.git
 
-  Then, in `config/development.rb`, add this line:
+     Then, in `config/development.rb`, add this line:
 
-        config.middleware.use "Rack::Bug"
+         config.middleware.use "Rack::Bug"
   
   Because ActionView#render_templates has been removed, I had to comment out the TemplatesPanel in `rack/bug/options.rb:80` for rack-bug to work. I imagine the bug will be fixed relatively quickly, though.
 
