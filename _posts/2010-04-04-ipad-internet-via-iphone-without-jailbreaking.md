@@ -10,9 +10,9 @@ I am a big fan of the [iProxy](http://github.com/tcurdt/iProxy) project, which l
   
   2.  Create a file named `socks.pac`, and put this in it:
   
-        function FindProxyForURL(url, host) {
-          return "SOCKS 10.0.0.1:8888";
-        }
+          function FindProxyForURL(url, host) {
+            return "SOCKS 10.0.0.1:8888";
+          }
 
   3.  Upload that file to Air Sharing on your iPhone, so you can host it for the iPad later.
   
