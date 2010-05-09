@@ -9,6 +9,15 @@
 
   <link rel="stylesheet" href="/css/syntax.css" type="text/css">
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/js/facebox/facebox.css" type="text/css" media="screen">
+
+  <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/facebox/facebox.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox()
+    })
+  </script>
 
   <link rel="openid.server" href="http://www.myopenid.com/server">
   <link rel="openid.delegate" href="http://indirect.myopenid.com/">
