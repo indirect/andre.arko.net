@@ -15,7 +15,10 @@
   <script src="/js/facebox/facebox.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
     jQuery(document).ready(function($) {
-      $('a[rel*=facebox]').facebox()
+      $('a[rel*=facebox]').facebox();
+      $('#facebox').bind('click', function() {
+        jQuery(document).trigger('close.facebox');
+      });
     })
   </script>
 
