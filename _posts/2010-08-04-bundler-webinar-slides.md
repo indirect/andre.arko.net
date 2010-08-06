@@ -2,7 +2,9 @@
 title: Bundler webinar slides
 layout: post
 ---
-These are the slides for the Bundler webinar I gave at [Engine Yard](http://engineyard.com), right before the release of Bundler 1.0rc3. As soon as it's up, I'll add a link to the webinar recording to this post.
+These are the slides for the [Bundler webinar](http://www.engineyard.com/video/13917022) I gave at [Engine Yard](http://engineyard.com), right before the release of Bundler 1.0rc3.
+
+If you want to watch and listen to the entire thing,  Engine Yard has posted [a video of the presentation](http://www.engineyard.com/video/13917022).
 
 <a href="webinar.001.jpg" rel="facebox" class="image"><img src="webinar.001.jpg" alt="webinar.001"></a>
 <a href="webinar.002.jpg" rel="facebox" class="image"><img src="webinar.002.jpg" alt="webinar.002"></a>
