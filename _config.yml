@@ -5,6 +5,5 @@ server_port: 4444
 pygments:    true
 markdown:    rdiscount
 permalink:   pretty
-postfiles:   true
 exclude:
   - Thorfile
