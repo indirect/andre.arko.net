@@ -6,11 +6,22 @@ layout: post
 
 Tools like [Jeweler](http://github.com/technicalpickles/jeweler) have attempted to help with this problem in the past. Jeweler comes with a rake task that tells you if some of your gem's dependencies aren't installed. Bundler takes this idea one step further, allowing you to install all of your gem's dependencies with a single command. This makes it very simple to check out a gem's source and start working on it right away.
 
+------------------
+
+**Update** While the stuff below worked in Bundler 0.9, it has been removed in 1.0, and replaced by the `gemspec` method that you put in your Gemfile. It should look like this:
+
+    source :rubygems
+    gemspec
+
+For more information about the `gemspec` method and managing your gems with Bundler, please see the official docs, written by myself and the incomparable Josh Hull over on [the official Bundler documentation site](http://gembundler.com/rubygems.html).
+
+------------------
+
 Specifying your gem's dependencies is simple: just like any other bundler project, you create a [Gemfile](http://gembundler.com/gemfile.html). That file is some ruby code declaring the other gems that you gem needs to have installed in order to run. It will look something like this:
 
     source :rubyforge
     gem "json"
-    
+
     group :development do
       gem "rspec"
     end
