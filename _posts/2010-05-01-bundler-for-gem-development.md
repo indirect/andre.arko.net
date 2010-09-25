@@ -8,7 +8,9 @@ Tools like [Jeweler](http://github.com/technicalpickles/jeweler) have attempted 
 
 ------------------
 
-**Update** While the stuff below worked in Bundler 0.9, it has been removed in 1.0, and replaced by the `gemspec` method that you put in your Gemfile. It should look like this:
+**Update** While the stuff below worked in Bundler 0.9, it has been removed in 1.0. Integrating Bundler with gemspecs proved to be a fantastic idea, but the version that shipped with Bundler 0.9 had some issues. Gemspecs are executable Ruby code, and adding a dependency on the Bundler gem to your gemspec didn't work in practice, because many machines that needed to process gemspecs didn't have the right version of Bundler already installed.
+
+Replacing `Gem::Specification#add_bundler_dependencies` is the `gemspec` method for your Gemfile. You can use it like this:
 
     source :rubygems
     gemspec
