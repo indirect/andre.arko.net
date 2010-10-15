@@ -12,7 +12,9 @@ The source is [on github](http://github.com/indirect/haml-rails) if you want to 
 
 Installation is pretty complicated, but I'm sure you can get the hang of it:
 
+    {% highlight ruby %}
     # Gemfile
     gem "haml-rails"
+    {% endhighlight %}
 
 Enjoy!
