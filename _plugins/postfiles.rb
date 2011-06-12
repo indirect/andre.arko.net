@@ -19,6 +19,8 @@ module Jekyll
         next unless File.exist?(postfile_dir)
         # Construct the directory the post will be in
         post_dir = File.join(site.config['destination'], post.url)
+        # Create the directory if we need to for some reason
+        FileUtils.mkdir_p(post_dir)
         # Copy postfiles to the directory created for this post
         Dir[File.join(postfile_dir, '/*')].each{|pf| FileUtils.cp(pf, post_dir) }
       end
