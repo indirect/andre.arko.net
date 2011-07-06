@@ -12,8 +12,8 @@ a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
-a:visited { border: 0; }
-a:hover, a:visited:hover { border-bottom: 2px solid; }
+a:visited { border-bottom: 1px solid #CCC; }
+a:hover, a:visited:hover { border-bottom: none; }
 a.image { border-bottom: 0; }
 
 h1, h2, h3 {
