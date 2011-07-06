@@ -1,5 +1,5 @@
 body {
-  font-family: skia, verdana, sans-serif;
+  font-family: ff-nuvo-sc-web-pro, skia, verdana, sans-serif;
   line-height: 1.3em;
   margin: 4em auto;
   max-width: 35em;
@@ -54,7 +54,7 @@ h1, h2, h3 {
 }
 
 .posts .post-date {
-  font-family: courier;
+  font-family: droid-sans-mono, courier;
   position: absolute;
   left: 0;
 }
