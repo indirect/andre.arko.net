@@ -1,5 +1,5 @@
 body {
-  font-family: ff-nuvo-web-pro, sans-serif;
+  font-family: museo;
   line-height: 1.3em;
   margin: 4em auto;
   max-width: 35em;
@@ -17,6 +17,7 @@ a:hover, a:visited:hover { border-bottom: none; }
 a.image { border-bottom: 0; }
 
 h1, h2, h3 {
+  font-family: junction;
   font-weight: normal;
   margin-bottom: 1em;
 }
@@ -54,7 +55,7 @@ h1, h2, h3 {
 }
 
 .posts .post-date {
-  font-family: droid-sans-mono, courier;
+/*  font-family: courier;*/
   position: absolute;
   left: 0;
 }
