@@ -4,8 +4,8 @@ class Default < Thor
   def deploy
     $stdout.sync = true
     system %{git push}
-    # everything squeezed into one system call so it only sshes once
-    system %{ssh arko "cd /home/arko.net/domains/andre.arko.net/web && git clean -f && git pull && jekyll && thor :symlink"}
+    system %{jekyll}
+    system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
   end
 
   desc "symlink", "server command to symlink year directories into arko.net to maintain links and such"
@@ -17,6 +17,10 @@ class Default < Thor
     Dir["*/"].each do |d|
       o = pubdir + d.chop
       n = "/home/arko.net/web/public/#{d.chop}"
+      if File.exist?(n)
+        puts "#{n} already linked"
+        next
+      end
       puts "#{o} → #{n}"
       system %{ln -f -s #{o} #{n}}
     end
