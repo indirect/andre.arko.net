@@ -1,6 +1,6 @@
 class Default < Thor
 
-  desc "deploy", "Updates repo at andre.arko.net and runs the generate task on the server"
+  desc "deploy", "push to the git repo, generate the site, and rsync it up"
   def deploy
     $stdout.sync = true
     system %{git push}
@@ -8,7 +8,7 @@ class Default < Thor
     system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
   end
 
-  desc "symlink", "server command to symlink year directories into arko.net to maintain links and such"
+  desc "symlink", "server command to symlink year directories into arko.net to maintain links to old post URLs and such"
   def symlink
     $stdout.sync = true
     system %{cd /home/arko.net/web && git clean -f}
