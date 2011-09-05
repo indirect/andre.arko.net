@@ -3,7 +3,12 @@ auto:        false
 lsi:         false
 server_port: 4444
 pygments:    true
-markdown:    rdiscount
+markdown:    redcarpet
 permalink:   pretty
 exclude:
   - Thorfile
+redcarpet:
+  extensions:
+    - fenced_code
+    - no_intraemphasis
+    - smart
