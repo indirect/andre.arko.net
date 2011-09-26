@@ -1,5 +1,5 @@
 ---
-title: 'From' address keyboard shortcuts in Lion
+title: "'From' address keyboard shortcuts in Lion"
 layout: post
 ---
 
