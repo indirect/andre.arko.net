@@ -3,8 +3,8 @@ class Default < Thor
   desc "deploy", "push to the git repo, generate the site, and rsync it up"
   def deploy
     $stdout.sync = true
-    system %{git push}
-    system %{jekyll}
+    system %{git push} || abort("Push failed, please resolve.")
+    system %{jekyll} || abort("Build failed, please resolve.")
     system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
   end
 
