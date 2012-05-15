@@ -7,6 +7,9 @@ markdown:    redcarpet
 permalink:   pretty
 exclude:
   - Thorfile
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 redcarpet:
   extensions:
     - fenced_code
