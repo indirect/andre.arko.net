@@ -4,7 +4,7 @@ class Default < Thor
   def deploy
     $stdout.sync = true
     system %{git push} || abort("Push failed, please resolve.")
-    system %{jekyll} || abort("Build failed, please resolve.")
+    system %{bundle exec jekyll} || abort("Build failed, please resolve.")
     system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
   end
 
