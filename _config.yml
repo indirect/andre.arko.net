@@ -14,4 +14,3 @@ redcarpet:
   extensions:
     - fenced_code
     - no_intraemphasis
-    - smart
