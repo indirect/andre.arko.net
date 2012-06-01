@@ -30,7 +30,7 @@ git track
 git track indirect
 
 # make the current branch track indirect/feature
-git track indirect feautre
+git track indirect feature
 ```
 
 You too can use this particular git alias. Just copy this line into your `.gitconfig` file, in the `[aliases]` section:
