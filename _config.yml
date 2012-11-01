@@ -10,6 +10,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - bin
 redcarpet:
   extensions:
     - fenced_code
