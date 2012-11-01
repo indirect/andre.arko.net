@@ -1,4 +1,5 @@
-.DS_Store
 .bundle
+.DS_Store
+bin
 public
 vendor/bundle
