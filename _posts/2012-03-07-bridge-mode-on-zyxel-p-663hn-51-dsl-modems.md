@@ -26,3 +26,6 @@ Once you reach the last page, you'll be able to save your change. After that, yo
 
 Now you're set. Yay.
 
+*8 months later:*
+
+It's not entirely obvious, but one big thing changes once bridge mode is on. You can't connect to the router's web admin interface. It turns out that the DHCP address that you get assigned, when the modem is in bridge mode, only knows how to talk to the outside internet. Here's how to connect to the modem again, in case you ever need to: manually configure your ethernet interface to have a static IP address in the 192.168.1.x range, with the final value being higher than 1. Set the router to 192.168.1.1. Open a web browser, and navigate to [http://192.168.1.1](http://192.168.1.1). There you go.
