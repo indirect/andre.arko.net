@@ -3,6 +3,7 @@ class Default < Thor
   desc "deploy", "push to the git repo, generate the site, and rsync it up"
   def deploy
     $stdout.sync = true
+    system %{which pygmentize} || abort("Can't find pgyments, please install it first.")
     system %{git push} || abort("Push failed, please resolve.")
     system %{bundle exec jekyll} || abort("Build failed, please resolve.")
     system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
