@@ -1,12 +1,10 @@
 body {
   font-family: museo;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.3em;
   margin: 4em auto;
   max-width: 35em;
 }
-
-
 
 a {
   color: #1C1C1C;
