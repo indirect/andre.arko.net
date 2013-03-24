@@ -1,7 +1,6 @@
 ---
 title: Falsehoods programmers believe
 layout: post
-published: false
 ---
 
 Everyone's [names will be like mine][kalzumeus].
