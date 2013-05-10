@@ -1,5 +1,5 @@
 ---
-title: Hack Your Bundle For Fun and Profit
+title: Hack your bundle for fun and profit
 layout: post
 ---
 
