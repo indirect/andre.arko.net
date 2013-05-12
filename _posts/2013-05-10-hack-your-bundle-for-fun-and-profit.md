@@ -120,4 +120,6 @@ Finally, what I think is the biggest and most useful feature of Bundler after in
 
 Now that you know all of the handy stuff Bundler will do for you, I suggest trying it out! Search your bundle, create a gem, edit it with git locals, and release it to rubygems.org. As far as I'm concerned, the absolute best thing about Bundler is that it makes it easier for everyone to share useful code, and collaborate to make Ruby better for everyone.
 
+<p class="aside">This post was also given as a lightinng talk at <a href="http://2013.la-conf.org/#eclair">La Conf</a>, and the slides for that talk are <a href="https://speakerdeck.com/indirect/hack-your-bundle-for-fun-and-profit-la-conf-2013">posted to SpeakerDeck</a>.</p>
+
 <p class="aside">This post was originally written for, and posted to, the <a href="http://www.engineyard.com/blog/2010/homebrew-os-xs-missing-package-manager/">Engine Yard Blog</a>.</p>
