@@ -3,6 +3,8 @@ title: Middleman Buildpack for Heroku
 layout: post
 ---
 
+*Update*: Custom buildpacks aren't needed to host Middleman sites on Heroku anymore, making this blog post partially obsolete. I've updated my [example of a Middleman site hosted on Heroku](https://github.com/indirect/middleman-heroku-static-app) using the standard Ruby buildpack.
+
 When I make a static site, [Middleman][mm] is my default tool. Middleman makes building static sites as easy as Rails makes building dynamic sites. It's [activately maintained][mmgithub] by [Thomas Reynolds][tdreyno], and keeps up with the latest changes coming out of Rails and elsewhere.
 
 [mm]: http://middlemanapp.com/
