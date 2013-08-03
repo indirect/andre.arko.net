@@ -1,9 +1,0 @@
---- 
-title: A New Angle on Trig
-layout: post
----
-Ha. Seriously, though, it's Trig without Sin, Cos, Tan, or angles, at all. Amazing, and really interesting.
-
-"Press release on book":http://web.maths.unsw.edu.au.nyud.net:8090/~norman/book.htm and "first chapter with introduction":http://web.maths.unsw.edu.au.nyud.net:8090/~norman/papers/Chapter1.pdf.
-
-It's terrible to realize that all those stupid formulas you jammed into your head were totally unneeded, but it gives me great hope that people in the future won't think of math as terrible formula memorization like I do...  yay!

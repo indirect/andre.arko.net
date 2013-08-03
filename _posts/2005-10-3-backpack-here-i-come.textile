@@ -1,7 +1,0 @@
---- 
-title: Backpack, here I come...
-layout: post
----
-There's a "Backpack Widget":http://www.chipt.com/. This is exciting because it means I don't have to manage all those little reminders and whatnot via web pages...
-
-Ironically, as I find webapps more and more useful, and as ajax makes them more like real programs, I really wish more and more that I have an interface to them that isn't a web browser. At least I have one for Backpack.

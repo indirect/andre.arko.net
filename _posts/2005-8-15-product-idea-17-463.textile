@@ -1,7 +1,0 @@
---- 
-title: "Product Idea #17,463"
-layout: post
----
-Cocoa app/prefpane that can turn a USB key into the second part of a two-factor authentication scheme for your Mac.
-
-It just needs to tie into the Authorization Service (like a thumbprint reader), and refuse authentication requests, even with the right password, for users that have set up their USB flash drive as a key. That plus FileVault plus OpenFirmware Passwords might actually give you something resembling security on a laptop. Two-factor authentication is just so much more secure than a password by itself.

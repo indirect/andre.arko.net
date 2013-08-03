@@ -1,7 +1,0 @@
---- 
-title: Cool swag
-layout: post
----
-Whee! "Phil":http://www.philisha.net got me a cool shirt as a "get better" present. Check it out:
-
-!/images/andre/shirt.jpg!

@@ -1,9 +1,0 @@
---- 
-title: Del.icio.us
-layout: post
----
-I can't believe I didn't do this a very, very, very long time ago. "Delicious":http://del.icio.us is what I've been trying to do with my bookmarks for the last eight years. How do you categorize a bookmark that's about web programming, and OS X, and ruby? You add tags for _all of them_. I'm way behind the curve, here, but it feels really really good to finally have made it to a modern way to handle bookmarks.
-
-Delicious also really drives home the power of "folksonomies":http://en.wikipedia.org/wiki/Folksonomy and tagging in a way that I just never understood before. Mentally understanding how tagging works and thinking it is cool is a long way from suddenly being able to find that bookmark that you only vaguely remember had something to do with CSS...
-
-Hooray.

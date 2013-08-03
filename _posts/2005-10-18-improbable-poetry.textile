@@ -1,7 +1,0 @@
---- 
-title: Improbable Poetry
-layout: post
----
-Have you always wanted to write poetry, but never have time? Well, here's a solution looking for a problem: "The Statistically Improbable Poetry Generator":http://sip.arko.net/. Design (and the story of its creation) still forthcoming, but for now all your computer-mediated poetry-writing dreams can come true. Try it, you might like it.
-
-Update: After a brief fight with rails 0.14.2, it works again. Silly ActiveRecord::Base's addition of a readonly attribute.

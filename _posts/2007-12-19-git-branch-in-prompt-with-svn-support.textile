@@ -1,5 +1,0 @@
---- 
-title: Git branch in prompt (with svn support)
-layout: post
----
-I like "having my git branch in my prompt":http://acts.as.streeteasy.com/archives/2007/12/19/git_in_your_prompt/, but I sadly still have to use subversion sometimes. So, I hacked something together (mostly out of "this script for vcs info in your prompt":http://web.glandium.org/blog/?p=170) that gives either the current git branch or the current svn revision. In my .bash_profile, I include "this file":http://arko.net/files/blog/vcs-prompt.bash with `source ~/sw/bash/vcs-prompt.bash`.

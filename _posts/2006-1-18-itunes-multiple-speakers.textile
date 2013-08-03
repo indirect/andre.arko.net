@@ -1,5 +1,0 @@
---- 
-title: iTunes Multiple Speakers
-layout: post
----
-While I find the iTunes mini-store completely useless, it appears that iTunes 6.0.2 does have one very cool new feature: multiple speakers. If you have an AirPort Express (or two), you can play your music out of any combination of Expresses and the speakers in or connected to your computer. Knowing about the AirPort Express delay, you are probably now scoffing that the Expresses and the computer had better be in different rooms so no one can tell they are wildly out of sync, but that's the part that's actually cool. As of now, iTunes synchronizes the sound coming out of the Express(es) with the sound coming out of your speakers. Impressive.

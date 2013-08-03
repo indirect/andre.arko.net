@@ -1,5 +1,0 @@
---- 
-title: I, for one, welcome our new burnt aqua overlords...
-layout: post
----
-iTunes 5 has a new look. John Gruber gives us "the inside scoop on what really happened":http://daringfireball.net/2005/09/anthropomorphized. This really is the kind of stuff of which up can not be made, folks.
