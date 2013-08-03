@@ -3,11 +3,11 @@ require 'date'
 desc "push to the git repo, generate the site, and rsync it up"
 task :deploy do
   $stdout.sync = true
-  system %{which pygmentize} || abort("Can't find pgyments, please install it first.")
-  system %{git pull --rebase} || abort("Pull failed, please resolve.")
-  system %{git push} || abort("Push failed, please resolve.")
-  system %{bundle exec jekyll build} || abort("Build failed, please resolve.")
-  system %{rsync -avz -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
+  sh %{which pygmentize} || abort("Can't find pgyments, please install it first.")
+  sh %{git pull --rebase} || abort("Pull failed, please resolve.")
+  sh %{git push} || abort("Push failed, please resolve.")
+  sh %{bundle exec jekyll build} || abort("Build failed, please resolve.")
+  sh %{rsync -avz --delete-after -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
 end
 
 desc "create a new post"
