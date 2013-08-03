@@ -1,16 +1,15 @@
 destination: ./public
-auto:        false
-lsi:         false
-server_port: 4444
-pygments:    true
-markdown:    redcarpet
+
 permalink:   pretty
+
 exclude:
   - Thorfile
   - Gemfile
   - Gemfile.lock
   - vendor
   - bin
+
+markdown:    redcarpet
 redcarpet:
   extensions:
     - fenced_code
