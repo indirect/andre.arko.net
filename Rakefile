@@ -3,7 +3,6 @@ require 'date'
 desc "push to the git repo, generate the site, and rsync it up"
 task :deploy do
   $stdout.sync = true
-  sh %{which pygmentize} || abort("Can't find pgyments, please install it first.")
   sh %{git pull --rebase} || abort("Pull failed, please resolve.")
   sh %{git push} || abort("Push failed, please resolve.")
   sh %{bundle exec jekyll build} || abort("Build failed, please resolve.")
