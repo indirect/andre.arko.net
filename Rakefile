@@ -10,15 +10,13 @@ task :deploy do
 end
 
 desc "create a new post"
-task :post, [:title, :ext] do |task, args|
-  puts [task, args].inspect
-  title = args[:title] || abort("Usage: rake post['post title'] or rake post['post title',ext]")
-  ext = args[:ext] || "md"
+task :post, [:title] do |task, args|
+  title = [args.title, *args.extras].compact.join(", ")
+  abort("Usage: rake post['post title']") if title.empty?
   date = Date.today.strftime('%Y-%m-%d')
   name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
-  filename = File.join("_posts", "#{date}-#{name}.#{ext}")
+  filename = File.join("_posts", "#{date}-#{name}.md")
   puts filename
-  next
   File.open(filename, "w") do |f|
     f.puts "---"
     f.puts "title: #{title}"
