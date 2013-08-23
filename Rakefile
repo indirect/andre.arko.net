@@ -22,6 +22,7 @@ task :post, [:title] do |task, args|
     f.puts "title: #{title}"
     f.puts "layout: post"
     f.puts "---"
+    f.puts
   end
   case ENV["EDITOR"]
   when /vim?/
