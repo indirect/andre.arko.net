@@ -24,13 +24,13 @@ So, in no particular order, here's a list of things that drive me insane about V
 
   1. Indenting pastes.
 
-    You're all about to start yelling "use `p` instead of `⌘V`, you idiot", but that's not what I'm talking about at all. TextMate has an _incredibly_ smart paste system. Every paste is automatically re-indented to match the indentation level of the cursor at the moment of pasting. It never even occurred to me that indentation of pastes was a thing that ever required thought of any kind.
+    You're all about to start yelling "use `p` instead of `⌘V`, you idiot", or "bind `set paste` to F2`, but that's not what I'm talking about at all. TextMate has an _incredibly_ smart paste system. Every paste is automatically re-indented to match the indentation level of the cursor at the moment of pasting. It never even occurred to me that indentation of pastes was a thing that ever required thought of any kind.
 
     Then I switched to Vim, and discovered that [leading Vim minds][twitter] [suggest][uniqpath] that you "simply" run ``V`]=`` after _every goddamn paste_. No, no, and also: no.
 
-     I guess I can try to figure out how to hook vim to automatically run that after every time I use `p`, but that seems terrible, and would forcibly re-align sub-line pastes.
+    I guess I can try to figure out how to hook vim to automatically run that after every time I use `p`, but that seems terrible, and would forcibly re-align sub-line pastes.
 
-    To add insult to injury, Vim's automatic indentation, triggered by `==`, is frequently just wrong. Then I have to manually adjust by running ``V`]>`` or whatever, and that is also... pretty terrible.
+    To add insult to injury, Vim's automatic indentation, triggered by `=`, is frequently just wrong. Then I have to manually adjust by running ``V`]>`` or whatever, and that is also... pretty terrible.
 
   1. Project-wide find and replace
 
@@ -44,7 +44,7 @@ So, in no particular order, here's a list of things that drive me insane about V
         :argdo %s//Practical/g
         :argdo update
     
-    While I am incredibly impressed that Vim has primitives that allow this, five commands is a pretty crappy replacement for `<tab>Practical`, in my opinion.
+    While I am incredibly impressed that Vim has primitives that allow this, the last four commands is a pretty crappy replacement for `⇥Practical`, in my opinion.
 
   1. Opening files inside my project
 
