@@ -4,9 +4,9 @@ layout: post
 ---
 ### &hellip;except all the other editors
 
-I want to like Vim so badly! I've been using it full-time for just over three months now. I finished [Vim Adventures][vim-adventures]], I've been reading [Practical Vim][pragprog], and watching some [Vimcasts][vimcasts]. I've even been asking my [smart][twitter 2] [vim][twitter 3] [friends][twitter 4] for help.
+I want to like Vim so badly! I've been using it full-time for just over three months now. I finished [Vim Adventures][vim-adventures], I've been reading [Practical Vim][pragprog], and watching some [Vimcasts][vimcasts]. I've even been asking my [smart][twitter 2] [vim][twitter 3] [friends][twitter 4] for help.
 
-Unfortunately, it's still driving me insane. The things it does badly make me want to stop using it almost every single day. That makes me really sad, because the things it does well, it does _phenomenally_ well. After 3 months in Vim, I get incredibly angry trying to use other text editors because do many editing tasks so poorly in comparsion to Vim.
+Unfortunately, it's still driving me insane. The things it does badly make me want to stop using it almost every single day. That makes me really sad, because the things it does well, it does _phenomenally_ well. After 3 months in Vim, I get incredibly angry trying to use other text editors because they do so many editing tasks so poorly in comparsion to Vim.
 
 So, in no particular order, here's a list of things that drive me insane about Vim. After reading this list, feel free to tell me how I'm doing it wrong [on twitter][twitter 5].
 
