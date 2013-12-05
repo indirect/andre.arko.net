@@ -2,7 +2,7 @@
 title: How to be an ally
 layout: post
 ---
-<small>This was also a talk at the RailsBridge lightning talks at Github. See below for the slides, as well as the content of the talk.</small>
+<small>This was also a talk during the RailsBridge lightning talks at Github. See below for the slides, as well as the content of the talk.</small>
 
 <script async class="speakerdeck-embed" data-id="664ea2803fca013162053a28d6c1e062" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
