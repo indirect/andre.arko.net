@@ -18,7 +18,7 @@ Even if you don't have a personal beef with the dominant culture, there are two 
 
 ### What even is allies
 
-Now that you know why you should care, back to allies. Ally, in this context, is a description of how you act. Are your actions inclusive and encouraging towards those who aren't like you? Do they show that you couldn't care less about them? Or worse yet, do they show that you are willing to harrass, exploit, or attack people who aren't like you?
+Now that you know why you should care, back to allies. Ally, in this context, is a description of how you act. Are your actions inclusive and encouraging towards those who aren't like you? Do they show that you couldn't care less about them? Or worse yet, do they show that you are willing to harass, exploit, or attack people who aren't like you?
 
 It's important to note at this point that I am NOT saying that anyone here is sexist, or even a bad person. I'm saying that it's important to think about our actions, and how they impact the people around us, regardless of our intentions.
 
@@ -26,7 +26,7 @@ As a result, ally work isn't something you can just do once. It's an attitude an
 
 ### Fucking allies how do they work
 
-So now that you care, what can you do? Primarily, it is this: shuck the fuck up and listen. There are a lot of people who have been mistreated. Listen to them. You have not experienced what has happened to them. Listen to them so you can understand their experiences. They will probably be angry. They should be! The culture says it's fine to mistreat them. Ugh.
+So now that you care, what can you do? Primarily, it is this: shut the fuck up and listen. There are a lot of people who have been mistreated. Listen to them. You have not experienced what has happened to them. Listen to them so you can understand their experiences. They will probably be angry. They should be! The culture says it's fine to mistreat them. Ugh.
 
 Now that you're listening, you'll probably only last a few seconds before you're tempted to say something. Don't. Don't change the subject. Don't talk about how you have problems too. Don't tell them they're being too angry. Don't tell them being angry will have some sort of bad impact. Don't say anything that includes "I'm only trying to help". You didn't have their experience, and your problems aren't directly comparable to theirs.
 
@@ -44,7 +44,7 @@ I'll just cover responses to the top 3 that I run into:
   2. Meritocracy doesn't solve subconscious biases. In fact, a study found that performance evaluations in so-called meritocracies were more biased against women and minorities than evaluations outside them.
   3. Helping minorities is not unfair to the majority—the majority is already better off than those who need help are even after they get helped.
 
-Fortunately, the entire list of complaints is so common that there are already well-researched responses to all of them. A wonderfully concise list can be found on Julie Pagano's blog in her post entitled "101 Off Limits". In it, she quickly covers the most common arguments against diversity, feminism, and women. Most answers also include links to other responses with tons of detail and research.
+Fortunately, the entire list of complaints is so common that there are already well-researched responses to all of them. A wonderfully concise list can be found on Julie Pagano's blog, in her post [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/). In it, she quickly covers the most common arguments against diversity, feminism, and women. Most answers also include links to other responses with tons of detail and research.
 
 There's a ton more to learn about this, but it's hard to tackle all at once. If you'd like to learn how deep the rabbit hole goes, I've collected a few links that you can use as starting points to learn more.
 
