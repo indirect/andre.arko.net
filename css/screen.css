@@ -1,9 +1,9 @@
 body {
-  font-family: museo;
-  font-weight: 300;
+  font-family: "chaparral-pro", serif;
+  font-weight: 400;
+  font-size: 14pt;
   line-height: 1.3em;
-  margin: 4em auto;
-  max-width: 35em;
+  margin: 0 5%;
 }
 
 a {
@@ -15,15 +15,14 @@ a:visited { border-bottom: 1px solid #CCC; }
 a:hover, a:visited:hover { border-bottom: none; }
 a.image { border-bottom: 0; }
 
-h1, h2, h3 {
-  font-family: junction;
-  font-weight: 400;
-  line-height: 1.25em;
-  margin-bottom: 1em;
+h1, h2, h3, h4 {
+  font-family: "p22-underground", sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 0.3em;
 }
 
 .clear { clear: both; }
-
 
 
 #header {
@@ -50,7 +49,7 @@ h1, h2, h3 {
 }
 
 .posts li {
-  min-height: 1.4em;
+  line-height: 1.25em;
   clear: left;
 }
 
@@ -63,6 +62,7 @@ h1, h2, h3 {
 .posts .post-name {
   float: left;
   margin-left: 5em;
+  padding-bottom: 0.5em;
 }
 
 
