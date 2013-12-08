@@ -50,13 +50,13 @@ There's a ton more to learn about this, but it's hard to tackle all at once. If 
 
 ### Further resources on
 
-Sexism
+#### Sexism
 
   - [A primer on sexism in the tech industry](http://www.creativebloq.com/netmag/primer-sexism-tech-industry-10126040)
   - [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/)
   - [Reading List for a New Kind of Manager](https://medium.com/about-work/935a550ddd02)
 
-Allies
+#### Allies
 
   - [Allies](http://geekfeminism.wikia.com/wiki/Allies)
   - [How To Be A (Male) Ally](http://www.anamardoll.com/2012/11/deconstruction-how-to-be-male-ally.html)
@@ -64,7 +64,7 @@ Allies
   - [listening to anger](http://sophiaserpentia.livejournal.com/838741.html)
   - [What Can Men Do?](https://medium.com/tech-culture-briefs/a1e93d985af0)
 
-Open Source
+#### Open Source
 
   - [The Ethics of Unpaid Labor and the OSS Community](http://ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community)
   - [Why Github is not your CV](https://blog.jcoglan.com/2013/11/15/why-github-is-not-your-cv/)
