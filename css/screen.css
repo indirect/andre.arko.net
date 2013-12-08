@@ -5,6 +5,8 @@ body {
   font-size: 14pt;
   line-height: 1.4em;
   margin: 0 5%;
+  min-width: 25em;
+  max-width: 40em;
 }
 
 a {
