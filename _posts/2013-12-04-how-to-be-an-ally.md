@@ -53,8 +53,9 @@ There's a ton more to learn about this, but it's hard to tackle all at once. If 
 #### Sexism
 
   - [A primer on sexism in the tech industry](http://www.creativebloq.com/netmag/primer-sexism-tech-industry-10126040)
-  - [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/)
+  - [Finally, Feminism 101: The FAQs](http://finallyfeminism101.wordpress.com/the-faqs/faq-roundup/)
   - [Reading List for a New Kind of Manager](https://medium.com/about-work/935a550ddd02)
+  - [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/)
 
 #### Allies
 
