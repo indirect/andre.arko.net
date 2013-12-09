@@ -1,15 +1,15 @@
 destination: ./public
 
-permalink:   pretty
+permalink: pretty
 
 exclude:
-  - Thorfile
+  - Rakefile
   - Gemfile
   - Gemfile.lock
   - vendor
   - bin
 
-markdown:    redcarpet
+markdown: redcarpet
 redcarpet:
   extensions:
     - fenced_code
