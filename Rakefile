@@ -19,7 +19,7 @@ task :post, [:title] do |task, args|
   puts filename
   File.open(filename, "w") do |f|
     f.puts "---"
-    f.puts "title: #{title}"
+    f.puts "title: \"#{title}\""
     f.puts "layout: post"
     f.puts "---"
     f.puts
