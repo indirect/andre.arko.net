@@ -3,7 +3,7 @@ title: "Extreme Makeover: Rubygems Edition"
 layout: post
 ---
 
-<small>This was also a talk given at RubyConf 2013 in Miami Beach, FL. If you prefer, you can [watch the video] from the talk. This post contains the slide deck from the talk, and a written version of the content.</small>
+<small>This was also a talk given at RubyConf 2013 in Miami Beach, FL. If you prefer, you can [watch the video](http://www.confreaks.com/videos/2885-rubyconf2013-extreme-makeover-rubygems-edition) from the talk. This post contains the slide deck from the talk, and a written version of the content.</small>
 
 <script async class="speakerdeck-embed" data-id="5951b48031690131904d529dfbcfdd99" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
