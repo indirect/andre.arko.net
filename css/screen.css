@@ -44,6 +44,10 @@ h1, h2, h3, h4 {
 
 
 /** Posts list page **/
+h2.year {
+  margin-top: 0;
+}
+
 .posts {
   margin: 0 0 2em 0;
   padding: 0;
