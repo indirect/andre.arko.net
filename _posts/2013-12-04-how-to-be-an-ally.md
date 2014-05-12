@@ -38,11 +38,12 @@ You won't always get ally actions right, but that's okay. No one does. We need t
 
 At this point, you're about to meet the opposition. Those people and their allies will fight unbelievably hard against the idea that their actions are damaging. "What about the mens!", they cry. "Reverse racism!" is another popular one, as is "but tech is a meritocracy!". Then there's always my favorite, "feminists hate men and also fun".
 
-I'll just cover responses to the top 3 that I run into:
+I'll just cover responses to the top few that I run into:
 
-  1. There is no biological difference between the genders in IQ, problem solving, or any of the other skills needed to type all day while being angry at computers.
-  2. Meritocracy doesn't solve subconscious biases. In fact, a study found that performance evaluations in so-called meritocracies were more biased against women and minorities than evaluations outside them.
-  3. Helping minorities is not unfair to the majority—the majority is already better off than those who need help are even after they get helped.
+  1. "Women can't computer because biology!" There is no biological difference between the genders in IQ, problem solving, or any of the other skills needed to type all day while being angry at computers.
+  2. "Tech is a meritocracy!" Meritocracy doesn't solve subconscious biases. In fact, a study found that performance evaluations in so-called meritocracies were more biased against women and minorities than evaluations outside them.
+  3. "That's reverse sexism (or reverse racism)!" Helping minorities is not unfair to the majority—the majority is already better off than those who need help are even after they get helped.
+  4. "Not ALL men are like that!" Of course not all men are like this. Anyone who feels the need to say this is just trying to distract from the very real problems caused by SOME men.
 
 Fortunately, the entire list of complaints is so common that there are already well-researched responses to all of them. A wonderfully concise list can be found on Julie Pagano's blog, in her post [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/). In it, she quickly covers the most common arguments against diversity, feminism, and women. Most answers also include links to other responses with tons of detail and research.
 
@@ -52,18 +53,19 @@ There's a ton more to learn about this, but it's hard to tackle all at once. If 
 
 #### Sexism
 
+  - [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/)
   - [A primer on sexism in the tech industry](http://www.creativebloq.com/netmag/primer-sexism-tech-industry-10126040)
   - [Finally, Feminism 101: The FAQs](http://finallyfeminism101.wordpress.com/the-faqs/faq-roundup/)
   - [Reading List for a New Kind of Manager](https://medium.com/about-work/935a550ddd02)
-  - [101 Off Limits](http://juliepagano.com/blog/2013/11/02/101-off-limits/)
 
 #### Allies
 
+  - [How to be an ally](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/)
+  - [What Can Men Do?](https://medium.com/tech-culture-briefs/a1e93d985af0)
   - [Allies](http://geekfeminism.wikia.com/wiki/Allies)
   - [How To Be A (Male) Ally](http://www.anamardoll.com/2012/11/deconstruction-how-to-be-male-ally.html)
   - [The Do's and Don'ts of Being a Good Ally](http://theangryblackwoman.com/2009/10/01/the-dos-and-donts-of-being-a-good-ally/)
   - [listening to anger](http://sophiaserpentia.livejournal.com/838741.html)
-  - [What Can Men Do?](https://medium.com/tech-culture-briefs/a1e93d985af0)
 
 #### Open Source
 
