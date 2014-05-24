@@ -5,7 +5,7 @@ task :deploy do
   $stdout.sync = true
   sh %{git pull --rebase} || abort("Pull failed, please resolve.")
   sh %{git push} || abort("Push failed, please resolve.")
-  sh %{bundle exec jekyll build} || abort("Build failed, please resolve.")
+  sh %{jekyll build} || abort("Build failed, please resolve.")
   sh %{rsync -avz --delete-after -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
 end
 
@@ -30,6 +30,11 @@ task :post, [:title] do |task, args|
   when /mate/
     system "#{ENV["EDITOR"]} -l 5 #{Shellwords.escape(filename)}"
   end
+end
+
+desc "launch the preview server"
+task :serve do
+  sh %{jekyll serve -w}
 end
 
 task :default => :deploy
