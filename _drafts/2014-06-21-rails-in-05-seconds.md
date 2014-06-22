@@ -120,7 +120,7 @@ require "action_mailer/railtie"
 require "sprockets/railtie"
 ```
 
-Note that removing those lines doesn't stop you from using either ActionMailer or Sprockets -- they just avoid loading them by default every single time any Ruby process loads your app. If you'd still like to use ActionMailer or Sprockets, add require statements before you need to use them instead of universally requiring them all the time. At last, loading Rails (including ActiveRecord, ActionController, and ActionView) takes less than 500ms:
+Building an API service in Rails that returns JSON means that I don't need ActionMailer or Sprockets. If you do, you'll either need to figure out how to load those frameworks lazily, when you need to send mail or generate assets, or just bite the bullet and load your Rails app in 700ms instead of 500. At last, loading Rails (including ActiveRecord, ActionController, and ActionView) takes less than 500ms:
 
 ```bash
 $ time bin/rails runner '0'
