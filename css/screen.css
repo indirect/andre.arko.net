@@ -93,12 +93,14 @@ h2.year {
 
 code {
   background-color: #F2F2F2;
+  font-size: 80%;
 }
 
 pre {
   overflow: hidden;
   background-color: #F2F2F2;
   padding: 10px;
+  line-height: 1.0em;
 }
 
 pre code {
