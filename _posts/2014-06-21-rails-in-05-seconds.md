@@ -2,7 +2,7 @@
 title: "Rails in 0.5 seconds"
 layout: post
 ---
-You too can boot a Rails app in as little as 500ms! Here's how, by using lazy require statements and not loading Bundler or Rubygems at runtime.
+You too can boot a Rails app in as little as 500ms! Here's how, using lazy require statements and not loading Bundler or Rubygems at runtime.
 
 🏃💨💫💞
 
@@ -61,6 +61,8 @@ require_relative "rubygems_shim"
 
 Next step (you probably guessed it already) is `config/rubygems_shim.rb`. It's the absolute minimum set of Rubygems constants and methods that mean that Rails will function. Using this shim instead of Rubygems removes one specific thing from Rails: the version of your database adapter will not be checked by ActiveRecord. Make sure you have the latest compatible version!
 
+When I first figured out how to do this, I was using Ruby 2.1.1. About halfway through, I decided that I should upgrade to Ruby 2.1.2, and I discovered a very sad thing: the version of RDoc that ships with Ruby 2.1.2 has a file, `rdoc/tasks.rb`, that actually has the statement `require "rubygems"` inside it. The only way to work around it was to monkeypatch require, and block Rubygems from loading. This is a terrible idea, and honestly I don't recommend that anyone do it. I couldn't figure out how to make this work on Ruby 2.1.2 without it, though, so it's here in the shim. 
+
 ```ruby
 # config/rubygems_shim.rb
 if defined?(Gem)
@@ -83,7 +85,7 @@ else
   module Kernel
     # ActiveSupport requires Kernel.gem to load
     def gem(*); end
-    # rdoc/task.rb requires rubygems itself :(
+    # rdoc/task.rb in Ruby 2.1.2 requires rubygems itself :(
     alias_method :require, :orig_require
     def require(*args); args.first == "rubygems" || orig_require(*args); end
   end
