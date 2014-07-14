@@ -31,7 +31,7 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.77.4 
 
 ```
 
-We'll talk more about the extra lines following the first one in Part 2: Headers. For now, this serves to show that even the newest and fanciest web browsers use easily readable plain-text HTTP.
+We'll talk more about the extra lines following the first line (called _request headers_) in the next post in this series. For now, this serves to show that even the newest and fanciest web browsers use easily readable plain-text HTTP.
 
 ### Responses
 
