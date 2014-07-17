@@ -10,12 +10,11 @@ The entire Ruby on Rails web application framework is designed around accepting 
 
 Fortunately, it turns out that HTTP at its simplest is just a few lines of text. Here is a valid HTTP 1.1 request:
 
-```
-GET / HTTP/1.1
+<pre><code>GET / HTTP/1.1
+    
+</code></pre>
 
-```
-
-`GET` is an _HTTP verb_, and tells the server what the client is trying to do. The single forward slash by itself (`/`) is the _path_, identifying the resource that the client is requesting from the server. The `HTTP/1.1` tells the server that this client knows how to use the HTTP protocol version 1.1. Version 1.1 added some handy things that we'll talk about later, but don't matter for now. The blank line at the end is a required part of the protocol, and indicates that the client is done sending the request.
+`GET` is an _HTTP verb_, and tells the server what the client is trying to do. The single forward slash by itself (`/`) is the _path_, identifying the resource that the client is requesting from the server. The `HTTP/1.1` tells the server that this client knows how to use the HTTP protocol version 1.1. Version 1.1 added some handy things that we'll talk about later, but don't matter for now. The last line is required to be blank as part of the protocol, and indicates that the client is done sending the request.
 
 It's possible to see the plain text of a request using the netcat command-line tool and any web browser. First, open a terminal window and start netcat listening by running `nc -lp 3000`. Then, open a web browser and browse to [http://localhost:3000](http://localhost:3000). Here's an example using Safari 7.
 
