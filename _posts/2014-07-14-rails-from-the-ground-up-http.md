@@ -52,7 +52,7 @@ hi
 ^C
 ```
 
-This is a complete HTTP request and response! In Safari 7, it produces a screen that looks like this:
+This is a complete HTTP request and response! (Although the response is technically not valid HTTP.) Nonetheless, in Safari 7, it produces a screen that looks like this:
 
 ![Safari window containing "hi"](http://files.arko.net/image/0K0X3y0Y0w2r/Image%202014-07-14%20at%201.10.23%20AM.png)
 
