@@ -56,4 +56,6 @@ Other than `Content-Length`, common repsonse headers include:
 
 All of these headers (and others besides) allow HTTP clients and servers to coordinate requests and responses in more and more complicated ways.
 
+Use `curl` to experiement and check out response headers for yourself. Run `curl -I` on your favorite websites, and see what response headers they send. Discover the secrets of the internet.
+
 Now that we have code for a working HTTP server, we'll talk about how to serve HTML next.
