@@ -5,7 +5,7 @@ layout: post
 
 ![hard](http://files.arko.net/image/2J3k2N3n3y0N/security_is_hard.jpg)
 
-<small>This post was also given as a conference talk, originally at [Ruby on Ales 2013][roa] ([slides][roas], [video][roav]), as well as at [RailsConf 2013][rc] ([slides][rcs], [video][rcv]) and [RubyKaigi 2013][rk] ([slides][rks], [video][rkv]).</small>
+<small>This post was also given as a conference talk, originally at [Ruby on Ales 2013][roa] ([slides][roas], [video][roav]), as well as at [RailsConf 2013][rc] ([slides][rcs], [video][rcv]) and [RubyKaigi 2013][rk] ([slides][rks], [video][rkv]), then updated for [Madison+Ruby 2014][mr] ([slides][mrs]).</small>
 
 [roa]: http://ruby.onales.com
 [roas]: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-ruby-on-ales-2013
@@ -16,6 +16,8 @@ layout: post
 [rk]: http://rubykaigi.org
 [rks]: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-rubykaigi-2013
 [rkv]: http://www.ustream.tv/recorded/33562443
+[mr]: http://madisonpl.us/ruby
+[mrs]: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-madison-ruby-2014
 
 ### Uhoh, security?
 
