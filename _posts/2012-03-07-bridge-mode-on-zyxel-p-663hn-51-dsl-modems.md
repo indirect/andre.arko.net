@@ -18,6 +18,8 @@ Then click the "Edit" button on the right-hand side of that page:
 
 <img src="{% postfile router-2.jpg %}" style="width: auto">
 
+Be sure to turn off NAT, DHCP, and IP address assignment now, before you turn on bridge mode. Apparently, they aren't turned off, but the UI to disable them disappears once bridging is enabled. (Thanks, Craig Paxton.)
+
 You'll want to click "Next" at least once, until you eventually end up at a page that lets you choose bridge mode. Click the radio button labelled "Bridging", and then push "Next" some more:
 
 <img src="{% postfile router-3.jpg %}" style="width: auto">
