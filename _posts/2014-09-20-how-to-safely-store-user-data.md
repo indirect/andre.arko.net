@@ -56,6 +56,8 @@ Also, very importantly, split your key up. Store part of it in the database as p
 
 Splitting the key up this way means that even attacks that reveal the source code of your running application (which are sadly somewhat common), combined with a complete copy of the database (likewise sadly common) still does not reveal the entire key. Every one of these partitions is important: database breaches, code breaches, and code execution breaches often require different security holes. If all three are required to get the entire encryption key, it is significantly less likely that a single breach will result in all of your users' "secure" data being leaked.
 
+In addition to splitting your keys, rotating your keys is an excellent practice to ensure that former employees or contractors will not retain access to the encrypted data after they've left. [Encryption on Rails: A Primer](http://product.reverb.com/2015/01/20/encryption-on-rails-a-primer) outlines a structure that allows encrypting arbitrary data as well as rotating the keys used to encrypt that data on a regular basis.
+
 You really don't want your users' data to be leaked. California and many other states require notification of data breaches to every user in a timely manner or companies face stiff fines. If your company is sued over the breach and found liable, the resulting judgement could be huge.
 
 ### Secure your admin keys, too
@@ -65,3 +67,5 @@ One last note: treat all of your own internal credentials as carefully as your u
 This stuff is company making or breaking, so think about what you're doing and why you're doing it. Ask for advice from people who know their stuff. Fix small security issues before they combine with other small security issues to become a huge security issue. And definitely follow (at a minimum!) the steps outlined above.
 
 <small>2014-09-22: updated with separate sections for the safer hash and encryption options, thanks [@bgreenlee](http://twitter.com/bgreenlee)!</small>
+
+<small>2015-01-24: updated with a link to <i>Encryption on Rails</i></small>
