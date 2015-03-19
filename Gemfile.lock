@@ -21,7 +21,7 @@ GEM
       redcarpet (~> 2.2.2)
       safe_yaml (~> 0.7.0)
     kramdown (1.0.2)
-    liquid (2.5.1)
+    liquid (2.5.5)
     maruku (0.6.1)
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
@@ -40,3 +40,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   rake (~> 10.1)
+  redcarpet
