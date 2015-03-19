@@ -15,6 +15,7 @@ If you or your company has benefited from the free and open-source tools availab
 
 <small>This post was originally written for [Ruby Together][post].</small>
 
+[rubytogether]: https://rubytogether.org
 [bundler]: https://bundler.io
 [rubygems]: https://rubygems.org/pages/download
 [projects]: https://rubytogether.org/projects
