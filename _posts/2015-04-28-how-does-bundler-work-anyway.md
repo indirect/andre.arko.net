@@ -6,7 +6,7 @@ layout: post
 
 <script async class="speakerdeck-embed" data-id="7eaa2724d0624961bc4423a100036ce5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-<small>This post was originally given as a presentation at [RailsConf 2015](http://confreaks.tv/events/railsconf2015).</small>
+<small>This post was originally given as a presentation at [RailsConf 2015](http://confreaks.tv/videos/railsconf2015-how-does-bundler-work-anyway).</small>
 
 Using Ruby code written by other developers is easy! Just add it to your Gemfile, run `bundle install`, and start using it. But what's really happening when you do that? How can use you someone else's code just by putting it in your Gemfile? To answer that question, I'm going to take you back in time. We're going on a tour of the history of dependencies in Ruby, from the beginning to the present day. When we're done, you'll not only understand what happens when you use Bundler, you'll understand why things work the way they do.
 
