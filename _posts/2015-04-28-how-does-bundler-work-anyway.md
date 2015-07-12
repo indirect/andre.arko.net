@@ -44,7 +44,7 @@ To allow required files to be in different directories, we could create a list o
 $LOAD_PATH = []
 
 def require(filename)
-  full_path = $LOAD_PATH.first do |path|
+  full_path = $LOAD_PATH.find do |path|
     File.exist?(File.join(path, filename))
   end
   eval File.read(full_path)
