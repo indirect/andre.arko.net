@@ -144,7 +144,7 @@ Research from Ohio State University identified [elements that make an apology mo
 
 In the end, everything that I've suggested comes from the underlying principle of having respect and empathy for other people. Other people don't have the context you do, and they don't have the skills you do. Almost all of the time, they're just trying to do their job. They can tell when you're trying to help, and they'll be very happy to receive that help. On the other hand, they can tell when you don't like them and don't care about them, and they will respond to that as well.
 
-Treating others the way that you personally would like to be treated isn't enough. Listen to people in underrepresented groups. Pay attention to how tech as a field mistreats those underrepresented people, and actively work to fix it. Call out people violating codes of conduct. Let them know that what they're doing isn't okay. Tech as a field is biased and exclusive, and the only way it will get better is if all of us act together to change it.
+Treating others the way that you personally would like to be treated isn't enough. Read about [how to be a good ally](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/). Listen to people in underrepresented groups. Pay attention to how tech as a field mistreats those underrepresented people, and actively work to fix it. Call out people violating codes of conduct. Let them know that what they're doing isn't okay. Tech as a field is biased and exclusive, and the only way it will get better is if all of us act together to change it.
 
 ### improving inclusion
 
@@ -152,4 +152,4 @@ Let me finish by taking one of my own suggestions: I run a popular open source p
 
 I also want to improve this talk, and improve inclusion in tech. If you have ever thought about contributing to open source, but felt intimidated or excluded, please let me know about your experiences—I want to change things so that everyone will feel capable, welcome, and empowered to help make things better.
 
-<small>Special thanks to Julie Pagano for “On Making Mistakes”, [@taylor\_atx](https://twitter.com/taylor_atx) and [@rockbot](https://twitter.com/rockbot) for permission to use their tweets, and [@sailorhg](https://twitter.com/sailorhg) for editing, vetting, and extensive feedback.</small>
+<small>Special thanks to [@juliepagano](https://twitter.com/juliepagano) for [On Making Mistakes](http://juliepagano.com/blog/2014/01/06/on-making-mistakes/) and [So You Want To Be An Ally](http://juliepagano.com/blog/2014/05/10/so-you-want-to-be-an-ally/), [@taylor\_atx](https://twitter.com/taylor_atx) and [@rockbot](https://twitter.com/rockbot) for permission to use their tweets, and [@sailorhg](https://twitter.com/sailorhg) for editing, vetting, and extensive feedback.</small>
