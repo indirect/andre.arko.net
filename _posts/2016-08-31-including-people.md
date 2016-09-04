@@ -54,17 +54,23 @@ Once that’s out of the way, everyone tells me that I should “obviously” fo
 
 Let’s start with the most obvious counterpoint: when the first electronic computers were built, [all programmers were women](http://labweb.education.wisc.edu/elpa940/readings/Light.pdf). The title “Computer” referred to a woman who performed calculations. The job of “Programmer” was created by those women as they wrote programs to automate their computational work. Despite starting at 100% women, programmers today are less than 25% women. If the trend continues, within a few decades no women at all will be programmers.
 
-Young women already like computers and are interested in working with them. There isn't anything wrong with the pipeline, but tech is so hostile that it drives even interested women away. This is why we need inclusion—we had diversity already, but we fucked it up.
+Young women already like computers and are interested in working with them. [There isn't anything wrong with the pipeline](https://mfbt.ca/your-diversity-problem-isnt-the-pipeline-s-fault-820e8e7e2b77#.pv80ijfnj), but tech is so hostile that it drives even interested women away. This is why we need inclusion—we had diversity already, but we fucked it up.
 
 At this point, objectors usually pivot to another tactic. I can't even count the number of times I've heard the comeback “including everyone is a good idea, but it would lower the bar”.
 
 ### the bar is already on the floor
 
-In America in general and in tech specifically, the bar for white dudes is unbelievably low. An incompetent white man can [land a job more easily](http://whatwouldkingleonidasdo.tumblr.com/post/54989171152/how-i-discovered-gender-discrimination) than an experienced and competent [woman](http://gender.stanford.edu/news/2014/why-does-john-get-stem-job-rather-jennifer) or [person of color](http://www.nber.org/digest/sep03/w9873.html). Jobs for underrepresented people would mean raising the bar higher than incompetent white men.
+First, the very phrase "lowering the bar" is [full of racist assumptions](https://byrslf.co/what-you-re-really-saying-when-you-talk-about-lowering-the-bar-in-hiring-a30d9b12430f#.gfv372a53). Second, research into bias during job applications shows that [white men have a huge advantage](http://whatwouldkingleonidasdo.tumblr.com/post/54989171152/how-i-discovered-gender-discrimination) while experience and competence are dismissed in  [women](http://gender.stanford.edu/news/2014/why-does-john-get-stem-job-rather-jennifer) or [people of color](http://www.nber.org/digest/sep03/w9873.html).
 
-Despite this evidence, the biggest companies in tech claim they value everyone equally, and their dismal diversity reports are because of problems in the pipeline.We're already talked about how the pipeline claim is provably wrong. On top of that, employees confirm those companies [continue to treat white men as inherently better](https://42hire.com/the-big-lie-tech-companies-and-diversity-hiring-f52fb82abfbf#.i4qwkryed).
+Despite the research showing otherwise, big tech companies claim they value everyone equally. Their dismal diversity reports are explained away as part of the pipeline problem (which, as we just covered, doesn't exist!) On top of that, employees confirm these companies [continue to treat white men as inherently better](https://42hire.com/the-big-lie-tech-companies-and-diversity-hiring-f52fb82abfbf#.i4qwkryed), no matter what they say.
 
-Last, and most popular with angry people arguing against diversity: the claim that companies refuse to be inclusive because it would be costly and hurt profits.
+> Hiring Manager: "We <3 diversity, but can't lower the bar for our devs"  
+> Me: "No, I was suggesting raising it. But, for your hiring managers"  
+> — [@josh\_cheek](https://twitter.com/josh_cheek/status/770624979436199936)
+
+In America in general and in tech specifically, the bar for white dudes is already unbelievably low. The reality is the exact opposite of the claim: inclusion requires _raising_ the bar&mdash;up above incompetent white men. At that point, more jobs can go to underrepresented competent people.
+
+At this point, arguments for exclusion pivot to one more extremely popular claim: companies would love to be inclusive, but they can't because it would be costly and hurt profits.
 
 ### the economic argument is diversionary bullshit
 
