@@ -2,8 +2,6 @@
 title: "Including People"
 layout: post
 ---
-# Including People
-
 <small>This post was also given as a conference talk at [Ruby on Ales 2016](http://ruby.onales.com) and [Ruby Remote Conf 2016](https://allremoteconfs.com/ruby-2016). If you prefer, you can [watch the video](https://www.youtube.com/watch?v=MrPtHogES6k) or [see the slides](https://speakerdeck.com/indirect/including-people-1).</small>
 
 This is about including people in projects, teams, and communities, but it would be more accurate to say “not excluding people”. Tech is a highly exclusive field, and we need to stop driving people away before we can make them feel welcome and included.
