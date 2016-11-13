@@ -5,6 +5,8 @@ layout: post
 
 <small>This post was originally given as a presentation at [EuRuKo 2016](http://2016.euruko.org). ([slides](https://speakerdeck.com/indirect/a-year-of-ruby-together))</small>
 
+<script async class="speakerdeck-embed" data-id="94b37277d3d6423d9ebeb94de2add27b" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 [Ruby Together](https://rubytogether.org) has been around for over a year! It’s actually been about 18 months, but that didn’t sound as snappy. To celebrate, I’ve put together this summary of our history: why and how we exist, what we’ve done, and what the future holds.
 
 So, what even _is_ Ruby Together? Ruby Together is a non-profit that pays developers to work on RubyGems, Bundler, and more, using funds from members. Members can be any person or company who uses Ruby, and the work we pay for is free for anyone to use.
