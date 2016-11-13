@@ -4,6 +4,10 @@ layout: post
 ---
 ### or: from no experience to the core team of any project in 15 minutes a day
 
+<small>This post was given at [RubyConf 2016](http://http://rubyconf.org). The [slides from that talk](https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day) are also available.</small>
+
+<script async class="speakerdeck-embed" data-id="f675fcfcca484f05b133ce71c22ab5ba" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 At conferences and on the internet, the most common question I get isn’t about one of my open source projects. The most common question I get is “how can I start contributing to open source?”. After years of trying to answer that question, I have a list of suggestions that I think are pretty good. Before I get to that, though, we need to talk about what contributing to open source really means.
 
 The most common misconception about working on open source is that you need to have a lot of experience to be able to do it. I totally understand where that idea comes from, but it’s wrong. You don’t need to understand something before you can work on it. In fact, working on an open source project is a powerful way to learn more about the project, the language, and the open source ecosystem of developers who help one another write code.
