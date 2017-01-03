@@ -50,7 +50,7 @@ Creating open source tools and expanding your reputation is cool, but a side-pro
 
 My last warning about doing open source work is this: choosing to release your work as open source means that you have agreed to give up control over it.
 
-In a recent real-life scenario, the author of many open source node packages was so upset by NPM, Inc. that he deleted all of his work from the npm servers. His work happened to include a very commonly used package called `left-pad`, and the removal of left-pad broke tests and deploys for many if not post software projects written in Node.js.
+In a recent real-life scenario, the author of many open source node packages was so upset by NPM, Inc. that he deleted all of his work from the npm servers. His work happened to include a very commonly used package called `left-pad`, and the removal of left-pad broke tests and deploys for many if not most software projects written in Node.js.
 
 Because `left-pad` was open source, though, someone was able to take their own copy of the package and upload it to npm’s servers under the same name. Even though the author wanted to remove his packages from NPM forever, his open source license meant that anyone else could (legally!) put them back, and everyone else could continue to use them.
 
