@@ -4,7 +4,7 @@ layout: post
 ---
 <h3 class="subtitle">or: From No Experience to the Core Team<br> in 15 Minutes Per Day</h3>
 
-<small>This post was originally given as a presentation at [RubyConf 2016](http://http://rubyconf.org), and the [slides](https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day) are also available.</small>
+<small>This post was originally given as a presentation at [RubyConf 2016](http://rubyconf.org), and the [slides](https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day) are also available.</small>
 
 <script async class="speakerdeck-embed" data-id="f675fcfcca484f05b133ce71c22ab5ba" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
