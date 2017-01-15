@@ -3,11 +3,12 @@ destination: ./public
 permalink: pretty
 
 exclude:
-  - Rakefile
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - Rakefile
   - bin
+  - public
+  - vendor
 
 markdown: redcarpet
 redcarpet:
