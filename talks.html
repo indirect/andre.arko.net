@@ -1,0 +1,39 @@
+---
+layout: default
+title: Conference Talks
+---
+
+<h2>Conference Talks</h2>
+
+<dl class="talks">
+  {% for talk in site.data.talks %}
+    <details class="talk">
+      <summary class="talk-title">{{ talk.title }}</summary>
+      <div class="talk-info group">
+        {% if talk.description %}
+          <p class="talk-description">{{ talk.description }}</p>
+        {% endif %}
+        <ul class="talk-events">
+        {% for event in talk.events %}
+          <li class="talk-event">
+            <span class="talk-event-date">
+              {{ event.date | date: "%b %d, %Y"}}
+            </span>
+            {% if event.url %}
+              <a class="talk-event-name" href="{{event.url}}">{{ event.name }}</a>
+            {% else %}
+              <span class="talk-event-name">{{ event.name }}</span>
+            {% endif %}
+            {% if event.slides_url %}
+              <a class="talk-event-slides" href="{{event.slides_url}}">see slides</a>
+            {% endif %}            
+            {% if event.video_url %}
+              <a class="talk-event-video" href="{{event.video_url}}">watch video</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </details>
+  {% endfor %}
+</dl>

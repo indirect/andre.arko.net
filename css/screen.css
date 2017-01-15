@@ -130,3 +130,49 @@ small, .aside {
 #content img {
   width: 100%;
 }
+
+
+/* Talks page */
+
+.talk-title {
+  font-family: "p22-underground", sans-serif;
+  font-weight: 600;
+  margin-left: 0;
+  margin-top: 1em;
+  clear: both;
+}
+
+.talk-info {
+  padding-bottom: 1em;
+}
+
+.talk-description {
+  font-size: 12pt;
+  line-height: 1.25em;
+  padding-left: 40px;
+}
+
+ul.talk-events {
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 40px;
+}
+
+.talk-event-date {
+  float: left;
+  clear: left;
+  margin-right: 1em;
+  font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
+  font-size: 12pt;
+  margin-top: -1px;
+}
+
+.talk-event-name {
+  float: left;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

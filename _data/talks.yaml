@@ -1,0 +1,174 @@
+---
+- title: From No OSS Experinece to the Core Team in 15 Minutes Per Day
+  description: Using and contributing to open source has been a cornerstone of the
+    Ruby community for many years. Despite this strong tradition, it’s hard to find
+    anything collecting the likely advantages and costs of working on open source.
+    This talk will introduce open source work, the benefits and costs of doing that
+    work, and then provide a straightforward list of activities that can be done by
+    anyone, no matter their level of experience with programming. Pick a project,
+    schedule at least 15 minutes per day, join the core team. It’s your destiny!
+  post_url: /2016/11/12/how-to-contribute-to-open-source/
+  events:
+  - name: RubyConf 2016
+    date: 2016-11-10
+    url: https://rubyconf.org
+- title: A Year of Ruby, Together
+  post_url: /2016/09/26/a-year-of-ruby-together/
+  description:
+  events:
+  - name: Fog City Ruby Meetup
+    date: 2016-12-06
+  - name: EuRuKo 2016
+    date: 2016-09-22
+- title: Don't Forget The Network
+  description:
+  events:
+  - name: RailsConf 2016
+    date: 2016-05-05
+- title: Including People
+  post_url: /2016/08/31/including-people/
+  description:
+  events:
+  - name: Ruby Remote Conf 2016
+    date: 2016-06-22
+  - name: Ruby on Ales 2016
+    date: 2016-03-31
+  - name: MagmaConf 2015
+    date: 2015-06-20
+- title: Introducing Ruby Together
+  post_url: /2015/03/18/announcing-ruby-together/
+  description:
+  events:
+  - name: EuRuKo 2015 Lightning Talks
+    date: 2015-10-17
+  - name: MagmaConf 2015 Lightning Talks
+    date: 2015-06-18
+  - name: RubyNation 2015 Lightning Talks
+    date: 2015-06-12
+  - name: RailsConf 2015 Lightning Talks
+    date: 2015-04-12
+- title: How Does Bundler Work, Anyway?
+  post_url: /2015/04/28/how-does-bundler-work-anyway/
+  description:
+  events:
+  - name: RubyConf 2015
+    date: 2015-11-17
+    url: https://rubyconf.org
+  - name: ROSSConf 2015
+    date: 2015-09-26
+  - name: Airbnb Tech Talks
+    date: 2015-07-22
+  - name: SFRuby Meetup
+    date: 2015-04-10
+  - name: RailsConf 2015
+    date: 2015-04-10
+- title: Lies, Damn Lies, and Metrics
+  description:
+  events:
+  - name: StrangeLoop 2016
+    date: 2016-09-17
+  - name: Velocity Webinar 2014
+    date: 2014-08-07
+  - name: Distill 2014
+    date: 2014-07-16
+- title: Development Was The Easy Part
+  description:
+  events:
+  - name: Rails Remote Conf 2015
+    date: 2015-11-07
+  - name: RubyNation 2015
+    date: 2015-06-12
+  - name: Scottish RubyConf 2014
+    date: 2014-05-13
+  - name: MagmaConf 2014
+    date: 2014-05-13
+- title: How To Be An Ally
+  post_url: /2013/12/04/how-to-be-an-ally/
+  description:
+  events:
+  - name: RubyConf Philippines 2014 Lightning Talks
+    date: 2014-03-28
+  - name: Úll 2014 Lightning Talks
+    date: 2014-02-25
+  - name: RailsBridge Lightning Talks Meetup
+    date: 2013-12-04
+- title: 'Extreme Makeover: Rubygems Edition'
+  post_url: /2013/12/09/extreme-makeover-rubygems-edition/
+  description:
+  events:
+  - name: RubyKaigi 2014
+    date: 2014-09-19
+  - name: FrozenRails 2014
+    date: 2014-09-11
+  - name: RubyConf Taiwan 2014
+    date: 2014-04-25
+  - name: RubyConf Philippines 2014
+    date: 2014-03-28
+  - name: RubyConf Australia 2014
+    date: 2014-02-21
+  - name: RubyFuza 2014
+    date: 2014-02-06
+  - name: RubyConf 2013
+    date: 2013-11-07
+    url: https://rubyconf.org
+- title: The Tip of the Iceberg
+  description:
+  events:
+  - name: DevCon TLV 2013
+    date: 2013-10-10
+- title: You Don't Know Bundler
+  description:
+  events:
+  - name: Rails Israil 2013 Lightning Talks
+    date: 2013-10-09
+- title: 'Deathmatch: Bundler vs. Rubygems'
+  post_url: /2013/05/12/deathmatch-bundler-vs-rubygemsorg/
+  description:
+  events:
+  - name: Rails Israel 2013
+    date: 2013-10-09
+  - name: GoRuCo 2013
+    date: 2013-07-09
+  - name: Scottish Ruby 2013
+    date: 2013-05-12
+- title: Hack Your Bundle
+  post_url: /2013/05/10/hack-your-bundle-for-fun-and-profit/
+  description:
+  events:
+  - name: La Conf 2013
+    date: 2013-05-10
+- title: Bundler's Dependency API
+  description:
+  events:
+  - name: Ruby on Ales 2012
+    date: 2013-03-03
+- title: Security Is Hard, But We Can't Go Shopping
+  post_url: /2013/08/22/security-is-hard-but-we-cant-go-shopping/
+  description:
+  events:
+  - name: RubyConf Australia 2016
+    date: 2016-02-12
+  - name: RedDotRubyConf 2015
+    date: 2015-06-04
+  - name: Madison+Ruby 2014
+    date: 2014-08-22
+  - name: RailsConf 2013
+    date: 2013-04-29
+  - name: Ruby on Ales 2013
+    date: 2013-03-03
+- title: Deploying with Bundler
+  post_url: /2011/06/11/deploying-with-bundler-notes/
+  description:
+  events:
+  - name: RailsConf 2011
+    date: 2011-05-20
+- title: Why Bundler?
+  post_url: /2010/05/09/slides-from-my-bundler-talk-at-the-red-dirt-ruby-conference/
+  description:
+  events:
+  - name: SunnyConf
+    date: 2010-09-25
+  - name: RailsConf 2010
+    date: 2010-06-08
+  - name: Red Dirt Ruby
+    date: 2010-05-06
