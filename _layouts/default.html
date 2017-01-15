@@ -15,9 +15,6 @@
   <link rel="openid.server" href="http://www.myopenid.com/server">
   <link rel="openid.delegate" href="http://indirect.myopenid.com/">
 
-  <script type="text/javascript" src="http://use.typekit.com/qhr5xpd.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
   <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="/js/facebox/facebox.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
@@ -30,6 +27,18 @@
   </script>
 </head>
 <body>
+  <div id="header">
+    <h1><a href="http://andre.arko.net">André.Arko.net</a></h1>
+  </div>
+
+  <div id="content">
+    {{ content }}
+  </div>
+
+  <div id="footer">
+    everything here written by <a rel="author" href="http://arko.net">André Arko</a><br>
+    <a href="mailto:andre+blog@arko.net">hire me</a> for Ruby and web development
+  </div>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-306556-1']);
@@ -45,17 +54,7 @@
     })();
 
   </script>
-  <div id="header">
-    <h1><a href="http://andre.arko.net">André.Arko.net</a></h1>
-  </div>
-
-  <div id="content">
-    {{ content }}
-  </div>
-
-  <div id="footer">
-    everything here written by <a rel="author" href="http://arko.net">André Arko</a><br>
-    <a href="mailto:andre+blog@arko.net">hire me</a> for Ruby and web development
-  </div>
+  <script type="text/javascript" src="http://use.typekit.com/qhr5xpd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>
