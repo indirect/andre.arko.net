@@ -67,6 +67,8 @@ h2.year {
 .posts .post-date {
   position: absolute;
   left: 0;
+  font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
+  font-size: 12pt;
 }
 
 .posts .post-name {
