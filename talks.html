@@ -13,6 +13,11 @@ title: Conference Talks
         {% if talk.description %}
           <p class="talk-description">{{ talk.description }}</p>
         {% endif %}
+        {% if talk.post_url %}
+          <a class="talk-post" href="{{ talk.post_url }}">
+            Read the entire talk as a blog post &rarr;
+          </a>
+        {% endif %}
         <ul class="talk-events">
         {% for event in talk.events %}
           <li class="talk-event">

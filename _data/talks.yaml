@@ -7,37 +7,68 @@
     work, and then provide a straightforward list of activities that can be done by
     anyone, no matter their level of experience with programming. Pick a project,
     schedule at least 15 minutes per day, join the core team. It’s your destiny!
-  post_url: /2016/11/12/how-to-contribute-to-open-source/
+  post_url: "/2016/11/12/how-to-contribute-to-open-source/"
   events:
   - name: RubyConf 2016
     date: 2016-11-10
     url: https://rubyconf.org
+    video_url: http://confreaks.tv/videos/rubyconf2016-from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
+    slides_url: https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
 - title: A Year of Ruby, Together
-  post_url: /2016/09/26/a-year-of-ruby-together/
+  post_url: "/2016/09/26/a-year-of-ruby-together/"
   description:
   events:
   - name: Fog City Ruby Meetup
     date: 2016-12-06
+    slides_url: https://speakerdeck.com/indirect/a-year-of-ruby-together-fog-city-ruby
   - name: EuRuKo 2016
     date: 2016-09-22
-- title: Don't Forget The Network
-  description:
+    slides_url: https://speakerdeck.com/indirect/a-year-of-ruby-together-euruko-2016
+    video_url: https://www.youtube.com/watch?v=SJddsEfvcW8
+- title: "Package Managers: Before And After NPM (Panel)"
+  events:
+    - name: NPM Camp
+      date: 2016-07-30
+      url: http://npm.camp
+      video_url: http://confreaks.tv/videos/npmcamp2016-panel-package-managers-before-and-after-npm
+- title: "Don't Forget The Network: Your App Is Slower Than You Think"
+  description: 'When you look at your response times, satisfied that they are "fast enough",
+    you''re forgetting an important thing: your users are on the other side of a network
+    connection, and their browser has to process and render the data that you sent so
+    quickly. This talk examines some often overlooked parts of web applications that
+    can destroy your user experience even when your response times seem fantastic. We''ll
+    talk about networks, routing, client and server-side VMs, and how to measure and
+    mitigate their issues.'
   events:
   - name: RailsConf 2016
     date: 2016-05-05
+    video_url: http://confreaks.tv/videos/railsconf2016-don-t-forget-the-network-your-app-is-slower-than-you-think
+    slides_url: https://speakerdeck.com/indirect/dont-forget-the-network-your-app-is-slower-than-you-think
 - title: Including People
-  post_url: /2016/08/31/including-people/
-  description:
+  post_url: "/2016/08/31/including-people/"
+  description: This talk is about the twin open source project goals of, on the one hand, increasing
+    participation and contribution to an open source project, and on the other hand
+    including everyone while eliminating discrimination and harassment (whether deliberate
+    or accidental). I'll talk about different approaches to reducing discrimination,
+    including better documentation, better development tooling, explicit onboarding
+    process, and codes of conduct. I'll also cover concrete steps that anyone can take
+    to help increase inclusion and participation in the teams, communities, and open
+    source projects that they are involved in.
   events:
   - name: Ruby Remote Conf 2016
     date: 2016-06-22
   - name: Ruby on Ales 2016
     date: 2016-03-31
+    video_url: http://confreaks.tv/videos/roa2016-including-people
+    slides_url: https://speakerdeck.com/indirect/including-people-1
   - name: MagmaConf 2015
     date: 2015-06-20
+    slides_url: https://speakerdeck.com/indirect/including-people-magmaconf-2015
 - title: Introducing Ruby Together
-  post_url: /2015/03/18/announcing-ruby-together/
-  description:
+  post_url: "/2015/03/18/announcing-ruby-together/"
+  description: Ruby Together is the Ruby programming language trade association. It funds maintenance
+    and development on Ruby open source tools like Bundler and RubyGems.org using funds
+    from developers and companies that use Ruby.
   events:
   - name: EuRuKo 2015 Lightning Talks
     date: 2015-10-17
@@ -47,128 +78,250 @@
     date: 2015-06-12
   - name: RailsConf 2015 Lightning Talks
     date: 2015-04-12
+    slides_url: https://speakerdeck.com/indirect/ruby-together-railsconf-2015
 - title: How Does Bundler Work, Anyway?
-  post_url: /2015/04/28/how-does-bundler-work-anyway/
+  post_url: "/2015/04/28/how-does-bundler-work-anyway/"
   description:
   events:
+  - name: RubyConf Australia 2017
+    url: http://rubyconf.org.au/2017/
+    date: 2017-02-09
   - name: RubyConf 2015
     date: 2015-11-17
     url: https://rubyconf.org
+    video_url: http://confreaks.tv/videos/rubyconf2015-how-does-bundler-work-anyway
+    slides_url: https://speakerdeck.com/indirect/how-does-bundler-work-anyway-rubyconf-2015
   - name: ROSSConf 2015
     date: 2015-09-26
+    slides_url: https://speakerdeck.com/indirect/how-to-bundler
   - name: Airbnb Tech Talks
     date: 2015-07-22
   - name: SFRuby Meetup
     date: 2015-04-10
   - name: RailsConf 2015
     date: 2015-04-10
+    slides_url: https://speakerdeck.com/indirect/how-does-bundler-work-anyway-railsconf-2015
+    video_url: http://confreaks.tv/videos/railsconf2015-how-does-bundler-work-anyway
 - title: Lies, Damn Lies, and Metrics
   description:
   events:
   - name: StrangeLoop 2016
     date: 2016-09-17
+    slides_url: https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-1
   - name: Velocity Webinar 2014
     date: 2014-08-07
   - name: Distill 2014
     date: 2014-07-16
+    slides_url: https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-distill-2014
+- title: "Everything You Ever Wanted to Know About Diversity But Were Too Afraid To Ask"
+  description: Co-presented with Ashe Dryden. See also "How To Be An Ally".
+  post_url: https://www.ashedryden.com/la-conf-tbd
+  events:
+    - name: La Conf 2014
+      date: 2014-05-22
+      slides_url: https://speakerdeck.com/indirect/everything-you-ever-wanted-to-know-about-diversity-but-were-too-afraid-to-ask-laconf-2014
 - title: Development Was The Easy Part
-  description:
+  description: 'We want to produce reliable, functioning software… but we often don’t. The cliched
+    cry of “but it works on my machine” demonstrates the myopia that most web developers
+    (including me) suffer from: we spend almost all of our time working with a development
+    environment. This leads us to think of production as “like development, with people
+    using it”. Then, when things go wrong, we think “oh, I see now, production is like
+    development except this one thing that went wrong”. This is exactly the opposite
+    of the mindset we need. Production is fundamentally different from development,
+    and it’s important to keep that in mind. This talk discusses some of those fundamental
+    differences, including load balancing, metrics, data store reliability, and network
+    partitions. Don’t get stuck rebuilding your servers at 3AM because you went with
+    the option that was easiest during development!'
   events:
   - name: Rails Remote Conf 2015
     date: 2015-11-07
   - name: RubyNation 2015
     date: 2015-06-12
+    slides_url: https://speakerdeck.com/indirect/development-was-the-easy-part-rubynation-2015
+  - name: MagmaConf 2014
+    date: 2014-06-05
+    slides_url: https://speakerdeck.com/indirect/development-was-the-easy-part-magmaconf-2014
   - name: Scottish RubyConf 2014
     date: 2014-05-13
-  - name: MagmaConf 2014
-    date: 2014-05-13
+    slides_url: https://speakerdeck.com/indirect/development-was-the-easy-part-scottish-ruby-2014
+    video_url: https://vimeo.com/96882390
 - title: How To Be An Ally
-  post_url: /2013/12/04/how-to-be-an-ally/
-  description:
+  post_url: "/2013/12/04/how-to-be-an-ally/"
+  description: This talk presents a theory of ally work that encourages everyone to do what they are able to create an open, inclusive, empathetic, and compassionate culture.
   events:
   - name: RubyConf Philippines 2014 Lightning Talks
     date: 2014-03-28
+    slides_url: https://speakerdeck.com/indirect/how-to-be-an-ally
   - name: Úll 2014 Lightning Talks
     date: 2014-02-25
   - name: RailsBridge Lightning Talks Meetup
     date: 2013-12-04
+    slides_url: https://speakerdeck.com/indirect/how-to-be-an-ally
 - title: 'Extreme Makeover: Rubygems Edition'
-  post_url: /2013/12/09/extreme-makeover-rubygems-edition/
+  post_url: "/2013/12/09/extreme-makeover-rubygems-edition/"
   description:
   events:
   - name: RubyKaigi 2014
     date: 2014-09-19
+    slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-rubykaigi-2014
   - name: FrozenRails 2014
     date: 2014-09-11
+    slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-frozenrails-2014
   - name: RubyConf Taiwan 2014
     date: 2014-04-25
+    slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-rubyconf-taiwan-2014
   - name: RubyConf Philippines 2014
     date: 2014-03-28
+    slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-1
   - name: RubyConf Australia 2014
     date: 2014-02-21
+    url: http://rubyconf.org.au/2014/
+    video_url: https://vimeo.com/88941448
   - name: RubyFuza 2014
     date: 2014-02-06
   - name: RubyConf 2013
     date: 2013-11-07
     url: https://rubyconf.org
-- title: The Tip of the Iceberg
-  description:
+    video_url: http://confreaks.tv/videos/rubyconf2013-extreme-makeover-rubygems-edition
+    slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition
+- title: The Iceberg of Webdev
+  description: 'If you do web developement, you''ve probably noticed that "distributed
+    systems" and "service oriented architecture" are really hot topics right now.
+    I have a surprise for you, though: you already work on a distributed system with
+    a service oriented architecture, because every webapp is one. That means you''ve
+    already decided how your distributed system is going to work, and chances are
+    good you didn''t even know you were making those decisions. This talk will uncover
+    the hidden decisions that shape web applications, including how the org chart
+    limits service architecture, and how consistency and availability by default seems
+    great until it''s 3am and the data store needs to be rebuilt by hand to bring
+    the site back up. Once the decisions aren''t hidden anymore, I''ll explain some
+    other options, and why you might want to pick them to save yourself pain in the
+    future.'
   events:
   - name: DevCon TLV 2013
     date: 2013-10-10
+    video_url: https://www.youtube.com/watch?v=u4Ay8Bn4ZNA
+    slides_url: https://speakerdeck.com/indirect/development-is-just-the-tip-of-the-iceberg
 - title: You Don't Know Bundler
-  description:
   events:
   - name: Rails Israil 2013 Lightning Talks
     date: 2013-10-09
 - title: 'Deathmatch: Bundler vs. Rubygems'
-  post_url: /2013/05/12/deathmatch-bundler-vs-rubygemsorg/
-  description:
+  post_url: "/2013/05/12/deathmatch-bundler-vs-rubygemsorg/"
+  description: 'The story of the quest to make `bundle install` faster; in which Rubyists
+    around the world inadvertently DDoS rubygems.org, witness its ignominious death,
+    and vow to rebuild it from the ashes stronger than it was before. Then, a tour
+    of the changes; why is Redis so much slower than Postgres? Marvel at the gorgeous
+    metrics and graphs used to measure and optimize; gasp in delight as we track,
+    live, exactly how many Heroku dynos are needed. Finally, a happy ending: today,
+    the server responds to requests TWO ORDERS OF MAGNITUDE faster than it did before.'
   events:
   - name: Rails Israel 2013
     date: 2013-10-09
+    video_url: https://www.youtube.com/watch?v=aYrqHtmbDXw
   - name: GoRuCo 2013
     date: 2013-07-09
+    video_url: http://confreaks.tv/videos/goruco2013-deathmatch-bundler-vs-rubygems-org
+    slides_url: https://speakerdeck.com/indirect/deathmatch-bundler-vs-rubygems-goruco-2013
   - name: Scottish Ruby 2013
     date: 2013-05-12
-- title: Hack Your Bundle
-  post_url: /2013/05/10/hack-your-bundle-for-fun-and-profit/
-  description:
+    video_url: https://vimeo.com/67476626
+    slides_url: https://speakerdeck.com/indirect/hack-your-bundle-for-fun-and-profit-la-conf-2013
+- title: Hack Your Bundle For Fun And Profit
+  post_url: "/2013/05/10/hack-your-bundle-for-fun-and-profit/"
+  description: Bundler has turned out to be a super-useful tool for installing and managing dependencies,
+    but it has hidden depths! This talk discusses some of the ways you can use Bundler
+    and other tools together to boost your development productivity. I’ll walk through
+    how to use the lesser-known but very handy commands like bundle gem, bundle open,
+    and a few others. I’ll show you how to use Bundler to make sure you always run your
+    app on the right version of Ruby, how to search through every gem in your Gemfile
+    with a single command, and how to check for newer versions of the gems you use.
   events:
   - name: La Conf 2013
     date: 2013-05-10
-- title: Bundler's Dependency API
+    slides_url: https://speakerdeck.com/indirect/hack-your-bundle-for-fun-and-profit-la-conf-2013
+- title: "`bundle install` Y U SO SLOW"
   description:
   events:
   - name: Ruby on Ales 2012
     date: 2013-03-03
+    video_url: http://confreaks.tv/videos/roa2012-bundle-install-y-u-so-slow
 - title: Security Is Hard, But We Can't Go Shopping
-  post_url: /2013/08/22/security-is-hard-but-we-cant-go-shopping/
-  description:
+  post_url: "/2013/08/22/security-is-hard-but-we-cant-go-shopping/"
+  description: 'The last year has been brutal for Ruby and security. Ruby has gotten quite popular,
+    which is really exciting! But it also means that we are now square in the crosshairs
+    of security researchers, whether whitehat, blackhat, or some other hat. Before 2013,
+    only the Ruby and Rails core teams had meaningful experience with security issues.
+    This year everyone got meaningful experience. Vulnerabilities are everywhere, and
+    handling security issues responsibly is critical if we want Ruby (and Rubyists)
+    to stay safe and in high demand. I’ll discuss responsible disclosure, as well as
+    repsonsible ownership of your own code. How do you know if a bug is a security issue,
+    and how do you report it without tipping off someone malicious? As a Rubyist, you
+    probably have at least one library of your own. How do you handle security issues,
+    and fix them without compromising apps running on the old code? Don’t let your site
+    get hacked, or worse yet, let your project allow someone else’s site to get hacked!
+    Learn from the hard-won wisdom of the security community so that we won’t repeat
+    the mistakes of others.'
   events:
   - name: RubyConf Australia 2016
     date: 2016-02-12
+    url: http://rubyconf.org.au/2016/
   - name: RedDotRubyConf 2015
     date: 2015-06-04
+    video_url: http://confreaks.tv/videos/rdrc2015-security-is-hard-but-we-can-t-go-shopping
+    slides_url: https://speakerdeck.com/indirect/security-is-hard-reddotrubyconf-2015
   - name: Madison+Ruby 2014
     date: 2014-08-22
+    video_url: https://www.youtube.com/watch?v=oJxQoXW8qZY
+    slides_url: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-madison-ruby-2014
+  - name: RubyKaigi 2013
+    date: 2013-05-31
+    slides_url: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-rubykaigi-2013
   - name: RailsConf 2013
     date: 2013-04-29
+    slides_url: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-railsconf-2013
+    video_url: http://confreaks.tv/videos/railsconf2013-security-is-hard-but-we-can-t-go-shopping
   - name: Ruby on Ales 2013
     date: 2013-03-03
+    slides_url: https://speakerdeck.com/indirect/security-is-hard-but-we-cant-go-shopping-ruby-on-ales-2013
+    video_url: http://confreaks.tv/videos/roa2013-security-is-hard-but-we-can-t-go-shopping
 - title: Deploying with Bundler
-  post_url: /2011/06/11/deploying-with-bundler-notes/
-  description:
+  post_url: "/2011/06/11/deploying-with-bundler-notes/"
+  description: Rails 3 is here, and ships with Bundler by default. Bundler’s default
+    mode makes things easy on developers, obsoleting that out of date list of gems
+    in your app’s readme. Deploying, however, isn’t as obvious. What if you’re using
+    Sinatra or something else that isn’t Rails? How do you deploy a bundled app using
+    Capistrano, or Vlad, or your own script? What are the best practices for deploying
+    to an app running in Mongrel, Unicorn, or Passenger? What if your server doesn’t
+    have an internet connection to talk to rubygems.org? These questions and others
+    will be answered by a member of the Bundler core team.
   events:
   - name: RailsConf 2011
     date: 2011-05-20
+    slides_url: "/2011/06/11/deploying-with-bundler-slides/"
 - title: Why Bundler?
-  post_url: /2010/05/09/slides-from-my-bundler-talk-at-the-red-dirt-ruby-conference/
-  description:
+  description: There comes a point in every programming language's life, where the
+    question of dependency management arises. That is, "if A requires B and B requires
+    C, and C requires D, what happens when I install A." Believe it or not, that's
+    actually an easy question, the hard question is "What happens when I install A,
+    but I have two apps on a machine that rely on different versions of C and D. Ruh-oh
+    Fortunately, Andre will be joining us at SunnyConf to talk about painless dependency
+    management with Bundler. Bundler, which has been released alongside Rails 3, has
+    been designed to fix all of your dependency problems. It makes using dependencies
+    easy and reliable at the same time. Bundler can handle your Rails gem plugins,
+    your application's dependancies, and even your dependencies' dependencies, all
+    automatically. In this talk, Andre will walk us through why Bundler was written,
+    and why you should be using it for all of your Ruby applications. He'll talk about
+    how to use it effectively in common scenarios and even cover it's usage within
+    Rails 3, Rails 2, Sinatra, and your own Ruby application. He'll also share where
+    Bundler is headed in the future.
   events:
   - name: SunnyConf
     date: 2010-09-25
+    video_url: http://confreaks.tv/videos/sunnyconf2010-managing-ruby-dependencies-with-bundler
   - name: RailsConf 2010
     date: 2010-06-08
+    slides_url: "/2010/06/09/railsconf-2010-bundler-talk-slides/"
   - name: Red Dirt Ruby
     date: 2010-05-06
+    slides_url: "/2010/05/09/slides-from-my-bundler-talk-at-the-red-dirt-ruby-conference/"

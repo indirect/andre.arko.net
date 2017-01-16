@@ -143,19 +143,28 @@ small, .aside {
 }
 
 .talk-info {
-  padding-bottom: 1em;
+  padding-left: 40px;
+  font-size: 12pt;
+  line-height: 1.25em;
 }
 
 .talk-description {
-  font-size: 12pt;
-  line-height: 1.25em;
-  padding-left: 40px;
+  margin-bottom: 0;
+}
+
+.talk-post {
+  display: inline-block;
+  margin-top: 1em;
 }
 
 ul.talk-events {
   list-style-type: none;
-  margin-top: 0;
-  padding-left: 40px;
+  margin-top: 1.5em;
+  padding: 0;
+}
+
+.talk-event {
+  clear: both;
 }
 
 .talk-event-date {
@@ -169,6 +178,13 @@ ul.talk-events {
 
 .talk-event-name {
   float: left;
+}
+
+.talk-event-slides, .talk-event-video {
+  display: block-inline;
+  margin-left: 1.5em;
+  margin-right: 0;
+  font-size: 10pt;
 }
 
 .group:after {
