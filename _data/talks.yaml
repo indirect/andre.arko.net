@@ -16,7 +16,12 @@
     slides_url: https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
 - title: A Year of Ruby, Together
   post_url: "/2016/09/26/a-year-of-ruby-together/"
-  description:
+  description: 'Ruby Together is a simple concept: Ruby developers and companies all
+    pay a small amount of money. That money ensures that Bundler, RubyGems, and other
+    critical software continues to work, by paying developers to work on it. While
+    the concept is simple, creating Ruby Together was very complicated in practice.
+    In this talk I’ll explain why I was motivated to start Ruby Together, how it became
+    possible, and what we have done for Ruby in our first year.'
   events:
   - name: Fog City Ruby Meetup
     date: 2016-12-06
@@ -25,20 +30,20 @@
     date: 2016-09-22
     slides_url: https://speakerdeck.com/indirect/a-year-of-ruby-together-euruko-2016
     video_url: https://www.youtube.com/watch?v=SJddsEfvcW8
-- title: "Package Managers: Before And After NPM (Panel)"
+- title: 'Package Managers: Before And After NPM (Panel)'
   events:
-    - name: NPM Camp
-      date: 2016-07-30
-      url: http://npm.camp
-      video_url: http://confreaks.tv/videos/npmcamp2016-panel-package-managers-before-and-after-npm
-- title: "Don't Forget The Network: Your App Is Slower Than You Think"
-  description: 'When you look at your response times, satisfied that they are "fast enough",
-    you''re forgetting an important thing: your users are on the other side of a network
-    connection, and their browser has to process and render the data that you sent so
-    quickly. This talk examines some often overlooked parts of web applications that
-    can destroy your user experience even when your response times seem fantastic. We''ll
-    talk about networks, routing, client and server-side VMs, and how to measure and
-    mitigate their issues.'
+  - name: NPM Camp
+    date: 2016-07-30
+    url: http://npm.camp
+    video_url: http://confreaks.tv/videos/npmcamp2016-panel-package-managers-before-and-after-npm
+- title: 'Don''t Forget The Network: Your App Is Slower Than You Think'
+  description: 'When you look at your response times, satisfied that they are "fast
+    enough", you''re forgetting an important thing: your users are on the other side
+    of a network connection, and their browser has to process and render the data
+    that you sent so quickly. This talk examines some often overlooked parts of web
+    applications that can destroy your user experience even when your response times
+    seem fantastic. We''ll talk about networks, routing, client and server-side VMs,
+    and how to measure and mitigate their issues.'
   events:
   - name: RailsConf 2016
     date: 2016-05-05
@@ -46,14 +51,14 @@
     slides_url: https://speakerdeck.com/indirect/dont-forget-the-network-your-app-is-slower-than-you-think
 - title: Including People
   post_url: "/2016/08/31/including-people/"
-  description: This talk is about the twin open source project goals of, on the one hand, increasing
-    participation and contribution to an open source project, and on the other hand
-    including everyone while eliminating discrimination and harassment (whether deliberate
-    or accidental). I'll talk about different approaches to reducing discrimination,
-    including better documentation, better development tooling, explicit onboarding
-    process, and codes of conduct. I'll also cover concrete steps that anyone can take
-    to help increase inclusion and participation in the teams, communities, and open
-    source projects that they are involved in.
+  description: This talk is about the twin open source project goals of, on the one
+    hand, increasing participation and contribution to an open source project, and
+    on the other hand including everyone while eliminating discrimination and harassment
+    (whether deliberate or accidental). I'll talk about different approaches to reducing
+    discrimination, including better documentation, better development tooling, explicit
+    onboarding process, and codes of conduct. I'll also cover concrete steps that
+    anyone can take to help increase inclusion and participation in the teams, communities,
+    and open source projects that they are involved in.
   events:
   - name: Ruby Remote Conf 2016
     date: 2016-06-22
@@ -66,9 +71,9 @@
     slides_url: https://speakerdeck.com/indirect/including-people-magmaconf-2015
 - title: Introducing Ruby Together
   post_url: "/2015/03/18/announcing-ruby-together/"
-  description: Ruby Together is the Ruby programming language trade association. It funds maintenance
-    and development on Ruby open source tools like Bundler and RubyGems.org using funds
-    from developers and companies that use Ruby.
+  description: Ruby Together is the Ruby programming language trade association. It
+    funds maintenance and development on Ruby open source tools like Bundler and RubyGems.org
+    using funds from developers and companies that use Ruby.
   events:
   - name: EuRuKo 2015 Lightning Talks
     date: 2015-10-17
@@ -81,7 +86,12 @@
     slides_url: https://speakerdeck.com/indirect/ruby-together-railsconf-2015
 - title: How Does Bundler Work, Anyway?
   post_url: "/2015/04/28/how-does-bundler-work-anyway/"
-  description:
+  description: We all use Bundler at some point, and most of us use it every day.
+    But what does it do, exactly? Why do we have to use bundle exec? What's the point
+    of checking in the Gemfile.lock? Why can't we just `gem install` the gems we need?
+    Join me for a walk through the reasons that Bundler exists, and a guide to what
+    actually happens when you use it. Finally, we'll cover some Bundler "pro tips"
+    that can improve your workflow when developing on multiple applications at once.
   events:
   - name: RubyConf Australia 2017
     url: http://rubyconf.org.au/2017/
@@ -103,7 +113,14 @@
     slides_url: https://speakerdeck.com/indirect/how-does-bundler-work-anyway-railsconf-2015
     video_url: http://confreaks.tv/videos/railsconf2015-how-does-bundler-work-anyway
 - title: Lies, Damn Lies, and Metrics
-  description:
+  description: 'Metrics are great, and measuring things can provide tremendously useful
+    insights. But there''s a problem: metrics lie to you. Metrics just report the
+    numbers that were measured. Analyzing those numbers is up to us, and that analysis
+    can go wrong in so, so many ways. Learn how to arm yourself against human intuition,
+    interpreter pauses, routing, instrumentation lag, and other issues. Don''t get
+    so caught up in instrumenting that you lose sight of why metrics exist! Make sure
+    your metrics are telling you actionable information, instead of just accurate
+    numbers.'
   events:
   - name: StrangeLoop 2016
     date: 2016-09-17
@@ -113,25 +130,26 @@
   - name: Distill 2014
     date: 2014-07-16
     slides_url: https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-distill-2014
-- title: "Everything You Ever Wanted to Know About Diversity But Were Too Afraid To Ask"
+- title: Everything You Ever Wanted to Know About Diversity But Were Too Afraid To
+    Ask
   description: Co-presented with Ashe Dryden. See also "How To Be An Ally".
   post_url: https://www.ashedryden.com/la-conf-tbd
   events:
-    - name: La Conf 2014
-      date: 2014-05-22
-      slides_url: https://speakerdeck.com/indirect/everything-you-ever-wanted-to-know-about-diversity-but-were-too-afraid-to-ask-laconf-2014
+  - name: La Conf 2014
+    date: 2014-05-22
+    slides_url: https://speakerdeck.com/indirect/everything-you-ever-wanted-to-know-about-diversity-but-were-too-afraid-to-ask-laconf-2014
 - title: Development Was The Easy Part
-  description: 'We want to produce reliable, functioning software… but we often don’t. The cliched
-    cry of “but it works on my machine” demonstrates the myopia that most web developers
-    (including me) suffer from: we spend almost all of our time working with a development
-    environment. This leads us to think of production as “like development, with people
-    using it”. Then, when things go wrong, we think “oh, I see now, production is like
-    development except this one thing that went wrong”. This is exactly the opposite
-    of the mindset we need. Production is fundamentally different from development,
-    and it’s important to keep that in mind. This talk discusses some of those fundamental
-    differences, including load balancing, metrics, data store reliability, and network
-    partitions. Don’t get stuck rebuilding your servers at 3AM because you went with
-    the option that was easiest during development!'
+  description: 'We want to produce reliable, functioning software… but we often don’t.
+    The cliched cry of “but it works on my machine” demonstrates the myopia that most
+    web developers (including me) suffer from: we spend almost all of our time working
+    with a development environment. This leads us to think of production as “like
+    development, with people using it”. Then, when things go wrong, we think “oh,
+    I see now, production is like development except this one thing that went wrong”.
+    This is exactly the opposite of the mindset we need. Production is fundamentally
+    different from development, and it’s important to keep that in mind. This talk
+    discusses some of those fundamental differences, including load balancing, metrics,
+    data store reliability, and network partitions. Don’t get stuck rebuilding your
+    servers at 3AM because you went with the option that was easiest during development!'
   events:
   - name: Rails Remote Conf 2015
     date: 2015-11-07
@@ -147,7 +165,9 @@
     video_url: https://vimeo.com/96882390
 - title: How To Be An Ally
   post_url: "/2013/12/04/how-to-be-an-ally/"
-  description: This talk presents a theory of ally work that encourages everyone to do what they are able to create an open, inclusive, empathetic, and compassionate culture.
+  description: This talk presents a theory of ally work that encourages everyone to
+    do what they are able to create an open, inclusive, empathetic, and compassionate
+    culture.
   events:
   - name: RubyConf Philippines 2014 Lightning Talks
     date: 2014-03-28
@@ -159,11 +179,19 @@
     slides_url: https://speakerdeck.com/indirect/how-to-be-an-ally
 - title: 'Extreme Makeover: Rubygems Edition'
   post_url: "/2013/12/09/extreme-makeover-rubygems-edition/"
-  description:
+  description: 'Rubygems.org provides every Rubyist with an amazing service: all the
+    libraries in the Ruby world. As amazing as that is, installing gems can be a time-consuming
+    and even error-prone process. (Just ask the Travis guys.) In this talk, you''ll
+    learn about the recent dramatic changes in Rubygems and Bundler to improve speed
+    and reliability by rewriting the Rubygems client/server architecture. I''ll show
+    how the new system caches more information, makes fewer requests, and takes less
+    time to install gems. Finally, I''ll cover how the changes allow worldwide mirrors
+    of rubygems.org, improving things for Rubyists around the globe.'
   events:
   - name: RubyKaigi 2014
     date: 2014-09-19
     slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-rubykaigi-2014
+    video_url: https://www.youtube.com/watch?v=QedJ8eVqkOU
   - name: FrozenRails 2014
     date: 2014-09-11
     slides_url: https://speakerdeck.com/indirect/extreme-makeover-rubygems-edition-frozenrails-2014
@@ -229,39 +257,45 @@
     slides_url: https://speakerdeck.com/indirect/hack-your-bundle-for-fun-and-profit-la-conf-2013
 - title: Hack Your Bundle For Fun And Profit
   post_url: "/2013/05/10/hack-your-bundle-for-fun-and-profit/"
-  description: Bundler has turned out to be a super-useful tool for installing and managing dependencies,
-    but it has hidden depths! This talk discusses some of the ways you can use Bundler
-    and other tools together to boost your development productivity. I’ll walk through
-    how to use the lesser-known but very handy commands like bundle gem, bundle open,
-    and a few others. I’ll show you how to use Bundler to make sure you always run your
-    app on the right version of Ruby, how to search through every gem in your Gemfile
-    with a single command, and how to check for newer versions of the gems you use.
+  description: Bundler has turned out to be a super-useful tool for installing and
+    managing dependencies, but it has hidden depths! This talk discusses some of the
+    ways you can use Bundler and other tools together to boost your development productivity.
+    I’ll walk through how to use the lesser-known but very handy commands like bundle
+    gem, bundle open, and a few others. I’ll show you how to use Bundler to make sure
+    you always run your app on the right version of Ruby, how to search through every
+    gem in your Gemfile with a single command, and how to check for newer versions
+    of the gems you use.
   events:
   - name: La Conf 2013
     date: 2013-05-10
     slides_url: https://speakerdeck.com/indirect/hack-your-bundle-for-fun-and-profit-la-conf-2013
 - title: "`bundle install` Y U SO SLOW"
-  description:
+  description: If you've ever done anything in ruby, you've probably used rubygems
+    and to search or install your favorite gem. On October 17, 2012, rubygems.org
+    went down. A Dependency API was built to be used by Bundler 1.1+ to speed up bundle
+    install. Unfortunately, it was a bit too popular and the service caused too much
+    load on the current infrasture. In order to get rubygems.org back up the API had
+    to be disabled.
   events:
   - name: Ruby on Ales 2012
     date: 2013-03-03
     video_url: http://confreaks.tv/videos/roa2012-bundle-install-y-u-so-slow
 - title: Security Is Hard, But We Can't Go Shopping
   post_url: "/2013/08/22/security-is-hard-but-we-cant-go-shopping/"
-  description: 'The last year has been brutal for Ruby and security. Ruby has gotten quite popular,
-    which is really exciting! But it also means that we are now square in the crosshairs
-    of security researchers, whether whitehat, blackhat, or some other hat. Before 2013,
-    only the Ruby and Rails core teams had meaningful experience with security issues.
-    This year everyone got meaningful experience. Vulnerabilities are everywhere, and
-    handling security issues responsibly is critical if we want Ruby (and Rubyists)
-    to stay safe and in high demand. I’ll discuss responsible disclosure, as well as
-    repsonsible ownership of your own code. How do you know if a bug is a security issue,
-    and how do you report it without tipping off someone malicious? As a Rubyist, you
-    probably have at least one library of your own. How do you handle security issues,
-    and fix them without compromising apps running on the old code? Don’t let your site
-    get hacked, or worse yet, let your project allow someone else’s site to get hacked!
-    Learn from the hard-won wisdom of the security community so that we won’t repeat
-    the mistakes of others.'
+  description: The last year has been brutal for Ruby and security. Ruby has gotten
+    quite popular, which is really exciting! But it also means that we are now square
+    in the crosshairs of security researchers, whether whitehat, blackhat, or some
+    other hat. Before 2013, only the Ruby and Rails core teams had meaningful experience
+    with security issues. This year everyone got meaningful experience. Vulnerabilities
+    are everywhere, and handling security issues responsibly is critical if we want
+    Ruby (and Rubyists) to stay safe and in high demand. I’ll discuss responsible
+    disclosure, as well as repsonsible ownership of your own code. How do you know
+    if a bug is a security issue, and how do you report it without tipping off someone
+    malicious? As a Rubyist, you probably have at least one library of your own. How
+    do you handle security issues, and fix them without compromising apps running
+    on the old code? Don’t let your site get hacked, or worse yet, let your project
+    allow someone else’s site to get hacked! Learn from the hard-won wisdom of the
+    security community so that we won’t repeat the mistakes of others.
   events:
   - name: RubyConf Australia 2016
     date: 2016-02-12
