@@ -1,4 +1,18 @@
 ---
+- title: Robin Hood Hashing
+  description: Using and contributing to open source has been a cornerstone of the
+    Ruby community for many years. Despite this strong tradition, it’s hard to find
+    anything collecting the likely advantages and costs of working on open source.
+    This talk will introduce open source work, the benefits and costs of doing that
+    work, and then provide a straightforward list of activities that can be done by
+    anyone, no matter their level of experience with programming. Pick a project,
+    schedule at least 15 minutes per day, join the core team. It’s your destiny!
+  post_url: "/2017/08/24/robin-hood-hashing/"
+  events:
+  - name: Papers We Love Too August 2017
+    date: 2017-08-24
+    url: https://www.meetup.com/papers-we-love-too/events/241365367/
+    slides_url: https://speakerdeck.com/indirect/robin-hood-hashing-papers-we-love-sf-august-2017
 - title: From No OSS Experience to the Core Team in 15 Minutes Per Day
   description: Using and contributing to open source has been a cornerstone of the
     Ruby community for many years. Despite this strong tradition, it’s hard to find
