@@ -18,7 +18,10 @@ task :post, [:title] do |task, args|
   date = Date.today.strftime('%Y-%m-%d')
   name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
   filename = File.join("_posts", "#{date}-#{name}.md")
-  puts filename
+  dirname = File.join("_postfiles", "#{date}-#{name}")
+
+  FileUtils.mkdir_p(dirname)
+
   File.open(filename, "w") do |f|
     f.puts "---"
     f.puts "title: \"#{title}\""
@@ -26,6 +29,11 @@ task :post, [:title] do |task, args|
     f.puts "---"
     f.puts
   end
+
+  puts filename
+  puts dirname
+  system("open #{Shellwords.escape(dirname)}")
+
   case ENV["EDITOR"]
   when /vim?/
     system "#{ENV["EDITOR"]} +5 #{Shellwords.escape(filename)}"
