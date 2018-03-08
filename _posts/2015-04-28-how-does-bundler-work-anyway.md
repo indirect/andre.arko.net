@@ -40,7 +40,7 @@ The second problem that you might have noticed by now is that the argument to `r
 
 To allow required files to be in different directories, we could create a list of directories to look inside whenever require is called. Here's what an implementation of load paths might look like:
 
-```
+```ruby
 $LOAD_PATH = ["/path/to/code", "/other/path/to/code"]
 
 def require(filename)
@@ -53,7 +53,7 @@ end
 
 You may then wonder if these two things can be combined. They can! Here's a version of the function that only loads files once, and looks in all `$LOAD_PATH` directories.
 
-```
+```ruby
 $LOAD_PATH = ["/path/to/code", "/other/path/to/code"]
 $LOADED_FEATURES = []
 
@@ -147,8 +147,8 @@ The process for `bundle exec` is similar, with two important changes. First, it 
 1. Read the Gemfile (and lock, if it's there)
 2. If needed, find gem versions allowed by the Gemfile that work together
 3. If found, write down those versions in the lock for future installs
-4. Remove any existing gems from the $LOAD_PATH array
-5. Add each gem version listed in the lock file to the $LOAD_PATH
+4. Remove any existing gems from the `$LOAD_PATH` array
+5. Add each gem version listed in the lock file to the `$LOAD_PATH`
 
 That's it! While there are a lot of other details, those are the underlying pieces Bundler uses to let you get your work done: `require`, the `$LOAD_PATH` array, and RubyGems. Each one is built on top of the ones that came before, and each one fixes problems that only became apparent after the new system was created.
 
