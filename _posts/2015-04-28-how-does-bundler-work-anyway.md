@@ -41,7 +41,7 @@ The second problem that you might have noticed by now is that the argument to `r
 To allow required files to be in different directories, we could create a list of directories to look inside whenever require is called. Here's what an implementation of load paths might look like:
 
 ```
-$LOAD_PATH = []
+$LOAD_PATH = ["/path/to/code", "/other/path/to/code"]
 
 def require(filename)
   full_path = $LOAD_PATH.find do |path|
@@ -51,7 +51,21 @@ def require(filename)
 end
 ```
 
-Of course, the load path and loaded features can both be combined. Since the code for that wouldn't fit on a single slide, I leave that as an exercise to the reader. It's pretty straightforward.
+You may then wonder if these two things can be combined. They can! Here's a version of the function that only loads files once, and looks in all `$LOAD_PATH` directories.
+
+```
+$LOAD_PATH = ["/path/to/code", "/other/path/to/code"]
+$LOADED_FEATURES = []
+
+def require(filename)
+  full_path = $LOAD_PATH.find do |path|
+    File.exist?(File.join(path, filename))
+  end
+  return true if $LOADED_FEATURES.include?(full_path)
+  eval File.read(full_path)
+  $LOADED_FEATURES << full_path
+end
+```
 
 Anyway, adding a load path allows us to find Ruby libraries even if they are spread across multiple directories. At this point, we can add the directory that holds the Ruby standard library to that list, and it becomes very easy to require those files. Loading `net/http`? No problem, now you can just `require 'net/http'`, and Ruby wil automatically check the directory where it lives.
 
