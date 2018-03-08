@@ -8,7 +8,7 @@ task :deploy do
     sh %{git push} || abort("Push failed, please resolve.")
   end
   sh %{jekyll build} || abort("Build failed, please resolve.")
-  sh %{rsync -avz --delete-after -essh public/ arko:/home/arko.net/domains/andre.arko.net/web/public/}
+  sh %{rsync -avz --delete-after -essh public/ arko:/var/www/andre.arko.net/public/}
 end
 
 desc "create a new post"
