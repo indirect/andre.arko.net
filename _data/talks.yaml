@@ -1,4 +1,12 @@
 ---
+- title: "Pairing: a guide to fruitful collaboration 🍓🍑🍐"
+  description: "Despite general consensus that pairing is good, the desire to pair doesn’t come with instructions. Come to this talk to learn how to pair with someone more experienced, how (and why) to pair with your peers, and how to pair productively with someone less experienced. (Hint: productivity isn’t about the speed of new features.) Pairing is a fantastic tool for your professional toolbox: let’s design, discuss, refine, and refactor, together."
+  post_url: "/2018/04/26/pairing-a-guide-to-fruitful-collaboration-/"
+  events:
+    - name: RailsConf 2018
+      date: 2018-04-16
+      url: https://railsconf.org
+      slides_url: https://speakerdeck.com/indirect/pairing-a-guide-to-fruitful-collaboration
 - title: "A History of Bundles: 2010 to 2017"
   description: "When Bundler 1.0 came out in 2010, it did something really great: installed all of your gems and let you use them in your app. Today, Bundler does something really great: it installs all your gems and lets you use them. So, given that, why has Bundler needed thousands upon thousands of hours of development work? What exactly has changed since then? Prepare to find out. We’ll cover performance improvements, server response optimizations, adapting to new versions of Ruby, and adding features to support new usecases. Learn the tricks of Bundler power users, and find out how to optimize your gem workflows."
   post_url: "/2017/11/16/a-history-of-bundles/"
