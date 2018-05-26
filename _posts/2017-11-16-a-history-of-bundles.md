@@ -2,9 +2,9 @@
 title: "A History of Bundles: 2010 to 2017"
 layout: post
 ---
-### a one-person oral history of Ruby’s dependency manager
+<h3 class="subtitle">a one-person oral history of Ruby’s dependency manager</h3>
 
-<small>This post was originally given as a presentation at [RubyConf 2017](http://rubyconf.org), and the [slides](https://speakerdeck.com/indirect/a-history-of-bundles-2010-to-2017) are also available.</small>
+<small>This post was originally given as a presentation at [RubyConf 2017](http://rubyconf.org). The [slides](https://speakerdeck.com/indirect/a-history-of-bundles-2010-to-2017) and [video](https://www.youtube.com/watch?v=BXFYjO8qDxk) are also available.</small>
 
 <script async class="speakerdeck-embed" data-id="18db05d85be142e0a3c125547eeb3098" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
