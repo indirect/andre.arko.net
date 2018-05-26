@@ -2,6 +2,10 @@
 title: "Pairing: A Guide to Fruitful Collaboration 🍓🍑🍐"
 layout: post
 ---
+<small>This post was originally given as a presentation at [RailsConf 2018](http://rubyconf.org). The [slides](https://speakerdeck.com/indirect/a-history-of-bundles-2010-to-2017) and [video](https://www.youtube.com/watch?v=km7uGUEd4fk) are also available.</small>
+
+<script async class="speakerdeck-embed" data-id="8678a82b77a54d488c3cb7945b81a7b5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 When interacting with Ruby devs, I’ve heard a lot of feedback along the lines of “I‘ve heard that pairing is supposed to be good, but every time I try to do it I get more and more discouraged”. Other devs I’ve talked to have lots of great experience pairing with their peers, but aren’t sure how to work with someone more or less experienced than they are. The goal of this talk is to prepare you so that pairing is not only something that you _can_ do with any other dev, but something that you _want_ to do with any other dev. By the end of this talk, I want you to be ready have awesome pairing sessions where you are energized and excited by working together with other devs to conquer your shared problems. Pairing is a fantastic tool for your professional toolbox: let’s learn how to design, discuss, refine, and refactor… together.
 
 So, before we dive in, why would you want to listen to me talk about this anyway? I’ve collaborated with other Ruby developers for 14 years, and for the last 5 years my day job has been almost entirely pairing. All day long, every day. In that time, I’ve paired with devs ranging from twice my age and experience all the way down to brand new devs writing code for the very first time. This talk is an attempt to gather everything that I’ve learned into one place, so that you (and, honestly, also me) can easily refer to it later.
