@@ -128,6 +128,7 @@
   - name: RubyConf Australia 2017
     url: http://rubyconf.org.au/2017/
     date: 2017-02-09
+    video_url: https://www.youtube.com/watch?v=j2V-A8vvLP0
   - name: RubyConf 2015
     date: 2015-11-17
     url: https://rubyconf.org
@@ -157,6 +158,7 @@
   - name: StrangeLoop 2016
     date: 2016-09-17
     slides_url: https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-1
+    video_url: https://www.youtube.com/watch?v=pYbgcDfM2Ts
   - name: Velocity Webinar 2014
     date: 2014-08-07
   - name: Distill 2014
