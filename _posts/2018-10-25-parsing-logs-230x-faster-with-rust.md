@@ -1,5 +1,5 @@
 ---
-title: "Parsing logs 288x faster with Rust"
+title: "Parsing logs 230x faster with Rust"
 layout: post
 ---
 Perhaps surprisingly, one of the most challenging things about operating [RubyGems.org](https://rubygems.org) is the logs. Unlike most Rails applications, RubyGems sees between 4,000 and 25,000 requests per second, all day long, every single day. As you can probably imagine, this creates... a lot of logs. A single day of request logs is usually around 500 gigabytes on disk. We've tried some hosted logging products, but at our volume they can typically only offer us a retention measured in hours.
