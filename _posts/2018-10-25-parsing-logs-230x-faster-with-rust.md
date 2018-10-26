@@ -2,6 +2,7 @@
 title: "Parsing logs 230x faster with Rust"
 layout: post
 ---
+
 Perhaps surprisingly, one of the most challenging things about operating [RubyGems.org](https://rubygems.org) is the logs. Unlike most Rails applications, RubyGems sees between 4,000 and 25,000 requests per second, all day long, every single day. As you can probably imagine, this creates... a lot of logs. A single day of request logs is usually around 500 gigabytes on disk. We've tried some hosted logging products, but at our volume they can typically only offer us a retention measured in hours.
 
 About a year ago, the only thing I could think of to do with the full log firehose was to run it through `gzip -9` and then drop it in S3. With gzip, the files shrink by about 92%, and with S3's "infrequent access" and "less duplication" tiers, it's actually affordable to keep those logs in a bucket: each month worth of logs costs about $3.50 per month to store.
@@ -77,5 +78,7 @@ Between `rust-aws-lambda` and  `docker-lambda`, I was able to port my parser to 
 As fantastic gravy on top of this whole situation, after a few days I realized that I needed to know exactly how much it would cost. With each log file taking about 23 seconds, and there being about 500 log files per day, it seemed like I would need about 350,000 seconds of Lambda execution time per month.
 
 Then, when I went to look up Lambda pricing, I noticed that it has a free tier: 400,000 seconds per month. So in the end, it seems like I'm parsing 500GB of logs per day... for free. 😆
+
+If you want to read the code, or better yet send me pull requests making it even faster, it lives on GitHub at [rubytogether/kirby](https://github.com/rubytogether/kirby).
 
 <small>Thanks to Steve Klabnik, Ashley Williams, without boats, Rein Heinrichs, Coda Hale, Nelson Minar, Chris Dary, Sunah Suh, Tim Kordas, and Larry Marburger for feedback and encouragement to turn our conversations into a post.</small>
