@@ -1,5 +1,5 @@
 ---
-title: "Parsing logs 230x faster with Rust"
+title: "Parsing logs 288x faster with Rust"
 layout: post
 ---
 Perhaps surprisingly, one of the most challenging things about operating [RubyGems.org](https://rubygems.org) is the logs. Unlike most Rails applications, RubyGems sees between 4,000 and 25,000 requests per second, all day long, every single day. As you can probably imagine, this creates... a lot of logs. A single day of request logs is usually around 500 gigabytes on disk. We've tried some hosted logging products, but at our volume they can typically only offer us a retention measured in hours.
@@ -18,7 +18,7 @@ With a full set of those counts, we would be able provide seriously useful infor
 
 Without any real idea of how to get those counts out of S3, I started by writing a proof of concept Ruby script that could parse one of the 500 log files and print out stats from it. It proved that the logs did contain the data I wanted, but it also took a _really long time_. Even on my super-fast laptop, my prototype script would take more than 16 hours to parse 24 hours worth of logs.
 
-If I was going to make this work, I would need to figure out some way to massively parallelize the work. After setting it aside for a while, I noticed that AWS had just announced [Glue](TODO), their managed Hadoop cluster that runs Apache Spark scripts.
+If I was going to make this work, I would need to figure out some way to massively parallelize the work. After setting it aside for a while, I noticed that AWS had just announced [Glue](https://aws.amazon.com/glue/), their managed Hadoop cluster that runs Apache Spark scripts.
 
 ### python and glue
 
@@ -28,21 +28,20 @@ While 3 realtime hours is pretty great, my script must have been very bad, becau
 
 ### maybe rust?
 
-After shelving the problem again, I thought of it while idly wondering if there was anything that I'd like to use [Rust](TODO) for. I'd heard good things about [fast JSON](TODO) and [fast text search](TODO) in Rust, so it seemed like it might be a good fit.
+After shelving the problem again, I thought of it while idly wondering if there was anything that I'd like to use [Rust](https://www.rust-lang.org/en-US/) for. I'd heard good things about [fast JSON](https://github.com/serde-rs/json-benchmark#-cargo-run---release---bin-json-benchmark) and [fast text search](https://blog.burntsushi.net/ripgrep/) in Rust, so it seemed like it might be a good fit.
 
-It turns out [`serde`](TODO), the Rust JSON library, is super, super fast. It tries very hard to not allocate, and it can deserialize 1GB of JSON into Rust structs in 2 seconds flat.
+It turns out [`serde`](https://serde.rs), the Rust JSON library, is  super fast. It tries very hard to not allocate, and it can deserialize the (uncompressed) 1GB of JSON into Rust structs in 2 seconds flat.
 
-Impressed by how fast Rust was at JSON, I searched for "rust parsing" and found [`nom`](TODO), a parser combinator library. After a few nights of work, I had a working parser combinator that did what I wanted, and I used it to parse the same log files. Excitingly, it could parse a 1GB logfile in just 3 minutes, which felt like a huge win coming from ~30 minutes in Python on Glue.
+Impressed by how fast Rust was at JSON, I searched for "rust parsing" and found [`nom`](https://github.com/Geal/nom), a parser combinator library. After a few nights of work, I had a working parser combinator that did what I wanted, and I used it to parse the same log files. Excitingly, it could parse a 1GB logfile in just 3 minutes, which felt like a huge win coming from ~30 minutes in Python on Glue.
 
-While wondering if there was a way to make it faster, I started re-reading the `nom` docs carefully, and that's when I noticed that "sometimes, `nom` can be almost as fast as `regex`". 🤦🏻‍♂️ Feeling pretty silly, I went and rewrote my rust program to use the `regex` crate, and sure enough it got 3x faster. Down to 60 seconds per file, 30x as fast as Python in Spark in Glue. Even 2x faster than the Ruby prototype! (Though that comparison isn't very fair because the Python and Rust versions collect more data.)
+While wondering if there was a way to make it faster, I started re-reading the `nom` docs carefully, and that's when I noticed that "sometimes, `nom` can be almost as fast as `regex`". 🤦🏻‍♂️ Feeling pretty silly, I went and rewrote my rust program to use the [`regex`](https://github.com/rust-lang/regex#regex) crate, and sure enough it got 3x faster. Down to 60 seconds per file, or 30x as fast as Python in Spark in Glue. Even 2x faster than the Ruby prototype! (Though that comparison isn't very fair because the Python and Rust versions collect more data.)
 
-At that point, I excitedly shared how fast my Rust version was with [@reinh](TODO)... and his response was "WHY IS IT SO SLOW ANDRÉ YOU MUST PROFILE IT". I'm still not sure how much of that was a joke, since it was already 30x faster than my last version. But I was curious, so I started looking into how to profile programs in Rust.
+At that point, I excitedly shared how fast my Rust version was with [@reinh](https://twitter.com/reinh)... and his response was "WHY IS IT SO SLOW YOU MUST PROFILE IT". I'm still not sure how much of that was a joke, since it was already 30x faster than my last version. But I was curious, so I started looking into how to profile programs in Rust.
 
 ### release mode
 
 The first thing I learned about profiling programs in Rust is that you have to do it with compiler optimizations turned on. Which I was not doing. 🤯 Rerunning the exact same Rust program while passing the `--release` flag to `cargo` turned on compiler optimizations, and suddenly I could parse a 1GB log file in... **8 seconds**.
 
-With a little bit more judicious optimization (leaving some JSON fields out of the Rust struct, skipping some log objects if they were duplicates), I was able to get the runtime for a 1GB log file down to 6.4 seconds.
 
 So, to recap, here's a table of processing speeds:
 
@@ -54,7 +53,7 @@ So, to recap, here's a table of processing speeds:
 
 ### thanks, rayon. thayon.
 
-At that point, I remembered that Rust also has a [parallel iteration library, Rayon](TODO). With a 5 character change to my program, Rayon ran the program against multiple log files at the same time. I was able to use all 8 cores on my laptop, and go even faster:
+At that point, I remembered that Rust also has a [parallel iteration library, Rayon](https://github.com/rayon-rs/rayon). With a 5 character change to my program, Rayon ran the program against multiple log files at the same time. I was able to use all 8 cores on my laptop, and go even faster:
 
 ```
  ~4,200 records/second in Python with 8 worker instances on AWS Glue
@@ -63,9 +62,11 @@ At that point, I remembered that Rust also has a [parallel iteration library, Ra
 
 While workers on Glue seem to scale linearly, that definitely wasn't the case on my laptop. Even with 8x the cores, I only got a 3.3x speedup. It's not a super fair comparison since the code is running on different machines, but it's 100x faster with 8 cores, and 230x faster on one core.
 
+I didn't include it in the table above, beacuse it's sort of cheating, but I was able to go even faster than that. By leaving some JSON fields out of the Rust struct, and skipping some JSON objects if I could tell they had duplicate information, I was able to get the runtime for a 1GB log file down to 6.4 seconds. That's 151,441 records/second/cpu, or 288x faster.
+
 ### back to aws
 
-After rewriting my parser in Rust, I had a new problem: how do I deploy this thing? My first idea (which probably would have worked?) was to cross-compile Rust binaries for Heroku and make [Sidekiq](TODO) run the binary once for each new log file in S3.
+After rewriting my parser in Rust, I had a new problem: how do I deploy this thing? My first idea (which probably would have worked?) was to cross-compile Rust binaries for Heroku and make [Sidekiq](https://sidekiq.org) run the binary once for each new log file in S3.
 
 Fortunately, before I tried to actually do that, I discovered [`rust-aws-lambda`](https://github.com/srijs/rust-aws-lambda), a crate that lets your Rust program run on AWS Lambda by pretending to be a Go binary. As a nice bonus for my usecase, it's only a few clicks to have AWS run a Lambda as a callback every time a new file is added to an S3 bucket.
 
