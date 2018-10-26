@@ -81,4 +81,4 @@ Then, when I went to look up Lambda pricing, I noticed that it has a free tier: 
 
 If you want to read the code, or better yet send me pull requests making it even faster, it lives on GitHub at [rubytogether/kirby](https://github.com/rubytogether/kirby).
 
-<small>Thanks to Steve Klabnik, Ashley Williams, without boats, Rein Heinrichs, Coda Hale, Nelson Minar, Chris Dary, Sunah Suh, Tim Kordas, and Larry Marburger for feedback and encouragement to turn our conversations into a post.</small>
+<small>Thanks to Steve Klabnik, Ashley Williams, without boats, Rein Henrichs, Coda Hale, Nelson Minar, Chris Dary, Sunah Suh, Tim Kordas, and Larry Marburger for feedback and encouragement to turn our conversations into a post.</small>
