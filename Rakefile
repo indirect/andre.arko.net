@@ -1,4 +1,5 @@
-require 'date'
+require "date"
+require "shellwords"
 
 desc "push to the git repo, generate the site, and rsync it up"
 task :deploy do
