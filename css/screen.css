@@ -125,6 +125,8 @@ pre code {
 
 small, .aside {
   font-size: 70%;
+  display: inline-block;
+  line-height: 1.4;
 }
 
 #content img {
