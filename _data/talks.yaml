@@ -1,4 +1,12 @@
 ---
+- title: "How to calculate the phase of the moon very, very badly!"
+  description: "This talk is about how, despite “common knowledge”, lunar cycles are not 28 days long, and in fact lunar cycles don’t have a single numerical length! You’ll hear about several very bad ways to calculate the phases of the moon, why they seemed reasonable at the time, and exactly how it took three years from the time one app shipped to the App Store before the calendar was even arguably correct."
+  post_url: "/2018/05/24/everyone-knows-a-lunar-cycle-is-28-days/"
+  events:
+    - name: "BangBangCon West"
+      date: 2019-02-23
+      url: https://bangbangcon.com/west
+      slides_url: https://speakerdeck.com/indirect/how-to-calculate-the-phase-of-the-moon-very-very-badly
 - title: "Pairing: a guide to fruitful collaboration 🍓🍑🍐"
   description: "Despite general consensus that pairing is good, the desire to pair doesn’t come with instructions. Come to this talk to learn how to pair with someone more experienced, how (and why) to pair with your peers, and how to pair productively with someone less experienced. (Hint: productivity isn’t about the speed of new features.) Pairing is a fantastic tool for your professional toolbox: let’s design, discuss, refine, and refactor, together."
   post_url: "/2018/04/26/pairing-a-guide-to-fruitful-collaboration-/"
