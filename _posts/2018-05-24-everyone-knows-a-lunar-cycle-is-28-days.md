@@ -4,6 +4,8 @@ layout: post
 ---
 <h3 class="subtitle">or, falsehoods werewolves believe about time</h3>
 
+<small>This blog post was eventually given as a talk at [@bangbangconwest](https://bangbangcon.com/west). The [slides](https://speakerdeck.com/indirect/how-to-calculate-the-phase-of-the-moon-very-very-badly) are also available.</small>
+
 A few years ago, I collaborated with [@sailorhg](https://twitter.com/sailorhg) to make an iPhone app: a lunar calendar (for witches and werewolves), [Luna](https://itunes.apple.com/us/app/luna-lunar-calendar-for-witches/id1052484934). She also made a swanky website for it over at [witchy.co](http://witchy.co).
 
 She created the concept and visual design, as well as managing the freelancers who provided the music and lunar horoscopes. I wrote the code, excited to have the chance to ship a mobile app and learn Swift.
@@ -18,9 +20,21 @@ Fast forward two years: the app has sold three copies per week, and has 150 acti
 
 Hearing this, I open the app myself (for the first time in about 18 months) and discover that the app is _three days off_. I knew that there would eventually be compounding error from multiplication with floats, but that was way, way more error than seemed reasonable.
 
-Hours of investigation later, I discovered that my entire premise was hilariously wrong: 27.321661 is the _average_ length of the lunar cycle. No individual lunar cycles actually last 27.321661 days, and I had painfully rediscovered that [averages don’t actually exist](https://99percentinvisible.org/episode/on-average/).
+Hours of investigation later, I discovered that my entire premise was hilariously wrong.
 
-If I could wait decades (or centuries!) individual differences in lunar cycle lengths will eventually average out... but that doesn’t help Wiccans in the year 2018. At the moment that message arrived, the full moon in the real world arrived three days after the app’s perfectly average spherical moon in a vacuum.
+First of all, 27.321661 is the average length of the _siderial_ month. I didn't know exactly what that meant when I used the number, but it sounded like it was related to astronomy! It turns out the word sidereal comes from the Latin word _sidera_, which means "star".
+
+Knowing that, it will now make sense to hear that a sidereal month is the time it takes for the moon to return to the same position among the stars in the sky. Unfortunately, the moon's illumination is determined by position relative to the sun and earth, so the length of a siderial month is totally useless for calculating moon phases.
+
+A full cycle of lunar phases that we see on earth is called a _synodic_ month, the amount of time it takes for the moon to return to the same position relative to the earth and sun. (Synodic and siderial months are different lengths because 1) the earth moves around the sun while the moon moves around the earth, and 2) the earth and moon's orbits are both ellipses!)
+
+You can learn more about how the positions of the sun and earth determine the moon's illumination at the website made by [@sailorhg](https://twitter.com/sailorhg) for her talk at HawaiiJS: [witchy.co/trig](https://witchy.co/trig).
+
+So now that we’re using the average length of a synodic month, 29.530587981 days, can we calculate accurate moon phases? Still no. We know the average length of a synodic month, but it's an average. Almost no individual synodic months actually last 29.530587981 days.
+
+At this point, I had painfully rediscovered that [averages don’t actually exist](https://99percentinvisible.org/episode/on-average/). In another talk I've given, [Lies, Damn Lies, and Metrics](https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-1), I call this out by saying "averages are lie-candy for your brain". Even though I already knew that, I still fell for the idea that the average would reselmble reality!
+
+If we could wait decades (or centuries!) individual differences in lunar cycle lengths will eventually average out... but that doesn’t help Wiccans in the year 2018. At the moment that message arrived, the full moon in the real world arrived three days after the app’s perfectly average spherical moon in a vacuum.
 
 Fortunately, Swift matured pretty significantly while my app was getting more and more wrong. A few seconds of searching provided several open source astronomical libraries implemented entirely in Swift.
 
@@ -46,4 +60,10 @@ Considering how little code went into this application overall, I feel like I le
 
 Today, Luna’s astronomical calculations are accurate to within a few minutes, each quarter of the moon falls on the same day as other moon calendars, and it even stays accurate when the date is manually jumped years into the past or future. It only took three years. 😅
 
+<small>
 _Thanks to Chris Dary for the subtitle, Kyle Kingsbury for inadvertently reminding me that this happened, and to all of Kyle, Chris, Coda Hale, Marc Hedlund, Nelson Minar, Sunah Suh, and Daniel Espeset for enjoying this story so much that I was motivated to publish it._
+</small>
+
+<small>
+_Updated 2019-02-25 to add an explanation of siderial versus synodic months, link to [witchy.co/trig](https://witchy.co/trig), and link to the slides from !!ConWest._
+</small>
