@@ -26,13 +26,13 @@ First of all, 27.321661 is the average length of the _siderial_ month. I didn't 
 
 Knowing that, it will now make sense to hear that a sidereal month is the time it takes for the moon to return to the same position among the stars in the sky. Unfortunately, the moon's illumination is determined by position relative to the sun and earth, so the length of a siderial month is totally useless for calculating moon phases.
 
-A full cycle of lunar phases that we see on earth is called a _synodic_ month, the amount of time it takes for the moon to return to the same position relative to the earth and sun. (Synodic and siderial months are different lengths because 1) the earth moves around the sun while the moon moves around the earth, and 2) the earth and moon's orbits are both ellipses!)
+A full cycle of lunar phases that we see on earth is called a _synodic_ month, the amount of time it takes for the moon to return to the same position relative to the earth and sun. Synodic and siderial months are different lengths because 1) the earth moves around the sun while the moon moves around the earth, and 2) the earth and moon's orbits are both ellipses!
 
-You can learn more about how the positions of the sun and earth determine the moon's illumination at the website made by [@sailorhg](https://twitter.com/sailorhg) for her talk at HawaiiJS: [witchy.co/trig](https://witchy.co/trig).
+(You can learn more about how the positions of the sun and earth determine the moon's illumination at the website made by [@sailorhg](https://twitter.com/sailorhg) for her talk at HawaiiJS: [witchy.co/trig](https://witchy.co/trig).)
 
 So now that we’re using the average length of a synodic month, 29.530587981 days, can we calculate accurate moon phases? Still no. We know the average length of a synodic month, but it's an average. Almost no individual synodic months actually last 29.530587981 days.
 
-At this point, I had painfully rediscovered that [averages don’t actually exist](https://99percentinvisible.org/episode/on-average/). In another talk I've given, [Lies, Damn Lies, and Metrics](https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-1), I call this out by saying "averages are lie-candy for your brain". Even though I already knew that, I still fell for the idea that the average would reselmble reality!
+At this point, I had painfully rediscovered that [averages don’t actually exist](https://99percentinvisible.org/episode/on-average/). In another talk I've given, [Lies, Damn Lies, and Metrics](https://speakerdeck.com/indirect/lies-damn-lies-and-metrics-1), I call this out by saying "averages are lie-candy for your brain". Even though I already knew that, I still fell for the idea that the average would resemble reality!
 
 If we could wait decades (or centuries!) individual differences in lunar cycle lengths will eventually average out... but that doesn’t help Wiccans in the year 2018. At the moment that message arrived, the full moon in the real world arrived three days after the app’s perfectly average spherical moon in a vacuum.
 
