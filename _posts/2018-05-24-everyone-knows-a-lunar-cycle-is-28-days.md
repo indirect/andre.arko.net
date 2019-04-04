@@ -4,7 +4,7 @@ layout: post
 ---
 <h3 class="subtitle">or, falsehoods werewolves believe about time</h3>
 
-<small>This blog post was eventually given as a talk at [@bangbangconwest](https://bangbangcon.com/west). The [slides](https://speakerdeck.com/indirect/how-to-calculate-the-phase-of-the-moon-very-very-badly) are also available.</small>
+<small>This blog post was eventually given as a talk at [@bangbangconwest](https://bangbangcon.com/west). The [slides](https://speakerdeck.com/indirect/how-to-calculate-the-phase-of-the-moon-very-very-badly) and [video](https://www.youtube.com/watch?v=syx4pWxu_sk) are also available.</small>
 
 A few years ago, I collaborated with [@sailorhg](https://twitter.com/sailorhg) to make an iPhone app: a lunar calendar (for witches and werewolves), [Luna](https://itunes.apple.com/us/app/luna-lunar-calendar-for-witches/id1052484934). She also made a swanky website for it over at [witchy.co](http://witchy.co).
 
