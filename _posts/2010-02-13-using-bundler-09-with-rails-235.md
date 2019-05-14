@@ -6,15 +6,15 @@ layout: post
 
 The first step in converting is to tweak the configuration and startup files in your app. You'll need to add a monkeypatch to your app's `config/boot.rb` file:
 
-<script src="http://gist.github.com/302406.js?file=boot.rb"></script>
+<script src="https://gist.github.com/302406.js?file=boot.rb"></script>
 
 Next, you'll need to add a new file at `config/preinitializer.rb`, and put this into it:
 
-<script src="http://gist.github.com/302406.js?file=preinitializer.rb"></script>
+<script src="https://gist.github.com/302406.js?file=preinitializer.rb"></script>
 
 Last, you'll need to move your gem requirements list from `config/environment.rb` to your `Gemfile`. Here's an example `Gemfile`:
 
-<script src="http://gist.github.com/302406.js?file=Gemfile"></script>
+<script src="https://gist.github.com/302406.js?file=Gemfile"></script>
 
 By the time you have finished, there shouldn't be any `config.gem` statements left in your `environment.rb` file. All the gems that your application depends on should be listed in your `Gemfile` instead. If you have gems that should only be loaded in certain environments, like development-only or test-only gems, you can put those in the "development" and "test" groups.
 

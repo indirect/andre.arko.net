@@ -12,6 +12,6 @@ So, without further ado, here's the setup:
 2. Create a Cloud account (the paid accounts can even use a custom subdomain for links, if you like.)
 3. Using the Keyboard sytem preference pane, change the keyboard shortcut ⌘⇧4 to copy the screenshot to the clipboard instead of saving it to a file on your desktop. Or just always use ⌘⇧⌃4 to take a screenshot.
 4. Set a keyboard shortcut to upload the clipboard in CloudApp. I use the default, ⌘⌃C.
-5. Install [this Alfred extension](http://cl.ly/0Q05361j243G/download/CloudApp%20Image.alfredextension).
+5. Install [this Alfred extension](https://cl.ly/0Q05361j243G/download/CloudApp%20Image.alfredextension).
 
 Now you're set! To share a screenshot, push take your screenshot, hit ⌥⌃C and then run the Alfred action. Now you can paste a direct link to the image into Campfire or wherever you like.
