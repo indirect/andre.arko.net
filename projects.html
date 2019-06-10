@@ -1,0 +1,27 @@
+---
+layout: default
+title: Personal Projects
+---
+
+<h2>Personal projects</h2>
+
+<p>Sometimes I do things that seem worth writing down somewhere.</p>
+
+<dl class="projects">
+  {% for project in site.data.projects %}
+    <h4 class="project-title">
+      {% if project.url %}
+      <a class="project-link" href="{{ project.url }}">
+        {{ project.title }}
+      </a>
+      {% else %}
+        {{ project.title }}
+      {% endif %}
+    </h4>
+    {% if project.description %}
+    <div class="project-info group">
+      <p class="project-description">{{ project.description }}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</dl>
