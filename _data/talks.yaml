@@ -27,19 +27,13 @@
       video_url: https://www.youtube.com/watch?v=BXFYjO8qDxk
       slides_url: https://speakerdeck.com/indirect/a-history-of-bundles-2010-to-2017
 - title: Robin Hood Hashing
-  description: Using and contributing to open source has been a cornerstone of the
-    Ruby community for many years. Despite this strong tradition, it’s hard to find
-    anything collecting the likely advantages and costs of working on open source.
-    This talk will introduce open source work, the benefits and costs of doing that
-    work, and then provide a straightforward list of activities that can be done by
-    anyone, no matter their level of experience with programming. Pick a project,
-    schedule at least 15 minutes per day, join the core team. It’s your destiny!
+  description: "Without requiring calculations in advance or additional arrays to store extra data, Robin Hood Hashing provides a system that results in a maximum of O(ln n) probes per operation, where n is the number of items stored in the hash table. How does it do this? By stealing from the rich and giving to the poor, of course. 😆"
   post_url: "/2017/08/24/robin-hood-hashing/"
   events:
-  - name: Papers We Love Too August 2017
-    date: 2017-08-24
-    url: https://www.meetup.com/papers-we-love-too/events/241365367/
-    slides_url: https://speakerdeck.com/indirect/robin-hood-hashing-papers-we-love-sf-august-2017
+    - name: Papers We Love Too August 2017
+      date: 2017-08-24
+      url: https://www.meetup.com/papers-we-love-too/events/241365367/
+      slides_url: https://speakerdeck.com/indirect/robin-hood-hashing-papers-we-love-sf-august-2017
 - title: From No OSS Experience to the Core Team in 15 Minutes Per Day
   description: Using and contributing to open source has been a cornerstone of the
     Ruby community for many years. Despite this strong tradition, it’s hard to find
@@ -50,11 +44,11 @@
     schedule at least 15 minutes per day, join the core team. It’s your destiny!
   post_url: "/2016/11/12/how-to-contribute-to-open-source/"
   events:
-  - name: RubyConf 2016
-    date: 2016-11-10
-    url: https://rubyconf.org
-    video_url: http://confreaks.tv/videos/rubyconf2016-from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
-    slides_url: https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
+    - name: RubyConf 2016
+      date: 2016-11-10
+      url: https://rubyconf.org
+      video_url: http://confreaks.tv/videos/rubyconf2016-from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
+      slides_url: https://speakerdeck.com/indirect/from-no-oss-experience-to-the-core-team-in-15-minutes-a-day
 - title: A Year of Ruby, Together
   post_url: "/2016/09/26/a-year-of-ruby-together/"
   description: 'Ruby Together is a simple concept: Ruby developers and companies all
