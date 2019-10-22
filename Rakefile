@@ -6,10 +6,12 @@ task :deploy do
   $stdout.sync = true
   Bundler.with_clean_env do
     sh %{git pull --rebase} || abort("Pull failed, please resolve.")
-    sh %{git push} || abort("Push failed, please resolve.")
   end
   sh %{jekyll build} || abort("Build failed, please resolve.")
-  sh %{rsync -avz --delete-after -essh public/ arko:/var/www/andre.arko.net/public/}
+  Bundler.with_clean_env do
+    sh %{git push} || abort("Push failed, please resolve.")
+  end
+  puts "Netlify build running..."
 end
 
 desc "create a new post"
