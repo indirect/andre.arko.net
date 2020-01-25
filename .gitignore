@@ -1,5 +1,6 @@
-.bundle
 .DS_Store
-bin
-public
-vendor/bundle
+/.bundle
+/bin
+/public
+/tmp
+/vendor/bundle
