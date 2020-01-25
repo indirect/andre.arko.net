@@ -13,17 +13,31 @@ As a reviewer you’re responsible for **improving safety**, **enforcing broadly
 
 Code reviews have a few goals.
 
-1. **⛑  Safety** The #1 priority in a code review is to provide a layer of safety to protect things from breaking for your users.
+1. **⛑ Safety**
 
-2. **🚔 Enforcement of broadly agreed upon standards** In the cases where there are broadly agreed upon standards that aren’t enforced by your test infrastructure we may need to enforce standards in reviews. Reviewers should never enforce standards that aren’t broadly agreed upon.
+    The #1 priority in a code review is to provide a layer of safety to protect things from breaking for your users.
 
-3. 🧠 **Education and context sharing** Nobody comes to a company already knowing the stack. Code reviews provide a chance for us to learn from each other.
+2. **🚔 Enforcement of broadly agreed upon standards**
 
-Authors are required to get a single approval from any colleague in order to merge code, but that doesn’t give reviewers a license to block reviews for any reason.
+    In the cases where there are broadly agreed upon standards that aren’t enforced by your test infrastructure we may need to enforce standards in reviews. Reviewers should never enforce standards that aren’t broadly agreed upon.
 
-- **❌ Stylistic preferences** Our linters enforce our style guide. Reviewers shouldn’t push their personal preferences in a blocking code review.
+3. **🧠 Education and context sharing**
 
-- **❌ Blocking tips** Offering tips for how things could be improved is great, but reviewers shouldn’t block PRs on nits. Only safety issues and broadly agreed upon standards that aren’t caught by the linter should block PRs.
+    Nobody comes to a company already knowing the stack. Code reviews provide a chance for us to learn from each other.
+
+Authors are required to get an approval from any colleague in order to merge code, but that doesn’t give reviewers a license to block reviews for just any reason.
+
+- **❌ No stylistic preferences**
+
+    Linters enforce style guidelines. Reviewers shouldn’t push their personal preferences in a blocking code review.
+
+- **❌ No blocking tips**
+
+    Offering tips for how things could be improved is great, but reviewers shouldn’t block PRs on nits.
+
+- **✅ Block unsafe or non-standard code**
+
+    Only safety issues and broadly agreed upon standards that aren’t caught by the linter should block PRs.
 
 ### ⛑  Safety
 
