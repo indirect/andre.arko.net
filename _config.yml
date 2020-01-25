@@ -8,6 +8,7 @@ exclude:
   - Rakefile
   - bin
   - public
+  - tmp
   - vendor
 
 highlighter: rouge
