@@ -108,6 +108,13 @@ h2.year {
   float: right;
 }
 
+.callout {
+  display: block;
+  background-color: #F2F2F2;
+  padding: 10px 15px;
+}
+
+
 code {
   background-color: #F2F2F2;
   font-size: 80%;
