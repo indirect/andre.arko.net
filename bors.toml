@@ -1,4 +1,4 @@
-status = [
+pr_status = [
   "deploy/netlify"
 ]
 
