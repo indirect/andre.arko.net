@@ -20,7 +20,7 @@ It’s not said often enough, but there are no “real” programmers. Everyone 
 
 Despise some lazy companies’ claims, [Github is not your resumé](https://blog.jcoglan.com/2013/11/15/why-github-is-not-your-cv/). Making free software does not prove that you are a good programmer, and some of the best programmers produce no open source. Before doing any work, sit down and think about what your goals are.
 
-Do you want to hone your skills? Gain acclaim from your peers? Shoulder a pile of crushing guilt? Open source can be a good way to accomplish those goals, but it’s not the only one. You could write software for yourself to hone your skills. You could volunteer as a teacher or mentor at [RailsBridge](railsbridge.org), [Code 2040](code2040.org), or a host of other programs. You could find an extended family full of entitled relatives who all demand that you fix their computers. You have lots of options!
+Do you want to hone your skills? Gain acclaim from your peers? Shoulder a pile of crushing guilt? Open source can be a good way to accomplish those goals, but it’s not the only one. You could write software for yourself to hone your skills. You could volunteer as a teacher or mentor at [RailsBridge](https://railsbridge.org/), [Code 2040](https://www.code2040.org/), or a host of other programs. You could find an extended family full of entitled relatives who all demand that you fix their computers. You have lots of options!
 
 Your time is your own, and you don’t owe it to anyone else. Keep that in mind as we talk about all of the things that are available to you—think about your goals, and choose to spend your time on accomplishing those goals.
 
