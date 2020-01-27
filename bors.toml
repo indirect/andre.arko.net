@@ -1,0 +1,9 @@
+pr_status = [
+  "deploy/netlify"
+]
+
+delete_merged_branches = true
+
+[committer]
+name = "Andre Arko"
+email = "andre@arko.net"
