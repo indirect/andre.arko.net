@@ -3,6 +3,7 @@ pr_status = [
 ]
 
 delete_merged_branches = true
+cut_body_after = "<!-- END MERGE COMMIT MESSAGE -->"
 
 [committer]
 name = "Andre Arko"
