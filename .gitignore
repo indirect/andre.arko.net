@@ -1,6 +1,6 @@
 .DS_Store
 /.bundle
-/bin
+/.jekyll-metadata
 /public
 /tmp
 /vendor/bundle
