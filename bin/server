@@ -1,0 +1,4 @@
+#!/bin/bash
+
+set -x
+bin/jekyll server --watch --incremental --open-url --livereload
