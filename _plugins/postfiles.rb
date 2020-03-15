@@ -38,16 +38,20 @@ module Jekyll
   end
 
   class PostfileTag < Liquid::Tag
-
     def initialize(tag_name, text, tokens)
       super
       @text = text.strip
     end
 
     def render(context)
-      File.join(context['page']['url'], @text)
+      if context['page']['postfiles'].find{|pf| pf.name == @text }
+        File.join(context['page']['url'], @text)
+      else
+        raise "Postfile #{@text} doesn't exist!\nLooked in _postfiles#{context['page'].id}}"
+      end
     end
   end
+
 end
 
 Liquid::Template.register_tag('postfile', Jekyll::PostfileTag)
