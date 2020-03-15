@@ -83,7 +83,7 @@ They aren't quite as ergonomic as the Kinesis, but there are two options that ar
 
 ### I want mechanical keys but laptop sized
 
-The smallest purchasable mechanical keyboard I know of is the [Atreus 2](https://atreus.technomancy.us). It was designed by my college friend [Phil](http://technomancy.us) so he could use a mechanical keyboard when working on his laptop from coffee shops. It's conveniently about to be mass-manufactured by the [Keyboard.io](http://keyboard.io/) folks, with [a Kickstarter that begins in a few days](https://www.kickstarter.com/projects/keyboardio/atreus). I built one last month, laser cutting the case from maple and soldering on Kalih blue switches, and posted [some pictures of that build](https://share.icloud.com/photos/0iejJ36BpmXUcYF0z8cWaBnug) if you're interested.
+The smallest purchasable mechanical keyboard I know of is the [Atreus 2](https://atreus.technomancy.us). It was designed by my college friend [Phil](http://technomancy.us) so he could use a mechanical keyboard when working on his laptop from coffee shops. It's conveniently about to be mass-manufactured by the [Keyboard.io](http://keyboard.io/) folks, with [a Kickstarter that begins in a few days](https://www.kickstarter.com/projects/keyboardio/atreus). I built one last month, laser cutting the case from maple and soldering on Kalih blue switches, and posted [some pictures of that build](/2020/03/15/built-an-atreus-2/) if you're interested.
 
 Almost as small is the [Planck EZ](https://ergodox-ez.com/pages/planck), from the ErgoDox EZ folks. The physical case is a perfect rectangle and the keys are in straight rows and columns ("ortholinear" in mechanical keyboard-speak).
 
