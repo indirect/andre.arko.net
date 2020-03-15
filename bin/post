@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+require "date"
+require "fileutils"
+require "shellwords"
 
 title = ARGV.join(" ")
 abort("Usage: bin/post TITLE") if title.empty?
