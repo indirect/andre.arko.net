@@ -1,7 +1,9 @@
 #!/bin/bash
 
+set -eo pipefail
+
 git pull --rebase
-jekyll build
+bin/jekyll build
 git push
 
 echo "Netlify build running..."
