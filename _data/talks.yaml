@@ -1,4 +1,12 @@
 ---
+- title: "Engineering Teams in a Time of Corona"
+  description: "It’s been a month since San Francisco and the surrounding counties announced a lockdown, and at least a couple of weeks in most of the US. The good news is that it’s possible to build software even when everyone is staying at home every day, unlike a lot of jobs!<br><br>The bad news is this isn’t remote working, not the way that anyone has ever talked about it before. In the words of Juan Pablo Buritica, this is “stuck at home work”, and that’s much worse."
+  post_url: "/2020/04/16/sustainable-work-from-home-while-the-world-is-burning/"
+  events:
+    - name: "Cloud City online workshop"
+      date: 2020-04-16
+      url: https://www.cloudcity.io
+      slides_url: https://speakerdeck.com/indirect/engineering-teams-in-a-time-of-corona
 - title: "How to calculate the phase of the moon very, very badly!"
   description: "This talk is about how, despite “common knowledge”, lunar cycles are not 28 days long, and in fact lunar cycles don’t have a single numerical length! You’ll hear about several very bad ways to calculate the phases of the moon, why they seemed reasonable at the time, and exactly how it took three years from the time one app shipped to the App Store before the calendar was even arguably correct."
   post_url: "/2018/05/24/everyone-knows-a-lunar-cycle-is-28-days/"
