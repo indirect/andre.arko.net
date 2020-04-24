@@ -7,6 +7,7 @@
       date: 2020-04-16
       url: https://www.cloudcity.io
       slides_url: https://speakerdeck.com/indirect/engineering-teams-in-a-time-of-corona
+      video_url: https://www.youtube.com/watch?v=L7UUNbySwkU
 - title: "How to calculate the phase of the moon very, very badly!"
   description: "This talk is about how, despite “common knowledge”, lunar cycles are not 28 days long, and in fact lunar cycles don’t have a single numerical length! You’ll hear about several very bad ways to calculate the phases of the moon, why they seemed reasonable at the time, and exactly how it took three years from the time one app shipped to the App Store before the calendar was even arguably correct."
   post_url: "/2018/05/24/everyone-knows-a-lunar-cycle-is-28-days/"

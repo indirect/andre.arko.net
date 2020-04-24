@@ -3,7 +3,7 @@ title: "Sustainable work from home while the world is burning"
 layout: post
 ---
 
-<small>This post was originally given as a talk for <a href="https://www.cloudcity.io">Cloud City</a>. The [slides](https://speakerdeck.com/indirect/engineering-teams-in-a-time-of-corona) are also available.</small>
+<small>This post was originally given as a talk for <a href="https://www.cloudcity.io">Cloud City</a>. The [slides](https://speakerdeck.com/indirect/engineering-teams-in-a-time-of-corona) and [video](https://www.youtube.com/watch?v=L7UUNbySwkU) are also available.</small>
 
 <script async class="speakerdeck-embed" data-id="e3e0b75102d24d16b8410feb24915fcb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
