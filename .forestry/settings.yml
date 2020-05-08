@@ -8,10 +8,10 @@ sections:
   label: Posts
   create: all
 - type: document
-  path: _data/talks.yml
+  path: _data/talks.yaml
   label: Talks
 - type: document
-  path: _data/projects.yml
+  path: _data/projects.yaml
   label: Projects
 - type: jekyll-pages
   label: Pages
