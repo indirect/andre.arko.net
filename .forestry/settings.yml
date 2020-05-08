@@ -4,18 +4,18 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
-- type: document
-  path: _data/talks.yml
-  label: Talks
 - type: jekyll-posts
   label: Posts
   create: all
 - type: document
+  path: _data/talks.yml
+  label: Talks
+- type: document
   path: _data/projects.yml
   label: Projects
+- type: jekyll-pages
+  label: Pages
+  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
