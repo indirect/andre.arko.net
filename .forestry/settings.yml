@@ -10,6 +10,12 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+- type: document
+  label: Talks
+  path: _data/talks.yml
+- type: document
+  label: Projects
+  path: _data/projects.yml
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
