@@ -7,15 +7,15 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
+- type: document
+  path: _data/talks.yml
+  label: Talks
 - type: jekyll-posts
   label: Posts
   create: all
 - type: document
-  label: Talks
-  path: _data/talks.yml
-- type: document
-  label: Projects
   path: _data/projects.yml
+  label: Projects
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
