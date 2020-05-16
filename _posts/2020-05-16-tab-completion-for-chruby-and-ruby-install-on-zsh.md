@@ -11,7 +11,7 @@ Anyway, now that you're caught up, my problem of the day is wanting tab-completi
 #compdef chruby
 
 compadd $(chruby | tr -d '* ')
-local default_path='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+local default_path='/usr/local/bin:/usr/bin'
 if PATH=${default_path} type ruby &> /dev/null; then
   compadd system
 fi
@@ -46,6 +46,5 @@ $ chruby ⇤
 ruby-2.6.6  ruby-2.7.1  system
 
 $ ruby-install ⇤
-jruby-9.2.11.1      rbx-4.15            ruby-2.5.8          ruby-2.7.1          
-mruby-2.1.0         ruby-2.4.10         ruby-2.6.6          truffleruby-20.0.0  
+jruby-9.2.11.1  rbx-4.15  ruby-2.5.8  ruby-2.7.1  mruby-2.1.0  ruby-2.4.10  ruby-2.6.6  truffleruby-20.0.0  
 ```
