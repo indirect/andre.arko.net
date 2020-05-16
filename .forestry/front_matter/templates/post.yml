@@ -10,3 +10,5 @@ fields:
   label: layout
   default: post
   hidden: true
+pages:
+- _posts/tab-completion-for-chruby-and-ruby-install-on-zsh.md
