@@ -5,7 +5,7 @@ layout: post
 
 When I wrote about [how to change git and GitHub's default branches](/2020/06/06/changing-git-and-githubs-default-branch-name/), I was thinking entirely in terms of fixing the problem one repo at a time. The next day, GitHub announced they would be changing the default, so I thought my script wouldn't even be necessary, since surely GitHub would offer a bulk change tool as part of changing the default.
 
-Unfortunately, it's been 20 days, and GitHub not only hasn't shipped a tool to bulk-change default branches, it hasn't shipped the default branch name change at all. In the spirit of solving the problem as quickly as possible, here's a script that will change the default branch for every repository in a particular user or organization on GitHub.
+Unfortunately, it's been 20 days, and GitHub not only hasn't shipped a tool to bulk-change default branches, it hasn't shipped the default branch name change at all. In the spirit of solving the problem as quickly as possible, here's a script that will change the default branch for every repository in a particular user or organization on GitHub. You'll need [hub](https://hub.github.com) installed. On macOS, that means running `brew install hub`, and then `hub api user` to trigger authentication.
 
 ```bash
 #!/bin/bash
@@ -54,7 +54,7 @@ for repo in ${repos[@]}; do
 done
 ```
 
-If you already have [hub](https://hub.github.com) installed, you can run it like this:
+If you just want to do the thing, you can run it directly like this:
 
 ```bash
 curl -L https://git.io/JJeCZ | bash -s USERNAME [BRANCH]
