@@ -20,7 +20,7 @@ function git() {
 
 The somewhat trickier part is changing the GitHub default branch, which you can't do by pushing branches. If (and only if) your very first push to the empty repo is on a different branch, that branch will become your default. Assuming you used the modified `git init` listed above, you can create a repo with `hub create`, and push directly using `git push`. ([The `hub` command](https://github.com/github/hub) is a very useful CLI tool for interacting with GitHub.)
 
-If you've already pushed, or used the web UI, however, the default branch has automatically been set. The only official way to change a default branch is using the website, going to Settings, and clicking a bunch. I don't want to do that over and over, so I also created a wrapper for `hub` that adds a subcommand to change the default branch on GitHub for the repo in the current directory. This function should also work with either bash or zsh. If you pass an argument, that will be used as the branch name. Otherwise, the branch name `main` will be used.
+If you've already pushed, or used the web UI, however, the default branch has automatically been set. The only official way to change a default branch is using the website, going to Settings, and clicking a bunch. I don't want to do that over and over, so I also created a wrapper for `hub` that adds a subcommand to change the default branch on GitHub for the repo in the current directory. This function should also work with either bash or zsh.
 
 ```bash
 function hub() {
@@ -36,5 +36,7 @@ function hub() {
   fi
 }
 ```
+
+To use it, run `hub default-branch [NAME]` in a checkout of the repo you want to change. If you pass an argument, that will be used as the branch name. Otherwise, the branch name `main` will be used.
 
 Now that your git repos are slightly less bad, why not spend some time looking for actions you can take to oppose racism today?
