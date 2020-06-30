@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.6"
+gem "jekyll", "~> 3.8"
 
 gem "puma", "~> 4.3"
 gem "rack-jekyll", "~> 0.5.0"
