@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8"
+gem "jekyll", "~> 4.1"
 gem "redcarpet", "~> 3.5"
 gem "rouge", "~> 3.20"
 
