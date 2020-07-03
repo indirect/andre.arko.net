@@ -29,3 +29,5 @@ xcrun: error: unable to load libxcrun (dlopen(/Library/Developer/CommandLineTool
 ```
 
 If you see this, run `sudo rm -rf /Library/Developer/CommandLineTools; sudo xcode-select --switch /Application/Xcode-beta.app`. The Homebrew installer really really wants to install those Command Line Tools, but they're the wrong architecture and won't ever run. Use the devtools built into Xcode-beta instead.
+
+P.P.S. If you also want to build Ruby yourself, to get the latest version, check out [this follow-up post](/2020/06/30/building-ruby-on-arm64-macos/).
