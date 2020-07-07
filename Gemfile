@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8"
-gem "redcarpet", "~> 3.5"
+gem "jekyll", "~> 4.1"
+gem "kramdown", "~> 2.3"
 gem "rouge", "~> 3.20"
 
 group :development do
@@ -12,3 +12,4 @@ end
 group :jekyll_plugins do
   gem "jekyll-sitemap"
 end
+
