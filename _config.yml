@@ -11,13 +11,5 @@ exclude:
   - tmp
   - vendor
 
-highlighter: rouge
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - fenced_code
-    - no_intraemphasis
-    - smart
-
 sitemap:
   url: http://andre.arko.net
