@@ -1,6 +1,7 @@
 .DS_Store
-/.bundle
-/.jekyll-metadata
-/public
-/tmp
-/vendor/bundle
+/.bundle/
+/.jekyll-cache/
+/.jekyll-metadata/
+/public/
+/tmp/
+/vendor/bundle/
