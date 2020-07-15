@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.1"
 gem "kramdown", "~> 2.3"
-gem "rouge", "~> 3.20"
+gem "rouge", "~> 3.21"
 
 group :development do
   gem "puma", "~> 4.3"
