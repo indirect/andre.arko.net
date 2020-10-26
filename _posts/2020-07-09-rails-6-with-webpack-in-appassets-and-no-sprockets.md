@@ -81,7 +81,7 @@ Create an application stylesheet in `packs`.
 touch app/assets/packs/application.scss
 ```
 
-(If you generate controllers, Rails will create stylesheets like `app/assets/stylesheets/controller.css`, and you can import those files with lines like `@import "../stylesheets/controller.css` in the pack.)
+(If you generate controllers, Rails will create stylesheets like `app/assets/stylesheets/controller.css`, and you can import those files with lines like `@import "../stylesheets/controller.css";` in the pack.)
 
 Update `app/views/layouts/application.html.erb` to use the pack instead of the now-gone Sprockets stylesheet.
 
