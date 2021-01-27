@@ -1,6 +1,7 @@
 ---
-title: "Rails 6 containers, but really quickly"
+title: Rails 6 containers, but really quickly
 layout: post
+
 ---
 Running `docker build` always feels too slow. Most of the time, new builds still have to download and install something that every previous build also had to download and install—whether apt, yum, npm, or gem, there a lot of options for something that has to be done slowly, over and over.
 
@@ -16,7 +17,7 @@ To set it up, you create two Dockerfiles. The first Dockerfile (I usually call i
 
 ```dockerfile
 # Dockerfile-base
-FROM ruby:2.7.1-alpine
+FROM ruby:alpine
 
 # Install base app gems into the base image
 COPY Gemfile* .ruby-version /app/
@@ -30,7 +31,7 @@ ONBUILD RUN bundle install --clean
 ONBUILD COPY . /app
 ```
 
-Note that the ONBUILD steps *do not* run when this image is built. Instead, those steps run when another image uses this image as a base.
+Note that the ONBUILD steps _do not_ run when this image is built. Instead, those steps run when another image uses this image as a base.
 
 The base needs to be rebuilt periodically, but it's not super important—each individual change to the underlying gems or packages typically adds just a few seconds to the build. I typically set GitHub Actions to rebuild the base image and push once each night, rolling up all the changes from the previous day and speeding up builds for the next day. Here's an example GitHub Action to rebuild the base image each night.
 
@@ -58,8 +59,9 @@ steps:
 Then, the main Dockerfile uses that image as a base. The especial genius of this move is that Bundler and npm/yarn no longer start from nothing, but install on top of a complete set of packages from the recent past. If you add a new gem, the base image already has every gem except that one, and the only work Bundler has to do at build time is add that one gem. Here's what a `Dockerfile` might look like with this strategy.
 
 ```dockerfile
-FROM ruby:2.7.1-alpine
 FROM myorg/myrepo-base:latest AS base
+FROM ruby:alpine
+
 
 COPY --from=base /app /app
 
