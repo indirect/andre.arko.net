@@ -7,7 +7,7 @@ A mere five and a half weeks after I ordered it, my M1 MacBook Air has finally a
 
 ### Homebrew
 
-Installing Homebrew on M1 Macs is blessedly straightforward: you go to [brew.sh](#)(https://brew.sh) and copy and paste the install command into your terminal.
+Installing Homebrew on M1 Macs is blessedly straightforward: you go to [brew.sh](https://brew.sh) and copy and paste the install command into your terminal.
 
 However! On an M1 Mac, using the Homebrew installer puts your entire installation into `/opt/homebrew` instead of the previous usual `/usr/local`. You’ll want to check for that, and put it in your path ahead of `/usr/local`, if it exists. Here’s my snippet to make sure I always get the right `brew` on my path:
 
@@ -16,7 +16,7 @@ However! On an M1 Mac, using the Homebrew installer puts your entire installatio
 
 ### Strap
 
-If you use [`strap`](macos-strap.herokuapp.com) to set up new computers, keep in mind that it will skip the Homebrew installer and instead copy it directly into `/usr/local`. You'll need to use the regular Homebrew install process above to get a copy installed into `/opt/homebrew` as well.
+If you use [`strap`](https://macos-strap.herokuapp.com) to set up new computers, keep in mind that it will skip the Homebrew installer and instead copy it directly into `/usr/local`. You'll need to use the regular Homebrew install process above to get a copy installed into `/opt/homebrew` as well.
 
 ### architectures
 
