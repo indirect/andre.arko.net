@@ -19,11 +19,17 @@ If you don't use `bundle exec`, you might happen to get exactly the same version
 
 To be honest, neither one of these options strikes me as particularly good, and I wasn't ever very happy with them. Fortunately, there's another option.
 
-### How to avoid it
+### Binstubs, the other option
 
-Use per-app binstubs. Rails has already shipped with binstubs for `rails` and `rake` for several years. To use the built-in Rails binstubs to run a rake command, execute `bin/rake something`. To run a Rails command, run `bin/rails something`.
+For me, the way that makes sense to distinguish between ruby-wide commands and application commands is to use per-application executables. A binstub lives in your application's `bin/` directory, and contains just enough code to set up the application-specific environment before running the command you've requested. They don't need to be updated when gem versions change, since they delegate actual execution to the installed gems.
 
-To add your own commands, run `bundle binstubs GEM` and then check in anything added to `bin/` that you want to keep and use. For example, run `bundle binstubs rspec-core` and then commit your new `bin/rspec` file. Or `bundle binstubs puma` and then commit `bin/puma`.
+Rails has shipped with per-application commands for `rails` and `rake` for several years. That means you can run `bin/rake` or `bin/rails` to get the version for your application, and you can run `rake` or `rails` to get the latest version installed for the current Ruby.
+
+On top of `bin/rake` making it clearer that you are running this application's version of rake, it's also faster than running `bundle exec rake`. The exec version has to run Bundler first, and then switch over to running Rake, while the binstub can jump directly to setting up and running the rake command for this specific application.
+
+### No more `bundle exec`
+
+So, how do you get this for other gems besides Rake and Rails? Bundler can create an application-specific binstub for any gem command, by running `bundle binstubs GEM`. Once you've run that command, make sure to commit whichever commands Bundler added to `bin/` that you want to keep and use. For example, run `bundle binstubs rspec-core` and then commit your new `bin/rspec` file. Or `bundle binstubs puma` and then commit `bin/puma`.
 
 Once you have binstubs, it's always clear which gem you're going to get when you run a command: `rspec` will get you whatever the newest rspec gem is, while `bin/rspec` will get you the rspec gem that this particular application has in its Gemfile.lock.
 
