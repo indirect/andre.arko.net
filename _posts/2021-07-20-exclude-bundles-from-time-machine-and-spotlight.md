@@ -24,4 +24,6 @@ While researching Time Machine and how to exclude files from backups, I discover
 
 Bundler plugins have one somewhat surprising aspect: if `pwd` has a Gemfile, installing a plugin will only apply to the current application bundle. If there is no Gemfile present, installing a plugin will apply at the user level, to all application bundles. Because of that, you'll want to make sure that you `cd` into your home directory before installing this plugin.
 
-At last, we've made it through all the explanations to the very end! Run `cd` to get to your home directory, and then run `bundle plugin install bundler-mac` to get the plugin. Now anytime you run `bundle install` in the future, your bundled gems will be excluded from Time Machine backups and Spotlight search indexing. Hooray.
+Maybe, if this works well, it can eventually be part of Bundler itself! If we're incredibly lucky, maybe this can eventually be part of every package manager, and not just Cargo and Bundler.
+
+With that, we've made it through all the explanations to the very end! Run `cd` to get to your home directory, and then run `bundle plugin install bundler-mac` to get the plugin. Now anytime you run `bundle install` in the future, your bundled gems will be excluded from Time Machine backups and Spotlight search indexing. Hooray!
