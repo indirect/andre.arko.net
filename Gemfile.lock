@@ -53,11 +53,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nio4r (2.5.4)
+    nio4r (2.5.8)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.5)
-    puma (5.0.2)
+    puma (5.5.0)
       nio4r (~> 2.0)
     rack (2.2.3)
     rb-fsevent (0.10.4)
@@ -80,7 +80,7 @@ DEPENDENCIES
   jekyll (~> 4.1)
   jekyll-sitemap
   kramdown (~> 2.3)
-  puma (~> 5.0)
+  puma (~> 5.5)
   rack-jekyll!
   rouge (~> 3.24)
   webrick (~> 1.7)
