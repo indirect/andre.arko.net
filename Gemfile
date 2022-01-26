@@ -5,7 +5,7 @@ gem "kramdown", "~> 2.3"
 gem "rouge", "~> 3.27"
 
 group :development do
-  gem "puma", "~> 5.5"
+  gem "puma", "~> 5.6"
   gem "rack-jekyll", github: "adaoraul/rack-jekyll"
 end
 
