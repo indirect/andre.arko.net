@@ -64,7 +64,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (3.27.0)
+    rouge (3.28.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -82,7 +82,7 @@ DEPENDENCIES
   kramdown (~> 2.3)
   puma (~> 5.6)
   rack-jekyll!
-  rouge (~> 3.27)
+  rouge (~> 3.28)
   webrick (~> 1.7)
 
 BUNDLED WITH
