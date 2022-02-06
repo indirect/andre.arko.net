@@ -1,4 +1,4 @@
 require "bundler/setup"
 require "rack/jekyll"
 
-run Rack::Jekyll.new(auto: true)
+run Rack::Jekyll.new(auto: true, future: true)
