@@ -1,7 +1,5 @@
 destination: ./public
-
 permalink: pretty
-
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -10,6 +8,6 @@ exclude:
   - public
   - tmp
   - vendor
-
 sitemap:
   url: http://andre.arko.net
+future: false
