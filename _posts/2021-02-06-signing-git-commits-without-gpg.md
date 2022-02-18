@@ -37,22 +37,27 @@ If your setup worked, you’ll be able to use the `bpb` command to sign things v
 
 If it worked, you’ll see a PGP-formatted signature as the output. Here’s the output when I run the example above:
 
-    [GNUPG:] SIG_CREATED 
-    -----BEGIN PGP SIGNATURE-----
-    
-    iQB1BAAWCAAdFiEE7U7DQTZs3fUOkr3Au+UhJSudFWoFAmAfBiAACgkQu+UhJSudFWoDRAD+OuSWJzN2FWemZKrlQgZ4rcp6YfjxhKsqfUrnn8M06gEA/2eqNf7/J3JPvSfEfVA44xVOOfni7utAa/+sP1CdbwsG
-    =BZb0
-    -----END PGP SIGNATURE-----
+```plain
+[GNUPG:] SIG_CREATED 
+-----BEGIN PGP SIGNATURE-----
+
+iQB1BAAWCAAdFiEE7U7DQTZs3fUOkr3Au+UhJSudFWoFAmAfBiAACgkQu+UhJSudFWoDRAD+OuSWJzN2FWemZKrlQgZ4rcp6YfjxhKsqfUrnn8M06gEA/2eqNf7/J3JPvSfEfVA44xVOOfni7utAa/+sP1CdbwsG
+=BZb0
+-----END PGP SIGNATURE-----
+```
 
 **Step 4** Configure `git` to automatically sign commits using `bpb`.
 
 Now the important part, making sure `git` will use `bpb` to sign your commits.  I use three git configuration settings to produce the signature setup that I want. Here’s the relevant section of my `.gitconfig`:
-\[gpg\]
+
+```plain
+[gpg]
 program = bpb
-\[commit\]
+[commit]
 gpgSign = true
-\[tag\]
+[tag]
 forceSignAnnotated = true
+```
 
 Depending on how your `$PATH` is set up, you might need to give the full path to `bpb`. If you installed `bpb` via my Homebrew tap, that full path will be `/usr/local/bin/bpb` on Intel Macs, and `/opt/homebrew/bin/bpb` on Apple Silicon Macs.
 
@@ -60,8 +65,10 @@ Setting `gpgSign` to true means that git will automatically try to sign any comm
 
 I have one more bit of useful git config, an alias named `sign`. It will re-create all the commits in my current branch (by rebasing against the repo’s main branch), and sign every commit on the way.
 
-    [alias]
-    	sign = "!f() { git rebase \"${1:-$((git branch | egrep 'main|master|development|latest|release' || echo 'master') | sed 's|* |origin/|' | awk '{print $1}')}\" --exec 'git commit --amend --no-edit -n -S'; }; f"
+```gitconfig
+[alias]
+sign = "!f() { git rebase \"${1:-$((git branch | egrep 'main|master|development|latest|release' || echo 'master') | sed 's|* |origin/|' | awk '{print $1}')}\" --exec 'git commit --amend --no-edit -n -S'; }; f"
+```
 
 If the signatures on my commits are somehow wrong or missing, running `git sign` and force-pushing is a quick way to clean things up.
 
@@ -73,7 +80,29 @@ Copy your public key to the clipboard by running `bpb print | pbcopy`, and then 
 
 Now you have signed and verified git commits, without involving `gpg`. Congrats! 🎉
 
-**Step 6 (optional)** Move your actual secret key out of your dotfiles and into the macOS Keychain.
+**Step 6 (optional)** Use gpg how to verify your signed commits.
+
+If you want to verify your own signed commits, just to know that it's working, or to debug an issue with GitHub's signature verification, you'll need to use `gpg`. Sorry. 😞
+(Feel free to uninstall `gpg` when you're done!) There are three steps:
+
+1. Import the public key into `gpg`
+
+        bpb print | gpg --import
+
+2. Tell `gpg` to give the key ultimate trust
+
+        gpg --list-keys --fingerprint --with-colons | \
+        sed -E -n -e 's/^fpr:::::::::([0-9A-F]+):$/\1:6:/p' | \
+        gpg --import-ownertrust
+
+3. Check the signatures on your commits with `git log`
+
+        git log --date=relative --pretty='format:%C(yellow)%h%C(reset) %G? %C(blue)%>(14,trunc)%ad %C(green)%<(19)%aN%C(reset)%s%C(red)% gD% D'
+
+The `%G?` bit is the signature check, printed into the second column after the commit sha. According to the man page it will
+> show "G" for a good (valid) signature, "B" for a bad signature, "U" for a good signature with unknown validity, "X" for a good signature that has expired, "Y" for a good signature made by an expired key, "R" for a good signature made by a revoked key, "E" if the signature cannot be checked (e.g. missing key) and "N" for no signature
+
+**Step 7 (optional)** Move your actual secret key out of your dotfiles and into the macOS Keychain.
 
 If you’re like me, you might keep your dotfiles in [a public git repository](https://github.com/indirect/dotfiles). If your dotfiles are public, this new configuration file with a PGP key in it is a problem. You can’t commit the file and publish your secret key, but you want to have a single secret key that you share across whatever machines you happen to be working on.
 
@@ -98,7 +127,7 @@ Finally, edit `~/.bpb_keys.toml` to invoke the script anytime it needs access to
 
 Test `bpb` to make sure that it still works by running `echo "test" | bpb --sign`, and you're all set!
 
-**Step 7 (optional)** Copy your secret key into iCloud Keychain or 1Password
+**Step 8 (optional)** Copy your secret key into iCloud Keychain or 1Password
 
 Now that you have all of that set up, it would be really great if there was some way to automatically copy that secret onto new machines, wouldn't it?
 
