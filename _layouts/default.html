@@ -35,6 +35,7 @@
     this is the personal blog of <a rel="author" href="http://arko.net">André Arko</a><br>
   </div>
 
+  {% if jekyll.environment == "production" %}
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-306556-1']);
@@ -48,9 +49,10 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
     })();
-
   </script>
+
   <script type="text/javascript" src="https://use.typekit.com/qhr5xpd.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  {% endif %}
 </body>
 </html>
