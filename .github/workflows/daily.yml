@@ -6,4 +6,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -X POST -d {} "{{ secrets.BUILD_HOOK }}"
+      - run: curl -X POST -d {} "${{ secrets.BUILD_HOOK }}"
