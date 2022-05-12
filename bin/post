@@ -3,10 +3,10 @@ require "date"
 require "fileutils"
 require "shellwords"
 
-title = ARGV.join(" ")
-abort("Usage: bin/post TITLE") if title.empty?
+title = ARGV[0]
+abort("Usage: bin/post TITLE [DATE]") if title.empty?
 
-date = Date.today.strftime('%Y-%m-%d')
+date = (Date.parse(ARGV[1]) || Date.today).strftime('%Y-%m-%d')
 name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
 filename = File.join("_posts", "#{date}-#{name}.md")
 dirname = File.join("_postfiles", "#{date}-#{name}")
@@ -31,4 +31,3 @@ when /vim?/
 when /mate/
   system "#{ENV["EDITOR"]} -l 5 #{Shellwords.escape(filename)}"
 end
-
