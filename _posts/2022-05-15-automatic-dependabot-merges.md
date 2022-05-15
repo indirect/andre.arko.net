@@ -10,6 +10,7 @@ After several days of copying and pasting from blog posts and then troubleshooti
 
 Here's what the automerge GitHub action looks like:
 
+{% raw %}
 ```YAML
 # .github/workflows/merge-dependabot.yml
 name: "Merge updates"
@@ -41,6 +42,7 @@ jobs:
               repo: repository.repo,
             })
 ```
+{% endraw %}
 
 If your CI GitHub action is named something besides "CI", you'll need to put your job's name in the fourth line.
 
