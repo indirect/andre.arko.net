@@ -26,8 +26,8 @@ puts dirname
 system("open #{Shellwords.escape(dirname)}")
 
 case ENV["EDITOR"]
-when /vim?/
-  system "#{ENV["EDITOR"]} +5 #{Shellwords.escape(filename)}"
+when /mvim?/
+  system "mvim +5 #{Shellwords.escape(filename)}"
 when /mate/
   system "#{ENV["EDITOR"]} -l 5 #{Shellwords.escape(filename)}"
 end
