@@ -1,6 +1,7 @@
 ---
 title: "Ruby55: how to make a gem in under 60 seconds"
 layout: post
+image: thumb.jpg
 ---
 
 Tell me if you've heard this one before: a flying squirrel walks into a terminal, and shows you how to create a gem in 55 seconds.
