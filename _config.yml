@@ -5,7 +5,9 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - bin
+  - config.ru
   - public
+  - renovate.json
   - tmp
   - vendor
 sitemap:
