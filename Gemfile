@@ -13,4 +13,5 @@ end
 
 group :jekyll_plugins do
   gem "jekyll-sitemap"
+  gem "jekyll-seo-tag", "~> 2.8", github: "indirect/jekyll-seo-tag", branch: "issue/461"
 end
