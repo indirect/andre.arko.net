@@ -6,7 +6,7 @@ require "shellwords"
 title = ARGV[0]
 abort("Usage: bin/post TITLE [DATE]") if title.empty?
 
-date = (Date.parse(ARGV[1]) || Date.today).strftime('%Y-%m-%d')
+date = (ARGV[1] ? Date.parse(ARGV[1]) : Date.today).strftime('%Y-%m-%d')
 name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
 filename = File.join("_posts", "#{date}-#{name}.md")
 dirname = File.join("_postfiles", "#{date}-#{name}")
