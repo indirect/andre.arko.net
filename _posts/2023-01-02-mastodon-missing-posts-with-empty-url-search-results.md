@@ -102,6 +102,12 @@ One quick detour to the web UI and a single search later... yes, that did in fac
 
 Some instances seem to refuse requests made on behalf of `localhost:3000`. Maybe it's even in an instance blocklist, which would be pretty reasonable--it doesn't make sense to try to exchange updates with a server running on localhost.
 
-Sure would be nice if there were some way to know this had happened, though. I booted the Rails server one time before setting `LOCAL_DOMAIN`, and didn't even create an account. Everything seemed like it worked perfectly until I stumbled across an instance that refuses requests on behalf of `localhost:3000`. And then it took four hours to debug.
+Sure would be nice if there were some way to know this had happened, though. It turns out that any call to [`Account.representative`](https://github.com/mastodon/mastodon/blob/ef4d29c8791086b11f6e36aa121ff5c9b5fa0103/app/models/concerns/account_finder_concern.rb#L18) creates a new database record if there isn't one, and saves the currently set local domain into the database forever.
 
-Well, hopefully it won't take _you_ four hours to debug, since you found this post! Good luck.
+Where does the local domain come from, you ask? It is set by [the `hosts` initializer](https://github.com/mastodon/mastodon/blob/ef4d29c8791086b11f6e36aa121ff5c9b5fa0103/config/initializers/1_hosts.rb#L4), which reads from the env var `LOCAL_DOMAIN`, with a fallback to `localhost:3000` if the env var is unset.
+
+I booted the Rails server one time before setting `LOCAL_DOMAIN`, and didn't even create an account. Everything seemed like it worked perfectly until I stumbled across an instance that refuses requests on behalf of `localhost:3000`. And then it took four hours to debug.
+
+It sure would be nice if Mastodon had some way to let you know that your `Account.representative` and your `LOCAL_DOMAIN` didn't match up, to save that four hours of debugging.
+
+Well, hopefully it won't take _you_ four hours to debug, since you found this post. Good luck!
