@@ -5,6 +5,7 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - bin
+  - cache
   - config.ru
   - public
   - renovate.json
