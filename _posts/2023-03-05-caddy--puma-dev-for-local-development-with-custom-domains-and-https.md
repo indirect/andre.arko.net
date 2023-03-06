@@ -22,7 +22,7 @@ So how, I thought to myself, can I keep the custom domains and SSL certificates,
 
 But both Caddy and puma-dev expect to take over port 80 and 443 on localhost, so they can do their magic, and Caddy doesn't offer the local TLD that puma-dev does, nor does it manage processes automatically. How can I get the best of both?
 
-After a frankly embarassing amount of time searching the internet and reading Caddy forum posts, I eventually concluded that there was no single thing that did everything I wanted. THat's when I had a mildly deranged idea: what if I run puma-dev on a different port, and tell Caddy to reverse-proxy all `.test` domains to the puma-dev port? The puma-dev resolver will make sure that the domains point to Caddy running on localhost, and Caddy will make sure that the requests eventually reach puma-dev and from there reach my applications.
+After a frankly embarassing amount of time searching the internet and reading Caddy forum posts, I eventually concluded that there was no single thing that did everything I wanted. That's when I had a mildly deranged idea: what if I run puma-dev on a different port, and tell Caddy to reverse-proxy all `.test` domains to the puma-dev port? The puma-dev resolver will make sure that the domains point to Caddy running on localhost, and Caddy will make sure that the requests eventually reach puma-dev and from there reach my applications.
 
 It took an hour or two of fiddling around, but I actually got it working! The puma-dev change was to install it to the default userland ports by running `puma-dev -install -install-port 9280 -install-https-port 9283`. The Caddy change was to add this block to my `Caddyfile`:
 
