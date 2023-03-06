@@ -4,7 +4,7 @@ require "fileutils"
 require "shellwords"
 
 title = ARGV[0]
-abort("Usage: bin/post TITLE [DATE]") if title.empty?
+abort("Usage: bin/post TITLE [DATE]") if title.nil? || title.empty?
 
 date = (ARGV[1] ? Date.parse(ARGV[1]) : Date.today).strftime('%Y-%m-%d')
 name = title.gsub(/ /, '-').gsub(/[^\w-]/,'').downcase
