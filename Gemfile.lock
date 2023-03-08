@@ -69,7 +69,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.1.1)
       nio4r (~> 2.0)
-    rack (3.0.4.1)
+    rack (3.0.4.2)
     rack-livereload (0.3.17)
       rack
     rake (13.0.6)
