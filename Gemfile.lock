@@ -67,7 +67,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.1)
-    puma (6.1.1)
+    puma (6.2.0)
       nio4r (~> 2.0)
     rack (3.0.6.1)
     rack-livereload (0.3.17)
@@ -95,7 +95,7 @@ DEPENDENCIES
   jekyll-seo-tag (~> 2.8)!
   jekyll-sitemap
   kramdown (~> 2.4)
-  puma (~> 6.1)
+  puma (~> 6.2)
   rack-jekyll!
   rack-livereload (~> 0.3.17)
   rouge (~> 4.1)
