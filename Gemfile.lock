@@ -69,8 +69,8 @@ GEM
     public_suffix (5.0.1)
     puma (6.2.1)
       nio4r (~> 2.0)
-    rack (3.0.6.1)
-    rack-livereload (0.3.17)
+    rack (3.0.7)
+    rack-livereload (0.5.1)
       rack
     rake (13.0.6)
     rb-fsevent (0.11.2)
@@ -97,7 +97,7 @@ DEPENDENCIES
   kramdown (~> 2.4)
   puma (~> 6.2)
   rack-jekyll!
-  rack-livereload (~> 0.3.17)
+  rack-livereload (~> 0.5.1)
   rouge (~> 4.1)
   webrick (~> 1.8)
 
