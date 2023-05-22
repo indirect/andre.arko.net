@@ -2,6 +2,7 @@
 title: "Sharing an Apple Pro XDR or Studio Display between a Mac and PC"
 layout: post
 ---
+
 During the last episode of monitor shenanigans, I figured out how to [connect my PC’s Nvidia GeForce GPU to an Apple Display](/2022/10/24/apple-studio-display-from-a-pc-without-thunderbolt). The new challenge began when I realized that I wanted to switch back and forth between my M1 Mac and my PC by pushing a button, instead of by standing up, moving the monitor, and changing the cable plugged in to the back.
 
 After an enormous amount of research, it seemed like I would probably be able to use the [CKL-62DP-4](https://cklkvm.com/products/ckl-2-port-usb-3-0-kvm-switch-displayport-1-4-8k-30hz-for-2-computers-1-monitor-pc-screen-keyboard-mouse-peripheral-audio-sharing-selector-box-with-all-cables-62dp-4) KVM switch, which explicitly supports the DisplayPort 1.4 standard needed for 5k or 6k screens at 60hz. So I ordered the KVM, waited two weeks for it to arrive, and connected everything up using my existing cables. It even almost worked!
@@ -19,3 +20,7 @@ Unfortunately, I couldn’t figure out a way to get the fancy Belkin cable that 
 Since the switch doesn’t include a true KVM, you might need to also add a [regular USB switch like this one]([https://www.amazon.com/UGREEN-Selector-Computers-Peripheral-One-Button/dp/B01MXXQKGM]) if you want to share a single keyboard and mouse between the two machines.
 
 That was enough to meet my needs, and so I have actually settled on that as my permanent setup, with no camera and speakers from the PC, since I have a different camera and speakers that I prefer to use.
+
+**Update** you can now buy a [USB-C Combiner](https://store.level1techs.com/products/dp-repeater-hdmi-splitter-6sha9) and a [USB-C KVM](https://store.level1techs.com/products/kvm-switch-usbc-model) from [LevelOneTechs](https://level1techs.com) in the US. I haven't bought one, but it seems like exactly what I was trying for, and they explicitly state that the combiner and the KVM work together.
+
+**Update again** you can't buy it yet, but Sabrent claims they will sell a [Thunderbolt 4 KVM](https://sabrent.com/products/sb-tb4k) soon, thanks [@paul](https://tapbots.social/@paul/110403339218941998) for the link!
