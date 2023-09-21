@@ -5,7 +5,7 @@ gem "kramdown", "~> 2.4"
 gem "rouge", "~> 4.1"
 
 group :development do
-  gem "puma", "~> 6.3"
+  gem "puma", "~> 6.4"
   gem "rack-jekyll", github: "adaoraul/rack-jekyll"
   gem "rack-livereload", "~> 0.5.1"
   gem "webrick", "~> 1.8"
