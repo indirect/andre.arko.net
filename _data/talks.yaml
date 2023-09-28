@@ -3,7 +3,7 @@
   description: "Composability has rapidly accelerated the pace of software development by allowing engineers to reuse openly shared libraries and packages. But the widespread adoption of these components also makes them an enticing avenue of attack for malicious actors. In this fireside session, André Arko (Head of Open Source, Ruby Central) and Dustin Ingram (Director, Python Software Foundation) will join Emilio Escobar (CISO, Datadog) for a discussion about securing your software supply chain. They’ll share practices to verify the provenance of your dependencies, mitigate the risks of using third party components, and secure the software you share with others."
   events:
     - name: "DASH by Datadog"
-      date: 2023-08-16
+      date: 2023-08-03
       url: https://www.dashcon.io
       video_url: https://www.youtube.com/watch?app=desktop&v=OqY0vE2ZjfYa
 - title: "Engineering Teams in a Time of Corona"
