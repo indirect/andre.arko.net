@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "chaparral-pro";
+    src: url("/font/ChaparralPro-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "p22-underground";
+    src: url("/font/P22UndergroundW01-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono SSm';
+    src: url('/font/OperatorMonoSSm-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
   color: #222;
   font-family: "chaparral-pro", serif;
