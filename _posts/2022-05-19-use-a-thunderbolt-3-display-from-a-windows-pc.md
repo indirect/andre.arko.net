@@ -12,4 +12,4 @@ I turns out someone had [already written a blog post about this](https://ntk.me/
 
 In the end, this post is partly a note so I can look this up later if I need to, and partly to try to spread the word that bidirectional DisplayPort cables exist and work with 5k and 6k displays. Hopefully future me, and others with this problem, can spend fewer days searching the internet and just [buy the cable](https://amzn.to/39WrlRp) and get on with their lives.
 
-**Update** you can now just [buy a DisplayPort and USB to USB-C box](https://store.level1techs.com/products/dp-repeater-hdmi-splitter-6sha9) that not only works like a bi-directional cable, but also adds USB communication between your PC and monitor, for brightness control, speakers, and camera access.
+**Update** you can now just [buy a DisplayPort and USB to USB-C box](https://www.store.level1techs.com/products/p/dp-repeater-hdmi-splitter-6sha9-yznx5-zm58w) that not only works like a bi-directional cable, but also adds USB communication between your PC and monitor, for brightness control, speakers, and camera access.
