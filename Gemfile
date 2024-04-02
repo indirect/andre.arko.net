@@ -7,7 +7,7 @@ gem "rouge", "~> 4.2"
 group :development do
   gem "puma", "~> 6.4"
   gem "rack-jekyll", github: "adaoraul/rack-jekyll"
-  gem "rack-livereload", "~> 0.5.2"
+  gem "rack-livereload", "~> 0.6.0"
   gem "webrick", "~> 1.8"
 end
 
