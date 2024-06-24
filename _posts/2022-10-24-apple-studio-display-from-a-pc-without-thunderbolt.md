@@ -13,4 +13,6 @@ After I downloaded the latest Boot Camp image using [Bombardier](https://github.
 
 If your PC doesn’t have a Thunderbolt card, this seems like a genuinely good option to get full resolution and hardware support for Apple displays on your PC. It also seems like it's probably the only option?
 
-**Update** there is now another option, the [USB-C Combiner from LevelOneTechs](https://store.level1techs.com/products/dp-repeater-hdmi-splitter-6sha9). You can just buy a box that does the thing, shipped from the US, for $84. No need to wait a month for shipping from AliExpress!
+**Update** there is now another option, the [USB-C Combiner from LevelOneTechs](https://www.store.level1techs.com/products/p/dp-repeater-hdmi-splitter-6sha9-yznx5-zm58w). You can just buy a box that does the thing, shipped from the US, for $84. No need to wait a month for shipping from AliExpress!
+
+**Update again** eventually, I bought a [Sabrent Thunderbolt 4 KVM](https://sabrent.com/products/sb-tb4k) and built a new PC with a GTX 4080 and ASUS ROG Strix Z790-i, which has internal GPU passthrough for the Thunderbolt ports. Switching my Thunderbolt display between Mac and PC is now reliable and consistent. Hooray.
