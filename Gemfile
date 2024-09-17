@@ -15,4 +15,4 @@ end
 gem "jekyll", "~> 4.3"
 gem "kramdown", "~> 2.4"
 gem "rake", "~> 13.1"
-gem "rouge", "~> 4.3"
+gem "rouge", "~> 4.4"
