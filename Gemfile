@@ -12,7 +12,15 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.8", github: "indirect/jekyll-seo-tag", branch: "issue/461"
 end
 
+# gemified stdlibs
+gem "base64", "~> 0.2.0"
+gem "bigdecimal", "~> 3.1"
+gem "csv", "~> 3.3"
+gem "logger", "~> 1.6"
+gem "ostruct", "~> 0.6.0"
+gem "rake", "~> 13.1"
+
+# site gems
 gem "jekyll", "~> 4.3"
 gem "kramdown", "~> 2.4"
-gem "rake", "~> 13.1"
 gem "rouge", "~> 4.4"
