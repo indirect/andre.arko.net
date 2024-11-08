@@ -70,7 +70,7 @@ GEM
     logger (1.6.1)
     mercenary (0.4.0)
     nio4r (2.7.3)
-    ostruct (0.6.0)
+    ostruct (0.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -106,7 +106,7 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown (~> 2.4)
   logger (~> 1.6)
-  ostruct (~> 0.6.0)
+  ostruct (~> 0.6.1)
   puma (~> 6.4)
   rack-jekyll!
   rack-livereload (~> 0.6.1)
