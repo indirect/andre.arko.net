@@ -22,5 +22,5 @@ gem "rake", "~> 13.1"
 
 # site gems
 gem "jekyll", "~> 4.3"
-gem "kramdown", "~> 2.4"
+gem "kramdown", "~> 2.5"
 gem "rouge", "~> 4.5"
