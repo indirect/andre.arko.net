@@ -59,8 +59,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.4.0)
-      rexml
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.4)
@@ -104,7 +104,7 @@ DEPENDENCIES
   jekyll (~> 4.3)
   jekyll-seo-tag (~> 2.8)!
   jekyll-sitemap
-  kramdown (~> 2.4)
+  kramdown (~> 2.5)
   logger (~> 1.6)
   ostruct (~> 0.6.1)
   puma (~> 6.4)
