@@ -241,3 +241,30 @@ ul.talk-events {
     background-color: #262626;
   }
 }
+
+@media only screen and (max-device-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  #header {
+    margin: 0;
+  }
+
+  #content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .posts .post-name {
+    float: left;
+    margin-left: 4em;
+    padding-bottom: 0.5em;
+  }
+
+  #footer {
+    margin: 0;
+    width: 100%;
+  }
+}
