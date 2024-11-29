@@ -92,7 +92,7 @@ h2.year {
   position: absolute;
   left: 0;
   font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
-  font-size: 12pt;
+  font-size: 0.75rem;
 }
 
 .posts .post-name {
@@ -151,7 +151,7 @@ pre code {
 }
 
 .gist {
-  font-size: 12px;
+  font-size: 80%;
 }
 
 small, .aside {
@@ -177,7 +177,7 @@ small, .aside {
 
 .talk-info {
   padding-left: 40px;
-  font-size: 12pt;
+  font-size: 0.75rem;
   line-height: 1.25em;
 }
 
@@ -205,7 +205,7 @@ ul.talk-events {
   clear: left;
   margin-right: 1em;
   font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
-  font-size: 12pt;
+  font-size: 0.75rem;
   margin-top: -1px;
 }
 
@@ -217,7 +217,7 @@ ul.talk-events {
   display: block-inline;
   margin-left: 1.5em;
   margin-right: 0;
-  font-size: 10pt;
+  font-size: 0.625rem;
 }
 
 .group:after {
@@ -244,6 +244,7 @@ ul.talk-events {
 
 @media only screen and (max-device-width: 768px) {
   body {
+    font-size: 16pt;
     margin: 0;
     padding: 0 10px;
   }
