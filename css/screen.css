@@ -66,7 +66,7 @@ h3.subtitle {
 
 #footer {
   margin: 6em 4em 3em 4em;
-  font-size: 70%;
+  font-size: 0.7rem;
   text-align: right;
 }
 
@@ -92,7 +92,7 @@ h2.year {
   position: absolute;
   left: 0;
   font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .posts .post-name {
@@ -129,7 +129,7 @@ h2.year {
 
 code {
   background-color: #F2F2F2;
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 
 pre {
@@ -151,11 +151,11 @@ pre code {
 }
 
 .gist {
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 
 small, .aside {
-  font-size: 70%;
+  font-size: 0.7rem;
   display: inline-block;
   line-height: 1.4;
 }
@@ -247,6 +247,8 @@ ul.talk-events {
     font-size: 16pt;
     margin: 0;
     padding: 0 10px;
+    min-width: auto;
+    max-width: auto;
   }
 
   #header {
