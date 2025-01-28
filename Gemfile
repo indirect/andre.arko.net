@@ -21,6 +21,6 @@ gem "ostruct", "~> 0.6.1"
 gem "rake", "~> 13.1"
 
 # site gems
-gem "jekyll", "~> 4.3"
+gem "jekyll", "~> 4.4"
 gem "kramdown", "~> 2.5"
 gem "rouge", "~> 4.5"
