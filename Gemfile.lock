@@ -37,7 +37,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    jekyll (4.4.0)
+    jekyll (4.4.1)
       addressable (~> 2.4)
       base64 (~> 0.2)
       colorator (~> 1.0)
@@ -105,13 +105,13 @@ DEPENDENCIES
   base64 (~> 0.2.0)
   bigdecimal (~> 3.1)
   csv (~> 3.3)
-  jekyll (~> 4.4)
+  jekyll (~> 4.3)
   jekyll-seo-tag (~> 2.8)!
   jekyll-sitemap
   kramdown (~> 2.5)
   logger (~> 1.6)
   ostruct (~> 0.6.1)
-  puma (~> 6.6)
+  puma (~> 6.5)
   rack-jekyll!
   rack-livereload (~> 0.6.1)
   rake (~> 13.1)
