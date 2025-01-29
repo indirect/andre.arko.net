@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :development do
-  gem "puma", "~> 6.5"
+  gem "puma", "~> 6.6"
   gem "rack-jekyll", github: "adaoraul/rack-jekyll"
   gem "rack-livereload", "~> 0.6.1"
   gem "webrick", "~> 1.9"
