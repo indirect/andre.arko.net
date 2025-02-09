@@ -1,10 +1,9 @@
-baseURL = 'https://andre.arko.net/'
-title = 'André.Arko.net'
-languageCode = 'en-us'
+theme = "andre-arko-net"
 
 [permalinks]
   [permalinks.page]
     posts = '/:year/:month/:day/:slug/'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
