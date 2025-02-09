@@ -1,3 +1,6 @@
+baseURL = 'https://andre.arko.net/'
+title = 'André.Arko.net'
+languageCode = 'en-us'
 theme = "andre-arko-net"
 
 [permalinks]

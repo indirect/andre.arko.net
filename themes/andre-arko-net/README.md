@@ -1,7 +1,3 @@
-# Theme Name
+# André.Arko.net
 
-## Features
-
-## Installation
-
-## Configuration
+A hugo theme for my blog at [andre.arko.net](https://andre.arko.net).
