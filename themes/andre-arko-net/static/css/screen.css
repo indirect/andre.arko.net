@@ -57,6 +57,14 @@ h3.subtitle {
 
 #header {
   margin: 0 1em 2em 1em;
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+}
+
+#header nav {
+  display: flex;
+  gap: 1em;
 }
 
 #content {
