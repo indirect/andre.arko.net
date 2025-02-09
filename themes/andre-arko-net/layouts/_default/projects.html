@@ -1,0 +1,22 @@
+{{ define "title" }}Personal Projects{{ end }}
+{{ define "main" }}
+
+<dl class="projects">
+  {{ range .Site.Data.projects }}
+    <h4 class="project-title">
+      {{ if .url }}
+      <a class="project-link" href="{{ .url }}">
+        {{ .title }}
+      </a>
+      {{ else }}
+        {{ .title }}
+      {{ end }}
+    </h4>
+    {{ if .description }}
+      <div class="project-info group">
+        <p class="project-description">{{ .description | safeHTML }}</p>
+      </div>
+    {{ end }}
+  {{ end }}
+</dl>
+{{ end }}
