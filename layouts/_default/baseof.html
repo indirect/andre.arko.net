@@ -11,11 +11,8 @@
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen">
   <link rel="stylesheet" href="/js/facebox/facebox.css" type="text/css" media="screen">
 
-  <meta property="og:title" content="André.Arko.net">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:title" content="André.Arko.net">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 </head>
 <body>
   <div id="header">
