@@ -73,7 +73,7 @@ h3.subtitle {
 
 #footer {
   margin: 6em 4em 3em 4em;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: right;
 }
 
@@ -163,7 +163,7 @@ pre code {
 }
 
 small, .aside {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   display: inline-block;
   line-height: 1.4;
 }
@@ -185,7 +185,7 @@ small, .aside {
 
 .talk-info {
   padding-left: 40px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.25em;
 }
 
@@ -206,6 +206,7 @@ ul.talk-events {
 
 .talk-event {
   clear: both;
+  font-size: 0.9rem;
 }
 
 .talk-event-date {
@@ -213,19 +214,19 @@ ul.talk-events {
   clear: left;
   margin-right: 1em;
   font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
-  font-size: 0.75rem;
-  margin-top: -1px;
+  line-height: 1rem;
 }
 
 .talk-event-name {
   float: left;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .talk-event-slides, .talk-event-video {
   display: block-inline;
   margin-left: 1.5em;
   margin-right: 0;
-  font-size: 0.625rem;
 }
 
 .group:after {
