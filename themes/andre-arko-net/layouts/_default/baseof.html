@@ -15,17 +15,22 @@
   {{ template "_internal/twitter_cards.html" . }}
 </head>
 <body>
-  <div id="header">
+  <header id="header">
     <h1><a href="http://andre.arko.net">André.Arko.net</a></h1>
-  </div>
+    <nav>
+      <a href="https://arko.net">About</a>
+      <a href="">Talks</a>
+      <a href="">Projects</a>
+    </nav>
+  </header>
 
-  <div id="content">
+  <main id="content">
     {{ block "main" . }}{{ end }}
-  </div>
+  </main>
 
-  <div id="footer">
+  <footer id="footer">
     this is the personal blog of <a rel="author" href="http://arko.net">André Arko</a><br>
-  </div>
+  </footer>
 
   {{ if hugo.IsProduction }}
   <script type="text/javascript" src="https://use.typekit.com/qhr5xpd.js"></script>
