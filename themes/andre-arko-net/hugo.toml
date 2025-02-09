@@ -1,7 +1,3 @@
-baseURL = 'https://andre.arko.net/'
-title = 'André.Arko.net'
-languageCode = 'en-us'
-
 [module]
   [module.hugoVersion]
     extended = false
