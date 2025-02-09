@@ -1,4 +1,7 @@
 ---
+- title: "SunChaser"
+  url: "https://sunchaser.io"
+  description: "The missing Slack integration for PagerDuty. Track who's on call, request shift coverage, and set up automatically updating named groups."
 - title: "Feed Your Email"
   url: "https://feedyour.email"
   description: "Send newsletters to your feed reader. Generate an email address you can use for any newsletter, and a corresponding feed you can use to read those emails."
