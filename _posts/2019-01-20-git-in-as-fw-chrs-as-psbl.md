@@ -98,7 +98,7 @@ There are also a lot of shortcuts for more... esoteric... usecases. Let's look a
 
 `git ls` combines a one-line git log format with verification of git commit signatures. The output shows sha, relative time, author, and commit subject, as well as a color-coded letter indicating whether a signature is valid, invalid, unknown, or missing.
 
-![example of git ls]({% postfile git-ls.jpg %})
+![example of git ls](https://andre.arko.net/2019/01/20/git-in-as-fw-chrs-as-psbl/git-ls.jpg)
 
 ### Other bash aliases
 
