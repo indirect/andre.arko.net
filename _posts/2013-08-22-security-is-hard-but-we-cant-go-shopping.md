@@ -3,7 +3,7 @@ date: "2013-08-22T00:00:00Z"
 title: Security is hard, but we can't go shopping
 ---
 
-![hard](https://cl.ly/image/2J3k2N3n3y0N/security_is_hard.jpg)
+![hard](https://web.archive.org/web/20141122093639im_/http://files.arko.net/image/2J3k2N3n3y0N/security_is_hard.jpg)
 
 <small>This post was also given as a conference talk, originally at [Ruby on Ales 2013][roa] ([slides][roas], [video][roav]), [RailsConf 2013][rc] ([slides][rcs], [video][rcv]) and [RubyKaigi 2013][rk] ([slides][rks], [video][rkv]), then updated for [Madison+Ruby 2014][mr] ([slides][mrs]) and [RedDot RubyConf 2015][rd] ([slides][rds]).</small>
 
