@@ -1,15 +1,8 @@
 {{ define "main" }}
+  <h2>{{ .Title }}</h2>
   {{ .Content }}
 
-  {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
-    <h2 class="year">{{ .Key }}</h2>
-    <ul class="posts">
-      {{ range .Pages }}
-        <li>
-          <span class="post-date">{{ .PublishDate | time.Format "Jan 01" }}</span>
-          <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
-        </li>
-      {{ end }}
-    </ul>
+  {{ range .Pages }}
+    <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
   {{ end }}
 {{ end }}
