@@ -1,6 +1,6 @@
 ---
-title: "Deathmatch: Bundler vs. Rubygems.org"
-layout: post
+date: "2013-05-12T00:00:00Z"
+title: 'Deathmatch: Bundler vs. Rubygems.org'
 ---
 
 <p class="aside">This talk was given at <a href="http://2013.scottishrubyconference.com">Scottish Ruby Conference 2013</a>, and the slides are <a href="https://speakerdeck.com/indirect/deathmatch-bundler-vs-rubygems-dot-org">available on SpeakerDeck</a>, as well as <a href="{% postfile Deathmatch-Bundler-vs-Rubygems.pdf %}">available for download as a PDF</a>. This post doesn't correlate exactly to the slides, but it has the same content.</p>

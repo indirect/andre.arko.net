@@ -1,6 +1,6 @@
 ---
+date: "2013-03-29T00:00:00Z"
 title: Rubygems, OpenSSL, and you
-layout: post
 ---
 The last month or two has been a pretty tumultuous time for Rubygems, the Rubygems.org servers, and Bundler itself. This post is my attempt to summarize the history of what happened and make some concrete suggestions for rubyists that care about using Rubygems or Bundler (which is probably most of them). The practical upshot is that you should upgrade your installation of Rubygems to version 2.0.3 or later, and your Bundler gem to at least 1.3.4. If you're interested to hear why, keep reading.
 

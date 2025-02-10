@@ -1,6 +1,6 @@
 ---
-title: "Robin Hood Hashing"
-layout: post
+date: "2017-08-24T00:00:00Z"
+title: Robin Hood Hashing
 ---
 <small>This post was originally given as a presentation at [Papers We Love Too](https://www.meetup.com/papers-we-love-too/), and the [slides](https://speakerdeck.com/indirect/robin-hood-hashing-papers-we-love-sf-august-2017) are also available.</small>
 

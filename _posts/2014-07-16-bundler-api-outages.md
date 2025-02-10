@@ -1,6 +1,6 @@
 ---
-title: "Bundler API Outages"
-layout: post
+date: "2014-07-16T00:00:00Z"
+title: Bundler API Outages
 ---
 <small>This was also <a href="http://bundler.io/blog/2014/07/16/bundler-api-outages.html">crossposted on the Bundler blog</a>.</small>
 

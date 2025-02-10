@@ -1,6 +1,6 @@
 ---
+date: "2010-07-10T00:00:00Z"
 title: Moving along
-layout: post
 ---
 I'm a little bit surprised to be saying this, but the week that just ended was my last week at [Engine Yard](http://engineyard.com). I've had a great time working on [Bundler](http://gembundler.com) and EY's [Cloud](http://www.engineyard.com/products/appcloud), and I am sure EY will continue to do great things.
 

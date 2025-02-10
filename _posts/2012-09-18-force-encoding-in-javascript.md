@@ -1,6 +1,6 @@
 ---
+date: "2012-09-18T00:00:00Z"
 title: Force encoding in JavaScript
-layout: post
 ---
 So first, I should probably set the scene: in a special-purpose browser, automated and driven by JavaScript, there was a string that made no sense. Anytime it should have contained an apostrophe, it produced invalid JSON. Why would it do that, you ask? Well, after far too long digging into the way that smart quotes are represented in Unicode, I finally figured it out. A single left apostrophe, also known as \u2019, takes up three bytes. The third byte happens to be \x19, the obscure ^Y control character. Control characters aren't allowed in JSON strings, and so things exploded.
 

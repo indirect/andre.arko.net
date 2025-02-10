@@ -1,6 +1,6 @@
 ---
-title: "symbol '_ffi_prep_closure' not found"
-layout: post
+date: "2020-06-29T00:00:00Z"
+title: symbol '_ffi_prep_closure' not found
 ---
 I got a new computer today! It was very exciting. Unfortunately, when I tried to install [homebrew](https://brew.sh), I discovered that the copy of Ruby included in macOS had a small problem that manifested in the form of this somewhat inscrutable error:
 

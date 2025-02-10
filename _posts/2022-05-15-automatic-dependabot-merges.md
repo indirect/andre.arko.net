@@ -1,6 +1,6 @@
 ---
-title: "Automatic Dependabot merges"
-layout: post
+date: "2022-05-15T00:00:00Z"
+title: Automatic Dependabot merges
 ---
 I've been using [Dependabot](https://github.com/dependabot) for a long time. Back before GitHub bought it and took away the web dashboard, there was an amazing, glorious, wonderful feature: you could check a checkbox, and Dependabot would merge the open PR as soon as your tests passed.
 

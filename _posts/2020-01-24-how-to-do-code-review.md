@@ -1,6 +1,6 @@
 ---
-title: "🩺 How to do Code Review"
-layout: post
+date: "2020-01-24T00:00:00Z"
+title: "\U0001FA7A How to do Code Review"
 ---
 
 <div class="callout">

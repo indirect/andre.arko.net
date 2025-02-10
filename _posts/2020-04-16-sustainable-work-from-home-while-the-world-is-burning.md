@@ -1,6 +1,6 @@
 ---
-title: "Sustainable work from home while the world is burning"
-layout: post
+date: "2020-04-16T00:00:00Z"
+title: Sustainable work from home while the world is burning
 ---
 
 <small>This post was originally given as a talk for <a href="https://www.cloudcity.io">Cloud City</a>. The [slides](https://speakerdeck.com/indirect/engineering-teams-in-a-time-of-corona) and [video](https://www.youtube.com/watch?v=L7UUNbySwkU) are also available.</small>

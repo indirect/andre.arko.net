@@ -1,6 +1,6 @@
 ---
+date: "2013-12-07T00:00:00Z"
 title: The rumors of Bundler's death have been greatly exaggerated
-layout: post
 ---
 So this week there was some excitement on [Github][gh], [Hacker News][hn], and [Ruby Weekly][rw] about the news that Bundler will (eventually) be merged into Rubygems. Before that comment, which was a side point on a different topic, the idea of merging the two projects had not been announced or explained.  As lead of the Bundler project, I'd like to explain the merger plan, such as it is, and the reasoning behind it.
 

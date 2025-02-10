@@ -1,6 +1,6 @@
 ---
+date: "2011-11-12T00:00:00Z"
 title: Use NewRelic RPM developer mode with Pow
-layout: post
 ---
 ### tl;dr
 

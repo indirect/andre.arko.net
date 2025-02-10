@@ -1,6 +1,6 @@
 ---
+date: "2013-08-22T00:00:00Z"
 title: Security is hard, but we can't go shopping
-layout: post
 ---
 
 ![hard](https://cl.ly/image/2J3k2N3n3y0N/security_is_hard.jpg)

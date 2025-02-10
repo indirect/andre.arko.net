@@ -1,6 +1,6 @@
 ---
+date: "2009-12-21T00:00:00Z"
 title: Starting a Rails 3 app from scratch
-layout: post
 ---
 
 

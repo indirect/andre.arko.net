@@ -1,6 +1,6 @@
 ---
+date: "2013-03-23T00:00:00Z"
 title: Adding arrays in Ruby quickly
-layout: post
 ---
 So... this is quite possibly so esoteric that it's not really going to be useful, but I was curious, even if it doesn't really matter in the end, thanks to modern processor speeds. The other day as I was working on my [silly chat bot](http://github.com/indirect/daneel), I discovered that I had an array in a read-only attribute, and another array that I wanted to merge into the first array. Without a setter, it's not possible to something like `a = a + b`. As I was thinking about that, I realized that all of the `Array` addition operators create a third array to contain the result, and I didn't really want that either. So I looked up all of the `Array` operations that just add an element to the end of an existing array. The two mehtods I found are `#push` and `#<<`. I (maybe) could have also tested `a.insert(item, a.size)`, but I was trying to compare things of roughly equal complexity.
 

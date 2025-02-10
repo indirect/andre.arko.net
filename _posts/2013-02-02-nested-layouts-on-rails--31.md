@@ -1,6 +1,6 @@
 ---
+date: "2013-02-02T00:00:00Z"
 title: Nested layouts on Rails ~> 3.1
-layout: post
 ---
 
 ### tl;dr

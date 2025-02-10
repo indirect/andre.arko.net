@@ -1,6 +1,6 @@
 ---
-title: "Migrating off CloudApp (to Dropbox + Dropshare)"
-layout: post
+date: "2020-05-19T00:00:00Z"
+title: Migrating off CloudApp (to Dropbox + Dropshare)
 ---
 I've been using [CloudApp](https://getcloudapp.com/) since 2010. It was a pioneer in a service category that's incredibly busy today, full of companies like Droplr, Jumpshare, Dropshare, and honestly way more than I could possibly name. The concept is pretty simple: you get a keyboard shortcut and a menu bar icon that let you upload a screenshot or file, and your clipboard fills with a URL you can paste.
 

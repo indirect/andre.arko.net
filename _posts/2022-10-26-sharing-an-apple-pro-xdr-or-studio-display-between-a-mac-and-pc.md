@@ -1,6 +1,6 @@
 ---
-title: "Sharing an Apple Pro XDR or Studio Display between a Mac and PC"
-layout: post
+date: "2022-10-26T00:00:00Z"
+title: Sharing an Apple Pro XDR or Studio Display between a Mac and PC
 ---
 
 During the last episode of monitor shenanigans, I figured out how to [connect my PC’s Nvidia GeForce GPU to an Apple Display](/2022/10/24/apple-studio-display-from-a-pc-without-thunderbolt). The new challenge began when I realized that I wanted to switch back and forth between my M1 Mac and my PC by pushing a button, instead of by standing up, moving the monitor, and changing the cable plugged in to the back.

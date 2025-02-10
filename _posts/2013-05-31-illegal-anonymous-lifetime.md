@@ -1,6 +1,6 @@
 ---
+date: "2013-05-31T00:00:00Z"
 title: Illegal anonymous lifetime
-layout: post
 ---
 So I’ve been playing with [Rust](http://rust-lang.org) lately. It’s pretty fun, in a “let’s learn about four types of pointers” kind of way.
 

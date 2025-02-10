@@ -1,6 +1,6 @@
 ---
+date: "2012-01-24T00:00:00Z"
 title: Fix newrelic.yml symlink errors on Engine Yard
-layout: post
 ---
 Perhaps you, like me, occasionally deploy Ruby applications to [Engine Yard Cloud][ey]. And perhaps you, also like me, use the lovely [NewRelic][nr] analytics package provided to all Engine Yard customers. If you do, you have probably noticed that the [`newrelic_rpm` gem][rpm] complains in development if you do not have a `config/newrelic.yml` file.
 

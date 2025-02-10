@@ -1,6 +1,6 @@
 ---
+date: "2011-05-27T00:00:00Z"
 title: undefined method `merge' for nil:NilClass
-layout: post
 ---
 
 ### tl;dr

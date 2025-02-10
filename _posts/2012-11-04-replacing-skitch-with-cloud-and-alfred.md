@@ -1,6 +1,6 @@
 ---
+date: "2012-11-04T00:00:00Z"
 title: Replacing Skitch with Cloud and Alfred
-layout: post
 ---
 Recently, I was sad to discover that Evernote's purchase of Skitch has finally resulted in the dreaded "discontinuation of service" for the truly great Skitch.com service. While searching for a replacement, I briefly contemplated downgrading Skitch and setting up my own server for images. After a little more thought, though, I remembered how terrible the uptime was on the last personal service I ran, and decided to go with something hosted instead. [Cloud](http://cl.ly) is a neat service that provides super easy upload of text, audio, files, and even images. The screenshot integration, though, is what got me to take a serious look.
 

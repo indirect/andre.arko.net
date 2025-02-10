@@ -1,6 +1,6 @@
 ---
-title: "Rails from the ground up: HTTP"
-layout: post
+date: "2014-07-14T00:00:00Z"
+title: 'Rails from the ground up: HTTP'
 ---
 Welcome to Rails from the ground up! In this series of posts, I'm going to talk about the many pieces that underlie every Ruby on Rails application. By the end, anyone who has read every post will hopefully understand both how each layer of the Rails stack works, why it's there, and how to implement it themselves.
 

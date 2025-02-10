@@ -1,6 +1,6 @@
 ---
+date: "2011-07-02T00:00:00Z"
 title: Sending Delayed Job Exceptions to Hoptoad
-layout: post
 ---
 I've been using [delayed_job][1] to handle background tasks recently. Unfortunately, my background jobs have sometimes had bugs (either in my code or in the code of the web service I usually talk to). While DJ records the last exception in the database between retries, the job itself is deleted completely on failure. Since I don't want my jobs table to fill up with every job I've ever had that failed, I decided to send exceptions that occur during DJ jobs to Hoptoad. The error is saved for posterity at Hoptoad, I get an email notifying me there was a problem, and anyone on the team can investigate the issue. Wins all around. How do you do this black magic, you ask? It's actually not too bad in the end. Create an initializer in your Rails app (I creatively name mine `delayed_job_hoptoad.rb`), and then add this code:
 

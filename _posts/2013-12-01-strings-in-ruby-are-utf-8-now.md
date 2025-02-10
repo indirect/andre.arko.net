@@ -1,6 +1,6 @@
 ---
+date: "2013-12-01T00:00:00Z"
 title: Strings in Ruby are UTF-8 now… right?
-layout: post
 ---
 Ruby strings! In Ruby 1.8, Strings were (basically) just arrays of bytes with some extra methods, but Ruby 1.9 added explicit encoding support. Now every string knows how it is encoded! This fixes all of our issues with non-ASCII characters, right? Maybe? Hopefully? Possibly?
 

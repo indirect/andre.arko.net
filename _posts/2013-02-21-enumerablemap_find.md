@@ -1,6 +1,6 @@
 ---
+date: "2013-02-21T00:00:00Z"
 title: Enumerable#map_find
-layout: post
 ---
 It doesn’t happen very often, but the other day I wanted a method on `Enumerable` that doesn’t exist. I had a list of regular expressions in `patterns`, and I was trying to find the expression that matched a given `string`. Rather than just return the pattern, though, I wanted to get the `MatchData` object returned by running `#match`. That’s not possible using `#find`, since it just returns the object itself, rather than the result of the code that ran inside the block passed to `#find`. The code looked like this:
 

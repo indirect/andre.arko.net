@@ -1,6 +1,6 @@
 ---
+date: "2012-05-29T00:00:00Z"
 title: Track remote git branches with ease
-layout: post
 ---
 ## tl;dr
 

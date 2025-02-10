@@ -1,6 +1,6 @@
 ---
-title: "Bundler Tips and Tricks"
-layout: post
+date: "2018-06-03T00:00:00Z"
+title: Bundler Tips and Tricks
 ---
 <small>This post was originally [a guest episode of Ruby Tapas](https://www.rubytapas.com/2018/03/27/bundler-tips-and-tricks-andre-arko/), a series of regular, short screencasts about Ruby topics. If that sounds good to you, [try out Ruby Tapas](https://www.rubytapas.com).</small>
 

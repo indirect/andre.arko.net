@@ -1,6 +1,6 @@
 ---
+date: "2010-08-04T00:00:00Z"
 title: Bundler webinar slides
-layout: post
 ---
 These are the slides for the [Bundler webinar](http://www.engineyard.com/video/13917022) I gave at [Engine Yard](http://engineyard.com), right before the release of Bundler 1.0rc3.
 

@@ -1,7 +1,6 @@
 ---
+date: "2020-08-23T00:00:00Z"
 title: Rails 6 containers, but really quickly
-layout: post
-
 ---
 Running `docker build` always feels too slow. Most of the time, new builds still have to download and install something that every previous build also had to download and install—whether apt, yum, npm, or gem, there a lot of options for something that has to be done slowly, over and over.
 

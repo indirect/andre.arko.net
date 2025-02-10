@@ -1,6 +1,6 @@
 ---
+date: "2013-06-12T00:00:00Z"
 title: Cloud City Citizen
-layout: post
 ---
 ![Cloud City Logo]({% postfile ccd.png %})
 

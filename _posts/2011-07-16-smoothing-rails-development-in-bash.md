@@ -1,6 +1,6 @@
 ---
+date: "2011-07-16T00:00:00Z"
 title: Smoothing Rails development in Bash
-layout: post
 ---
 This post covers a few ways that I've automated the repetitive tasks that are required while building and deploying Rails apps.
 

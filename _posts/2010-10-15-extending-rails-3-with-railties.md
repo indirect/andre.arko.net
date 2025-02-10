@@ -1,6 +1,6 @@
 ---
+date: "2010-10-15T00:00:00Z"
 title: Extending Rails 3 with Railties
-layout: post
 ---
 
 Rails 3.0 is finally released, and with it comes a fantastic new way to extend Rails: Railties. Railties are the basis of the core components of Rails 3, and are the result of months of careful refactoring by Carlhuda. It is easier to extend and expand Rails than it has ever been before, without an `alias_method_chain` in sight.
@@ -15,12 +15,12 @@ Unfortunately, while the system for extending and expanding Rails has been compl
 
 Creating a Railtie is easy. Just create a class that inherits from [`::Rails::Railtie`][railtie]. Every subclass of Railtie is used to initialize your Rails application. Since ActionController, ActionView, and the other Rails components are also Railties, your plugin can function as a first-class member of the Rails application. It will have access to the same methods and context that are used by the official Rails components. Here is a sample minimal Railtie that will be loaded when your Rails application boots.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 require 'rails'
 class MyCoolRailtie < Rails::Railtie
   # railtie code goes here
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 The [Railtie documentation][railtie] lists all of the methods that are available inside each Railtie class, but doesn't really go into depth about what you can use Railties to do. Here are some example Railties explaining how to use the Railtie methods (in alphabetical order) to customize and extend Rails.
 
@@ -30,21 +30,21 @@ The [Railtie documentation][railtie] lists all of the methods that are available
 
 The `console` method allows your Railtie to add code that will be run when a Rails console is started.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 console do
   Foo.console_mode!
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 ### `generators`
 
 Rails will require any generators defined in `lib/generators/*.rb` automatically. If you ship [Rails::Generators][generators] with your Railtie in some other directory, you can require them using this method.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 generators do
   require 'path/to/generator'
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 [generators]: http://api.rubyonrails.org/classes/Rails/Generators.html
 
@@ -52,17 +52,17 @@ end
 
 If you ship rake tasks for apps with your Railtie, load them using this method.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 rake_tasks do
   require 'path/to/railtie.tasks'
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 ### `initializer`
 
 The `initializer` method provides Railties with a lot of power. They create initializers that will be run during the Rails boot process, like the files put into `config/initializers` in the app directory. The `initializer` method takes two options, `:after` or `:before`, if there are specific initializers that you want to run before or after yours.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 initializer "my_cool_railtie.boot_foo" do
   Foo.boot(Bar)
 end
@@ -71,7 +71,7 @@ initializer "my_cool_railtie.boot_bar",
   :before => "my_cool_railtie.boot_foo" do
     Bar.boot!
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 
 ## Rails configuration hooks
@@ -88,9 +88,9 @@ This method takes a block that will be run after Rails is is completely initiali
 
 This method exposes the [MiddlewareStack][middleware] that will be used to handle requests to your Rails application. You can use any of the methods defined on MiddlewareStack, including `use` and `swap`, to manage the Rails application's Rack middlewares. For example, if your Railtie included the Rack middleware `MyRailtie::Middleware`, you could add it to the Rails application middleware stack like this.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 config.middlewares.use MyRailtie::Middleware
-{% endhighlight %}
+{{< / highlight >}}
 
 [middleware]: http://api.rubyonrails.org/classes/ActionDispatch/MiddlewareStack.html
 
@@ -102,11 +102,11 @@ Code passed in a block to this method will be run after immediately before the a
 
 The block passed to `before_eager_load` will be run before Rails requires the application’s classes. Eager load is never run in development mode. However, if you need to run code after Rails loads but before any application code loads, this is the place to put it.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 config.before_eager_load do
   SomeClass.set_important_value = "RoboCop"
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 ### `before_initialize`
 
@@ -116,19 +116,19 @@ This method takes a block to be run before the Rails initialization process happ
 
 This object holds the configuration for the generators that are invoked when you run the `rails generate` command.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 config.generators do |g|
   g.orm             :datamapper, :migration => true
   g.template_engine :haml
   g.test_framework  :rspec
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 You can also use it to disable colorized logging in the console.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 config.generators.colorize_logging = false
-{% endhighlight %}
+{{< / highlight >}}
 
 ### `to_prepare`
 
@@ -143,7 +143,7 @@ At this point, you're probably thinking "why would I actually want to do any of 
 
 The rspec-rails plugin ships with a set of rake tasks and generators that integrate the [RSpec][rspec] gem with Rails.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 module RSpec
   module Rails
     class Railtie < ::Rails::Railtie
@@ -156,7 +156,7 @@ module RSpec
     end
   end
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 This Railtie just does three things: First, it sets the generators that will be used for integration tests via the `integration_tool` method. Next, it sets the generators that will be used to generate model, controller, and view tests (via the `test_framework` method). Last, it loads the RSpec rake tasks to run RSpec tests instead of test-unit tests.
 
@@ -167,7 +167,7 @@ This Railtie just does three things: First, it sets the generators that will be 
 
 The jquery-rails plugin ships with a generator that downloads and installs jQuery, the jquery-ujs script that enables Rails helpers with jQuery, and optionally installs jQueryUI as well.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 module Jquery
   module Rails
     class Railtie < ::Rails::Railtie
@@ -184,7 +184,7 @@ module Jquery
     end
   end
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 This Railtie only sets one setting, but checks for the jQueryUI library to determine the value to set. By using the `config.before_configuration` hook, it runs right before the `application.rb` config block runs. That means it has access to the Rails.root, which is needed to check for jQueryUI, and it means that users can still override `javascript_expansion[:defaults]` in their `application.rb` if they want something different than the new defaults that the plugin provides.
 
@@ -194,7 +194,7 @@ This Railtie only sets one setting, but checks for the jQueryUI library to deter
 
 The haml-rails gem provides generators for views written in Haml instead of the default generated views that are written in ERB.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 module Haml
   module Rails
     class Railtie < ::Rails::Railtie
@@ -207,7 +207,7 @@ module Haml
     end
   end
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 This Railtie simply changes the template engine that Rails invokes when you run `rails generate`, and then initializes Haml for Rails, and sets the Haml output format to HTML5.
 
@@ -222,19 +222,19 @@ Railtie plugins are easy to turn into gem plugins for Rails. This makes them eas
 
 If your gem is also a plain Ruby library, and you don't want to depend on the Rails gem, then you can put your Railtie in a separate file, and conditionally require that file inside your main library file.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 # lib/my_new_gem/my_cool_railtie.rb
 module MyNewGem
   class MyCoolRailtie < ::Rails::Railtie
     # Railtie code here
   end
 end
-{% endhighlight %}
+{{< / highlight >}}
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 # lib/my_new_gem.rb
 require 'lib/my_cool_railtie.rb' if defined?(Rails)
-{% endhighlight %}
+{{< / highlight >}}
 
 This ensures that your gem can be loaded (without the Railtie) if it is loaded outside the context of a Rails application.
 

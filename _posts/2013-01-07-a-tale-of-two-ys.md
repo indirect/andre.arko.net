@@ -1,6 +1,6 @@
 ---
+date: "2013-01-07T00:00:00Z"
 title: A Tale of Two ‘Y’s
-layout: post
 ---
 
 Today marks a momentous occasion: today, [scheduled Do Not Disturb mode on iOS starts working again](http://support.apple.com/kb/TS4510)! While the exact reasons that the feature stopped working between January 1 and January 7 are unlikely to ever be explained, investigating date bugs during the new year led me to discover a fascinating (and horrifying) aspect of dates on modern computers: the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) [Week Date](http://en.wikipedia.org/wiki/ISO_week_date).

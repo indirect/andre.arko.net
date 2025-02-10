@@ -1,6 +1,6 @@
 ---
-title: "Rails from the ground up: HTML"
-layout: post
+date: "2014-09-29T00:00:00Z"
+title: 'Rails from the ground up: HTML'
 ---
 
 LasLast time, we learned about [status codes](/2014/07/22/rails-from-the-ground-up-headers--status-codes/), and created an HTTP server that was able to serve a response to a web browser. This time, we're going to change the response body to be _HTML_. HTML stands for "HyperText Markup Language". HTML is written as plain text, but _rendered_ by web browsers.

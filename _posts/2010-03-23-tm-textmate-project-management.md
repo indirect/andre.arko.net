@@ -1,6 +1,6 @@
 ---
+date: "2010-03-23T00:00:00Z"
 title: tm, TextMate project management
-layout: post
 ---
 I realized, the other day, that I always create a new TextMate project by running `mate .` whenever I want to edit code on a project. Unfortunately, that approach has frustrating downsides like forgetting per-project ignores, open files, window positions, and sidebar arrangement. To save all that stuff, you have to save a .tmproj file somewhere. But I could never figure out where to put them, and I never managed to remember to open them later since I was already in the habit of `mate .`.
 

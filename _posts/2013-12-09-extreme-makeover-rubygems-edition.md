@@ -1,6 +1,6 @@
 ---
-title: "Extreme Makeover: Rubygems Edition"
-layout: post
+date: "2013-12-09T00:00:00Z"
+title: 'Extreme Makeover: Rubygems Edition'
 ---
 
 <small>This was also a talk given at RubyConf 2013 in Miami Beach, FL. If you prefer, you can [watch the video](http://www.confreaks.com/videos/2885-rubyconf2013-extreme-makeover-rubygems-edition) from the talk. This post contains the slide deck from the talk, and a written version of the content.</small>

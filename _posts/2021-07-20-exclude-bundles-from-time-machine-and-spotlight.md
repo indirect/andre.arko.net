@@ -1,6 +1,6 @@
 ---
-title: "Exclude bundles from Time Machine and Spotlight"
-layout: post
+date: "2021-07-20T00:00:00Z"
+title: Exclude bundles from Time Machine and Spotlight
 ---
 
 **short version:** run `cd; bundle plugin install bundler-mac`, never think about it again.

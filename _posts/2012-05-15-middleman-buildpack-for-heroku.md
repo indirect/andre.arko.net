@@ -1,6 +1,6 @@
 ---
+date: "2012-05-15T00:00:00Z"
 title: Middleman Buildpack for Heroku
-layout: post
 ---
 
 *Update*: Custom buildpacks aren't needed to host Middleman sites on Heroku anymore, making this blog post partially obsolete. I've updated my [example of a Middleman site hosted on Heroku](https://github.com/indirect/middleman-heroku-static-app) using the standard Ruby buildpack.

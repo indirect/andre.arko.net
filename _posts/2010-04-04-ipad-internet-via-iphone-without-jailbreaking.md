@@ -1,6 +1,6 @@
 ---
+date: "2010-04-04T00:00:00Z"
 title: iPad internet via iPhone, without jailbreaking
-layout: post
 ---
 I am a big fan of the [iProxy](http://github.com/tcurdt/iProxy) project, which lets you get your laptop online via your iPhone without having to jailbreak it, provided you are (or at least know) someone in the iPhone developer program. I got my iPad today, and took it out to the park. Once I was there, I of course instantly wanted to look something up online. To solve this problem until the iPad 3G comes out, I figured out a mildly annoying hack that will suffice for the time being. So here's what to do:
 

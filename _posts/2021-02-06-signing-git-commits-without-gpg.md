@@ -1,7 +1,6 @@
 ---
+date: "2021-02-06T00:00:00Z"
 title: signing git commits without gpg
-layout: post
-
 ---
 Given the [”incredibly perfect heap overflow”](https://twitter.com/FiloSottile/status/1355225801172660224) in gpg that [dropped this week](https://dev.gnupg.org/T5275), it seems worthwhile to write up my strategy for signing git commits.
 

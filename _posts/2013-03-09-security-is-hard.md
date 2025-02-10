@@ -1,6 +1,6 @@
 ---
+date: "2013-03-09T00:00:00Z"
 title: Security is hard
-layout: post
 ---
 
 This week, I gave a talk at [Ruby on Ales](http://ruby.onales.com/) about CVEs, responsible disclosure, and security process and best practices. The conference was awesome, and it was a blast to be able to give a talk there. I hope that rubyists will be able to embrace and extend the best practices discovered by years of community experimentation!

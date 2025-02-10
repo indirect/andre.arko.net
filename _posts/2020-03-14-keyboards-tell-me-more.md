@@ -1,6 +1,6 @@
 ---
-title: "Keyboards? Tell Me More"
-layout: post
+date: "2020-03-14T00:00:00Z"
+title: Keyboards? Tell Me More
 ---
 I have <strike>a lot of keyboards</strike> a keyboard problem.
 

@@ -1,6 +1,6 @@
 ---
-title: "uses this interview"
-layout: post
+date: "2021-12-13T00:00:00Z"
+title: uses this interview
 ---
 Back in September, I did [an interview](https://usesthis.com/interviews/andre.arko/) with the impressively long-running [usesthis.com](https://usesthis.com). Since I like to archive my own writing, I've reproduced it here.
 

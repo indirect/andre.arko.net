@@ -1,6 +1,6 @@
 ---
-title: "Custom styles for Notion"
-layout: post
+date: "2020-05-18T00:00:00Z"
+title: Custom styles for Notion
 ---
 
 I recently helped [someone with strong aesthetic preferences](https://instagram.com/sailorhg) set up a custom Mac app for [Notion](https://notion.so). It’s approximately the same thing you could get with a browser extension like [Stylus](https://add0n.com/stylus.html), but it retains the convenient Electron app parts of getting its own app icon and its own separate cookie storage. 

@@ -1,6 +1,6 @@
 ---
-title: "'From' address keyboard shortcuts in Lion"
-layout: post
+date: "2011-09-26T00:00:00Z"
+title: '''From'' address keyboard shortcuts in Lion'
 ---
 
 Mac OS X contains a truly helpful feature in the Keyboard system preference pane that allows you to set a keyboard shortcut for any menu item in any application by name. In Snow Leopard, I used this feature to add keyboard shortcuts for selecting the "From" address while I was composing an email in Mail.app. I had configured it so that ⌃1, ⌃2, etc. would switch between my personal, work, and other email accounts. The menu items in Mail.app are titled things like "Andre Arko <andre@arko.net>", so it was easy to assign a keyboard shortcut to that item by name. Unfortunately, Lion's Keyboard preference pane adds a bug with menu item titles that contain angle brackets. The bug escapes angle brackets incorrectly when inserting them into the application's preferences plist file. As a result, the keyboard shortcuts are never activated.

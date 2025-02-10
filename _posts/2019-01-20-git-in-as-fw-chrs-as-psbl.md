@@ -1,6 +1,6 @@
 ---
-title: "git in as fw chrs as psbl"
-layout: post
+date: "2019-01-20T00:00:00Z"
+title: git in as fw chrs as psbl
 ---
 ### or: learn from my dotfile mistakes
 

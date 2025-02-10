@@ -1,6 +1,6 @@
 ---
+date: "2011-11-09T00:00:00Z"
 title: The request is doing WHAT?
-layout: post
 ---
 ### tl;dr
 

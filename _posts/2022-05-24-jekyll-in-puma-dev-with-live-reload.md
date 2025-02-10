@@ -1,6 +1,6 @@
 ---
-title: "Jekyll in puma-dev with live reload"
-layout: post
+date: "2022-05-24T00:00:00Z"
+title: Jekyll in puma-dev with live reload
 ---
 It isn't a secret (and probably not even interesting) that this blog has used [Jekyll](https://jekyllrb.com) for many years. Almost as many years ago, I discovered [puma-dev](https://github.com/puma/puma-dev) and used it to set up all of the Rails and Sinatra apps that I work on. I don’t have to start or stop any local development servers, I just browse to `appname.local`, and a Puma worker will start up and let me see the app. It even handles SSL, which is very handy.
 

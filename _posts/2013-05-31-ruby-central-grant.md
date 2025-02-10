@@ -1,6 +1,6 @@
 ---
+date: "2013-05-31T00:00:00Z"
 title: Ruby Central Grant
-layout: post
 ---
 It's been a long time since I first started working on [Bundler](http://gembundler.com), alongside Carl and Yehuda. Since then, the Bundler team has pushed three big feature releases, and I've taken over as project lead. One of my major goals as lead has been to cooperate with both the Rubygems and rubygems.org teams to make Bundler and Rubygems more useful to the Ruby community at large.
 

@@ -1,6 +1,6 @@
 ---
+date: "2010-02-13T00:00:00Z"
 title: Bundler 0.9 and Rails 2.3.5
-layout: post
 ---
 [Bundler](http://github.com/carlhuda/bundler) 0.9 is out, and people have been having trouble getting it working with Rails 2.3.5 applications. In order to help with that, I'll be keeping this blog post updated with the latest instructions on converting a Rails 2.3.5 application over to use Bundler 0.9.
 

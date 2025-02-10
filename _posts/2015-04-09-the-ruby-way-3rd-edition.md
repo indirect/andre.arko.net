@@ -1,6 +1,6 @@
 ---
-title: "The Ruby Way, 3rd Edition"
-layout: post
+date: "2015-04-09T00:00:00Z"
+title: The Ruby Way, 3rd Edition
 ---
 A surprising thing happened to me last year: I wrote a book.
 

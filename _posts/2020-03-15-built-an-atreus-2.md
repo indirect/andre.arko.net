@@ -1,6 +1,6 @@
 ---
-title: "Built an Atreus 2"
-layout: post
+date: "2020-03-15T00:00:00Z"
+title: Built an Atreus 2
 ---
 
 [As I mentioned yesterday](/2020/03/14/keyboards-tell-me-more/), I have a bit of a keyboard problem. Despite having owned dozens of mechanical, touchsurface, experimental, and otherwise weird keyboqards and other input devices, I had never built one myself. (I bought an ErgoDox Infinity kit at one point, but sold it after more than a year of never getting around to it.)

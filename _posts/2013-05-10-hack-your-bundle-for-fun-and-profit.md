@@ -1,6 +1,6 @@
 ---
+date: "2013-05-10T00:00:00Z"
 title: Hack your bundle for fun and profit
-layout: post
 ---
 
 Bundler has turned out to be an amazingly useful tool for installing and tracking gems a Ruby project needs. So useful, in fact, that nearly every Ruby project uses it. Even though it shows up practically everywhere, most people don’t know about Bundler’s built-in tools and helpers. In an attempt to increase awareness (and Ruby developer productivity), I’m going to tell you about them.

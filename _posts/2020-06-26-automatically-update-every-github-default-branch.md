@@ -1,6 +1,6 @@
 ---
-title: "Automatically update every GitHub default branch"
-layout: post
+date: "2020-06-26T00:00:00Z"
+title: Automatically update every GitHub default branch
 ---
 
 When I wrote about [how to change git and GitHub's default branches](/2020/06/06/changing-git-and-githubs-default-branch-name/), I was thinking entirely in terms of fixing the problem one repo at a time. The next day, GitHub announced they would be changing the default, so I thought my script wouldn't even be necessary, since surely GitHub would offer a bulk change tool as part of changing the default.

@@ -1,6 +1,6 @@
 ---
+date: "2012-02-19T00:00:00Z"
 title: SSLError certificate verify failed on Engine Yard
-layout: post
 ---
 The other day, I deployed a new feature for the first time: connect your [Devise](https://github.com/plataformatec/devise) account to Facebook via [OmniAuth](https://github.com/intridea/omniauth). I tested it out on my laptop, and everything seemed swell, but then I deployed to production.
 

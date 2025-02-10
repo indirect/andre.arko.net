@@ -1,6 +1,6 @@
 ---
-title: "Self-hosted Mastodon SMTP configuration"
-layout: post
+date: "2022-11-14T00:00:00Z"
+title: Self-hosted Mastodon SMTP configuration
 ---
 
 Since [masto.host](https://masto.host) has signups disabled at the moment, I tried deploying Mastodon to Fly.io using tmm1's [flyapp-mastodon](https://github.com/tmm1/flyapp-mastodon/) instructions. It worked surprisingly well, by which I mean about half of the documented commands were using removed option flags, I had to debug sidekiq restarting in a different random region constantly, and email sending didn't work at all.

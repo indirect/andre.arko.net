@@ -1,6 +1,6 @@
 ---
-title: "Rails from the ground up: Status Codes & Headers"
-layout: post
+date: "2014-07-22T00:00:00Z"
+title: 'Rails from the ground up: Status Codes & Headers'
 ---
 Now that we know what the tiniest possible response looks like, we can talk about what a valid and correct HTTP response looks like. That means explaining *status codes* and *headers*.
 

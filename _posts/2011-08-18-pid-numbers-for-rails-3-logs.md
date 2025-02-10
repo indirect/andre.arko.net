@@ -1,6 +1,6 @@
 ---
+date: "2011-08-18T00:00:00Z"
 title: PID numbers for Rails 3 logs
-layout: post
 ---
 **tl;dr**: Copy [the code][1] into `lib/pid_logger.rb` and edit your `application.rb`. Now your Rails 3 app has PID numbers on each log line. Tada.
 

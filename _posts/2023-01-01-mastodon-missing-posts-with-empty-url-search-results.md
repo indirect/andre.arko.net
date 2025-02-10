@@ -1,6 +1,6 @@
 ---
-title: "Mastodon missing posts, with empty URL search results"
-layout: post
+date: "2023-01-01T00:00:00Z"
+title: Mastodon missing posts, with empty URL search results
 ---
 
 **tl;dr** if you boot Mastodon without `LOCAL_DOMAIN` once, you might be unable to fetch posts from some other instances. If searching for a post URL returns nothing, try running `bin/rails r 'Account.representative.update!(username: ENV["LOCAL_DOMAIN"])'`. That fixed things for me.

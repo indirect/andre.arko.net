@@ -1,6 +1,6 @@
 ---
+date: "2012-03-07T00:00:00Z"
 title: Bridge mode on ZyXEL P-663HN-51 DSL modems
-layout: post
 ---
 My internet service is provided by the illustrious [Sonic.net](http://sonic.net), and I just upgraded my [Fusion Broadband](http://sonic.net/solutions/home/internet/fusion/) from a single DSL line to two DSL lines. This increases my overall speeds to around 30mbits down and 5mbits up, which is great.
 

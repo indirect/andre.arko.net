@@ -1,6 +1,6 @@
 ---
-title: "Instant Rails CI for GitHub Actions (finally)"
-layout: post
+date: "2022-04-16T00:00:00Z"
+title: Instant Rails CI for GitHub Actions (finally)
 ---
 
 A couple of months ago, I [built a webapp from scratch using Rails 7](/2022/02/17/feedyouremail/). In addition to leaving Node out of my Rails app, I wanted to use GitHub Actions as the only CI for a real webapp that other people use.

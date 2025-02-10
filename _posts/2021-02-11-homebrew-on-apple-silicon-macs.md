@@ -1,6 +1,6 @@
 ---
-title: "Homebrew on Apple Silicon Macs"
-layout: post
+date: "2021-02-11T00:00:00Z"
+title: Homebrew on Apple Silicon Macs
 ---
 
 A mere five and a half weeks after I ordered it, my M1 MacBook Air has finally arrived! Phew. Here are my notes from porting my dotfiles and setting it up.

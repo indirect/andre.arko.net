@@ -1,6 +1,6 @@
 ---
-title: "The \"Economic Argument\" For Diversity"
-layout: post
+date: "2014-05-24T00:00:00Z"
+title: The "Economic Argument" For Diversity
 ---
 
 This week, I gave [a talk with Ashe Dryden at La Conf][talk] advocating for diversity in tech. In the talk, we addressed a wide range of questions and concerns that commonly come up when talking about diversity. Afterwards, I had an extended conversation with a gentleman who was quite insistent that I should spend less time talking about equality, empathy, and opportunity. Instead, he thought, I should emphasise the [well-documented business advantages of diversity][advantages]: increased quality, productivity, efficiency, and of course the resulting higher profits. This would, he said, cause businessmen like himself to want to hire diverse teams.

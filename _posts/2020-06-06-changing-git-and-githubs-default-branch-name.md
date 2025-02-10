@@ -1,6 +1,6 @@
 ---
-title: "Changing git and GitHub's default branch name"
-layout: post
+date: "2020-06-06T00:00:00Z"
+title: Changing git and GitHub's default branch name
 ---
 
 First off: [Black lives matter](https://blacklivesmatter.com). Go support Black activism in your community right now. I'll wait. If you're in the bay area, try [People's Breakfast Oakland](https://www.instagram.com/peoplesbreakfastoakland/), the [Transgender Gender-Variant & Intersex Justice Project](http://www.tgijp.org), the [Bay area anti-repression committee](https://antirepressionbayarea.com), and the [National Lawyer's Guild SF](https://nlgsf.org).
