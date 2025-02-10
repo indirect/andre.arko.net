@@ -8,7 +8,7 @@ As part of those efforts, I've worked on Bundler and other Ruby open source duri
 
 I'm extremely pleased (and excited) to announce that Ruby Central has funded a grant that will allow me to work on both Bundler and Rubygems for the next several months. To fully express my feelings when I announced the grant at my RubyKaigi talk about security, I (naturally) resorted to emoji.
 
-![ruby central loves bundler and rubygems. and sends them presents. presents of money.]({% postfile grant.gif %})
+![ruby central loves bundler and rubygems. and sends them presents. presents of money.](https://andre.arko.net/2013/05/31/ruby-central-grant/grant.gif)
 
 Planned improvements include a new index format that will speed up installing gems, improvements to the gem distribution infrastructure, and other things still in the planning stages. The grant also means I'll have some more time to pair with and help out volunteers. If you have some free time that you’d like to contribute, let me know! We like supporting new contributors to open source, and we would love to have your help.
  

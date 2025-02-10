@@ -19,12 +19,12 @@ Fortunately this one is pretty easy. If you have a Mac, get an [Apple Magic Keyb
 If you don't have a Mac, the Wirecutter recommends the [Logitech K380](https://www.amazon.com/dp/B0148NPH9I). Seems good.
 
 <div style="width: 48%; float: left;">
-  <img alt="Apple Magic Keyboard" src="{% postfile apple-magic-keyboard.jpg %}">
+  <img alt="Apple Magic Keyboard" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/apple-magic-keyboard.jpg">
   Apple Magic Keyboard
 </div>
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Logitech K380" src="{% postfile logitech-k380.jpg %}">
+  <img alt="Logitech K380" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/logitech-k380.jpg">
   Logitech K380
 </div>
 <div style="clear: both"></div>
@@ -34,7 +34,7 @@ If you don't have a Mac, the Wirecutter recommends the [Logitech K380](https://w
 If you want something that's pretty close to the keyboard you're already familiar with, but more ergonomic, I have heard that the [Microsoft Sculpt Ergonomic](https://www.microsoft.com/accessories/en-us/products/keyboards/sculpt-ergonomic-desktop/l5v-00001)  is good. I've never used one, but maybe that's a good way to ease yourself in to weirder keyboards? 😅
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Microsoft Sculpt Ergonomic" src="{% postfile microsoft-sculpt-ergonomic.jpg %}">
+  <img alt="Microsoft Sculpt Ergonomic" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/microsoft-sculpt-ergonomic.jpg">
   Microsoft Sculpt Ergonomic
 </div>
 <div style="clear: both"></div>
@@ -46,12 +46,12 @@ Maybe! Mechanical switches are generally more pleasant to type on, and last much
 If you want to give it a shot, the Wirecutter recommends the [Varmilo VA87M](https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=324), and I've heard positive things about the [Filco Majestouch 2](https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=341). In case you were worried about colors, there are pink versions of both! (As well as the usual black, white, and a bunch of others.)
 
 <div style="width: 48%; float: left;">
-  <img alt="Varmilo VA87M Sakura" src="{% postfile varmilo-va87m-sakura.jpg %}">
+  <img alt="Varmilo VA87M Sakura" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/varmilo-va87m-sakura.jpg">
   Varmilo VA87M Sakura
 </div>
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Filco Majestouch 2 Pink" src="{% postfile filco-majestouch-2-pink.jpg %}">
+  <img alt="Filco Majestouch 2 Pink" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/filco-majestouch-2-pink.jpg">
   Filco Majestouch 2 Pink
 </div>
 <div style="clear: both"></div>
@@ -61,7 +61,7 @@ If you want to give it a shot, the Wirecutter recommends the [Varmilo VA87M](htt
 If you have RSI or you're looking to reduce hand or wrist pain, the most ergonomic keyboard on the market is the [Kinesis Advantage 2](https://kinesis-ergo.com/shop/advantage2/). It's a weird shape, specifically because it's shaped to fill in the space under and around your hands if you hold your arms out neutrally. Most relaxed and least effort to type on of any keyboard I've ever used in my life.
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Kinesis Advantage 2" src="{% postfile kinesis-advantage-2.jpg %}">
+  <img alt="Kinesis Advantage 2" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/kinesis-advantage-2.jpg">
   Kinesis Advantage 2
 </div>
 <div style="clear: both"></div>
@@ -71,12 +71,12 @@ If you have RSI or you're looking to reduce hand or wrist pain, the most ergonom
 They aren't quite as ergonomic as the Kinesis, but there are two options that are still pretty ergonomic while being 100% customizable: the [Ergodox EZ](https://ergodox-ez.com/) and [Keyboard.io Model 01](http://keyboard.io/). Split with thumb keys like a Kinesis, but flat rather than shaped to keep your hands and arms neutral. The upside is they have open source firmware, and you can program them to do literally anything you want. Notable anythings include: multiple fn keys for many layers, single keys that press multiple other keys, one key if you tap different key if you hold, etc.
 
 <div style="width: 48%; float: left;">
-  <img alt="Ergodox EZ" src="{% postfile ergodox-ez.jpg %}">
+  <img alt="Ergodox EZ" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/ergodox-ez.jpg">
   Ergodox EZ
 </div>
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Keyboard.io Model 01" src="{% postfile keyboardio-model01.jpg %}">
+  <img alt="Keyboard.io Model 01" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/keyboardio-model01.jpg">
   Keyboard.io Model 01
 </div>
 <div style="clear: both"></div>
@@ -88,12 +88,12 @@ The smallest purchasable mechanical keyboard I know of is the [Atreus 2](https:/
 Almost as small is the [Planck EZ](https://ergodox-ez.com/pages/planck), from the ErgoDox EZ folks. The physical case is a perfect rectangle and the keys are in straight rows and columns ("ortholinear" in mechanical keyboard-speak).
 
 <div style="width: 48%; float: left;">
-  <img alt="Atreus 2" src="{% postfile atreus2.jpg %}">
+  <img alt="Atreus 2" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/atreus2.jpg">
   Atreus 2
 </div>
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="Planck EZ" src="{% postfile planck-ez.png %}">
+  <img alt="Planck EZ" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/planck-ez.png">
   Planck EZ
 </div>
 <div style="clear: both"></div>
@@ -103,12 +103,12 @@ Almost as small is the [Planck EZ](https://ergodox-ez.com/pages/planck), from th
 Okay now we're getting pretty out there, up against the boundaries of keyboarding that's possible today. My personal wishlist/buildlist is a [Mitosis](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/) (split, smaller than ergodox, but 100% wireless), and a [Dactyl Manuform](https://github.com/20lives/Dactyl-Manuform/blob/devel/README.md) (an open source attempt at shaping around your hand via 3d printing, requires completely manual wiring). Fun, huh?
 
 <div style="width: 48%; float: left;">
-  <img alt="mitosis" src="{% postfile mitosis.jpg %}">
+  <img alt="mitosis" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/mitosis.jpg">
   mitosis
 </div>
 
 <div style="width: 48%; float: right; text-align: right;">
-  <img alt="dactyl manuform" src="{% postfile dactyl-manuform.jpg %}">
+  <img alt="dactyl manuform" src="https://andre.arko.net/2020/03/14/keyboards-tell-me-more/dactyl-manuform.jpg">
   dactyl manuform
 </div>
 <div style="clear: both"></div>

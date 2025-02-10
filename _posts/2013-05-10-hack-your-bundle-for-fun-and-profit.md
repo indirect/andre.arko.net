@@ -102,7 +102,7 @@ $ bundle viz
 
 Once you've done that, though, you get a pretty picture that's a lot of fun to look at. Here's the graph for a Gemfile that just contains the Rails gem.
 
-{% postfile bundle.png %}
+<img src="https://andre.arko.net/2013/05/10/hack-your-bundle-for-fun-and-profit/bundle.png">
 
 ### IRB in your bundle
 

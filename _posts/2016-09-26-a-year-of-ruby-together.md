@@ -118,5 +118,5 @@ We offer the entire community a great deal: free tools and free hosting for Ruby
 
 So for now, we’re asking: help us work on [Bundler](https://bundler.io), [RubyGems](https://rubygems.org), and everything else by [signing up at rubytogether.org](https://rubytogether.org/join). Everything we build with money from the community is shared back to the community, and that’s what Ruby Together is all about.
 
-![Let's Ruby Together]({% postfile lets_ruby_together.png %})
+![Let's Ruby Together](https://andre.arko.net/2016/09/26/a-year-of-ruby-together/lets_ruby_together.png)
 
