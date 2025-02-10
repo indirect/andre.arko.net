@@ -1,9 +1,0 @@
-name = 'André.Arko.net'
-license = 'MIT'
-licenselink = 'https://github.com/indirect/andre.arko.net/LICENSE'
-description = 'Personal blog theme'
-homepage = 'https://github.com/indirect/andre.arko.net'
-
-[author]
-  name = 'André Arko'
-  homepage = 'https://arko.net'

@@ -1,0 +1,9 @@
+name = 'andre-arko-net'
+description = 'Personal blog theme'
+homepage = 'https://github.com/indirect/andre-arko-net-theme'
+license = 'MIT'
+licenselink = 'https://github.com/indirect/andre-arko-net-theme/LICENSE'
+
+[author]
+  name = 'André Arko'
+  homepage = 'https://arko.net'

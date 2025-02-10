@@ -1,7 +1,6 @@
 baseURL = 'https://andre.arko.net/'
 title = 'André.Arko.net'
 languageCode = 'en-us'
-theme = "andre-arko-net"
 
 [permalinks]
   [permalinks.page]
@@ -11,3 +10,8 @@ theme = "andre-arko-net"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
