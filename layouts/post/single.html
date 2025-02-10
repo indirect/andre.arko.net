@@ -1,6 +1,6 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
-  <p class="post-date">{{ .Date | time.Format "02 Jan 2006" }}</p>
+  <p class="post-date">{{ .PublishDate | time.Format "02 Jan 2006" }}</p>
   <h2 class="post-title">{{ .Title }}</h2>
   {{ .Content }}
 {{ end }}
