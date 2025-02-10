@@ -1,6 +1,10 @@
 {{ define "title" }}Personal Projects{{ end }}
 {{ define "main" }}
 
+<h2>Personal Projects</h2>
+
+<div>An inverted resume of projects I have worked on when it was not part of my job, for collaboration's sake, or for fun, or for the principle of the thing.</div>
+
 <dl class="projects">
   {{ range .Site.Data.projects }}
     <h4 class="project-title">
@@ -14,7 +18,7 @@
     </h4>
     {{ if .description }}
       <div class="project-info group">
-        <p class="project-description">{{ .description | safeHTML }}</p>
+        {{ .description | safeHTML }}
       </div>
     {{ end }}
   {{ end }}
