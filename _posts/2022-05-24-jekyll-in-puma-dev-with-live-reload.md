@@ -17,7 +17,7 @@ Once you have that file, run `bundle add rack-jekyll; bundle add puma; puma-dev 
 Okay, great, I hear you saying, but what about the live reload you promised? That turns out to be a little bit trickier. I wound up having to write a Jekyll plugin to run the livereload server. But it works! Here’s the setup:
 
 1. Run `bundle add rack-livereload`.
-2. Download <a href="{% postfile live_reload_server.rb %}">`live_reload_server.rb`</a> and copy it into `_plugins`. You might have to `mkdir _plugins` first.
+2. Download <a href="https://andre.arko.net/2022/05/24/jekyll-in-puma-dev-with-live-reload/live_reload_server.rb">`live_reload_server.rb`</a> and copy it into `_plugins`. You might have to `mkdir _plugins` first.
 3. Update your `config.ru` file to include `rack-livereload` and the Jekyll plugin:
 		require "bundler/setup"
 		require "rack/jekyll"
