@@ -1,6 +1,6 @@
 ---
+date: "2013-09-11T00:00:00Z"
 title: Vim is the worst editor
-layout: post
 ---
 ### &hellip;except all the other editors
 

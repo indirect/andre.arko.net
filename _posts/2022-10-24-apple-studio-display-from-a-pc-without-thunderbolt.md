@@ -1,6 +1,6 @@
 ---
-title: "Apple Studio Display from a PC without Thunderbolt"
-layout: post
+date: "2022-10-24T00:00:00Z"
+title: Apple Studio Display from a PC without Thunderbolt
 ---
 
 So maybe you have an Apple Studio Display (or possibly even an Apple Pro XDR Display), and you followed [my instructions from last time](/2022/05/19/use-a-thunderbolt-3-display-from-a-windows-pc/) to connect your display to your PC. You may have noticed a shortcoming: it’s impossible to adjust the brightness of the monitor from your Windows PC. Or maybe you noticed that the built-in webcam and speakers on your Studio Display don’t do anything.

@@ -1,6 +1,6 @@
 ---
-title: "TCP delays and retransmissions on Illumos"
-layout: post
+date: "2014-08-01T00:00:00Z"
+title: TCP delays and retransmissions on Illumos
 ---
 
 The other day, I helped debug an issue on some production Joyent Cloud servers (which use SmartOS, based on Illumos, the open-source successor to Solaris). The solution turned out to be so non-obvious, and the cause pretty interesting, so I thought it was worth writing up.

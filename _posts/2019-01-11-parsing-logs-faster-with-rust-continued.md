@@ -1,6 +1,6 @@
 ---
-title: "Parsing logs faster with Rust, continued"
-layout: post
+date: "2019-01-11T00:00:00Z"
+title: Parsing logs faster with Rust, continued
 ---
 
 Previously, I [wrote about parsing logs 230x faster using Rust](/2018/10/25/parsing-logs-230x-faster-with-rust/). Since publishing that post, I've discovered some new information! Here's what I've learned.

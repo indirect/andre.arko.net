@@ -1,6 +1,6 @@
 ---
-title: "GitHub Apps, a high-wtf introduction"
-layout: post
+date: "2020-12-08T00:00:00Z"
+title: GitHub Apps, a high-wtf introduction
 ---
 So maybe you've heard about those [GitHub App things](https://docs.github.com/en/free-pro-team@latest/developers/apps) that can programmatically interact with GitHub, and do useful stuff. "I want to build useful stuff!", you might say to yourself.
 

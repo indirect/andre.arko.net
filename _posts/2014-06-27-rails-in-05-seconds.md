@@ -1,6 +1,6 @@
 ---
-title: "Rails in 0.5 seconds"
-layout: post
+date: "2014-06-27T00:00:00Z"
+title: Rails in 0.5 seconds
 ---
 You too can boot a Rails app in as little as 500ms! Here's how, using lazy require statements and not loading Bundler or Rubygems at runtime.
 

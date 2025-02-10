@@ -1,6 +1,6 @@
 ---
-title: "A History of Bundles: 2010 to 2017"
-layout: post
+date: "2017-11-16T00:00:00Z"
+title: 'A History of Bundles: 2010 to 2017'
 ---
 <h3 class="subtitle">a one-person oral history of Ruby’s dependency manager</h3>
 

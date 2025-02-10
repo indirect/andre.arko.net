@@ -1,6 +1,6 @@
 ---
+date: "2010-08-15T00:00:00Z"
 title: Haml-rails gem for Haml with Rails 3
-layout: post
 ---
 I'm setting up a new Rails 3 app, and I discovered that the [rspec-rails](http://github.com/rspec/rspec-rails) plugin is a very well-behaved Rails 3 gem plugin. All you have to do is add it to your Gemfile, and then (via a Railtie) it adds RSpec rake tasks, adds some RSpec generators, and replaces Test/Unit as the testing framework for anything newly generated.
 
@@ -12,9 +12,9 @@ The source is [on github](http://github.com/indirect/haml-rails) if you want to 
 
 Installation is pretty complicated, but I'm sure you can get the hang of it:
 
-    {% highlight ruby %}
+    {{< highlight ruby >}}
     # Gemfile
     gem "haml-rails"
-    {% endhighlight %}
+    {{< / highlight >}}
 
 Enjoy!

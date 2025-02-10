@@ -1,6 +1,6 @@
 ---
+date: "2011-07-23T00:00:00Z"
 title: Safari extensions in Lion
-layout: post
 ---
 
 ### tl;dr

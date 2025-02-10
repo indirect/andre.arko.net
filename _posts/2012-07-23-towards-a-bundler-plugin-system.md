@@ -1,6 +1,6 @@
 ---
+date: "2012-07-23T00:00:00Z"
 title: Towards a Bundler plugin system
-layout: post
 ---
 
 ### Where we are now

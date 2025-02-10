@@ -1,6 +1,6 @@
 ---
-title: "How does Bundler work, anyway?"
-layout: post
+date: "2015-04-28T00:00:00Z"
+title: How does Bundler work, anyway?
 ---
 ### a history of ruby dependency management
 

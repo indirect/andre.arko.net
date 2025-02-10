@@ -1,6 +1,6 @@
 ---
-title: "The New Rubygems Index Format"
-layout: post
+date: "2014-03-28T00:00:00Z"
+title: The New Rubygems Index Format
 ---
 This post is a part news, part technical documentation, and part request for comment. I'm going to explain the technical nitty-gritty details of the planned next generation index that allows Bundler and Rubygems to know what gems exist and how to install them.
 

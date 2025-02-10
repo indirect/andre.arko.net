@@ -1,6 +1,6 @@
 ---
-title: "<code>sudo</code> with TouchID and Apple Watch, even inside <code>tmux</code>"
-layout: post
+date: "2020-07-10T00:00:00Z"
+title: <code>sudo</code> with TouchID and Apple Watch, even inside <code>tmux</code>
 ---
 
 Ever since TouchID was introduced in the 2016 MacBook Pro, I wondered why it could replace user authentication dialogs in the GUI, like System Preferences or Installer, but not in the command line, for things like `sudo`. Perhaps predictably, many nerds on the internet had the same idea, and for a while you could [install a fork of sudo](https://github.com/mattrajca/sudo-touchid) (!!) or a [custom PAM module](https://github.com/hamzasood/pam_touchid) to get TouchID support.

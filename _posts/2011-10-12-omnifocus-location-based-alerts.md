@@ -1,6 +1,6 @@
 ---
+date: "2011-10-12T00:00:00Z"
 title: OmniFocus location-based alerts
-layout: post
 ---
 iOS 5 is released! While I'm happy about a lot of new features, the one that has me the most excited at the moment is background location monitoring. Apps can now register with the OS to get notified when your location has significantly changed. The most obvious example of this, included with iOS 5 itself, is the new Reminders app. When you create a todo item, you can add a location to the item, and tell the app to alert you either when you arrive at or leave that location. It's pretty cool.
 

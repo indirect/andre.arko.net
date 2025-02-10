@@ -1,6 +1,6 @@
 ---
-title: "Never `bundle exec` again"
-layout: post
+date: "2021-02-22T00:00:00Z"
+title: Never `bundle exec` again
 ---
 If you work with a lot of Ruby and/or Rails codebases, you probably spend a significant amount of time using `bundle exec` to run commands. Over the years, I've spent a lot of time explaining why `bundle exec` exists, what it does, and how to avoid it. I'm writing this post now in hopes that it will spread across the Ruby community, and over time hopefully everyone will know the answers to those questions.
 

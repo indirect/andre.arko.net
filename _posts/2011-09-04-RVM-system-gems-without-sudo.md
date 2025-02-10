@@ -1,6 +1,6 @@
 ---
+date: "2011-09-04T00:00:00Z"
 title: RVM system gems without sudo
-layout: post
 ---
 Somewhat unusually (I guess?) I sometimes use system Ruby on OS X. I use RVM for other versions of Ruby, like 1.9.2 and JRuby. System Ruby is still the easiest Ruby version to use on OS X, however. Furthermore, because it is so common with developers, I need to make sure that each new version of [Bundler][1] is compatible with OS X system Ruby.
 

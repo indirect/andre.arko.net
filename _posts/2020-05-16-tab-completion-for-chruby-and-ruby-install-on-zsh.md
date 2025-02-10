@@ -1,7 +1,6 @@
 ---
-layout: post
+date: "2020-05-16T00:00:00Z"
 title: Tab completion for chruby and ruby-install on zsh
-
 ---
 I switched to zsh as part of upgrading to macOS 10.15 Catalina. I'm not using oh-my-zsh, but I was _incredibly_ helped by the [Scripting OSX series](https://scriptingosx.com/2019/06/moving-to-zsh/), and my new best friend is [Powerlevel10k](https://github.com/romkatv/powerlevel10k).
 

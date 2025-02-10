@@ -1,6 +1,6 @@
 ---
+date: "2011-05-26T00:00:00Z"
 title: Add true Readline to Ruby on OS X
-layout: post
 ---
 I normally use OS X system Ruby. As of OS X 10.6.4, that is Ruby 1.8.7-p174. Sadly, system Ruby links against libedit instead of libreadline, which means I can't use any of my nice readline setup.
 

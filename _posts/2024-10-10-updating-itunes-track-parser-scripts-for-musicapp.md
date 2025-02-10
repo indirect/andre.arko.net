@@ -1,6 +1,7 @@
 ---
-title: "Updating iTunes Track Parser Scripts for Music.app"
-layout: post
+date: "2024-10-10T00:00:00Z"
+title: Updating iTunes Track Parser Scripts for Music.app
+slug: updating-itunes-track-parser-scripts-for-musicapp
 ---
 
 Moving from my usual niche interests to a niche so small that I have only seen two people on the internet who care about this: I have some really great news if you still want to manage metadata tags like it’s 2010 and you’re ripping CDs into iTunes. I’ve updated the most useful iTunes track naming script to ever exist, so you can use it in Music.app on macOS 15.1 Sequoia in the year 2024.

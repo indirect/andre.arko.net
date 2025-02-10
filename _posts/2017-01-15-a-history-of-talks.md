@@ -1,6 +1,6 @@
 ---
-title: "A History of Talks"
-layout: post
+date: "2017-01-15T00:00:00Z"
+title: A History of Talks
 ---
 I've added a new section to this blog, listing all of the talks I have given at meetups, events, and conferences.
 

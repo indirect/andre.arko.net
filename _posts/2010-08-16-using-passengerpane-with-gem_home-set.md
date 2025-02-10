@@ -1,6 +1,6 @@
 ---
+date: "2010-08-16T00:00:00Z"
 title: Using PassengerPane with GEM_HOME set
-layout: post
 ---
 I use the excellent [homebrew](http://mxcl.github.com/homebrew) to manage my unix software on OS X, and as a result my bash profile includes `export GEM_HOME /usr/local/Cellar/Gems/1.8`. Unfortunately, that makes Passenger unable to find any of my gems, which is a bummer.
 

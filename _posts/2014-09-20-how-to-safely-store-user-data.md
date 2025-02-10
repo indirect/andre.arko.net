@@ -1,6 +1,6 @@
 ---
-title: "How to Safely Store User Data"
-layout: post
+date: "2014-09-20T00:00:00Z"
+title: How to Safely Store User Data
 ---
 
 So, you have a web application, and you want to store some data "securely". Right now, you're you probably thinking "I know this already, we should encrypt it!". No.

@@ -1,6 +1,6 @@
 ---
+date: "2010-09-06T00:00:00Z"
 title: Jekyll postfiles plugin
-layout: post
 ---
 Through the years, I've used a lot of blogging engines. Nowadays, I use [Jekyll](http://jekyllrb.com/) to generate a static version of my blog. Jekyll has had one annoying shortcoming for me, though -- it doesn't support including files in a blog post. This has bitten me more than once, especially as I move between blogging engines (or just try to clean up random files on my web server).
 

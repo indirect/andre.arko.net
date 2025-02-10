@@ -1,6 +1,6 @@
 ---
+date: "2013-12-04T00:00:00Z"
 title: How to be an ally
-layout: post
 ---
 <small>This was also a talk during the RailsBridge lightning talks at Github. See below for the slides, as well as the content of the talk.</small>
 

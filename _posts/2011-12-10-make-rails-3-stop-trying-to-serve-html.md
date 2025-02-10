@@ -1,6 +1,6 @@
 ---
+date: "2011-12-10T00:00:00Z"
 title: Make Rails 3 stop trying to serve HTML
-layout: post
 ---
 Something kind of surreal happened today. I noticed that one of my Rails 3 apps was logging `ActionView::MissingTemplate` errors. When I looked into it, the error was coming from an HTML template that didn't exist. The problem was, that action wasn't supposed to serve HTML at all, ever. I had even dutifully called `clear_respond_to; respond_to :xml` in my controller, and I thought that would fix everything. Unfortunately, googling and checking Stack Overflow turned up nothing relevant to this particular version of the error, so I decided I had better just dig in.
 

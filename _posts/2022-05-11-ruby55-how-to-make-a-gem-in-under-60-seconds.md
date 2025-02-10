@@ -1,7 +1,7 @@
 ---
-title: "Ruby55: how to make a gem in under 60 seconds"
-layout: post
+date: "2022-05-11T00:00:00Z"
 image: thumb.jpg
+title: 'Ruby55: how to make a gem in under 60 seconds'
 ---
 
 Tell me if you've heard this one before: a flying squirrel walks into a terminal, and shows you how to create a gem in 55 seconds.

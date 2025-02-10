@@ -1,6 +1,6 @@
 ---
-title: "Rails 6 with Webpack in app/assets (and no Sprockets)"
-layout: post
+date: "2020-07-09T00:00:00Z"
+title: Rails 6 with Webpack in app/assets (and no Sprockets)
 ---
 The first version of Rails with Sprockets to manage JS and CSS assets shipped in May 2011. Generating a new Rails app today includes not only Sprockets, but an entire second JS and CSS asset pipeline that uses Webpack. It... sort of... makes sense to do this, for legacy reasons, but it's confusing.
 

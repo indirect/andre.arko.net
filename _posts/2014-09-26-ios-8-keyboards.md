@@ -1,6 +1,6 @@
 ---
-title: "iOS 8 Keyboards"
-layout: post
+date: "2014-09-26T00:00:00Z"
+title: iOS 8 Keyboards
 ---
 This week I tried a lot of iOS 8 third-party keyboards. They all had problems so big that I gave up. Here's what I noticed.
 

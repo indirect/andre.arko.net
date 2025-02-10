@@ -1,6 +1,6 @@
 ---
-title: "git golf continued"
-layout: post
+date: "2020-02-19T00:00:00Z"
+title: git golf continued
 ---
 In the ongoing quest to type even less while using git on a day to day basis, I noticed that I sometimes need to switch back and forth between branches with similar names. To pick a completely hypothetical example, let’s call those branches `update-ruby` and `update-rails`.
 

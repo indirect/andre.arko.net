@@ -1,6 +1,6 @@
 ---
-title: "feedyour.email"
-layout: post
+date: "2022-02-17T00:00:00Z"
+title: feedyour.email
 ---
 
 Confession time: I still use [a feed reader](https://reeder.com). (Honestly not sure at this point if that makes me Just A Millenial™ or makes me a weird cranky holdout insisting that I don't want blog posts in my email.)

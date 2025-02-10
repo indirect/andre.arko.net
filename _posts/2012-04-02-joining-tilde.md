@@ -1,6 +1,6 @@
 ---
+date: "2012-04-02T00:00:00Z"
 title: Joining Tilde
-layout: post
 ---
 I'm really excited to announce that I've joined [Tilde][1]. Today is my first day, and I'm really excited to be working with [Yehuda][2], [Tom][3], [Carl][4], [Leah][6], [Patrick][5] and the rest of the Tilde team.
 

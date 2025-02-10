@@ -1,6 +1,6 @@
 ---
+date: "2013-03-24T00:00:00Z"
 title: Falsehoods programmers believe
-layout: post
 ---
 
 Everyone's [names will be like mine][kalzumeus].

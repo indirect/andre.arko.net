@@ -1,6 +1,6 @@
 ---
+date: "2010-05-01T00:00:00Z"
 title: Bundler for gem development
-layout: post
 ---
 [Bundler](http://gembundler.com) was written to manage the gem dependencies of ruby applications, and it has gotten to the point where it is pretty good at that. What you probably don't know is that it can manage the gem dependencies of any gem that you are working on, as well.
 

@@ -1,6 +1,6 @@
 ---
+date: "2011-08-29T00:00:00Z"
 title: View Github issues opened by a user
-layout: post
 ---
 Since I keep wanting this and forgetting how to do it, I'm posting it for posterity (and myself, later). In Github Issues 2.0, there is an undocumented URL that lets you see all the tickets opened by a specific person:
 

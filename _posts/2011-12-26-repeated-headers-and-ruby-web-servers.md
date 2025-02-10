@@ -1,6 +1,6 @@
 ---
+date: "2011-12-26T00:00:00Z"
 title: Repeated headers and Ruby web servers
-layout: post
 ---
 A few weeks ago, I ran into an interesting problem with my Rails app. For some reason, the `request.remote_ip` value inside my app didn't contain the correct value. Instead, it simply contained the internal address of the EC2 instance I was using as a load balancer. I started noticing the problem when I set up a stack consisting of stunnel, HAProxy, Nginx, and Passenger.
 

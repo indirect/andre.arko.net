@@ -1,6 +1,6 @@
 ---
+date: "2009-12-27T00:00:00Z"
 title: TextMate strip whitespace and preserve cursor position
-layout: post
 ---
 There are a lot of bundles and macros out there that exist solely to strip trailing whitespace from the current file whenever you save it. Unfortunately, (almost) all of the whitespace stripping options that I have found share a fatal flaw: they move the cursor to the beginning of the line. This seriously messes with my head, as I never expect saving the file to move the cursor.
 

@@ -1,6 +1,6 @@
 ---
-title: "Including People"
-layout: post
+date: "2016-08-31T00:00:00Z"
+title: Including People
 ---
 <small>This post was also given as a conference talk at [Ruby on Ales 2016](http://ruby.onales.com) and [Ruby Remote Conf 2016](https://allremoteconfs.com/ruby-2016). If you prefer, you can [watch the video](https://www.youtube.com/watch?v=MrPtHogES6k) or [see the slides](https://speakerdeck.com/indirect/including-people-1).</small>
 

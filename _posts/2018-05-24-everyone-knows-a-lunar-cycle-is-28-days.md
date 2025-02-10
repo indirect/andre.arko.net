@@ -1,6 +1,6 @@
 ---
-title: "Everyone Knows a Lunar Cycle is 28 Days"
-layout: post
+date: "2018-05-24T00:00:00Z"
+title: Everyone Knows a Lunar Cycle is 28 Days
 ---
 <h3 class="subtitle">or, falsehoods werewolves believe about time</h3>
 

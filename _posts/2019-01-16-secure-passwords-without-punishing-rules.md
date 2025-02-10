@@ -1,6 +1,6 @@
 ---
-title: "Secure Passwords Without Punishing Rules"
-layout: post
+date: "2019-01-16T00:00:00Z"
+title: Secure Passwords Without Punishing Rules
 ---
 
 Building secure web applications is really, really hard. One of the biggest attack vectors in modern webapps is passwords. Even if we set aside the dangers of phishing or other more sophisticated attacks, passwords themselves are a source of danger, between simple passwords, guessable passwords, shared passwords among family members or teammates, and reused passwords across accounts.

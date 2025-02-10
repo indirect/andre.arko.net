@@ -1,6 +1,6 @@
 ---
+date: "2011-06-30T00:00:00Z"
 title: Rails page caching, Nginx, and RESTful routes
-layout: post
 ---
 ### Or, Why Am I Getting These 405 Not Allowed Errors
 

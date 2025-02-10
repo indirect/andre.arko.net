@@ -1,6 +1,6 @@
 ---
-title: "Pairing: A Guide to Fruitful Collaboration 🍓🍑🍐"
-layout: post
+date: "2018-04-26T00:00:00Z"
+title: "Pairing: A Guide to Fruitful Collaboration \U0001F353\U0001F351\U0001F350"
 ---
 <small>This post was originally given as a presentation at [RailsConf 2018](http://rubyconf.org). The [slides](https://speakerdeck.com/indirect/a-history-of-bundles-2010-to-2017) and [video](https://www.youtube.com/watch?v=km7uGUEd4fk) are also available.</small>
 

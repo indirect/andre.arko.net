@@ -1,6 +1,6 @@
 ---
-title: "Restoring backed up cookies on Mac OS X 10.9 Mavericks"
-layout: post
+date: "2014-01-20T00:00:00Z"
+title: Restoring backed up cookies on Mac OS X 10.9 Mavericks
 ---
 
 You can restore a backup of your `Cookies` file on 10.9 by quitting Safari and then running these commands in the Terminal:

@@ -1,6 +1,6 @@
 ---
-title: "Announcing RubyGems.org Stats"
-layout: post
+date: "2020-03-11T00:00:00Z"
+title: Announcing RubyGems.org Stats
 ---
 
 <small>This post was originally written for the [the RubyGems.org blog](https://blog.rubygems.org/2020/03/09/announcing-rubygems-stats.html).</small>

@@ -1,6 +1,6 @@
 ---
-title: "How to Contribute to Open Source"
-layout: post
+date: "2016-11-12T00:00:00Z"
+title: How to Contribute to Open Source
 ---
 <h3 class="subtitle">or: From No Experience to the Core Team<br> in 15 Minutes Per Day</h3>
 

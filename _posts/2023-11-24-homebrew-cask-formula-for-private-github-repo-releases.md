@@ -1,6 +1,6 @@
 ---
-title: "Homebrew cask formula for private GitHub repo releases"
-layout: post
+date: "2023-11-24T00:00:00Z"
+title: Homebrew cask formula for private GitHub repo releases
 ---
 I try to use [my dotfiles](https://github.com/indirect/dotfiles) to install software for myself, mainly via [Homebrew](https://brew.sh). This week, I ran into a new automation problem: I wanted to start using a program only available from a private GitHub repo, which requires authentication for downloads. To make things worse, new versions release frequently, so I can't use a static link to the GitHub Release entry's asset download link.
 

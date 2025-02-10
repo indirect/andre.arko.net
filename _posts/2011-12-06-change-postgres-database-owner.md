@@ -1,6 +1,6 @@
 ---
+date: "2011-12-06T00:00:00Z"
 title: Change Postgres database owner
-layout: post
 ---
 Since this took some digging to find, I'm just going to post it for posterity (and myself in the future):
 

@@ -1,6 +1,6 @@
 ---
+date: "2011-06-11T00:00:00Z"
 title: Deploying With Bundler Notes
-layout: post
 ---
 _I gave a talk at RailsConf 2011 about deploying with Bundler. These are my notes for the talk. I've also posted my [slides for the talk](/2011/06/11/deploying-with-bundler-slides). Combined, they probably serve as a somewhat reasonable replacement for having seen the talk itself._
 

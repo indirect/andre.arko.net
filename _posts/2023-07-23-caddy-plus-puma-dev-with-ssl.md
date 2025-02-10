@@ -1,6 +1,6 @@
 ---
-title: "Caddy plus puma-dev with SSL"
-layout: post
+date: "2023-07-23T00:00:00Z"
+title: Caddy plus puma-dev with SSL
 ---
 
 [Last time](/2023/03/05/caddy-puma-dev-for-local-development-with-custom-domains-and-https/), we talked about setting up Caddy as a reverse-proxy to puma-dev, providing automatically-managed local development Rails apps on their own dedicated `.test` domains. Either I missed this back then, or something inside puma-dev or Caddy changed in the meantime, but SSL requests stopped working inside Rails apps today, and it took me a while to figure out what was happening.

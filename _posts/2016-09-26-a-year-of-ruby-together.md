@@ -1,6 +1,6 @@
 ---
-title: "A Year of Ruby, Together"
-layout: post
+date: "2016-09-26T00:00:00Z"
+title: A Year of Ruby, Together
 ---
 
 <small>This post was originally given as a presentation at [EuRuKo 2016](http://2016.euruko.org). ([slides](https://speakerdeck.com/indirect/a-year-of-ruby-together))</small>

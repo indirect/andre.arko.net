@@ -1,6 +1,6 @@
 ---
-title: "Food Identification"
-layout: post
+date: "2018-05-09T00:00:00Z"
+title: Food Identification
 ---
 I'm very excited to announce my latest project, [cuberule.com](http://cuberule.com).
 

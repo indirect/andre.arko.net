@@ -1,6 +1,6 @@
 ---
+date: "2011-08-07T00:00:00Z"
 title: Fixing Mac Shutdown Delays
-layout: post
 ---
 ### or, How MySQL is broken on OS X
 

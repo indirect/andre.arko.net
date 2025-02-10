@@ -1,6 +1,6 @@
 ---
-title: "Building Ruby on arm64 macOS"
-layout: post
+date: "2020-06-30T00:00:00Z"
+title: Building Ruby on arm64 macOS
 ---
 As part of my [new computer project](/2020/06/29/symbol-_ffi_prep_closure-not-found/), I've been trying to compile Ruby for arm64-darwin20 from source. The bad news is that if you don't do anything in particular, it won't work:
 

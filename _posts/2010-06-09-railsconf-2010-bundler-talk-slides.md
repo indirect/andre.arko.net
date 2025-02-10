@@ -1,6 +1,6 @@
 ---
+date: "2010-06-09T00:00:00Z"
 title: RailsConf 2010 Bundler Talk Slides
-layout: post
 ---
 <a href="bundler.001.jpg" rel="facebox" class="image"><img src="bundler.001.jpg" alt="bundler.001"></a>
 <a href="bundler.002.jpg" rel="facebox" class="image"><img src="bundler.002.jpg" alt="bundler.002"></a>
