@@ -15,4 +15,4 @@ photos_with_metadata:
 - url: https://cdn.uploads.micro.blog/205145/2025/914b42b8ec.jpg
 url: /2016/07/01/andreconcatamy/
 ---
-<img src="uploads/2025/914b42b8ec.jpg">
+<img src="https://indirect-test.micro.blog/uploads/2025/914b42b8ec.jpg">

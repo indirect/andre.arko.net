@@ -33,4 +33,4 @@ Ultimately, I guess I have to accept that it's my fault, since I did have to do 
 
 Check out [The Ruby Way, 3rd Edition](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20) on Amazon, or get a sample chapter of the book from [therubyway.io](http://therubyway.io).
 
-[<img src="uploads/2025/a9ca85154c.jpg" style="width: 336px;">](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20)
+[<img src="https://indirect-test.micro.blog/uploads/2025/a9ca85154c.jpg" style="width: 336px;">](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20)

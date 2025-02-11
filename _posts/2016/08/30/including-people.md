@@ -29,7 +29,7 @@ Now that you know why I’m the one bringing this up, let’s talk about it. It�
 
 The topic of "diversity" has gotten a lot of press lately, both in tech in general and in the Ruby community in particular. The history of pervasive sexism and harassment in the Ruby community has even gone mainstream—it was the biggest fact about Ruby in a Bloomberg magazine article by Paul Ford called “[What is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)”, aimed at non-technical readers.
 
-Over the last few years, I've put a lot of time and energy into research. I've also written about [how to be an ally](http://andre.arko.net/2013/12/04/how-to-be-an-ally/), and about [why diversity matters](http://www.ashedryden.com/la-conf-tbd). First, I’ll briefly summarize the current situation.
+Over the last few years, I've put a lot of time and energy into research. I've also written about [how to be an ally](/2013/12/04/how-to-be-an-ally/), and about [why diversity matters](http://www.ashedryden.com/la-conf-tbd). First, I’ll briefly summarize the current situation.
 
 > How to start increasing inclusion in tech: s/diversity/inclusion/g — [@rockbot](https://twitter.com/rockbot/status/622109542533300224)
 
@@ -81,7 +81,7 @@ At this point, arguments for exclusion pivot to one more extremely popular claim
 
 ### the economic argument is diversionary bullshit
 
-I've written about [the economic argument for diversity](http://andre.arko.net/2014/05/24/the-economic-argument-for-diversity/) before, but the short response is “no, wrong again”. Research shows that [diverse teams produce better results in less time](http://www.scientificamerican.com/article/how-diversity-makes-us-smarter/).  Diversity is measurably beneficial whether it is [different expertise](https://hbr.org/2014/03/the-case-for-team-diversity-gets-even-better/) or merely [different backgrounds or perspectives](https://hbr.org/2013/12/how-diversity-can-drive-innovation). Companies choose to uphold the exclusive status quo even when it means harming themselves.
+I've written about [the economic argument for diversity](/2014/05/24/the-economic-argument-for-diversity/) before, but the short response is “no, wrong again”. Research shows that [diverse teams produce better results in less time](http://www.scientificamerican.com/article/how-diversity-makes-us-smarter/).  Diversity is measurably beneficial whether it is [different expertise](https://hbr.org/2014/03/the-case-for-team-diversity-gets-even-better/) or merely [different backgrounds or perspectives](https://hbr.org/2013/12/how-diversity-can-drive-innovation). Companies choose to uphold the exclusive status quo even when it means harming themselves.
 
 But the underlying problem is even worse: there is no excuse for treating a group of people as inferior. Ever. Mercenary attempts to include underrepresented groups for the purpose of "improving productivity" are doomed to fail from the start. Companies motivated solely by profit will never be inclusive, because that requires valuing people as human beings rather than interchangeable cogs in a machine that creates value for investors.
 

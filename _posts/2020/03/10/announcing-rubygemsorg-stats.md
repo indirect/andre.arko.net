@@ -22,7 +22,7 @@ Merely 2 or 3 years later, I was able to ensure that a redacted copy of the Ruby
 
 Unfortunately, RubyGems.org is an extremely popular website, and it produces a truly stupendous amount of logs: something on the order of 500GB, every single day. Downloading those logs, parsing them to get out the user agent, trying to remove duplicates, and then saving the results, becomes an extremely hard job when you need to be able to do it cheaply, every day, and faster than 20GB/hour.
 
-It took several more years, and [lots of experimentation with Ruby, Python, Apache Spark, AWS Glue, Rust, and Amazon Lambda](https://andre.arko.net/2018/10/25/parsing-logs-230x-faster-with-rust/), but I eventually managed to create a system that could reliably process the RubyGems.org logs firehose and provide daily numbers in the second half of 2018.
+It took several more years, and [lots of experimentation with Ruby, Python, Apache Spark, AWS Glue, Rust, and Amazon Lambda](/2018/10/25/parsing-logs-230x-faster-with-rust/), but I eventually managed to create a system that could reliably process the RubyGems.org logs firehose and provide daily numbers in the second half of 2018.
 
 At that point, André started work on a webapp that could display that data, but then completely ran out of spare cycles to work on the project for all of 2019. Fortunately, that’s when [@sidk](https://github.com/sidk) stepped in, heroically working to complete and expand the webapp into the site we have today. Here's a summary from Sid of how the final site is set up:
 

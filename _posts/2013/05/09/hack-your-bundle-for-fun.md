@@ -115,7 +115,7 @@ $ bundle viz
 
 Once you've done that, though, you get a pretty picture that's a lot of fun to look at. Here's the graph for a Gemfile that just contains the Rails gem.
 
-<img src="uploads/2025/ad6627702c.jpg">
+<img src="https://indirect-test.micro.blog/uploads/2025/ad6627702c.jpg">
 
 ### IRB in your bundle
 

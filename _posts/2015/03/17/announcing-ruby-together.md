@@ -26,7 +26,7 @@ The community that has grown up around Ruby is amazing, and provides many fantas
 
 If you or your company has benefited from the free and open-source tools available in Ruby, support those tools by becoming a member of Ruby Together. Membership dues directly fund work that benefits everyone using Ruby, and are usually tax-deductible. Both individual and corporate memberships are available. [Join us today][join]!
 
-<img src="uploads/2025/bd40991f7d.jpg" alt="Ruby Together Logo" style="width: 200px">
+<img src="https://indirect-test.micro.blog/uploads/2025/bd40991f7d.jpg" alt="Ruby Together Logo" style="width: 200px">
 
 <small>This post was originally written for [Ruby Together][post].</small>
 

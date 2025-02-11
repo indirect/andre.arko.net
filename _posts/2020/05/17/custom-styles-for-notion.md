@@ -36,4 +36,4 @@ div[style*="rgb(173, 26, 114)"] {
 
 It works, though!
 
-<img src="uploads/2025/54eee2f97f.jpg">
+<img src="https://indirect-test.micro.blog/uploads/2025/54eee2f97f.jpg">
