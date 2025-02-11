@@ -1,0 +1,47 @@
+---
+layout: post
+title: "RubyFuza 2014"
+microblog: false
+guid: http://indirect-test.micro.blog/2014/02/19/rubyfuza/
+post_id: 4971613
+date: 2014-02-18T16:00:00-0800
+lastmod: 2025-02-10T14:59:31-0800
+type: post
+images:
+- https://cdn.uploads.micro.blog/205145/2025/ec96f6cc81.jpg
+photos:
+- https://cdn.uploads.micro.blog/205145/2025/ec96f6cc81.jpg
+photos_with_metadata:
+- url: https://cdn.uploads.micro.blog/205145/2025/ec96f6cc81.jpg
+url: /2014/02/18/rubyfuza/
+---
+
+### How to build the web with empathy for non-Americans
+
+![Cape Town Beach](https://indirect-test.micro.blog/uploads/2025/ec96f6cc81.jpg)
+
+Hey there everyone! Here's another entry in my ongoing conference travelogues. This time, I went to Cape Town in South Africa, to speak at the RubyFuza conference. It was a great experience, and really brought home some important development concepts that I've heard about in the abstract but rarely experienced myself. The conference had speakers from all over the world, including Oregon, California, and Massachusetts, as well as Denmark, India, and (of course) South Africa.
+
+The community in South Africa isn't as mature as it is in the US, but it didn't feel as jaded, either. As I met locals and talked to them, I was reminded most strongly of the early days of the American Ruby community. No one was buying their own custom sports cars (at least, not yet), but everyone was excited about using Ruby and excited about building things. 
+
+That excitement translated into both projects tailored for South African needs and projects intended for anyone to use wherever they are, and that was great to see. I was impressed that even with a nascent development community, companies like Microsoft, Google, and Amazon have already founded local offices. Microsoft even announced a local startup accelerator, offering seed funding for companies building on their Azure cloud platform.
+
+While there were many excellent talks, the highlights for me were Zachary Scott's _Contributing to Ruby_, and the complementary talks _The Art of Ruby_ by Matthew Mongeau and _Clean Code: Applying Object Oriented Principles_ by Kevin McKelvin.
+
+In Zak's talk, it was very encouraging to hear a clear explanation of the actual requirements to be able to contribute to Ruby. There was even someone present who had already become a Ruby contributor after hearing a previous version of the same talk at another conference!
+
+The refactoring talks were thoughtful, smart, and absolutely inspirational to me. The influence of Sandi Metz and _Practical Object Oriented Development with Ruby_ could definitely be felt. Overall, the Ruby community seems to be reaching a consensus about some aspects of modular and understandable code that I find both encouraging and motivational.
+
+The talk that left the strongest impression on me, though, was the keynote. Charlene Tshitoka spoke on _Software Development in South Africa_. Almost every aspect of developing software there is challenging, and not just for the reasons that it's challenging for American developers. African developers (and their users) have to deal with limited or nonexistent resources on every level.
+
+As she spoke about development process and product management, it became clear to me that I (without even realizing) rely on developers around me to provide solutions to my problems. I can get advice and suggestions quickly and easily thanks to where I live and work. Although South Africa clearly has excellent developers, there is a much smaller pool of expertise available. As a result, they face greater challenges in solving not just technical problems, but organizational and social problems too.
+
+"But these are software developers", you're probably thinking, "they can get advice and suggestions from developers all over the world!". While that is technically possible, internet access is another one of the challenges faced by developers in South Africa. It's hard for me to describe, because the internet isn't just slow (which it is, very), but it's also extremely laggy. A single request for a page, or an image, can take upwards of two seconds to make its way to a server in the US and back.
+
+A complex `bundle install` run in the US can sometimes take up to 30 or 45 seconds. In South Africa, it was common to hear about 5 or 10 _minute_ bundle installs. Compounding the problem is the expense and unreliability of data connections. In a country where many people live on as little as $60 per month, internet access is an extreme luxury.
+
+One developer I talked to pays $100 USD per month for a high-speed connection: 4mbits down, 512kbits up, with a usage cap under 100GB. Just watching Netflix for a couple of hours per night could be enough to use up that entire limit, to say nothing of actually doing work. Cellular data is equally distressing, with costs around $15 USD per gigabyte, and signal that is frequently weak and degraded or completely absent. I lost count of how many places there was no signal at all within just a day or two. 
+
+Developing countries are already a big market, and they are expected to grow into a truly enormous one. As big as the opportunity is, though, any developer targeting users in developing countries faces extreme challenges in accomodating circumstancesa they have never experienced. (Some South African users don't have their own source of electricity!) In order to build products and services that work well for every human, we need to account for these challenges.
+  
+Stay tuned. Next time: Sydney, Australia, and RubyConf AU!
