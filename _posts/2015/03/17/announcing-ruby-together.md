@@ -4,7 +4,7 @@ title: "Announcing Ruby Together"
 microblog: false
 guid: http://indirect-test.micro.blog/2015/03/18/announcing-ruby-together/
 post_id: 4971552
-date: 2015-03-17T16:00:00-0800
+date: 2015-03-18T00:00:00-0800
 lastmod: 2025-02-10T14:53:53-0800
 type: post
 images:

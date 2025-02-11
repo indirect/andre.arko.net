@@ -4,7 +4,7 @@ title: "''From'' address keyboard shortcuts in Lion"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/09/26/from-address-keyboard-shortcuts-in/
 post_id: 4971372
-date: 2011-09-25T16:00:00-0800
+date: 2011-09-26T00:00:00-0800
 lastmod: 2011-09-25T16:00:00-0800
 type: post
 url: /2011/09/25/from-address-keyboard-shortcuts-in/

@@ -4,7 +4,7 @@ title: "Custom styles for Notion"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/05/18/custom-styles-for-notion/
 post_id: 4971964
-date: 2020-05-17T16:00:00-0800
+date: 2020-05-18T00:00:00-0800
 lastmod: 2025-02-10T22:18:58-0800
 type: post
 images:

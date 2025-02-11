@@ -4,7 +4,7 @@ title: "Caddy plus puma-dev with SSL"
 microblog: false
 guid: http://indirect-test.micro.blog/2023/07/23/caddy-plus-pumadev-with-ssl/
 post_id: 4971991
-date: 2023-07-22T16:00:00-0800
+date: 2023-07-23T00:00:00-0800
 lastmod: 2023-07-22T16:00:00-0800
 type: post
 url: /2023/07/22/caddy-plus-pumadev-with-ssl/

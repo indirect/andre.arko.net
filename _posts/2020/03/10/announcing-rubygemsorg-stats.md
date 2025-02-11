@@ -4,7 +4,7 @@ title: "Announcing RubyGems.org Stats"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/03/11/announcing-rubygemsorg-stats/
 post_id: 4971636
-date: 2020-03-10T16:00:00-0800
+date: 2020-03-11T00:00:00-0800
 lastmod: 2020-03-10T16:00:00-0800
 type: post
 url: /2020/03/10/announcing-rubygemsorg-stats/

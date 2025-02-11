@@ -4,7 +4,7 @@ title: "Parsing logs faster with Rust, revisited"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/03/13/parsing-logs-faster-with-rust/
 post_id: 4971980
-date: 2022-03-12T16:00:00-0800
+date: 2022-03-13T00:00:00-0800
 lastmod: 2022-03-12T16:00:00-0800
 type: post
 url: /2022/03/12/parsing-logs-faster-with-rust/

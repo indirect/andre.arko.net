@@ -4,7 +4,7 @@ title: "A History of Bundles: 2010 to 2017"
 microblog: false
 guid: http://indirect-test.micro.blog/2017/11/16/a-history-of-bundles-to/
 post_id: 4971625
-date: 2017-11-15T16:00:00-0800
+date: 2017-11-16T00:00:00-0800
 lastmod: 2025-02-10T15:00:42-0800
 type: post
 images:

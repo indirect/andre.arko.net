@@ -4,7 +4,7 @@ title: "Everyone Knows a Lunar Cycle is 28 Days"
 microblog: false
 guid: http://indirect-test.micro.blog/2018/05/24/everyone-knows-a-lunar-cycle/
 post_id: 4971628
-date: 2018-05-23T16:00:00-0800
+date: 2018-05-24T00:00:00-0800
 lastmod: 2018-05-23T16:00:00-0800
 type: post
 url: /2018/05/23/everyone-knows-a-lunar-cycle/

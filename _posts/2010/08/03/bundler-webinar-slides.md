@@ -4,7 +4,7 @@ title: "Bundler webinar slides"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/08/04/bundler-webinar-slides/
 post_id: 4971235
-date: 2010-08-03T16:00:00-0800
+date: 2010-08-04T00:00:00-0800
 lastmod: 2025-02-10T11:14:25-0800
 type: post
 images:

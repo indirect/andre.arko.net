@@ -4,7 +4,7 @@ title: "Safari extensions in Lion"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/07/23/safari-extensions-in-lion/
 post_id: 4971367
-date: 2011-07-22T16:00:00-0800
+date: 2011-07-23T00:00:00-0800
 lastmod: 2011-07-22T16:00:00-0800
 type: post
 url: /2011/07/22/safari-extensions-in-lion/

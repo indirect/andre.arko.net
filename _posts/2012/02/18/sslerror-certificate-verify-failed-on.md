@@ -4,7 +4,7 @@ title: "SSLError certificate verify failed on Engine Yard"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/02/19/sslerror-certificate-verify-failed-on/
 post_id: 4971382
-date: 2012-02-18T16:00:00-0800
+date: 2012-02-19T00:00:00-0800
 lastmod: 2012-02-18T16:00:00-0800
 type: post
 url: /2012/02/18/sslerror-certificate-verify-failed-on/

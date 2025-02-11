@@ -4,7 +4,7 @@ title: "Illegal anonymous lifetime"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/05/31/illegal-anonymous-lifetime/
 post_id: 4971530
-date: 2013-05-30T16:00:00-0800
+date: 2013-05-31T00:00:00-0800
 lastmod: 2013-05-30T16:00:00-0800
 type: post
 url: /2013/05/30/illegal-anonymous-lifetime/

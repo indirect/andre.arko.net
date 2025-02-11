@@ -4,7 +4,7 @@ title: "Make Rails 3 stop trying to serve HTML"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/12/10/make-rails-stop-trying-to/
 post_id: 4971379
-date: 2011-12-09T16:00:00-0800
+date: 2011-12-10T00:00:00-0800
 lastmod: 2011-12-09T16:00:00-0800
 type: post
 url: /2011/12/09/make-rails-stop-trying-to/

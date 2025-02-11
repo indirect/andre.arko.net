@@ -4,7 +4,7 @@ title: "RubyFuza 2014"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/02/19/rubyfuza/
 post_id: 4971613
-date: 2014-02-18T16:00:00-0800
+date: 2014-02-19T00:00:00-0800
 lastmod: 2025-02-10T14:59:31-0800
 type: post
 images:

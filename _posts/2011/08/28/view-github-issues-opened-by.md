@@ -4,7 +4,7 @@ title: "View Github issues opened by a user"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/08/29/view-github-issues-opened-by/
 post_id: 4971370
-date: 2011-08-28T16:00:00-0800
+date: 2011-08-29T00:00:00-0800
 lastmod: 2011-08-28T16:00:00-0800
 type: post
 url: /2011/08/28/view-github-issues-opened-by/

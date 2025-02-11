@@ -4,7 +4,7 @@ title: "Automatic Dependabot merges"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/05/15/automatic-dependabot-merges/
 post_id: 4971983
-date: 2022-05-14T16:00:00-0800
+date: 2022-05-15T00:00:00-0800
 lastmod: 2022-05-14T16:00:00-0800
 type: post
 url: /2022/05/14/automatic-dependabot-merges/

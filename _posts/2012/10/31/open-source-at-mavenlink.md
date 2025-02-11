@@ -4,7 +4,7 @@ title: "Open Source at Mavenlink"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/11/01/open-source-at-mavenlink/
 post_id: 4971396
-date: 2012-10-31T16:00:00-0800
+date: 2012-11-01T00:00:00-0800
 lastmod: 2012-10-31T16:00:00-0800
 type: post
 url: /2012/10/31/open-source-at-mavenlink/

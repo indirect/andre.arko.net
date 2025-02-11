@@ -4,7 +4,7 @@ title: "Security is hard, but we can't go shopping"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/08/22/security-is-hard-but-we/
 post_id: 4971533
-date: 2013-08-21T16:00:00-0800
+date: 2013-08-22T00:00:00-0800
 lastmod: 2025-02-10T14:37:22-0800
 type: post
 images:

@@ -4,7 +4,7 @@ title: "Including People"
 microblog: false
 guid: http://indirect-test.micro.blog/2016/08/31/including-people/
 post_id: 4971620
-date: 2016-08-30T16:00:00-0800
+date: 2016-08-31T00:00:00-0800
 lastmod: 2016-08-30T16:00:00-0800
 type: post
 url: /2016/08/30/including-people/

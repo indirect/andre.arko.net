@@ -4,7 +4,7 @@ title: "Extending Rails 3 with Railties"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/10/15/extending-rails-with-railties/
 post_id: 4971346
-date: 2010-10-14T16:00:00-0800
+date: 2010-10-15T00:00:00-0800
 lastmod: 2010-10-14T16:00:00-0800
 type: post
 url: /2010/10/14/extending-rails-with-railties/

@@ -4,7 +4,7 @@ title: "Force encoding in JavaScript"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/09/18/force-encoding-in-javascript/
 post_id: 4971395
-date: 2012-09-17T16:00:00-0800
+date: 2012-09-18T00:00:00-0800
 lastmod: 2012-09-17T16:00:00-0800
 type: post
 url: /2012/09/17/force-encoding-in-javascript/

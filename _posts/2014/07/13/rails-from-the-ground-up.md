@@ -4,7 +4,7 @@ title: "Rails from the ground up: HTTP"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/07/14/rails-from-the-ground-up/
 post_id: 4971545
-date: 2014-07-13T16:00:00-0800
+date: 2014-07-14T00:00:00-0800
 lastmod: 2014-07-13T16:00:00-0800
 type: post
 images:

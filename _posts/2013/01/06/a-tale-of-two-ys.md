@@ -4,7 +4,7 @@ title: "A Tale of Two ‘Y’s"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/01/07/a-tale-of-two-ys/
 post_id: 4971398
-date: 2013-01-06T16:00:00-0800
+date: 2013-01-07T00:00:00-0800
 lastmod: 2013-01-06T16:00:00-0800
 type: post
 url: /2013/01/06/a-tale-of-two-ys/

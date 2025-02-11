@@ -4,7 +4,7 @@ title: "Homebrew: OS X''s Missing Package Manager"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/02/02/homebrew-os-xs-missing-package/
 post_id: 4967466
-date: 2010-02-01T16:00:00-0800
+date: 2010-02-02T00:00:00-0800
 lastmod: 2010-02-01T16:00:00-0800
 type: post
 url: /2010/02/01/homebrew-os-xs-missing-package/

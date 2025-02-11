@@ -4,7 +4,7 @@ title: "Mastodon missing posts, with empty URL search results"
 microblog: false
 guid: http://indirect-test.micro.blog/2023/01/01/mastodon-missing-posts-with-empty/
 post_id: 4971989
-date: 2022-12-31T16:00:00-0800
+date: 2023-01-01T00:00:00-0800
 lastmod: 2022-12-31T16:00:00-0800
 type: post
 url: /2022/12/31/mastodon-missing-posts-with-empty/

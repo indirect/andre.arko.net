@@ -4,7 +4,7 @@ title: "symbol '_ffi_prep_closure' not found"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/06/29/symbol-ffiprepclosure-not-found/
 post_id: 4971968
-date: 2020-06-28T16:00:00-0800
+date: 2020-06-29T00:00:00-0800
 lastmod: 2020-06-28T16:00:00-0800
 type: post
 url: /2020/06/28/symbol-ffiprepclosure-not-found/

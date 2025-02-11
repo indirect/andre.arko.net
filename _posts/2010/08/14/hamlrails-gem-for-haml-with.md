@@ -4,7 +4,7 @@ title: "Haml-rails gem for Haml with Rails 3"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/08/15/hamlrails-gem-for-haml-with/
 post_id: 4971343
-date: 2010-08-14T16:00:00-0800
+date: 2010-08-15T00:00:00-0800
 lastmod: 2010-08-14T16:00:00-0800
 type: post
 url: /2010/08/14/hamlrails-gem-for-haml-with/

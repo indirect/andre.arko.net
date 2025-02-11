@@ -4,7 +4,7 @@ title: "iPad internet via iPhone, without jailbreaking"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/04/04/ipad-internet-via-iphone-without/
 post_id: 4967470
-date: 2010-04-03T16:00:00-0800
+date: 2010-04-04T00:00:00-0800
 lastmod: 2010-04-03T16:00:00-0800
 type: post
 url: /2010/04/03/ipad-internet-via-iphone-without/

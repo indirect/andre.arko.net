@@ -4,7 +4,7 @@ title: "Deathmatch: Bundler vs. Rubygems.org"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/05/12/deathmatch-bundler-vs-rubygemsorg/
 post_id: 4971529
-date: 2013-05-11T16:00:00-0800
+date: 2013-05-12T00:00:00-0800
 lastmod: 2013-05-11T16:00:00-0800
 type: post
 url: /2013/05/11/deathmatch-bundler-vs-rubygemsorg/

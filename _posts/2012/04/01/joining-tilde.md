@@ -4,7 +4,7 @@ title: "Joining Tilde"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/04/02/joining-tilde/
 post_id: 4971384
-date: 2012-04-01T16:00:00-0800
+date: 2012-04-02T00:00:00-0800
 lastmod: 2012-04-01T16:00:00-0800
 type: post
 url: /2012/04/01/joining-tilde/

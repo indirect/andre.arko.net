@@ -4,7 +4,7 @@ title: "Track remote git branches with ease"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/05/29/track-remote-git-branches-with/
 post_id: 4971391
-date: 2012-05-28T16:00:00-0800
+date: 2012-05-29T00:00:00-0800
 lastmod: 2012-05-28T16:00:00-0800
 type: post
 url: /2012/05/28/track-remote-git-branches-with/

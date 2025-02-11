@@ -4,7 +4,7 @@ title: "Detached git status line"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/06/24/detached-git-status-line/
 post_id: 4971393
-date: 2012-06-23T16:00:00-0800
+date: 2012-06-24T00:00:00-0800
 lastmod: 2012-06-23T16:00:00-0800
 type: post
 url: /2012/06/23/detached-git-status-line/

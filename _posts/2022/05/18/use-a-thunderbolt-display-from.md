@@ -4,7 +4,7 @@ title: "Use a Thunderbolt 3 display from Windows"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/05/19/use-a-thunderbolt-display-from/
 post_id: 4971984
-date: 2022-05-18T16:00:00-0800
+date: 2022-05-19T00:00:00-0800
 lastmod: 2022-05-18T16:00:00-0800
 type: post
 url: /2022/05/18/use-a-thunderbolt-display-from/

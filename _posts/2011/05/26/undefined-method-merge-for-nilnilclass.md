@@ -4,7 +4,7 @@ title: "undefined method `merge' for nil:NilClass"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/05/27/undefined-method-merge-for-nilnilclass/
 post_id: 4971348
-date: 2011-05-26T16:00:00-0800
+date: 2011-05-27T00:00:00-0800
 lastmod: 2011-05-26T16:00:00-0800
 type: post
 url: /2011/05/26/undefined-method-merge-for-nilnilclass/

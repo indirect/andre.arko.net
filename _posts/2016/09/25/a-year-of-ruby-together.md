@@ -4,7 +4,7 @@ title: "A Year of Ruby, Together"
 microblog: false
 guid: http://indirect-test.micro.blog/2016/09/26/a-year-of-ruby-together/
 post_id: 4971621
-date: 2016-09-25T16:00:00-0800
+date: 2016-09-26T00:00:00-0800
 lastmod: 2025-02-10T15:00:34-0800
 type: post
 images:

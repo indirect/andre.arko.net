@@ -4,7 +4,7 @@ title: "Bundler 0.9 and Rails 2.3.5"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/02/13/bundler-and-rails/
 post_id: 4967467
-date: 2010-02-12T16:00:00-0800
+date: 2010-02-13T00:00:00-0800
 lastmod: 2010-02-12T16:00:00-0800
 type: post
 url: /2010/02/12/bundler-and-rails/

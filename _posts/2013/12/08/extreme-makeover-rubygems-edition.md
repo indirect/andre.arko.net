@@ -4,7 +4,7 @@ title: "Extreme Makeover: Rubygems Edition"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/12/09/extreme-makeover-rubygems-edition/
 post_id: 4971611
-date: 2013-12-08T16:00:00-0800
+date: 2013-12-09T00:00:00-0800
 lastmod: 2013-12-08T16:00:00-0800
 type: post
 url: /2013/12/08/extreme-makeover-rubygems-edition/

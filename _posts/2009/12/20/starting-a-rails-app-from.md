@@ -4,7 +4,7 @@ title: "Starting a Rails 3 app from scratch"
 microblog: false
 guid: http://indirect-test.micro.blog/2009/12/21/starting-a-rails-app-from/
 post_id: 4967463
-date: 2009-12-20T16:00:00-0800
+date: 2009-12-21T16:00:00-0800
 lastmod: 2009-12-20T16:00:00-0800
 type: post
 url: /2009/12/20/starting-a-rails-app-from/

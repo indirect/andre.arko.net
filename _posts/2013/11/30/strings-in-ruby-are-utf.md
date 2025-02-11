@@ -4,7 +4,7 @@ title: "Strings in Ruby are UTF-8 now… right?"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/12/01/strings-in-ruby-are-utf/
 post_id: 4971608
-date: 2013-11-30T16:00:00-0800
+date: 2013-12-01T00:00:00-0800
 lastmod: 2013-11-30T16:00:00-0800
 type: post
 url: /2013/11/30/strings-in-ruby-are-utf/

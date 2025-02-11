@@ -4,7 +4,7 @@ title: "Keyboards? Tell Me More"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/03/14/keyboards-tell-me-more/
 post_id: 4971637
-date: 2020-03-13T16:00:00-0800
+date: 2020-03-14T00:00:00-0800
 lastmod: 2025-02-10T15:02:05-0800
 type: post
 images:

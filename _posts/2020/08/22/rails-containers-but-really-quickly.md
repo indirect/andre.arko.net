@@ -4,7 +4,7 @@ title: "Rails 6 containers, but really quickly"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/08/23/rails-containers-but-really-quickly/
 post_id: 4971972
-date: 2020-08-22T16:00:00-0800
+date: 2020-08-23T00:00:00-0800
 lastmod: 2020-08-22T16:00:00-0800
 type: post
 url: /2020/08/22/rails-containers-but-really-quickly/

@@ -4,7 +4,7 @@ title: "The rumors of Bundler's death have been greatly exaggerated"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/12/07/the-rumors-of-bundlers-death/
 post_id: 4971610
-date: 2013-12-06T16:00:00-0800
+date: 2013-12-07T00:00:00-0800
 lastmod: 2013-12-06T16:00:00-0800
 type: post
 url: /2013/12/06/the-rumors-of-bundlers-death/

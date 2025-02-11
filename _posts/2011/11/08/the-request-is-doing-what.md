@@ -4,7 +4,7 @@ title: "The request is doing WHAT?"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/11/09/the-request-is-doing-what/
 post_id: 4971376
-date: 2011-11-08T16:00:00-0800
+date: 2011-11-09T00:00:00-0800
 lastmod: 2011-11-08T16:00:00-0800
 type: post
 url: /2011/11/08/the-request-is-doing-what/

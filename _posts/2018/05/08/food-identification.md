@@ -4,7 +4,7 @@ title: "Food Identification"
 microblog: false
 guid: http://indirect-test.micro.blog/2018/05/09/food-identification/
 post_id: 4971627
-date: 2018-05-08T16:00:00-0800
+date: 2018-05-09T00:00:00-0800
 lastmod: 2018-05-08T16:00:00-0800
 type: post
 url: /2018/05/08/food-identification/

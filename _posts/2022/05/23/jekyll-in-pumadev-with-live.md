@@ -4,7 +4,7 @@ title: "Jekyll in puma-dev with live reload"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/05/24/jekyll-in-pumadev-with-live/
 post_id: 4971985
-date: 2022-05-23T16:00:00-0800
+date: 2022-05-24T00:00:00-0800
 lastmod: 2022-05-23T16:00:00-0800
 type: post
 url: /2022/05/23/jekyll-in-pumadev-with-live/

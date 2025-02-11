@@ -4,7 +4,7 @@ title: "Homebrew cask formula for private GitHub repo releases"
 microblog: false
 guid: http://indirect-test.micro.blog/2023/11/24/homebrew-cask-formula-for-private/
 post_id: 4971993
-date: 2023-11-23T16:00:00-0800
+date: 2023-11-24T00:00:00-0800
 lastmod: 2023-11-23T16:00:00-0800
 type: post
 url: /2023/11/23/homebrew-cask-formula-for-private/

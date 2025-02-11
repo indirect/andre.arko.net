@@ -4,7 +4,7 @@ title: "PID numbers for Rails 3 logs"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/08/18/pid-numbers-for-rails-logs/
 post_id: 4971369
-date: 2011-08-17T16:00:00-0800
+date: 2011-08-18T00:00:00-0800
 lastmod: 2011-08-17T16:00:00-0800
 type: post
 url: /2011/08/17/pid-numbers-for-rails-logs/

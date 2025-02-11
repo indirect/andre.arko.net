@@ -4,7 +4,7 @@ title: "The \"Economic Argument\" For Diversity"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/05/24/the-economic-argument-for-diversity/
 post_id: 4971615
-date: 2014-05-23T16:00:00-0800
+date: 2014-05-24T00:00:00-0800
 lastmod: 2014-05-23T16:00:00-0800
 type: post
 url: /2014/05/23/the-economic-argument-for-diversity/

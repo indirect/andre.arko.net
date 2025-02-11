@@ -4,7 +4,7 @@ title: "Automatically update every GitHub default branch"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/06/26/automatically-update-every-github-default/
 post_id: 4971967
-date: 2020-06-25T16:00:00-0800
+date: 2020-06-26T00:00:00-0800
 lastmod: 2020-06-25T16:00:00-0800
 type: post
 url: /2020/06/25/automatically-update-every-github-default/

@@ -4,7 +4,7 @@ title: "Rubygems, OpenSSL, and you"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/03/29/rubygems-openssl-and-you/
 post_id: 4971527
-date: 2013-03-28T16:00:00-0800
+date: 2013-03-29T00:00:00-0800
 lastmod: 2013-03-28T16:00:00-0800
 type: post
 url: /2013/03/28/rubygems-openssl-and-you/

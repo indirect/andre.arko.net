@@ -4,7 +4,7 @@ title: "Deploying With Bundler Notes"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/06/11/deploying-with-bundler-notes/
 post_id: 4971349
-date: 2011-06-10T16:00:00-0800
+date: 2011-06-11T00:00:00-0800
 lastmod: 2011-06-10T16:00:00-0800
 type: post
 url: /2011/06/10/deploying-with-bundler-notes/

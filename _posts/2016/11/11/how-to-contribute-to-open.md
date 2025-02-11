@@ -4,7 +4,7 @@ title: "How to Contribute to Open Source"
 microblog: false
 guid: http://indirect-test.micro.blog/2016/11/12/how-to-contribute-to-open/
 post_id: 4971622
-date: 2016-11-11T16:00:00-0800
+date: 2016-11-12T00:00:00-0800
 lastmod: 2016-11-11T16:00:00-0800
 type: post
 url: /2016/11/11/how-to-contribute-to-open/

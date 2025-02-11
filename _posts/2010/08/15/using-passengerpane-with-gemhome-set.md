@@ -4,7 +4,7 @@ title: "Using PassengerPane with GEM_HOME set"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/08/16/using-passengerpane-with-gemhome-set/
 post_id: 4971344
-date: 2010-08-15T16:00:00-0800
+date: 2010-08-16T00:00:00-0800
 lastmod: 2010-08-15T16:00:00-0800
 type: post
 url: /2010/08/15/using-passengerpane-with-gemhome-set/

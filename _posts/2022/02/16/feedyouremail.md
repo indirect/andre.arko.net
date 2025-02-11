@@ -4,7 +4,7 @@ title: "feedyour.email"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/02/17/feedyouremail/
 post_id: 4971979
-date: 2022-02-16T16:00:00-0800
+date: 2022-02-17T00:00:00-0800
 lastmod: 2022-02-16T16:00:00-0800
 type: post
 url: /2022/02/16/feedyouremail/

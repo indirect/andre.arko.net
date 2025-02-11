@@ -4,7 +4,7 @@ title: "A History of Talks"
 microblog: false
 guid: http://indirect-test.micro.blog/2017/01/15/a-history-of-talks/
 post_id: 4971623
-date: 2017-01-14T16:00:00-0800
+date: 2017-01-15T00:00:00-0800
 lastmod: 2017-01-14T16:00:00-0800
 type: post
 url: /2017/01/14/a-history-of-talks/

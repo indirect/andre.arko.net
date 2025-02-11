@@ -4,7 +4,7 @@ title: "Never `bundle exec` again"
 microblog: false
 guid: http://indirect-test.micro.blog/2021/02/22/never-bundle-exec-again/
 post_id: 4971976
-date: 2021-02-21T16:00:00-0800
+date: 2021-02-22T00:00:00-0800
 lastmod: 2021-02-21T16:00:00-0800
 type: post
 url: /2021/02/21/never-bundle-exec-again/

@@ -4,7 +4,7 @@ title: "Adding arrays in Ruby quickly"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/03/23/adding-arrays-in-ruby-quickly/
 post_id: 4971525
-date: 2013-03-22T16:00:00-0800
+date: 2013-03-23T00:00:00-0800
 lastmod: 2013-03-22T16:00:00-0800
 type: post
 url: /2013/03/22/adding-arrays-in-ruby-quickly/

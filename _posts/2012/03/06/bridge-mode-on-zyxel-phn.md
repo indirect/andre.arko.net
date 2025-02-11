@@ -4,7 +4,7 @@ title: "Bridge mode on ZyXEL P-663HN-51 DSL modems"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/03/07/bridge-mode-on-zyxel-phn/
 post_id: 4971383
-date: 2012-03-06T16:00:00-0800
+date: 2012-03-07T00:00:00-0800
 lastmod: 2025-02-10T11:35:14-0800
 type: post
 images:

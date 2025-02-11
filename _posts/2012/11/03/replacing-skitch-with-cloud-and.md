@@ -4,7 +4,7 @@ title: "Replacing Skitch with Cloud and Alfred"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/11/04/replacing-skitch-with-cloud-and/
 post_id: 4971397
-date: 2012-11-03T16:00:00-0800
+date: 2012-11-04T00:00:00-0800
 lastmod: 2012-11-03T16:00:00-0800
 type: post
 url: /2012/11/03/replacing-skitch-with-cloud-and/

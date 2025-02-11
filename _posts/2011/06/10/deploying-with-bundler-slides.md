@@ -4,7 +4,7 @@ title: "Deploying With Bundler Slides"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/06/11/deploying-with-bundler-slides/
 post_id: 4971361
-date: 2011-06-10T16:00:00-0800
+date: 2011-06-11T00:00:00-0800
 lastmod: 2025-02-10T11:31:36-0800
 type: post
 images:

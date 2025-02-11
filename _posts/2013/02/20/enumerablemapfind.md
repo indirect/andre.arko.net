@@ -4,7 +4,7 @@ title: "Enumerable#map_find"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/02/21/enumerablemapfind/
 post_id: 4971400
-date: 2013-02-20T16:00:00-0800
+date: 2013-02-21T00:00:00-0800
 lastmod: 2013-02-20T16:00:00-0800
 type: post
 url: /2013/02/20/enumerablemapfind/

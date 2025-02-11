@@ -4,7 +4,7 @@ title: "Self-hosted Mastodon SMTP configuration"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/11/14/selfhosted-mastodon-smtp-configuration/
 post_id: 4971988
-date: 2022-11-13T16:00:00-0800
+date: 2022-11-14T00:00:00-0800
 lastmod: 2022-11-13T16:00:00-0800
 type: post
 url: /2022/11/13/selfhosted-mastodon-smtp-configuration/

@@ -4,7 +4,7 @@ title: "Rails page caching, Nginx, and RESTful routes"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/06/30/rails-page-caching-nginx-and/
 post_id: 4971364
-date: 2011-06-29T16:00:00-0800
+date: 2011-06-30T00:00:00-0800
 lastmod: 2011-06-29T16:00:00-0800
 type: post
 url: /2011/06/29/rails-page-caching-nginx-and/

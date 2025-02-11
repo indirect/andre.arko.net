@@ -4,7 +4,7 @@ title: "Caddy + puma-dev for local development with custom domains and HTTPS"
 microblog: false
 guid: http://indirect-test.micro.blog/2023/03/05/caddy-pumadev-for-local-development/
 post_id: 4971990
-date: 2023-03-04T16:00:00-0800
+date: 2023-03-05T00:00:00-0800
 lastmod: 2023-03-04T16:00:00-0800
 type: post
 url: /2023/03/04/caddy-pumadev-for-local-development/

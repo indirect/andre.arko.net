@@ -4,7 +4,7 @@ title: "Nested layouts on Rails ~> 3.1"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/02/02/nested-layouts-on-rails/
 post_id: 4971399
-date: 2013-02-01T16:00:00-0800
+date: 2013-02-02T00:00:00-0800
 lastmod: 2013-02-01T16:00:00-0800
 type: post
 url: /2013/02/01/nested-layouts-on-rails/

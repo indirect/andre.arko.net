@@ -4,7 +4,7 @@ title: "Changing git and GitHub's default branch name"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/06/06/changing-git-and-githubs-default/
 post_id: 4971966
-date: 2020-06-05T16:00:00-0800
+date: 2020-06-06T00:00:00-0800
 lastmod: 2020-06-05T16:00:00-0800
 type: post
 url: /2020/06/05/changing-git-and-githubs-default/

@@ -4,7 +4,7 @@ title: "Apple Studio Display from a PC without Thunderbolt"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/10/24/apple-studio-display-from-a/
 post_id: 4971986
-date: 2022-10-23T16:00:00-0800
+date: 2022-10-24T00:00:00-0800
 lastmod: 2022-10-23T16:00:00-0800
 type: post
 url: /2022/10/23/apple-studio-display-from-a/

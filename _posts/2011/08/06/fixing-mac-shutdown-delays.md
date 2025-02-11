@@ -4,7 +4,7 @@ title: "Fixing Mac Shutdown Delays"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/08/07/fixing-mac-shutdown-delays/
 post_id: 4971368
-date: 2011-08-06T16:00:00-0800
+date: 2011-08-07T00:00:00-0800
 lastmod: 2011-08-06T16:00:00-0800
 type: post
 url: /2011/08/06/fixing-mac-shutdown-delays/

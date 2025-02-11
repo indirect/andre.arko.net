@@ -4,7 +4,7 @@ title: "Tab completion for chruby and ruby-install on zsh"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/05/16/tab-completion-for-chruby-and/
 post_id: 4971963
-date: 2020-05-15T16:00:00-0800
+date: 2020-05-16T00:00:00-0800
 lastmod: 2020-05-15T16:00:00-0800
 type: post
 url: /2020/05/15/tab-completion-for-chruby-and/

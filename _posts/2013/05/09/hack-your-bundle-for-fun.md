@@ -4,7 +4,7 @@ title: "Hack your bundle for fun and profit"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/05/10/hack-your-bundle-for-fun/
 post_id: 4971528
-date: 2013-05-09T16:00:00-0800
+date: 2013-05-10T00:00:00-0800
 lastmod: 2025-02-10T14:36:57-0800
 type: post
 images:

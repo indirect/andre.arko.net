@@ -4,7 +4,7 @@ title: "How to be an ally"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/12/04/how-to-be-an-ally/
 post_id: 4971609
-date: 2013-12-03T16:00:00-0800
+date: 2013-12-04T00:00:00-0800
 lastmod: 2013-12-03T16:00:00-0800
 type: post
 url: /2013/12/03/how-to-be-an-ally/

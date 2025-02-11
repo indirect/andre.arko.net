@@ -4,7 +4,7 @@ title: "Change Postgres database owner"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/12/06/change-postgres-database-owner/
 post_id: 4971378
-date: 2011-12-05T16:00:00-0800
+date: 2011-12-06T00:00:00-0800
 lastmod: 2011-12-05T16:00:00-0800
 type: post
 url: /2011/12/05/change-postgres-database-owner/

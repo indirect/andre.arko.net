@@ -4,7 +4,7 @@ title: "git golf continued"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/02/19/git-golf-continued/
 post_id: 4971635
-date: 2020-02-18T16:00:00-0800
+date: 2020-02-19T00:00:00-0800
 lastmod: 2020-02-18T16:00:00-0800
 type: post
 url: /2020/02/18/git-golf-continued/

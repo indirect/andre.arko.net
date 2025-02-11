@@ -4,7 +4,7 @@ title: "Towards a Bundler plugin system"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/07/23/towards-a-bundler-plugin-system/
 post_id: 4971394
-date: 2012-07-22T16:00:00-0800
+date: 2012-07-23T00:00:00-0800
 lastmod: 2012-07-22T16:00:00-0800
 type: post
 url: /2012/07/22/towards-a-bundler-plugin-system/

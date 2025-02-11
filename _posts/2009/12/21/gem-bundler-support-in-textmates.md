@@ -4,7 +4,7 @@ title: "Gem bundler support in TextMate's RSpec bundle"
 microblog: false
 guid: http://indirect-test.micro.blog/2009/12/22/gem-bundler-support-in-textmates/
 post_id: 4967464
-date: 2009-12-21T16:00:00-0800
+date: 2009-12-22T00:00:00-0800
 lastmod: 2009-12-21T16:00:00-0800
 type: post
 url: /2009/12/21/gem-bundler-support-in-textmates/

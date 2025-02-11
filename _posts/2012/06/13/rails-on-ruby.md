@@ -4,7 +4,7 @@ title: "Rails 2.3.14 on Ruby 1.9.3"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/06/14/rails-on-ruby/
 post_id: 4971392
-date: 2012-06-13T16:00:00-0800
+date: 2012-06-14T00:00:00-0800
 lastmod: 2012-06-13T16:00:00-0800
 type: post
 url: /2012/06/13/rails-on-ruby/

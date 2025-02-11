@@ -4,7 +4,7 @@ title: "Instant Rails CI for GitHub Actions (finally)"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/04/16/instant-rails-ci-for-github/
 post_id: 4971981
-date: 2022-04-15T16:00:00-0800
+date: 2022-04-16T00:00:00-0800
 lastmod: 2025-02-10T22:19:52-0800
 type: post
 images:

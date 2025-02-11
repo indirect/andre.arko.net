@@ -4,7 +4,7 @@ title: "Pairing: A Guide to Fruitful Collaboration 🍓🍑🍐"
 microblog: false
 guid: http://indirect-test.micro.blog/2018/04/26/pairing-a-guide-to-fruitful/
 post_id: 4971626
-date: 2018-04-25T16:00:00-0800
+date: 2018-04-26T00:00:00-0800
 lastmod: 2025-02-10T22:17:25-0800
 type: post
 url: /2018/04/25/pairing-a-guide-to-fruitful/

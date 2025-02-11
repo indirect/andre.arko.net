@@ -4,7 +4,7 @@ title: "Fix newrelic.yml symlink errors on Engine Yard"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/01/24/fix-newrelicyml-symlink-errors-on/
 post_id: 4971381
-date: 2012-01-23T16:00:00-0800
+date: 2012-01-24T00:00:00-0800
 lastmod: 2012-01-23T16:00:00-0800
 type: post
 url: /2012/01/23/fix-newrelicyml-symlink-errors-on/

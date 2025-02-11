@@ -4,7 +4,7 @@ title: "iOS 8 Keyboards"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/09/26/ios-keyboards/
 post_id: 4971586
-date: 2014-09-25T16:00:00-0800
+date: 2014-09-26T00:00:00-0800
 lastmod: 2025-02-10T14:58:59-0800
 type: post
 images:

@@ -4,7 +4,7 @@ title: "Falsehoods programmers believe"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/03/24/falsehoods-programmers-believe/
 post_id: 4971526
-date: 2013-03-23T16:00:00-0800
+date: 2013-03-24T00:00:00-0800
 lastmod: 2013-03-23T16:00:00-0800
 type: post
 url: /2013/03/23/falsehoods-programmers-believe/

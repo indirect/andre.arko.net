@@ -4,7 +4,7 @@ title: "Vim is the worst editor"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/09/11/vim-is-the-worst-editor/
 post_id: 4971607
-date: 2013-09-10T16:00:00-0800
+date: 2013-09-11T00:00:00-0800
 lastmod: 2013-09-10T16:00:00-0800
 type: post
 url: /2013/09/10/vim-is-the-worst-editor/

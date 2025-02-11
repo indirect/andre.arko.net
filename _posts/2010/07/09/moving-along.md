@@ -4,7 +4,7 @@ title: "Moving along"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/07/10/moving-along/
 post_id: 4971234
-date: 2010-07-09T16:00:00-0800
+date: 2010-07-10T00:00:00-0800
 lastmod: 2010-07-09T16:00:00-0800
 type: post
 url: /2010/07/09/moving-along/

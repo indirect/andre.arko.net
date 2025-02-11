@@ -4,7 +4,7 @@ title: "Ruby55: how to make a gem in under 60 seconds"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/05/11/ruby-how-to-make-a/
 post_id: 4971982
-date: 2022-05-10T16:00:00-0800
+date: 2022-05-11T00:00:00-0800
 lastmod: 2022-05-10T16:00:00-0800
 type: post
 url: /2022/05/10/ruby-how-to-make-a/

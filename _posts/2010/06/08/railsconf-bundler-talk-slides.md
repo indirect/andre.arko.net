@@ -4,7 +4,7 @@ title: "RailsConf 2010 Bundler Talk Slides"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/06/09/railsconf-bundler-talk-slides/
 post_id: 4971213
-date: 2010-06-08T16:00:00-0800
+date: 2010-06-09T00:00:00-0800
 lastmod: 2025-02-10T11:13:06-0800
 type: post
 images:

@@ -4,7 +4,7 @@ title: "OmniFocus location-based alerts"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/10/12/omnifocus-locationbased-alerts/
 post_id: 4971373
-date: 2011-10-11T16:00:00-0800
+date: 2011-10-12T00:00:00-0800
 lastmod: 2011-10-11T16:00:00-0800
 type: post
 url: /2011/10/11/omnifocus-locationbased-alerts/

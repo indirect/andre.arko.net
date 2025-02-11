@@ -4,7 +4,7 @@ title: "Sharing an Apple Pro XDR or Studio Display between a Mac and PC"
 microblog: false
 guid: http://indirect-test.micro.blog/2022/10/26/sharing-an-apple-pro-xdr/
 post_id: 4971987
-date: 2022-10-25T16:00:00-0800
+date: 2022-10-26T00:00:00-0800
 lastmod: 2022-10-25T16:00:00-0800
 type: post
 url: /2022/10/25/sharing-an-apple-pro-xdr/

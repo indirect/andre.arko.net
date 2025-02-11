@@ -4,7 +4,7 @@ title: "Rails in 0.5 seconds"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/06/27/rails-in-seconds/
 post_id: 4971616
-date: 2014-06-26T16:00:00-0800
+date: 2014-06-27T00:00:00-0800
 lastmod: 2014-06-26T16:00:00-0800
 type: post
 url: /2014/06/26/rails-in-seconds/

@@ -4,7 +4,7 @@ title: "signing git commits without gpg"
 microblog: false
 guid: http://indirect-test.micro.blog/2021/02/06/signing-git-commits-without-gpg/
 post_id: 4971974
-date: 2021-02-05T16:00:00-0800
+date: 2021-02-06T00:00:00-0800
 lastmod: 2021-02-05T16:00:00-0800
 type: post
 url: /2021/02/05/signing-git-commits-without-gpg/

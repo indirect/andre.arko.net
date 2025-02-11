@@ -4,7 +4,7 @@ title: "How does Bundler work, anyway?"
 microblog: false
 guid: http://indirect-test.micro.blog/2015/04/28/how-does-bundler-work-anyway/
 post_id: 4971554
-date: 2015-04-27T16:00:00-0800
+date: 2015-04-28T00:00:00-0800
 lastmod: 2015-04-27T16:00:00-0800
 type: post
 url: /2015/04/27/how-does-bundler-work-anyway/

@@ -4,7 +4,7 @@ title: "The New Rubygems Index Format"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/03/28/the-new-rubygems-index-format/
 post_id: 4971614
-date: 2014-03-27T16:00:00-0800
+date: 2014-03-28T00:00:00-0800
 lastmod: 2014-03-27T16:00:00-0800
 type: post
 url: /2014/03/27/the-new-rubygems-index-format/

@@ -4,7 +4,7 @@ title: "Bundler API Outages"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/07/16/bundler-api-outages/
 post_id: 4971546
-date: 2014-07-15T16:00:00-0800
+date: 2014-07-16T00:00:00-0800
 lastmod: 2014-07-15T16:00:00-0800
 type: post
 url: /2014/07/15/bundler-api-outages/

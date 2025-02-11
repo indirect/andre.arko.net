@@ -4,7 +4,7 @@ title: "Sending Delayed Job Exceptions to Hoptoad"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/07/02/sending-delayed-job-exceptions-to/
 post_id: 4971365
-date: 2011-07-01T16:00:00-0800
+date: 2011-07-02T00:00:00-0800
 lastmod: 2011-07-01T16:00:00-0800
 type: post
 url: /2011/07/01/sending-delayed-job-exceptions-to/

@@ -4,7 +4,7 @@ title: "How to Safely Store User Data"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/09/20/how-to-safely-store-user/
 post_id: 4971549
-date: 2014-09-19T16:00:00-0800
+date: 2014-09-20T00:00:00-0800
 lastmod: 2014-09-19T16:00:00-0800
 type: post
 url: /2014/09/19/how-to-safely-store-user/

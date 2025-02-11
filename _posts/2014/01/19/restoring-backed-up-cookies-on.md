@@ -4,7 +4,7 @@ title: "Restoring backed up cookies on Mac OS X 10.9 Mavericks"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/01/20/restoring-backed-up-cookies-on/
 post_id: 4971612
-date: 2014-01-19T16:00:00-0800
+date: 2014-01-20T00:00:00-0800
 lastmod: 2014-01-19T16:00:00-0800
 type: post
 url: /2014/01/19/restoring-backed-up-cookies-on/

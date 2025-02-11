@@ -4,7 +4,7 @@ title: "Built an Atreus 2"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/03/15/built-an-atreus/
 post_id: 4971638
-date: 2020-03-14T16:00:00-0800
+date: 2020-03-15T00:00:00-0800
 lastmod: 2025-02-10T15:02:37-0800
 type: post
 images:

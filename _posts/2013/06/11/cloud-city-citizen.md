@@ -4,7 +4,7 @@ title: "Cloud City Citizen"
 microblog: false
 guid: http://indirect-test.micro.blog/2013/06/12/cloud-city-citizen/
 post_id: 4971532
-date: 2013-06-11T16:00:00-0800
+date: 2013-06-12T00:00:00-0800
 lastmod: 2025-02-10T14:37:06-0800
 type: post
 images:

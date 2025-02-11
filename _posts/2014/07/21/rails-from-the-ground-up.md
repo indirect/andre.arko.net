@@ -4,7 +4,7 @@ title: "Rails from the ground up: Status Codes & Headers"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/07/22/rails-from-the-ground-up/
 post_id: 4971547
-date: 2014-07-21T16:00:00-0800
+date: 2014-07-22T00:00:00-0800
 lastmod: 2014-07-21T16:00:00-0800
 type: post
 url: /2014/07/21/rails-from-the-ground-up/

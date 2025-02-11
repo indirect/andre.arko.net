@@ -4,7 +4,7 @@ title: "TCP delays and retransmissions on Illumos"
 microblog: false
 guid: http://indirect-test.micro.blog/2014/08/01/tcp-delays-and-retransmissions-on/
 post_id: 4971548
-date: 2014-07-31T16:00:00-0800
+date: 2014-08-01T00:00:00-0800
 lastmod: 2014-07-31T16:00:00-0800
 type: post
 url: /2014/07/31/tcp-delays-and-retransmissions-on/

@@ -4,7 +4,7 @@ title: "TextMate strip whitespace and preserve cursor position"
 microblog: false
 guid: http://indirect-test.micro.blog/2009/12/27/textmate-strip-whitespace-and-preserve/
 post_id: 4967465
-date: 2009-12-26T16:00:00-0800
+date: 2009-12-27T00:00:00-0800
 lastmod: 2009-12-26T16:00:00-0800
 type: post
 url: /2009/12/26/textmate-strip-whitespace-and-preserve/

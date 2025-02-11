@@ -4,7 +4,7 @@ title: "Migrating off CloudApp (to Dropbox + Dropshare)"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/05/19/migrating-off-cloudapp-to-dropbox/
 post_id: 4971965
-date: 2020-05-18T16:00:00-0800
+date: 2020-05-19T00:00:00-0800
 lastmod: 2020-05-18T16:00:00-0800
 type: post
 url: /2020/05/18/migrating-off-cloudapp-to-dropbox/

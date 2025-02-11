@@ -4,7 +4,7 @@ title: "Bundler Tips and Tricks"
 microblog: false
 guid: http://indirect-test.micro.blog/2018/06/03/bundler-tips-and-tricks/
 post_id: 4971629
-date: 2018-06-02T16:00:00-0800
+date: 2018-06-03T00:00:00-0800
 lastmod: 2018-06-02T16:00:00-0800
 type: post
 url: /2018/06/02/bundler-tips-and-tricks/

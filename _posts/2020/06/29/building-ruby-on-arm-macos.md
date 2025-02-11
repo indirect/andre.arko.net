@@ -4,7 +4,7 @@ title: "Building Ruby on arm64 macOS"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/06/30/building-ruby-on-arm-macos/
 post_id: 4971969
-date: 2020-06-29T16:00:00-0800
+date: 2020-06-30T00:00:00-0800
 lastmod: 2020-06-29T16:00:00-0800
 type: post
 url: /2020/06/29/building-ruby-on-arm-macos/

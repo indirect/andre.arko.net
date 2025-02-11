@@ -4,7 +4,7 @@ title: "The Ruby Way, 3rd Edition"
 microblog: false
 guid: http://indirect-test.micro.blog/2015/04/09/the-ruby-way-rd-edition/
 post_id: 4971553
-date: 2015-04-08T16:00:00-0800
+date: 2015-04-09T00:00:00-0800
 lastmod: 2025-02-10T14:53:55-0800
 type: post
 images:

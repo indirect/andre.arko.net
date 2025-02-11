@@ -4,7 +4,7 @@ title: "RVM system gems without sudo"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/09/04/rvm-system-gems-without-sudo/
 post_id: 4971371
-date: 2011-09-03T16:00:00-0800
+date: 2011-09-04T00:00:00-0800
 lastmod: 2011-09-03T16:00:00-0800
 type: post
 url: /2011/09/03/rvm-system-gems-without-sudo/

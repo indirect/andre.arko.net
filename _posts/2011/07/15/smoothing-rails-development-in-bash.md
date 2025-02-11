@@ -4,7 +4,7 @@ title: "Smoothing Rails development in Bash"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/07/16/smoothing-rails-development-in-bash/
 post_id: 4971366
-date: 2011-07-15T16:00:00-0800
+date: 2011-07-16T00:00:00-0800
 lastmod: 2011-07-15T16:00:00-0800
 type: post
 url: /2011/07/15/smoothing-rails-development-in-bash/

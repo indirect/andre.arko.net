@@ -4,7 +4,7 @@ title: "andre.concat(amy)"
 microblog: false
 guid: http://indirect-test.micro.blog/2016/07/02/andreconcatamy/
 post_id: 4971619
-date: 2016-07-01T16:00:00-0800
+date: 2016-07-02T00:00:00-0800
 lastmod: 2025-02-10T15:00:32-0800
 type: post
 images:

@@ -4,7 +4,7 @@ title: "git in as fw chrs as psbl"
 microblog: false
 guid: http://indirect-test.micro.blog/2019/01/20/git-in-as-fw-chrs/
 post_id: 4971633
-date: 2019-01-19T16:00:00-0800
+date: 2019-01-20T00:00:00-0800
 lastmod: 2025-02-10T15:01:18-0800
 type: post
 images:

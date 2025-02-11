@@ -4,7 +4,7 @@ title: "iGoogleFight"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/03/05/igooglefight/
 post_id: 4967468
-date: 2010-03-04T16:00:00-0800
+date: 2010-03-05T00:00:00-0800
 lastmod: 2010-03-04T16:00:00-0800
 type: post
 url: /2010/03/04/igooglefight/

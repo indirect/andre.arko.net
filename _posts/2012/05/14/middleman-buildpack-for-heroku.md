@@ -4,7 +4,7 @@ title: "Middleman Buildpack for Heroku"
 microblog: false
 guid: http://indirect-test.micro.blog/2012/05/15/middleman-buildpack-for-heroku/
 post_id: 4971385
-date: 2012-05-14T16:00:00-0800
+date: 2012-05-15T00:00:00-0800
 lastmod: 2012-05-14T16:00:00-0800
 type: post
 url: /2012/05/14/middleman-buildpack-for-heroku/

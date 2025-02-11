@@ -4,7 +4,7 @@ title: "🩺 How to do Code Review"
 microblog: false
 guid: http://indirect-test.micro.blog/2020/01/24/ufaa-how-to-do-code/
 post_id: 4971634
-date: 2020-01-23T16:00:00-0800
+date: 2020-01-24T00:00:00-0800
 lastmod: 2025-02-10T22:17:50-0800
 type: post
 url: /2020/01/23/ufaa-how-to-do-code/

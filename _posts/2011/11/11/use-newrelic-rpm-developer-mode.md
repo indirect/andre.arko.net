@@ -4,7 +4,7 @@ title: "Use NewRelic RPM developer mode with Pow"
 microblog: false
 guid: http://indirect-test.micro.blog/2011/11/12/use-newrelic-rpm-developer-mode/
 post_id: 4971377
-date: 2011-11-11T16:00:00-0800
+date: 2011-11-12T00:00:00-0800
 lastmod: 2011-11-11T16:00:00-0800
 type: post
 url: /2011/11/11/use-newrelic-rpm-developer-mode/

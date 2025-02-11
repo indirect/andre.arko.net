@@ -4,7 +4,7 @@ title: "Slides from my Bundler talk at the Red Dirt Ruby Conference"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/05/09/slides-from-my-bundler-talk/
 post_id: 4967472
-date: 2010-05-08T16:00:00-0800
+date: 2010-05-09T00:00:00-0800
 lastmod: 2025-02-10T00:47:39-0800
 type: post
 images:

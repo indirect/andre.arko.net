@@ -4,7 +4,7 @@ title: "Exclude bundles from Time Machine and Spotlight"
 microblog: false
 guid: http://indirect-test.micro.blog/2021/07/20/exclude-bundles-from-time-machine/
 post_id: 4971977
-date: 2021-07-19T16:00:00-0800
+date: 2021-07-20T00:00:00-0800
 lastmod: 2021-07-19T16:00:00-0800
 type: post
 url: /2021/07/19/exclude-bundles-from-time-machine/

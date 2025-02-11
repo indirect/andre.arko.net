@@ -4,7 +4,7 @@ title: "Jekyll postfiles plugin"
 microblog: false
 guid: http://indirect-test.micro.blog/2010/09/06/jekyll-postfiles-plugin/
 post_id: 4971345
-date: 2010-09-05T16:00:00-0800
+date: 2010-09-06T00:00:00-0800
 lastmod: 2010-09-05T16:00:00-0800
 type: post
 url: /2010/09/05/jekyll-postfiles-plugin/

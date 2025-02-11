@@ -4,7 +4,7 @@ title: "Updating iTunes Track Parser Scripts for Music.app"
 microblog: false
 guid: http://indirect-test.micro.blog/2024/10/10/updating-itunes-track-parser-scripts/
 post_id: 4971994
-date: 2024-10-09T16:00:00-0800
+date: 2024-10-10T00:00:00-0800
 lastmod: 2024-10-09T16:00:00-0800
 type: post
 url: /2024/10/09/updating-itunes-track-parser-scripts/
