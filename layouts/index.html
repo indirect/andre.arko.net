@@ -6,7 +6,7 @@
     <ul class="posts">
       {{ range .Pages }}
         <li>
-          <span class="post-date">{{ .PublishDate | time.Format "Jan 01" }}</span>
+          <span class="post-date">{{ .PublishDate | time.Format "Jan 02" }}</span>
           <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
         </li>
       {{ end }}
