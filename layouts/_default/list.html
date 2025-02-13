@@ -3,6 +3,6 @@
   {{ .Content }}
 
   {{ range .Pages }}
-    <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+    <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></span>
   {{ end }}
 {{ end }}

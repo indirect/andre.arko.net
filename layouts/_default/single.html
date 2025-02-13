@@ -1,5 +1,5 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
-  <h2 class="post-title">{{ .Title }}</h2>
+  <h2 class="post-title">{{ .Title | safeHTML }}</h2>
   {{ .Content }}
 {{ end }}
