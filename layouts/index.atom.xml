@@ -1,0 +1,23 @@
+{{ printf `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }} {{/* ref: https://validator.w3.org/feed/docs/atom.html */}}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>
+  <title>André Arko</title>
+  <link href="http://andre.arko.net/atom.xml" rel="self"/>
+  <link href="http://andre.arko.net/"/>
+  <updated>{{ now.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+  <id>http://andre.arko.net/</id>
+  <author>
+    <name>André Arko</name>
+    <email>andre@arko.net</email>
+  </author>
+
+  {{ range (where .Site.RegularPages "Type" "post") }}
+    <entry>
+      {{ printf `<title type="html"><![CDATA[%s]]></title>` .Title | safeHTML }}
+      <link href="{{ .Permalink }}"/>
+      <updated>{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+      <id>http://andre.arko.net{{ .RelPermalink }}</id>
+      {{ printf `<content type="html"><![CDATA[%s]]></content>` .Content | safeHTML }}
+    </entry>
+  {{ end }}
+</feed>
