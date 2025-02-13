@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="author" content="André Arko">
-  <link href="/atom.xml" rel="alternate" title="André Arko" type="application/atom+xml">
-
   <link rel="stylesheet" href="/css/syntax.css" type="text/css">
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen">
-
+  {{ partial "microblog_head.html" . }}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 </head>
