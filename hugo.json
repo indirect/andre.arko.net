@@ -14,6 +14,32 @@
       }
     }
   },
+  "outputs": {
+    "home": [
+      "HTML",
+      "RSS",
+      "ATOM"
+    ]
+  },
+  "mediaTypes": {
+    "application/atom+xml": {
+      "suffixes": [
+        "xml"
+      ]
+    }
+  },
+  "outputFormats": {
+    "Atom": {
+      "name": "Atom",
+      "mediaType": "application/atom+xml",
+      "baseName": "atom",
+      "isPlainText": false,
+      "rel": "alternate",
+      "isHTML": false,
+      "noUgly": true,
+      "permalinkable": false
+    }
+  },
   "module": {
     "hugoVersion": {
       "extended": false,
