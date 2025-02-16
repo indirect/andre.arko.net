@@ -240,6 +240,38 @@ ul.talk-events {
   clear: both;
 }
 
+.resume-entry {
+  margin-bottom: 1.5em;
+}
+
+.resume-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-info-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-info-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.resume-title {
+  clear: both;
+  font-family: "p22-underground", sans-serif;
+}
+
+.resume-description {
+  margin: 0.25em 1em;
+  padding: 0 0.5em;
+  border-left: 0.25em solid gray;
+  border-radius: 0.25em;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;

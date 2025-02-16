@@ -1,15 +1,125 @@
 ---
-- title: "Director of Engineering"
-  company: "Cloud City Development"
-  url: "https://cloudcity.io"
-  location: "San Francisco, CA"
-  start_date: "February 2013"
-  end_date: "Present"
-  description: ""
-- title: "Software consultant"
-  company: "FileThis"
-  url: "https://filethis.com"
-  location: "San Francisco, CA"
-  start_date: "June 2012"
-  end_date: "October 2013"
-  description: "The missing Slack integration for PagerDuty. Track who's on call, request shift coverage, and set up automatically updating named groups."
+- company: SunChaser
+  title: Cofounder
+  link: https://sunchaser.io
+  location: San Francisco, CA
+  start: March 2024
+  description:
+
+- company: Ruby Central
+  title: Open Source Lead
+  location: San Francisco, CA
+  start: January 2022
+  end: September 2024
+  description:
+
+- company: Ruby Together
+  title: Founder, Executive Director
+  location: San Francisco, CA
+  start: February 2015
+  end: December 2021
+  description: |
+    Solo-founded and bootstrapped a 501(c)(6) non-profit supporting the Ruby programming language package management system. Raised hundreds of thousands of dollars annually while managing all staff and open source developers.
+
+- company: Cloud City Development
+  title: Vice Minister of Computation
+  url: cloudcity.io
+  link: https://cloudcity.io
+  location: San Francisco, CA
+  start: February 2013
+  description: |
+    Architecture and principal-level software consulting at many Bay Area startups; business and engineering management as a director at the consultancy.
+
+- company: Mavenlink
+  title: Open Source Lead
+  link: https://mavenlink.com
+  location: San Francisco, CA
+  start: October 2012
+  end: February 2013
+  description: |
+    Extracted internal libraries for release as open source, maintained multiple external open source projects, and developed conference talk proposals. Provided internal consulting on Ruby and Rails issues, upgraded infrastructure, and paired with junior and mid-level developers for assistance and training.
+
+- company: FileThis
+  title: Software Consultant
+  location: San Francisco, CA
+  start: June 2012
+  end: February 2013
+  description: |
+    Maintained, updated, and added new scripts to the FileThis fork of the Wesabe SSU project, used to automate the process of fetching monthly statements from a large variety of financial institutions and utility providers.
+
+- company: Etsy
+  title: Software Consultant
+  link: https://etsy.com
+  location: New York, NY
+  start: June 2012
+  end: December 2012
+  description: |
+    Updated legacy Rails application from Ruby 1.8 and Rails 2.2 to Ruby 1.9 and Rails 3.2. Provided emergency troubleshooting, security recommendations, and implemented fixes for many known and discovered security and functional issues.
+
+- company: Fanfare Entertainment
+  title: Software Consultant
+  location: Burlingame, CA
+  start: June 2012
+  end: October 2012
+  description: |
+    Took over development of a Rails application that provides musicians with an online storefront for sales of music, music videos, and instructional videos. Assisted with development of a Rails-based app providing a JSON API backend for iOS clients.
+
+- company: Tilde
+  link: https://tilde.io
+  title: Software Engineer
+  location: San Francisco, CA
+  start: April 2012
+  end: May 2012
+  description: |
+    Worked as a consultant with [Square](https://squareup.com) to build their next generation user dashboard using the Javascript framework Ember.js. Built the Tilde website, and contributed to the Ember and ember-rails open source projects.
+
+- company: Plex
+  link: https://plexapp.com
+  title: Software Engineer
+  location: San Francisco, CA
+  start: July 2010
+  end: April 2012
+  description: |
+    Maintained, updated, and added features, unit tests, and integration tests to a legacy Rails application. Architected, designed, implemented, and automated deployment of a web service using Rails and Nginx that manages, updates, and routes requests for hundreds of Python HTTP servers. Designed and implemented a web application at my.plexapp.com that functions as the centralized coordinator of the Plex ecosystem, including user profiles, media queues, clients, and servers.
+
+- company: Engine Yard
+  link: https://engineyard.com
+  title: Software Engineer
+  location: San Francisco, CA
+  start: December 2009
+  end: July 2010
+  description: |
+    Worked on Bundler, an open source component of Ruby on Rails 3, as a member of the 3-person core team. Designed and implemented the first version of the Engineyard gem, a command-line tool for deploying Rails applications to Engine Yard’s AppCloud.  Maintained and extended the AppCloud application, written in Merb.
+
+- company: Wesabe
+  title: Software Engineer
+  location: San Francisco, CA
+  start: October 2007
+  end: December 2009
+  description: |
+    Maintained and extended the primary application, written in Ruby on Rails. Extensively developed new frontend portions of the application using jQuery. Installed in-house tools for the engineering team to use, including CCrb, gitosis, and RedMine. Helped develop open-source tools for company communication and git workflow, including Wesabot, git-tools, and git-commit-notifier.
+
+- company: i5Labs
+  title: Rails Lead
+  location: San Francisco, CA
+  start: January 2007
+  end: October 2007
+  description: |
+    Worked with clients to design, develop, and deploy Rails applications. Projects include solo development of an application for ordering food delivery online, as well as working with a team to develop a social networking site aimed at religious groups.
+
+- company: ReziTech
+  title: Rails Developer
+  start: January 2006
+  end: November 2006
+  location: La Habra, CA
+  description: |
+    Developed and deployed multiple Ruby on Rails applications for ReziTech’s clients, including a web storefront for selling mailers and flyers to realtors and a payroll management application. Designed, developed, deployed, and maintained an internal Rails application for customer relationship management.
+
+- company: The University Centre
+  title: Rails Developer
+  url: theucnet.org
+  start: May 2005
+  end: August 2005
+  location: Buena Park, CA
+  description: |
+    Designed, developed, and deployed a Rails application to provide online access to a conference hosted at Oxford and Cambridge Universities. The application provided a store to purchase access to the conference sessions, and enabled each viewer to have access to the transcript of each talk, the slides that accompanied it, and background material, all updated in real time while watching the video of the conference session.
