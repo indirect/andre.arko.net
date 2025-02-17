@@ -1,0 +1,22 @@
+<div class="resume-entry {{ if .client }}resume-client{{ end }}">
+  <div class="resume-info">
+    <span class="resume-date">{{ .start }} – {{ default "Present" .end }}</span>
+    {{- if .url -}}
+    <a class="resume-company" href="{{ .url }}">{{ .company }}</a>
+    {{- else -}}
+    <span class="resume-company">{{ .company }}</span>
+    {{- end -}}
+    <span class="resume-title">{{ .title }}</span>
+    <span class="resume-location">{{ .location }}</span>
+  </div>
+  {{ if .description }}
+  <div class="resume-body">
+    <div class="resume-description">
+      {{ .description | markdownify }}
+    </div>
+  </div>
+  {{ end }}
+  {{ range .clients }}
+    {{ partial "resume_entry" (merge . (dict "client" true)) }}
+  {{ end}}
+</div>
