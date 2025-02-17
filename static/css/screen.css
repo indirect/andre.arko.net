@@ -242,35 +242,46 @@ ul.talk-events {
 }
 
 .resume-entry {
-  margin-bottom: 1.5em;
+  margin: 2em 0 1.5em 0;
+}
+
+.resume-client {
+  margin: 0.5em 0 0.5em 2em;
 }
 
 .resume-info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 0 0.25em;
 }
 
-.resume-info-left {
-  display: flex;
-  flex-direction: column;
-}
-
-.resume-info-right {
-  display: flex;
-  flex-direction: column;
+.resume-company, .resume-location {
   text-align: right;
 }
 
 .resume-title {
-  clear: both;
   font-family: "p22-underground", sans-serif;
 }
 
-.resume-description {
-  margin: 0.25em 1em;
-  padding: 0 0.5em;
-  border-left: 0.25em solid gray;
-  border-radius: 0.25em;
+.resume-client .resume-title {
+  font-family: "chaparral-pro", sans-serif;
+}
+
+.resume-location {
+  font-style: italic;
+}
+
+.resume-body {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.resume-body:before {
+  content: " ";
+  flex: 0 0 0.2em;
+  background-color: #DDD;
+  margin: 5px 0.4em 8px 0.4em;
 }
 
 @media (prefers-color-scheme: dark) {

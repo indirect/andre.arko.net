@@ -5,25 +5,7 @@
 
 <div class="resume">
   {{ range .Site.Data.resume }}
-    <div class="resume-entry">
-      <div class="resume-info">
-        <div class="resume-info-left">
-          <b class="resume-title">{{ .title }}</b>
-          <span class="resume-date">{{ .start }} – {{ default "Present" .end }}</span>
-        </div>
-        <div class="resume-info-right">
-          {{- if .link -}}
-            <a class="resume-company" href="{{ .link }}">{{ .company }}</a>
-          {{- else -}}
-            <span class="resume-company">{{ .company }}</span>
-          {{- end -}}
-          <span class="resume-location">{{ .location }}</span>
-        </div>
-      </div>
-      <div class="resume-description">
-        {{ .description | markdownify }}
-      </div>
-    </div>
+    {{ partial "resume_entry" . }}
   {{ end }}
 </div>
 {{ end }}
