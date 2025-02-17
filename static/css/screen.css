@@ -36,6 +36,7 @@ body {
 a {
   color: #222;
   text-decoration-color: #222;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 a:visited { text-decoration-color: #AAA; }
