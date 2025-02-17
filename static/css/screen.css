@@ -299,9 +299,8 @@ ul.talk-events {
   }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 700px) {
   body {
-    font-size: 16pt;
     margin: 0;
     padding: 0 10px;
     min-width: auto;
@@ -309,7 +308,8 @@ ul.talk-events {
   }
 
   #header {
-    margin: 2em 0;
+    margin: 0;
+    padding-bottom: 1em;
   }
 
   #content {
