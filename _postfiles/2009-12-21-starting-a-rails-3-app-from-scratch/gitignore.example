@@ -1,6 +1,0 @@
-db/*.sqlite3
-bin/*
-tmp/**/*
-log/*.log
-vendor/gems/*
-!vendor/gems/cache/
