@@ -14,35 +14,30 @@
   description: Architecture and principal-level software consulting at many Bay Area startups, solving organizational problems with software and communication; business strategy and engineering management as a director at the consultancy.
   clients: 
     - company: Ruby Central
-      client: true
       url: https://rubycentral.org
       title: Head of Open Source
       location: Remote
       start: January 2022
       end: August 2024
     - company: Excelligence
-      client: true
       url: https://excelligence.com
       title: Software Management Consultant
       location: Remote
       start: August 2023
       end: August 2024
     - company: PivotBio
-      client: true
       url: https://pivotbio.com
       title: Principal Software Consultant
       location: Remote
       start: February 2023
       end: August 2023
     - company: Vital Strategies
-      client: true
       url: https://vitalstrategies.org
       title: Principal Software Consultant
       location: Remote
       start: August 2022
       end: December 2022
     - company: One Medical
-      client: true
       url: https://www.onemedical.com
       title: Principal Software Consultant
       location: Remote
