@@ -1,0 +1,68 @@
+#!/usr/bin/env ruby
+
+if Gem::Version.new(RUBY_VERSION) < Gem::Version.new("3.4")
+  abort "Ruby #{RUBY_VERSION} is too old!"
+end
+
+if !ENV.key?("MICROBLOG_API_KEY")
+  exec "op run --env-file=.env -- #{__FILE__}"
+end
+
+require "bundler/inline"
+gemfile do
+  source "https://rubygems.org"
+  gem "fileutils"
+  gem "http"
+  gem "ostruct"
+  gem "pry"
+  gem "reline"
+  gem "stringex"
+end
+
+class Micropub
+  attr_reader :url, :key
+
+  def initialize(url, key)
+    @url, @key = url, key
+  end
+
+  def posts
+    get(q: "source").dig("items").map do |i|
+      i["properties"].transform_values(&:first)
+    end
+  end
+
+  private
+
+  def get(**params)
+    http_auth.get(url, params: params).parse
+  end
+
+  def post(**params)
+    http_auth.post(url, params: params).parse
+  end
+
+  def http_auth
+    HTTP.auth("Bearer #{key}")
+  end
+end
+
+client = Micropub.new(
+  "https://micro.blog/micropub",
+  ENV.fetch("MICROBLOG_API_KEY")
+)
+
+client.posts.each do |post|
+  path = URI(post["url"]).path.chomp("/")
+  date = path.split("/")[1...-1]
+  basename = post["name"].to_url + ".md"
+  filename = [*date, basename].join("-")
+
+  post_path = File.join("content/post", filename)
+  exit 0 if File.exist?(post_path)
+
+  FileUtils.mkdir_p File.dirname(post_path)
+  post_body = YAML.dump("date" => post["published"], "title" => post["name"])
+  post_body << "---\n" << post["content"]
+  File.write post_path, post_body
+end
