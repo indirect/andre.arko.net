@@ -15,8 +15,10 @@ gemfile do
   gem "http"
   gem "ostruct"
   gem "pry"
+  gem "redcarpet"
   gem "reline"
   gem "stringex"
+  gem "nokogiri"
 end
 
 class Micropub
@@ -27,7 +29,7 @@ class Micropub
   end
 
   def posts
-    get(q: "source").dig("items").map do |i|
+    get(q: "source", limit: 1000).dig("items").map do |i|
       i["properties"].transform_values(&:first)
     end
   end
@@ -52,17 +54,34 @@ client = Micropub.new(
   ENV.fetch("MICROBLOG_API_KEY")
 )
 
-client.posts.each do |post|
+posts = ENV.key?("POSTS") ? YAML.unsafe_load_file(ENV["POSTS"]) : client.posts
+markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+
+posts.each do |post|
   path = URI(post["url"]).path.chomp("/")
   date = path.split("/")[1...-1]
-  basename = post["name"].to_url + ".md"
-  filename = [*date, basename].join("-")
-
-  post_path = File.join("content/post", filename)
+  basename = post["name"].to_url
+  title = [*date, basename].join("-")
+  post_path = File.join("content/post", File.dirname(path), title, "index.md")
   exit 0 if File.exist?(post_path)
 
-  FileUtils.mkdir_p File.dirname(post_path)
-  post_body = YAML.dump("date" => post["published"], "title" => post["name"])
-  post_body << "---\n" << post["content"]
+  post_dir = File.dirname(post_path)
+  FileUtils.mkdir_p post_dir
+
+  frontmatter = {
+    "date" => post["published"],
+    "title" => post["name"],
+    "images" => post["images"]
+  }.compact
+  post_body = YAML.dump(frontmatter) << "---\n" << post["content"]
+
+  html = markdown.render(post["content"])
+  images = Nokogiri::HTML(html).css("img").map{|i| i["src"] }
+  images.each do |url|
+    image_path = File.join(post_dir, File.basename(url))
+    File.write image_path, HTTP.follow.get(url).to_s
+    post_body.gsub!(url, File.basename(url))
+  end
+
   File.write post_path, post_body
 end
