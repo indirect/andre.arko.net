@@ -1,3 +1,29 @@
 baseURL = "https://andre.arko.net/"
 title = "André.Arko.net"
 languageCode = "en-us"
+
+[permalinks]
+post = "/:year/:month/:day/:slug/"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "ATOM"]
+
+[mediaTypes."application/atom+xml"]
+suffixes = ["xml"]
+
+[outputFormats.Atom]
+name = "Atom"
+mediaType = "application/atom+xml"
+baseName = "atom"
+isPlainText = false
+rel = "alternate"
+isHTML = false
+noUgly = true
+permalinkable = false
+
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
