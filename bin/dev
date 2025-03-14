@@ -25,4 +25,4 @@ hugo() {
 }
 
 set -x
-hugo server --gc --buildDrafts --buildExpired --buildFuture
+hugo server --gc --buildDrafts --buildExpired --buildFuture "$@"
