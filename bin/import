@@ -60,9 +60,10 @@ markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tabl
 posts.each do |post|
   path = URI(post["url"]).path.chomp("/")
   date = path.split("/")[1...-1]
-  basename = post["name"].to_url
-  title = [*date, basename].join("-")
-  post_path = File.join("content/post", File.dirname(path), title, "index.md")
+  basename = post["name"].to_url + ".md"
+  filename = [*date, basename].join("-")
+
+  post_path = File.join("content/post", filename)
   exit 0 if File.exist?(post_path)
 
   post_dir = File.dirname(post_path)
