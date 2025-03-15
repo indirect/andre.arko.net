@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="author" content="André Arko">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/syntax.css" type="text/css">
-  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen">
+  <link rel="icon" href="{{ absURL "favicon.ico" }}" sizes="32x32">
+  <link rel="icon" href="{{ absURL "favicon.png" }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ absURL "apple-touch-icon.png" }}">
+  <link rel="stylesheet" href="{{ absURL "css/syntax.css" }}" type="text/css">
+  <link rel="stylesheet" href="{{ absURL "css/screen.css" }}" type="text/css" media="screen">
+  <link rel="alternate" href="{{ absURL "atom.xml" }}" type="application/atom+xml" title="{{ $.Site.Title }}">
   {{ partial "microblog_head.html" . }}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 </head>
 <body>
   <header id="header">
-    <h1><a href="/">André.Arko.net</a></h1>
+    <h1><a href="{{ .Site.BaseURL }}">André.Arko.net</a></h1>
     <nav>
       <a href="/talks">Talks</a>
       <a href="/projects">Projects</a>
