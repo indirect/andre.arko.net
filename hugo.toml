@@ -27,3 +27,7 @@ permalinkable = false
 [module.hugoVersion]
 extended = false
 min = "0.116.0"
+
+[params]
+  [params.social]
+    twitter = 'indirect'
