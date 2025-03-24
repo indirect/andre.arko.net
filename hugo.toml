@@ -2,6 +2,8 @@ baseURL = "https://andre.arko.net/"
 title = "André.Arko.net"
 languageCode = "en-us"
 
+[Taxonomies]
+
 [permalinks]
 post = "/:year/:month/:day/:slug/"
 
