@@ -23,10 +23,13 @@ jobs:
       HUGO_ENVIRONMENT: ${{ vars.HUGO_ENVIRONMENT || 'production' }}
     steps:
       - uses: actions/checkout@v4
+      - name: Read Hugo version
+        id: hugo-version
+        run: echo "HUGO_VERSION=$(cat .hvm)" >> "$GITHUB_OUTPUT"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.143.0'
+          hugo-version: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
       - name: Run Hugo
         run: bin/build ${{ vars.HUGO_BASEURL }}
       - name: Upload artifact
