@@ -34,3 +34,6 @@ min = "0.116.0"
 [params]
   [params.social]
     twitter = 'indirect'
+
+[security.http]
+mediaTypes = ['^text/xml;']

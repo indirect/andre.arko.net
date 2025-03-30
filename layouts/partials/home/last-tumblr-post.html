@@ -1,0 +1,16 @@
+{{ $data := dict }}
+{{ $url := "http://indirect.io/api/read?num=2" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else with .Value }}
+    {{ $data = .Content | transform.Unmarshal }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %q" $url }}
+  {{ end }}
+{{ end }}
+
+{{ with (index $data.posts.post 0) }}
+  <img style="width: 300px" src='{{ index . "photo-url" 1 "#text" }}'>
+  {{ index . "photo-caption" | safeHTML }}
+{{ end }}
