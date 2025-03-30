@@ -1,5 +1,7 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
+<main id="content">
   <h2 class="post-title">{{ .Title | safeHTML }}</h2>
   {{ .Content }}
+</main>
 {{ end }}

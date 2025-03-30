@@ -29,8 +29,6 @@ body {
   font-size: 14pt;
   line-height: 1.4em;
   margin: 0 5%;
-  min-width: 25em;
-  max-width: 40em;
 }
 
 a {
@@ -75,6 +73,16 @@ h3.subtitle {
 
 #content {
   margin: 0 4em;
+  min-width: 25em;
+  max-width: 40em;
+}
+
+#content.home {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5em;
+  justify-content: space-between;
+  max-width: 100%;
 }
 
 #footer {
