@@ -1,5 +1,4 @@
 ---
-_build:
-  render: "never"
-  list: "never"
+aliases:
+- /posts
 ---

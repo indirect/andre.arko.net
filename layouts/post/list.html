@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main id="content">
+  {{ .Content }}
+
+  <section class="posts">
+    {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
+      {{ partial "post-year" . }}
+    {{ end }}
+  </section>
+</main>
+{{ end }}

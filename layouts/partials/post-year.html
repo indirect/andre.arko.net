@@ -1,0 +1,9 @@
+<h2 class="year">{{ .Key }}</h2>
+<ul>
+  {{ range .Pages }}
+  <li>
+    <span class="post-date">{{ .PublishDate | time.Format "Jan 02" }}</span>
+    <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></span>
+  </li>
+  {{ end }}
+</ul>

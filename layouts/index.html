@@ -2,18 +2,10 @@
 <main id="content" class="home">
   {{ .Content }}
 
-  <section>
-  {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
-    <h2 class="year">{{ .Key }}</h2>
-    <ul class="posts">
-      {{ range .Pages }}
-        <li>
-          <span class="post-date">{{ .PublishDate | time.Format "Jan 02" }}</span>
-          <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></span>
-        </li>
-      {{ end }}
-    </ul>
-  {{ end }}
+  <section class="posts">
+    {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
+      {{ partial "post-year" . }}
+    {{ end }}
   </section>
 
   <aside class="notes">
