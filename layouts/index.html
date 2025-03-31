@@ -2,6 +2,7 @@
 <main id="content" class="home">
   {{ .Content }}
 
+  <section>
   {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
     <h2 class="year">{{ .Key }}</h2>
     <ul class="posts">
@@ -13,5 +14,12 @@
       {{ end }}
     </ul>
   {{ end }}
+  </section>
+
+  <aside>
+    {{ range (where .Site.RegularPages "Type" "note").GroupByPublishDate "2006 Mar" }}
+      {{ .Key }}
+    {{ end }}
+  </aside>
 </main>
 {{ end }}
