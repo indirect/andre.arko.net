@@ -37,3 +37,7 @@ min = "0.116.0"
 
 [security.http]
 mediaTypes = ['^text/xml;']
+
+[frontmatter]
+date = [':default', ':filename']
+lastmod = ['lastmod', ':fileModTime']
