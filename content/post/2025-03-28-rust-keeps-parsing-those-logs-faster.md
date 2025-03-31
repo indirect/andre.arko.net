@@ -17,4 +17,4 @@ On top of that, they also noticed that we could [use the Rust version of zlib in
 
 In the end, it turns out on a Ryzen 9 9950X, just one core can process 1.24M r/s, and all 32 hyperthreads working together can process 22.56M r/s. For those keeping score at home, that adds up to a final result of 5,371x faster.
 
-I truly couldn’t believe how fast it was in 2017 when my machine first processed the an entire gigabyte of logs in just 8 seconds, and today this project can process the same log file in just _800 milliseconds_. Based on that, I’m very excited about ten years from now, when I expect I’ll be able to process the same file in 8ms. 😆
+I truly couldn’t believe how fast it was in 2017 when my machine first processed the an entire gigabyte of logs in just 8 seconds, and today this project can process the same log file in just _800 milliseconds_. Based on that, I’m very excited about ten years from now, when I expect I’ll be able to process the same file in 80ms. 😆
