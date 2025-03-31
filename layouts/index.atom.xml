@@ -11,7 +11,7 @@
     <email>andre@arko.net</email>
   </author>
 
-  {{ range (where .Site.RegularPages "Type" "post") }}
+  {{ range (where .Site.RegularPages "Type" "post" | first 20) }}
     <entry>
       {{ printf `<title type="html"><![CDATA[%s]]></title>` .Title | safeHTML }}
       <link href="{{ .Permalink }}"/>
