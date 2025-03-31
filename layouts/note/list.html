@@ -1,0 +1,10 @@
+{{ define "title" }}Notes{{ end }}
+{{ define "main" }}
+<main id="content" class="notes">
+  <ul>
+    {{ range where .Site.RegularPages "Type" "note" }}
+    <li>{{ partial "note" . }}</li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
