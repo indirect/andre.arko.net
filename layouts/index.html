@@ -16,10 +16,15 @@
   {{ end }}
   </section>
 
-  <aside>
-    {{ range (where .Site.RegularPages "Type" "note").GroupByPublishDate "2006 Mar" }}
-      {{ .Key }}
-    {{ end }}
+  <aside class="notes">
+    <ul>
+      {{ range where .Site.RegularPages "Type" "note" | first 20 }}
+      <li>{{ partial "note" . }}</li>
+      {{ end }}
+    </ul>
+    <div class="note-link">
+      <a href='{{ .RelRef (dict "path" "note") }}'>Earlier Notes →</a>
+    </div>
   </aside>
 </main>
 {{ end }}

@@ -77,13 +77,6 @@ h3.subtitle {
   max-width: 40em;
 }
 
-#content.home {
-  display: flex;
-  flex-direction: row;
-  column-gap: 5em;
-  justify-content: space-between;
-  max-width: 100%;
-}
 
 #footer {
   margin: 6em 4em 3em 4em;
@@ -92,13 +85,25 @@ h3.subtitle {
 }
 
 
-/** Posts list page **/
+/** Posts list on homepage **/
+#content.home {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3em;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
 h2.year {
   margin-top: 0;
   clear: left;
 }
 
 .posts {
+  flex: 1;
+}
+
+.posts ul, .notes ul {
   margin: 0 0 0 0;
   padding: 0 0 3.5rem 0;
   list-style: none outside;
@@ -123,6 +128,23 @@ h2.year {
   padding-bottom: 0.5em;
 }
 
+.notes {
+  max-width: 30em;
+  flex: 0.75;
+}
+
+.notes ul {
+  padding-bottom: 1em;
+}
+
+.notes .note-link {
+  text-align: right;
+}
+
+.notes .date {
+  font-family: "Operator Mono SSm Book", Menlo, Monaco, monospace;
+  font-size: 1rem;
+}
 
 /** Post show page **/
 .post-date {
@@ -310,6 +332,50 @@ ul.talk-events {
 @media only screen and (max-width: 700px) {
   body {
     margin: 0;
+    padding: 0 10px;
+    min-width: auto;
+    max-width: auto;
+  }
+
+  #header {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
+  #content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .posts .post-name {
+    float: left;
+    margin-left: 4em;
+    padding-bottom: 0.5em;
+  }
+
+  #footer {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #content.home {
+    flex-direction: column-reverse;
+  }
+
+  #content.home .notes {
+    margin-bottom: 1em;
+  }
+
+  #content.home .notes ul li:nth-child(n+2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 1rem;
     padding: 0 10px;
     min-width: auto;
     max-width: auto;
