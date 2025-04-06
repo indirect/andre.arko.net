@@ -6,7 +6,7 @@ languageCode = "en-us"
 
 [permalinks]
 post = "/:year/:month/:day/:slug/"
-note = "/:year/:month/:day/:slug/"
+note = "/:year/:month/:day/:slugorcontentbasename/"
 page = "/:slugorcontentbasename/"
 
 [markup.goldmark.renderer]
