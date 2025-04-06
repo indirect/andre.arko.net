@@ -345,6 +345,8 @@ ul.talk-events {
   #content {
     margin: 0;
     width: 100%;
+    min-width: auto;
+    max-width: auto;
   }
 
   .posts .post-name {
