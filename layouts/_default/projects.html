@@ -1,26 +1,27 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
+<main id="content">
+  <h2>{{ .Title }}</h2>
 
-<h2>{{ .Title }}</h2>
+  <div>An inverted resume, listing the projects I have worked on when it was <i>not</i> my job — for collaboration's sake, or for fun, or for the principle of the thing.</div>
 
-<div>An inverted resume, listing the projects I have worked on when it was <i>not</i> my job — for collaboration's sake, or for fun, or for the principle of the thing.</div>
-
-<dl class="projects">
-  {{ range .Site.Data.projects }}
-    <h4 class="project-title">
-      {{ if .url }}
-      <a class="project-link" href="{{ .url }}">
-        {{ .title }}
-      </a>
-      {{ else }}
-        {{ .title }}
+  <dl class="projects">
+    {{ range .Site.Data.projects }}
+      <h4 class="project-title">
+        {{ if .url }}
+        <a class="project-link" href="{{ .url }}">
+          {{ .title }}
+        </a>
+        {{ else }}
+          {{ .title }}
+        {{ end }}
+      </h4>
+      {{ if .description }}
+        <div class="project-info group">
+          {{ .description | safeHTML }}
+        </div>
       {{ end }}
-    </h4>
-    {{ if .description }}
-      <div class="project-info group">
-        {{ .description | safeHTML }}
-      </div>
     {{ end }}
-  {{ end }}
-</dl>
+  </dl>
+</main>
 {{ end }}

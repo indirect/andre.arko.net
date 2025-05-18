@@ -1,11 +1,12 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
+<main id="content">
+  <h2>{{ .Title }}</h2>
 
-<h2>{{ .Title }}</h2>
-
-<div class="resume">
-  {{ range .Site.Data.resume }}
-    {{ partial "resume_entry" . }}
-  {{ end }}
-</div>
+  <div class="resume">
+    {{ range .Site.Data.resume }}
+      {{ partial "resume_entry" . }}
+    {{ end }}
+  </div>
+</main>
 {{ end }}
