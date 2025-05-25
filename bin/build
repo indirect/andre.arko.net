@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
-set -x
 
+export PATH=bin:$PATH
+
+set -x
 if [[ -n "${1:-}" ]]; then
   hugo --minify --baseURL "$1"
 else
