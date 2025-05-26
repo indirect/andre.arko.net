@@ -2,11 +2,6 @@
 
 # Hugo Version Manager: override path to the hugo executable.
 hugo() {
-  if ! $(which hvm); then
-    command hugo "$@"
-    return $?
-  fi
-
   hvm_show_status=false
   if hugo_bin=$(hvm status --printExecPathCached); then
     if [ "${hvm_show_status}" = "true" ]; then

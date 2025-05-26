@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-export PATH=bin:$PATH
+if [[ "$HUGO_ENVIRONMENT" != "production" ]]; then
+  export PATH=bin:$PATH
+fi
 
 set -x
 if [[ -n "${1:-}" ]]; then
