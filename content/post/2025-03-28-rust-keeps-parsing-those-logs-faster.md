@@ -5,7 +5,7 @@ updated_at: '2025-03-28T20:56:06Z'
 title: Rust keeps parsing those logs faster
 slug: rust-keeps-parsing-those-logs-faster
 ---
-A few years ago, I [wrote about parsing logs 230x faster with Rust](https://andre.arko.net/2018/10/25/parsing-logs-230x-faster-with-rust/), and then [followed up with some improvements](https://andre.arko.net/2019/01/11/parsing-logs-faster-with-rust-continued/). Then [computers got a lot faster](https://andre.arko.net/2022/03/13/parsing-logs-faster-with-rust-revisited/).
+A few years ago, I [wrote about parsing logs 230x faster with Rust](/2018/10/25/parsing-logs-230x-faster-with-rust/), and then [followed up with some improvements](/2019/01/11/parsing-logs-faster-with-rust-continued/). Then [computers got a lot faster](/2022/03/13/parsing-logs-faster-with-rust-revisited/).
 
 Today, I re-ran all the same benchmarks that I’ve been running since 2018, and discovered that computers in 2025 are a silly amount faster than computers from 2021.
 

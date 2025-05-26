@@ -91,7 +91,7 @@ Be humane and supportive in an inhumane and traumatizing time. Even though we ca
 [How to adapt to a long term crisis](https://www.chronicle.com/article/Why-You-Should-Ignore-All-That/248366) by Aisha Ahmad  
 [Work in the Time of Corona](https://blog.alicegoldfuss.com/work-in-the-time-of-corona/) by Alice Goldfuss  
 [Remote Interviewing](https://www.moishelettvin.com/2020/03/16/Remote-Interviewing/) by Moishe Lettvin  
-[Pairing: A Guide to Fruitful Collaboration 🍓🍑🍐](https://andre.arko.net/2018/04/26/pairing-a-guide-to-fruitful-collaboration/) by André Arko  
+[Pairing: A Guide to Fruitful Collaboration 🍓🍑🍐](/2018/04/26/pairing-a-guide-to-fruitful-collaboration/) by André Arko  
 [A guide to distributed teams](https://increment.com/teams/a-guide-to-distributed-teams/) by Juan Pablo Buriticá and Katie Womersley  
 [A Crash Course in Remote Management](https://wordpress.com/blog/2020/03/06/a-crash-course-in-remote-management/) by Cate Huston  
 

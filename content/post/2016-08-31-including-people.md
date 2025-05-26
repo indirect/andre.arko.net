@@ -22,7 +22,7 @@ Now that you know why I’m the one bringing this up, let’s talk about it. It�
 
 The topic of "diversity" has gotten a lot of press lately, both in tech in general and in the Ruby community in particular. The history of pervasive sexism and harassment in the Ruby community has even gone mainstream—it was the biggest fact about Ruby in a Bloomberg magazine article by Paul Ford called “[What is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)”, aimed at non-technical readers.
 
-Over the last few years, I've put a lot of time and energy into research. I've also written about [how to be an ally](http://andre.arko.net/2013/12/04/how-to-be-an-ally/), and about [why diversity matters](http://www.ashedryden.com/la-conf-tbd). First, I’ll briefly summarize the current situation.
+Over the last few years, I've put a lot of time and energy into research. I've also written about [how to be an ally](/2013/12/04/how-to-be-an-ally/), and about [why diversity matters](http://www.ashedryden.com/la-conf-tbd). First, I’ll briefly summarize the current situation.
 
 > How to start increasing inclusion in tech: s/diversity/inclusion/g — [@rockbot](https://twitter.com/rockbot/status/622109542533300224)
 

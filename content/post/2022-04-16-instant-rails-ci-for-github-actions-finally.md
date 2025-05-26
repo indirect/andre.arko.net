@@ -15,4 +15,4 @@ At that point I was annoyed all the way into action: I frankenstiened together t
 
 Once I had a working action, my first thought was to simply post it here… but then I realized I could fix the one-click workflow offered by GitHub itself to actually run tests instead of just linters! So I went and [spent four days getting my pull request accepted](https://github.com/actions/starter-workflows/pull/1353), and now there’s a gloriously straightforward two-click way to test your Rails application with GitHub Actions. Phew.
 
-<img src="https://andre.arko.net/2022/04/16/instant-rails-ci-for-github-actions-finally/starter_workflow.jpg">
+<img src="starter_workflow.jpg">

@@ -17,14 +17,14 @@ Overall, I'm really happy with it! After a few nights of fiddling and a couple o
 
 If you're interested in an Atreus 2 of your own, check out [the Keyboard.io Atreus 2 Kickstarter](https://www.kickstarter.com/projects/keyboardio/atreus), which starts in two days on March 17.
 
-<img alt="atreus2-01.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-01.jpg">
-<img alt="atreus2-02.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-02.jpg">
-<img alt="atreus2-03.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-03.jpg">
-<img alt="atreus2-04.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-04.jpg">
-<img alt="atreus2-05.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-05.jpg">
-<img alt="atreus2-06.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-06.jpg">
-<img alt="atreus2-07.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-07.jpg">
-<img alt="atreus2-08.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-08.jpg">
-<img alt="atreus2-09.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-09.jpg">
-<img alt="atreus2-10.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-10.jpg">
-<img alt="atreus2-11.jpg" src="https://andre.arko.net/2020/03/15/built-an-atreus-2/atreus2-11.jpg">
+<img alt="atreus2-01.jpg" src="atreus2-01.jpg">
+<img alt="atreus2-02.jpg" src="atreus2-02.jpg">
+<img alt="atreus2-03.jpg" src="atreus2-03.jpg">
+<img alt="atreus2-04.jpg" src="atreus2-04.jpg">
+<img alt="atreus2-05.jpg" src="atreus2-05.jpg">
+<img alt="atreus2-06.jpg" src="atreus2-06.jpg">
+<img alt="atreus2-07.jpg" src="atreus2-07.jpg">
+<img alt="atreus2-08.jpg" src="atreus2-08.jpg">
+<img alt="atreus2-09.jpg" src="atreus2-09.jpg">
+<img alt="atreus2-10.jpg" src="atreus2-10.jpg">
+<img alt="atreus2-11.jpg" src="atreus2-11.jpg">

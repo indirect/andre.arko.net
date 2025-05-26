@@ -20,4 +20,4 @@ Ultimately, I guess I have to accept that it's my fault, since I did have to do 
 
 Check out [The Ruby Way, 3rd Edition](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20) on Amazon, or get a sample chapter of the book from [therubyway.io](http://therubyway.io).
 
-[<img src="https://andre.arko.net/2015/04/09/the-ruby-way-3rd-edition/cover.jpg" style="width: 336px;">](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20)
+[<img src="cover.jpg" style="width: 336px;">](http://www.amazon.com/gp/product/0321714636/?tag=indirect0b-20)

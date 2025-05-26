@@ -190,8 +190,8 @@ While you can always run a gem command using `bundle exec`, that depends on you 
 
 If you’re interested in seeing a visual layout of your application’s gem dependencies, you can install Graphviz and then run the `bundle viz` command. If your application is small enough and simple enough, you’ll end up with a graph that looks something like this:
 
-<a class="image" href="https://andre.arko.net/2017/11/16/a-history-of-bundles/gem_graph.png">
-  ![Default Rails app dependency visualization](https://andre.arko.net/2017/11/16/a-history-of-bundles/gem_graph.png)
+<a class="image" href="gem_graph.png">
+  ![Default Rails app dependency visualization](/2017/11/16/a-history-of-bundles/gem_graph.png)
 </a>
 
 If you want to start running your application on a new platform, like JRuby, or Windows, you can now add that platform in advance, on any machine, by running `bundle lock --add PLATFORM`. Once you’ve done that, running your application on that platform won’t cause changes to your lockfile. While Bundler can’t guarantee identical code runs on different platforms, it can guarantee that every machine on a particular platform will run exactly the same code as every other machine on that platform.

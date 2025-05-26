@@ -63,8 +63,8 @@ Over the years, I’ve built up a pile of related handy tools that I often use t
 - [tmux](https://github.com/tmux/tmux/wiki), to run a CLI session shared by all my terminal windows and SSH sessions
 - [puma-dev](https://github.com/puma/puma-dev), to run local dev servers with custom domains and HTTPS
 - [wishfish](https://github.com/claui/wishfish), to run SSH connections over wifi so they don’t disconnect when I undock from my desk
-- [bpb](https://github.com/withoutboats/bpb), which lets me [sign my git commits without gpg](https://andre.arko.net/2021/02/06/signing-git-commits-without-gpg/)
-- [pam\_reattach](https://github.com/fabianishere/pam_reattach), so I can [`sudo` via TouchID from tmux](https://andre.arko.net/2020/07/10/sudo-with-touchid-and-apple-watch-even-inside-tmux/)
+- [bpb](https://github.com/withoutboats/bpb), which lets me [sign my git commits without gpg](/2021/02/06/signing-git-commits-without-gpg/)
+- [pam\_reattach](https://github.com/fabianishere/pam_reattach), so I can [`sudo` via TouchID from tmux](/2020/07/10/sudo-with-touchid-and-apple-watch-even-inside-tmux/)
 
 In an example of going probably too far for a joke, I wrote [my own homebrew formula](https://github.com/indirect/homebrew-tap/blob/master/Formula/horse_fortunes.rb) to install a new source for the `fortune` command. Now, every time I open a new shell, I see [a random text-art My Little Pony saying a quote](https://mylittlehorseebooks.tumblr.com) from [@horse\_ebooks](https://en.wikipedia.org/wiki/Horse_ebooks). It’s incredibly stupid, and I love the results so much I also wrote an [Alfred](https://www.alfredapp.com) shortcut to make it easier to screenshot and post funny examples to the Tumblr.
 

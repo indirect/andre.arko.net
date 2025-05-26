@@ -23,4 +23,4 @@ div[style*="rgb(173, 26, 114)"] {
 
 It works, though!
 
-<img src="https://andre.arko.net/2020/05/18/custom-styles-for-notion/screenshot.png">
+<img src="screenshot.png">
