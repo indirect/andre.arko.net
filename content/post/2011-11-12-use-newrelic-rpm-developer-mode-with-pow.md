@@ -11,7 +11,7 @@ echo 'export POW_WORKERS=1' >> ~/.powconfig
 
 ### What now?
 
-I have used the excellent [Passenger Pane][pp] for years without complaint. But then I upgraded to Lion, and that disabled all of my apps' `.dev` domains. Since the new local hotness seems to be [Pow](pow.cx), I tried it. Lo and behold, my `.dev` domains worked again!
+I have used the excellent [Passenger Pane][pp] for years without complaint. But then I upgraded to Lion, and that disabled all of my apps' `.dev` domains. Since the new local hotness seems to be [Pow](http://pow.cx), I tried it. Lo and behold, my `.dev` domains worked again!
 
 [pp]: http://www.fngtps.com/passenger-preference-pane
 

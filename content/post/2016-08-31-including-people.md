@@ -42,13 +42,13 @@ One underlying problem is people being denied education, jobs, and promotions so
 
 There is a huge amount of repeated research showing these biases, because of gender, [disabilities](http://news.rutgers.edu/research-news/rutgers-study-employers-discriminate-against-qualified-workers-disabilities/20151104#.VorAgZMrKRs), [sexual orientation or status](http://williamsinstitute.law.ucla.edu/wp-content/uploads/Sears-Mallory-Discrimination-July-20111.pdf), [race](http://www.latimes.com/business/technology/la-fi-tn-asian-american-tech-20150506-story.html), age, weight, or any of a thousand other things. Just changing the name, gender, or race on a resume is enough to change a “good” resume to an “unacceptable” one.
 
-Even though this is a thoroughly researched phenomenon, people disagree with me every time I talk about this. They say things like "[but tech is a meritocracy](butitsameritocracy.com) and everyone is valued based on their contributions to the whole". Well, about that…
+Even though this is a thoroughly researched phenomenon, people disagree with me every time I talk about this. They say things like "[but tech is a meritocracy](https://butitsameritocracy.com) and everyone is valued based on their contributions to the whole". Well, about that…
 
 ### meritocracy is a lie told by rich white men
 
 Successful people often [assume they caused their success](https://en.wikipedia.org/wiki/Actor%E2%80%93observer_asymmetry), and then [wrongly conclude](https://en.wikipedia.org/wiki/Survivorship_bias) that anyone less successful [somehow deserved to fail](https://en.wikipedia.org/wiki/Just-world_hypothesis). This is not only the [fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error), but holding this idea actively causes discrimination! At companies that claim to be a meritocracy, performance evaluations and hiring decisions [are _even more_ biased](http://www.tarahunt.com/blog/2013/10/28/meritocracy-is-almost-as-real-as-this-unicorn).
 
-Once that’s out of the way, everyone tells me that I should “obviously” focus on [the pipeline problem](isitapipelineproblem.com). If new developers are diverse, then all of tech will become diverse eventually, right? Again: nope.
+Once that’s out of the way, everyone tells me that I should “obviously” focus on [the pipeline problem](https://isitapipelineproblem.com). If new developers are diverse, then all of tech will become diverse eventually, right? Again: nope.
 
 ### the pipeline leads straight to a sewage plant
 
@@ -74,7 +74,7 @@ At this point, arguments for exclusion pivot to one more extremely popular claim
 
 ### the economic argument is diversionary bullshit
 
-I've written about [the economic argument for diversity](http://andre.arko.net/2014/05/24/the-economic-argument-for-diversity/) before, but the short response is “no, wrong again”. Research shows that [diverse teams produce better results in less time](http://www.scientificamerican.com/article/how-diversity-makes-us-smarter/).  Diversity is measurably beneficial whether it is [different expertise](https://hbr.org/2014/03/the-case-for-team-diversity-gets-even-better/) or merely [different backgrounds or perspectives](https://hbr.org/2013/12/how-diversity-can-drive-innovation). Companies choose to uphold the exclusive status quo even when it means harming themselves.
+I've written about [the economic argument for diversity](/2014/05/24/the-economic-argument-for-diversity/) before, but the short response is “no, wrong again”. Research shows that [diverse teams produce better results in less time](http://www.scientificamerican.com/article/how-diversity-makes-us-smarter/).  Diversity is measurably beneficial whether it is [different expertise](https://hbr.org/2014/03/the-case-for-team-diversity-gets-even-better/) or merely [different backgrounds or perspectives](https://hbr.org/2013/12/how-diversity-can-drive-innovation). Companies choose to uphold the exclusive status quo even when it means harming themselves.
 
 But the underlying problem is even worse: there is no excuse for treating a group of people as inferior. Ever. Mercenary attempts to include underrepresented groups for the purpose of "improving productivity" are doomed to fail from the start. Companies motivated solely by profit will never be inclusive, because that requires valuing people as human beings rather than interchangeable cogs in a machine that creates value for investors.
 
@@ -120,7 +120,7 @@ Finally, and this is true for every project: you have to enforce the code of con
 
 Now let's talk about how to welcome contributors to your project. Everything that I've said so far about welcoming users applies to welcoming contributors, too. A safe environment without harassment is a requirement. Documentation helps a lot. Just having those things, though, isn't enough. There's more you can do to encourage contributions to your project.
 
-First, and I can't say this enough times, the biggest thing you can do to encourage contributions to your project is to ask for help. (Let me take this moment to say that I run the [Bundler](bundler.io) project, and we would _love_ to [have your help](https://github.com/bundler/bundler/blob/master/CONTRIBUTING.md)!) Most people think that they need to be total experts on something before they can even begin to help.
+First, and I can't say this enough times, the biggest thing you can do to encourage contributions to your project is to ask for help. (Let me take this moment to say that I run the [Bundler](https://bundler.io) project, and we would _love_ to [have your help](https://github.com/bundler/bundler/blob/master/CONTRIBUTING.md)!) Most people think that they need to be total experts on something before they can even begin to help.
 
 Let me make it extremely clear: I have never been an expert on any project that I have started to work on. I have also learned more by working on open source projects than any other way that I have learned anything about programming. When you ask for help, and when you write a document explaining how people can contribute, make it clear that they don't need to be an expert to be able to help you. Schedule times to pair with contributors at any skill level, and then actually pair with them so they can get started.
 

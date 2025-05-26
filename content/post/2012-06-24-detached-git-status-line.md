@@ -2,7 +2,7 @@
 date: "2012-06-24T00:00:00Z"
 title: Detached git status line
 ---
-It's been [a really long time](/2007/12/19/git-branch-in-prompt-with-svn-support/) since I posted about a prompt with git status support built in. I don't care so much about svn these days, but something that has bothered me for quite a while about the default git status line is that it's pretty useless if you aren't at the tip of a branch. The default `__git_ps1` function simply returns the sha of the current commit. It's really unhelpful to simply see `(abc1234...)`, especially when you're doing a git bisect or something like that.
+It's been a really long time since I posted about a prompt with git status support built in. I don't care so much about svn these days, but something that has bothered me for quite a while about the default git status line is that it's pretty useless if you aren't at the tip of a branch. The default `__git_ps1` function simply returns the sha of the current commit. It's really unhelpful to simply see `(abc1234...)`, especially when you're doing a git bisect or something like that.
 
 Instead of just using `__git_ps1`, you can spruce up your git prompt to tell you exactly where you are! Git knows that commit `abc1234` is actually `master~2` or `feature_branch~25`. Wouldn't it be more helpful to see that?
 

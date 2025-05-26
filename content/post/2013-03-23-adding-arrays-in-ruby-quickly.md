@@ -13,10 +13,10 @@ push     501.850000  17.810000 519.660000 (519.570627)
 <<       402.900000  16.670000 419.570000 (419.433473)
 ```
 
-For those of you playing along at home, I've included the [code I used to benchmark each method]("#add_arrays.rb") at the end of this post. The results weren't terribly surprising to me, but it does at least confirm that using the `<<` operator isn't the fastest way to add things to an array that already exists. It also confirms that looping over arrays in MRI's C implementation is faster than doing it ourselves in Ruby. So, in the end, it was pretty much just another way of finding out what we already knew. But it's nice to be sure, isn't it?
+For those of you playing along at home, I've included the [code I used to benchmark each method](#add_arrays.rb) at the end of this post. The results weren't terribly surprising to me, but it does at least confirm that using the `<<` operator isn't the fastest way to add things to an array that already exists. It also confirms that looping over arrays in MRI's C implementation is faster than doing it ourselves in Ruby. So, in the end, it was pretty much just another way of finding out what we already knew. But it's nice to be sure, isn't it?
 
 
-<a id="add_arrays.rb"></a>
+<p id="add_arrays.rb"></p>
 
 ``` ruby
 # add_arrays.rb

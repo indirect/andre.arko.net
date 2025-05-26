@@ -4,7 +4,7 @@ title: 'Deathmatch: Bundler vs. Rubygems.org'
 slug: deathmatch-bundler-vs-rubygemsorg
 ---
 
-<p class="aside">This talk was given at <a href="http://2013.scottishrubyconference.com">Scottish Ruby Conference 2013</a>, and the slides are <a href="https://speakerdeck.com/indirect/deathmatch-bundler-vs-rubygems-dot-org">available on SpeakerDeck</a>, as well as <a href="https://andre.arko.net/2013/05/12/deathmatch-bundler-vs-rubygemsorg/Deathmatch-Bundler-vs-Rubygems.pdf">available for download as a PDF</a>. This post doesn't correlate exactly to the slides, but it has the same content.</p>
+<p class="aside">This talk was given at <a href="http://2013.scottishrubyconference.com">Scottish Ruby Conference 2013</a>, and the slides are <a href="https://speakerdeck.com/indirect/deathmatch-bundler-vs-rubygems-dot-org">available on SpeakerDeck</a>, as well as <a href="/2013/05/12/deathmatch-bundler-vs-rubygemsorg/Deathmatch-Bundler-vs-Rubygems.pdf">available for download as a PDF</a>. This post doesn't correlate exactly to the slides, but it has the same content.</p>
 
 <script async class="speakerdeck-embed" data-id="57fa6d609d4901309d516e9dd498db92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 

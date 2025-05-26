@@ -17,7 +17,7 @@ Shockingly, it worked perfectly. After the amount of cables, devices, and config
 
 Unfortunately, I couldn’t figure out a way to get the fancy Belkin cable that adds a USB connection (in addition the the DisplayPort) to work through the switch—the PC says there is a USB error and only the display works, with no speakers or camera.
 
-Since the switch doesn’t include a true KVM, you might need to also add a [regular USB switch like this one]([https://www.amazon.com/UGREEN-Selector-Computers-Peripheral-One-Button/dp/B01MXXQKGM]) if you want to share a single keyboard and mouse between the two machines.
+Since the switch doesn’t include a true KVM, you might need to also add a [regular USB switch like this one](https://www.amazon.com/UGREEN-Selector-Computers-Peripheral-One-Button/dp/B01MXXQKGM]) if you want to share a single keyboard and mouse between the two machines.
 
 That was enough to meet my needs, and so I have actually settled on that as my permanent setup, with no camera and speakers from the PC, since I have a different camera and speakers that I prefer to use.
 
