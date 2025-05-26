@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [[ "$HUGO_ENVIRONMENT" != "production" ]]; then
+if [[ "${HUGO_ENVIRONMENT:-}" != "production" ]]; then
   export PATH=bin:$PATH
 fi
 
