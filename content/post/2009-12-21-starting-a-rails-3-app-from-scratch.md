@@ -17,7 +17,7 @@ Then you need an app. Assuming that your app is named "myapp" (which is a pretty
 
     mkdir myapp
     cd myapp
-    curl -o Gemfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Gemfile.example
+    curl -o Gemfile https://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Gemfile.example
     gem bundle
 
 That creates a new directory for your app, pulls down a (sort of) minimal Gemfile, and then tells the bundler to bundle up Rails and all its dependencies for you to use in this app.
@@ -63,7 +63,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 
   5. Thor needs a Thorfile, and can replace the Rakefile that Rails included with your app.
 
-         curl -o Thorfile http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile.example
+         curl -o Thorfile https://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/Thorfile.example
          rm Rakefile
          thor -T
 
@@ -82,7 +82,7 @@ At this point, you are pretty much set, and can run off and make your app do wha
 This is probably a good time to start tracking your app in source control:
 
     git init
-    curl -o .gitignore http://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/gitignore.example
+    curl -o .gitignore https://andre.arko.net/2009/12/21/starting-a-rails-3-app-from-scratch/gitignore.example
     git add .
     git commit -m "New Rails 3 app with bundled gems"
 
@@ -98,4 +98,4 @@ Lastly, if you want to use RSpec from TextMate in the manner to which you have (
 
 ### Phew.
 
-If you've actually made it all the way here, I'm terribly impressed. If for some reason you want to follow along with these steps, you can check out my [blank Rails 3 app](http://github.com/indirect/rails3-app) repository at Github. Have fun with Rails 3!
+If you've actually made it all the way here, I'm terribly impressed. If for some reason you want to follow along with these steps, you can check out my [blank Rails 3 app](https://github.com/indirect/rails3-app) repository at Github. Have fun with Rails 3!
