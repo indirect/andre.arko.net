@@ -1,6 +1,7 @@
 ---
 date: "2022-05-19T00:00:00Z"
 title: Use a Thunderbolt 3 display from Windows
+slug: use-a-thunderbolt-3-display-from-a-windows-pc
 ---
 Since 2016, when the [LG UltraFine 5k was announced](https://www.anandtech.com/show/10798/lg-introduces-new-4k-and-5k-ultrafine-monitors), the only high-DPI 5k screens have been for (or inside) Macs. The external displays, all three of them, have used Thunderbolt 3. There have been some non-Thunderbolt 5k panels that are ultra widescreen, but none of them have been the high-quality high-DPI screen I wanted.
 

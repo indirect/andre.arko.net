@@ -1,6 +1,7 @@
 ---
 date: "2023-03-05T00:00:00Z"
 title: Caddy + puma-dev for local development with custom domains and HTTPS
+slug: caddy-puma-dev-for-local-development-with-custom-domains-and-https
 ---
 
 I develop a lot of webapps locally, often at the same time. For Ruby-only applications, [puma-dev][] is by far the most convenient way to handle the situation. A single setup command gets you a lot out of the box:

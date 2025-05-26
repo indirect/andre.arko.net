@@ -1,6 +1,7 @@
 ---
 date: "2017-11-16T00:00:00Z"
 title: 'A History of Bundles: 2010 to 2017'
+slug: a-history-of-bundles
 ---
 <h3 class="subtitle">a one-person oral history of Ruby’s dependency manager</h3>
 
@@ -43,7 +44,7 @@ GitHub tried to help with this problem by automatically creating .gems from any 
 
 To encourage developers to create their own gems, and feel comfortable forking and editing other gems, Bundler 1.0 included tools for creating, building, and releasing gems. The `bundle gem` command generates a new empty gem, and the Bundler gem helpers provide `rake build` and `rake release` tasks. Today, not only are most gems installed with Bundler, but most gems are created with Bundler as well.
 
-While using Bundler to create and manage gems might feel obvious and natural nowadays, using early versions of Bundler felt unnatural or unnecessary to many Ruby devs. The entire concept of Bundler was met with a lot of resistance, andt he Bundler team spent a lot of time discussing, arguing, debating, and cajoling developers on the internet. It was so non-obvious, in fact, that I gave [an entire talk at RubyConf 2010 arguing that Bundler was actually worth using](http://andre.arko.net/2010/06/09/railsconf-2010-bundler-talk-slides/).
+While using Bundler to create and manage gems might feel obvious and natural nowadays, using early versions of Bundler felt unnatural or unnecessary to many Ruby devs. The entire concept of Bundler was met with a lot of resistance, andt he Bundler team spent a lot of time discussing, arguing, debating, and cajoling developers on the internet. It was so non-obvious, in fact, that I gave [an entire talk at RubyConf 2010 arguing that Bundler was actually worth using](/2010/06/09/railsconf-2010-bundler-talk-slides/).
 
 ### Now It’s Too Slow (2010-2012)
 
@@ -93,7 +94,7 @@ As you may have guessed, this did provide an API for Bundler users, but it came 
 
 On top of that, the standalone API was written on top of Sinatra and Sequel. The API application was extremely small, and I think it was a completely reasonable decision to make it a tiny app in a tiny framework. The downside that we weren’t expecting was existing contributors to RubyGems.org (or even developers who wrote Rails apps for their dayjob) weren’t easily able to contribute.
 
-The story of creating the Bundler API, deploying it, and then scaling it up to handle the traffic from every Bundler user in the world is a lot longer than I have time to fit into this talk. If you’re interested, you can find out a lot from my talk [Deathmatch: Bundler vs RubyGems](http://andre.arko.net/2013/05/12/deathmatch-bundler-vs-rubygemsorg/) or Terence Lee’s talk [Bundler Y U So Slow: Server Edition](http://rubykaigi.org/2013/talk/S54).
+The story of creating the Bundler API, deploying it, and then scaling it up to handle the traffic from every Bundler user in the world is a lot longer than I have time to fit into this talk. If you’re interested, you can find out a lot from my talk [Deathmatch: Bundler vs RubyGems](/2013/05/12/deathmatch-bundler-vs-rubygemsorg/) or Terence Lee’s talk [Bundler Y U So Slow: Server Edition](http://rubykaigi.org/2013/talk/S54).
 
 While we had a lot of additional work to do, the growing popularity of Bundler meant that it had many more users, and some of those new users turned into new contributors. With the help of new core team members, we were able to ship several significant improvements to Bundler in addition to the new API service.
 
@@ -103,7 +104,7 @@ We also rewrote the dependency resolver at this point, refactoring it to stop us
 
 This time period is also when Git and GitHub added support for using git over HTTP instead of only over SSH. Hoping to take advantage of the ways that HTTP git operations can be faster than the same operations over SSH, Bundler added support for HTTP authentication during git operations.
 
-Last, and possibly saddest, Bundler had its very first CVE. If you’re interested, I’ve given another talk [on security and the background behind CVEs](http://andre.arko.net/2013/08/22/security-is-hard-but-we-cant-go-shopping/). The short version is that a CVE means that your software has a critical security issue. 😰 In our case, the critical security issue was that we allowed multiple `source` declarations inside a Gemfile, and simply looked inside every source for every gem that we needed. Unfortunately, since anyone can claim a gem on RubyGems.org, the possible name conflicts create a security risk.
+Last, and possibly saddest, Bundler had its very first CVE. If you’re interested, I’ve given another talk [on security and the background behind CVEs](/2013/08/22/security-is-hard-but-we-cant-go-shopping/). The short version is that a CVE means that your software has a critical security issue. 😰 In our case, the critical security issue was that we allowed multiple `source` declarations inside a Gemfile, and simply looked inside every source for every gem that we needed. Unfortunately, since anyone can claim a gem on RubyGems.org, the possible name conflicts create a security risk.
 
 If you run a private gemserver at your company, and use a private gem that you have named `my-cool-thing`, someone else could push a gem named `my-cool-thing` to RubyGems.org, and you might (suddenly, and without warning) start downloading and installing and running the code from that gem, which might be malicious. We [blogged about the problem, and tried to fix it](http://bundler.io/blog/2014/08/14/bundler-may-install-gems-from-a-different-source-than-expected-cve-2013-0334.html), but in the end the only way to be sure that the problem can’t ever happen is to stop allowing more than one `source` for any gems inside your Gemfile.
 
@@ -133,7 +134,7 @@ Once that was done, we started to move the Bundler API back into the RubyGems.or
 
 Parallel to getting RubyGems completely moved over to Fastly, the RubyGems and Bundler teams were working to complete the long-awaited compact index format. In short, it is a plain-text format, with one file listing every gem name and version number, and one file per gem listing the full dependency information for each version of that gem. The text files are append-only, so that they can be cached on each machine and updated by requesting only the part of the file that comes after the part that is already cached.
 
-Even though the new format had been proved to work by a prototype I wrote, it took more than a year for myself, Sam Giddins, our Google Summer of Code student Felipe Tanus, and the rest of the Bundler and RubyGems.org teams to work together to finalize the format, write server and client libraries, and release. For more information about the compact index and related changes, check out the talk [Extreme Makeover: RubyGems Edition](http://andre.arko.net/2013/12/09/extreme-makeover-rubygems-edition/) from RubyConf 2013.
+Even though the new format had been proved to work by a prototype I wrote, it took more than a year for myself, Sam Giddins, our Google Summer of Code student Felipe Tanus, and the rest of the Bundler and RubyGems.org teams to work together to finalize the format, write server and client libraries, and release. For more information about the compact index and related changes, check out the talk [Extreme Makeover: RubyGems Edition](/2013/12/09/extreme-makeover-rubygems-edition/) from RubyConf 2013.
 
 By combining the power of Fastly’s CDN and the caching strategy of the compact index, installing gems became faster again, no matter where you lived in the world. Today, most of the time in a `bundle install` run is actually installing gems, rather than resolving complicated gemfiles or downloading information about gems.
 
