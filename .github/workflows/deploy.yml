@@ -29,7 +29,7 @@ jobs:
           target_repo_url:
             git@github.com:indirect/drafts.arko.net.git
           ssh_private_key:
-            ${{ secrets.DRAFTS_SSH_PRIVATE_KEY }}
+            ${{ secrets.DRAFTS_SSH_DEPLOY_KEY }}
     
   build:
     runs-on: ubuntu-latest
