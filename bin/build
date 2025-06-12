@@ -10,4 +10,4 @@ args=(--minify)
 [[ "${1:-}" == "https://drafts"* ]] && args+=(--buildDrafts --buildFuture)
 
 set -x
-exec echo hugo "${args[@]}"
+exec hugo "${args[@]}"
