@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  to_stage:
+  push_drafts:
     if: github.repository == 'indirect/andre.arko.net'
     runs-on: ubuntu-24.04
     steps:
