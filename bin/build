@@ -5,9 +5,9 @@ if [[ "${HUGO_ENVIRONMENT:-}" != "production" ]]; then
   export PATH=bin:$PATH
 fi
 
+args=(--minify)
+[[ -n "${1:-}" ]] && args+=(--baseURL "$1")
+[[ "${1:-}" == "https://drafts"* ]] && args+=(--buildDrafts --buildFuture)
+
 set -x
-if [[ -n "${1:-}" ]]; then
-  hugo --minify --baseURL "$1"
-else
-  hugo --minify
-fi
+exec echo hugo "${args[@]}"
