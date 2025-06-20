@@ -15,7 +15,7 @@ Let’s jump to the end first, and take a look at the final prompt I ended up wi
 
 ![a terminal prompt with the text "main›1 ⇣1⇡1 rouv [jj] add jj consume +1 ^1"](full-prompt.png)
 
-	main›1 ⇣1⇡1 rouv [jj] add jj consume +1 ^1
+    main›1 ⇣1⇡1 rouv [jj] add jj consume +1 ^1
 
 In this prompt, `main` is the closest bookmark. It’s colored red because it is both ahead and behind the remote it is tracking. (If only behind, magenta, if only ahead, cyan, and if caught up, green.) The small arrow to the right and the number 1 are telling us that our current `@` is one non-empty commit beyond the local bookmark.
 
@@ -33,7 +33,7 @@ To illustrate the base case, here’s an example where the local and remote book
 
 ![a terminal prompt with the text "main uump"](minimal-prompt.png)
 
-	main uump
+    main uump
 
 If all you care about is getting this prompt for yourself, you can copy [the full prompt segment](https://github.com/indirect/dotfiles/blob/main/dot_p10k.zsh#L1188-L1331) into your `~/.p10k` configuration file right now. If you’re interested in how it came about and how it works, keep reading.
 
@@ -63,7 +63,7 @@ While I was building the prompt, I tackled the sections from simplest to hardest
 
 Let’s look at the global options first, since they are shared across every section, and then we can take them as given.
 
-	jj --ignore-working-copy --at-op=@ --no-pager
+    jj --ignore-working-copy --at-op=@ --no-pager
 
 Option `--at-op=@` ensures that jj will not create an operation commit for this command. Then `--ignore-working-copy` stops jj from checking the filesystem for changes to add to the working copy. Together, those two options dramatically speed up the commands we are running. Finally, the global `--no-pager` option makes sure that jj won’t try to send the output to a pager no matter how long it is.
 
@@ -73,8 +73,8 @@ Okay, now back to the actual section commands.
 
 The first section is named `jj_add`, and all it does is add changes from the filesystem into jj’s working copy `@`, so the following commands will reflect the latest state of the world. If you’re already using Watchman or some other mechanism to track filesystem changes, you don’t need this.
 
-	## jj_add
-	jj debug snapshot
+    ## jj_add
+    jj debug snapshot
 
 This section, uniquely out of all sections, does not include `--ignore-working-copy`, since that would defeat the point of updating the working copy.
 
@@ -84,10 +84,10 @@ For the full zsh code, please check out the repo. In this post I’m going to fo
 
 #### jj\_op
 
-The simplest section is the final one, `jj_op`. Somewhat like git’s reflog, jj tracks every change to the repo in a commit, allowing you either `jj undo` a single command, or jump to any previous state of the repo at any time. Since those operations are stored as commits, they have “operation IDs”. 
+The simplest section is the final one, `jj_op`. Somewhat like git’s reflog, jj tracks every change to the repo in a commit, allowing you either `jj undo` a single command, or jump to any previous state of the repo at any time. Since those operations are stored as commits, they have “operation IDs”.
 
-	## jj_op
-	jj op log --no-graph --limit 1 --template "id.short()")
+    ## jj_op
+    jj op log --no-graph --limit 1 --template "id.short()")
 
 The jj command for this section is `op log`. The subcommand `op` is for dealing with operations, and `op log` simply prints the history of operations, similar to the command `git reflog`.  By default, jj prints logs as a kind of ascii graph, using circles and dashes to show how the commits are related. We disable that with `--no-graph`. Finally, we use `--limit 1` to only include the most recent operation, and `--template "id.short()"` to provide a jj template for the output we want.
 
@@ -97,11 +97,11 @@ In jj templates, the current object is implied and template methods will be call
 
 The next simplest section is `jj_desc`, which prints out either the first line of the current change’s description (a “commit message” in git), or a pencil icon to indicate that we have made changes but not yet described them. If there are no changes and no description, nothing is printed.
 
-	## jj_desc
-	jj log --limit 1 --revset "@" --template "coalesce(
-	  description.first_line(), 
-	  if(!empty, '\Uf040 ')
-	)"
+    ## jj_desc
+    jj log --limit 1 --revset "@" --template "coalesce(
+      description.first_line(),
+      if(!empty, '\Uf040 ')
+    )"
 
 This command uses `--limit 1` in exactly the same way that the previous section did, but now applied to the `log` command which works very much like `git log`, showing the history of changes and their parents. The `revset` option tells jj which changes to include in the log, and by passing `@`, we are saying “only the current commit”. Basically the same as git’s `HEAD`, if you’re used to that.
 
@@ -113,27 +113,27 @@ The second argument is a compound value—it’s another top level function, `if
 
 If the change has no description, and is empty, both arguments will be empty, and so `coalesce()` will return nothing.
 
-#### jj\_status 
+#### jj\_status
 
 The status section might be the simplest jj command, even though the output parsing is a bit more complicated.
 
-	## jj_status
-	VCS_STATUS_CHANGES=($(jj log -r @ -T "diff.summary()" 2> /dev/null | awk 'BEGIN {a=0;d=0;m=0} /^A / {a++} /^D / {d++} /^M / {m++} /^R / {m++} /^C / {a++} END {print(a,d,m)}'))
+    ## jj_status
+    VCS_STATUS_CHANGES=($(jj log -r @ -T "diff.summary()" 2> /dev/null | awk 'BEGIN {a=0;d=0;m=0} /^A / {a++} /^D / {d++} /^M / {m++} /^R / {m++} /^C / {a++} END {print(a,d,m)}'))
 
 The template function `diff.summary()` returns just a list of added, removed, and changed files, one file per line. We use the revset `@` to only show the diff from the current change. The output is the main component of the output from running `jj status`, and looks a lot like `git status`.  Here’s an example:
 
-	M .github/workflows/deploy.yml
-	M archetypes/default.md
-	A content/note/2025-06-13-fx.md
-	M bin/build
+    M .github/workflows/deploy.yml
+    M archetypes/default.md
+    A content/note/2025-06-13-fx.md
+    M bin/build
 
 If you count how many times each letter appears, that tells you how many files have been A(dded), D(eleted), or M(odified). The prompt section uses `awk` to count how many times each of those letters occurs, and then output the three numbers. The extra parentheses surrounding the jj command subshell tell zsh that it should create an array out of the values returned.
 
 The next few lines of the prompt take those array items and add symbols and colors to make it clear which numbers mean what:
 
-	(( VCS_STATUS_CHANGES[1] )) && res+=" %F{green}+${VCS_STATUS_CHANGES[1]}"
-	(( VCS_STATUS_CHANGES[2] )) && res+=" %F{red}-${VCS_STATUS_CHANGES[2]}"
-	(( VCS_STATUS_CHANGES[3] )) && res+=" %F{yellow}^${VCS_STATUS_CHANGES[3]}"
+    (( VCS_STATUS_CHANGES[1] )) && res+=" %F{green}+${VCS_STATUS_CHANGES[1]}"
+    (( VCS_STATUS_CHANGES[2] )) && res+=" %F{red}-${VCS_STATUS_CHANGES[2]}"
+    (( VCS_STATUS_CHANGES[3] )) && res+=" %F{yellow}^${VCS_STATUS_CHANGES[3]}"
 
 Luckily for us, zsh’s math mode `((expr))` treats a zero value as false, so we can use that to hide the parts that haven’t happened.
 
@@ -141,18 +141,18 @@ Luckily for us, zsh’s math mode `((expr))` treats a zero value as false, so we
 
 The jj\_change section is really only trying to print out the hash of the current change, equivalent to a git commit sha. Making it work the way jj expects required some gnarly bits, however.
 
-	IFS="#" change=($(jj log -r "@" -T 'separate("#",
-		change_id.shortest(4).prefix(),
-		coalesce(change_id.shortest(4).rest(), "\0"),
-		commit_id.shortest(4).prefix(),
-		coalesce(commit_id.shortest(4).rest(), "\0"),
-		concat(
-			if(conflict, "💥"),
-			if(divergent, "🚧"),
-			if(hidden, "👻"),
-			if(immutable, "🔒"),
-		),
-	)'))
+    IFS="#" change=($(jj log -r "@" -T 'separate("#",
+        change_id.shortest(4).prefix(),
+        coalesce(change_id.shortest(4).rest(), "\0"),
+        commit_id.shortest(4).prefix(),
+        coalesce(commit_id.shortest(4).rest(), "\0"),
+        concat(
+            if(conflict, "💥"),
+            if(divergent, "🚧"),
+            if(hidden, "👻"),
+            if(immutable, "🔒"),
+        ),
+    )'))
 
 There are a few layers to making this work. The first one is setting `IFS`, the list of separators when splitting a string into an array. We only want to use `#`, a character that is guaranteed to not be part of any of our IDs.
 
@@ -162,20 +162,20 @@ In some cases, the minimal prefix will be all four characters, and that means th
 
 To work around that problem, we’re using the `coalesce()` function, which returns the first argument that isn’t empty, along with a sentinel value of a single null, which jj considers “not empty”. Even better, zsh does consider a null to be empty, and so we get exactly the four item array that we want, even if the second or fourth value is empty.
 
-	VCS_STATUS_CHANGE=($change[1] $change[2])
-	VCS_STATUS_COMMIT=($change[3] $change[4])
-	VCS_STATUS_ACTION=$change[5]
+    VCS_STATUS_CHANGE=($change[1] $change[2])
+    VCS_STATUS_COMMIT=($change[3] $change[4])
+    VCS_STATUS_ACTION=$change[5]
 
 Once we have the four values, we print out the change ID and the commit ID with the same colorization that jj uses to indicate the smallest unambiguous ID for each.
 
-	# 'zyxw' with the standard jj color coding for shortest name
-	res+=" ${magenta}${VCS_STATUS_CHANGE[1]}${grey}${VCS_STATUS_CHANGE[2]}"
-	
-	# '💥🚧👻🔒' if the repo is in an unusual state.
-	[[ -n $VCS_STATUS_ACTION ]] && res+=" ${red}${VCS_STATUS_ACTION}"
-	
-	# '123abc' with the standard jj color coding for shortest name
-	res+=" ${blue}${VCS_STATUS_COMMIT[1]}${grey}${VCS_STATUS_COMMIT[2]}"
+    # 'zyxw' with the standard jj color coding for shortest name
+    res+=" ${magenta}${VCS_STATUS_CHANGE[1]}${grey}${VCS_STATUS_CHANGE[2]}"
+
+    # '💥🚧👻🔒' if the repo is in an unusual state.
+    [[ -n $VCS_STATUS_ACTION ]] && res+=" ${red}${VCS_STATUS_ACTION}"
+
+    # '123abc' with the standard jj color coding for shortest name
+    res+=" ${blue}${VCS_STATUS_COMMIT[1]}${grey}${VCS_STATUS_COMMIT[2]}"
 
 #### jj\_remote
 
@@ -183,25 +183,25 @@ Next, the remote output. Collecting these numbers depends on some work already d
 
 If the closest bookmark is tracking a remote bookmark with the same name, the jj template variable `remote` will contain the name of the remote, and we will print the tracking information that we want to show in the prompt.
 
-	local counts=($(jj bookmark list -r $branch -T '
-		if(remote, separate(" ",
-			name ++ "@" ++ remote, 
-			coalesce(
-				tracking_ahead_count.exact(),
-				tracking_ahead_count.lower()
-			),
-			coalesce(
-				tracking_behind_count.exact(),
-				tracking_behind_count.lower()
-			),
-			if(tracking_ahead_count.exact(), "0", "+"),
-			if(tracking_behind_count.exact(), "0", "+"),
-		) ++ "\n"
-	)'))
-	local VCS_STATUS_COMMITS_AHEAD=$counts[2]
-	local VCS_STATUS_COMMITS_BEHIND=$counts[3]
-	local VCS_STATUS_COMMITS_AHEAD_PLUS=$counts[4]
-	local VCS_STATUS_COMMITS_BEHIND_PLUS=$counts[5]
+    local counts=($(jj bookmark list -r $branch -T '
+        if(remote, separate(" ",
+            name ++ "@" ++ remote,
+            coalesce(
+                tracking_ahead_count.exact(),
+                tracking_ahead_count.lower()
+            ),
+            coalesce(
+                tracking_behind_count.exact(),
+                tracking_behind_count.lower()
+            ),
+            if(tracking_ahead_count.exact(), "0", "+"),
+            if(tracking_behind_count.exact(), "0", "+"),
+        ) ++ "\n"
+    )'))
+    local VCS_STATUS_COMMITS_AHEAD=$counts[2]
+    local VCS_STATUS_COMMITS_BEHIND=$counts[3]
+    local VCS_STATUS_COMMITS_AHEAD_PLUS=$counts[4]
+    local VCS_STATUS_COMMITS_BEHIND_PLUS=$counts[5]
 
 Unfortunately, a performance optimization in jj means that sometimes the number of commits ahead or behind the remote is simply estimated. In my experience, this happens most often after reaching 10 commits, but the documentation seems to imply that it could happen at any number of commits.
 
@@ -209,16 +209,16 @@ If the `tracking_ahead_count.exact()` doesn’t exist, there will instead be a `
 
 Once we have the numbers, we check for non-zero values and print them out next to little arrows indicating whether the number is how many commits we are ahead or behind the remote. Here’s what that looks like.
 
-	## jj_remote
-	
-	# ⇣10+ if behind the remote.
-	(( VCS_STATUS_COMMITS_BEHIND )) && res+=" ${green}⇣${VCS_STATUS_COMMITS_BEHIND}"
-	(( VCS_STATUS_COMMITS_BEHIND_PLUS )) && res+="${VCS_STATUS_COMMITS_BEHIND_PLUS}"
-	
-	# ⇡10+ if ahead of the remote; no leading space if also behind the remote: ⇣10+⇡10+.
-	(( VCS_STATUS_COMMITS_AHEAD && !VCS_STATUS_COMMITS_BEHIND )) && res+=" "
-	(( VCS_STATUS_COMMITS_AHEAD  )) && res+="${green}⇡${VCS_STATUS_COMMITS_AHEAD}"
-	(( VCS_STATUS_COMMITS_AHEAD_PLUS )) && res+="${VCS_STATUS_COMMITS_AHEAD_PLUS}"
+    ## jj_remote
+
+    # ⇣10+ if behind the remote.
+    (( VCS_STATUS_COMMITS_BEHIND )) && res+=" ${green}⇣${VCS_STATUS_COMMITS_BEHIND}"
+    (( VCS_STATUS_COMMITS_BEHIND_PLUS )) && res+="${VCS_STATUS_COMMITS_BEHIND_PLUS}"
+
+    # ⇡10+ if ahead of the remote; no leading space if also behind the remote: ⇣10+⇡10+.
+    (( VCS_STATUS_COMMITS_AHEAD && !VCS_STATUS_COMMITS_BEHIND )) && res+=" "
+    (( VCS_STATUS_COMMITS_AHEAD  )) && res+="${green}⇡${VCS_STATUS_COMMITS_AHEAD}"
+    (( VCS_STATUS_COMMITS_AHEAD_PLUS )) && res+="${VCS_STATUS_COMMITS_AHEAD_PLUS}"
 
 #### jj\_at
 
@@ -226,17 +226,17 @@ The `jj_at` section is the most complicated one, so we’re going to break it do
 
 The first jj command is looking for the closest “named” change. A local bookmark, a remote bookmark, a tag, or if nothing else `trunk()`, a jj builtin for the bookmark named `main` or `master`.
 
-	## jj_at
-	jj log --no-graph --limit 1 -r "coalesce(
-	  heads(::@ & bookmarks()),
-	  heads(::@ & remote_bookmarks()),
-	  heads(::@ & tags()),
-	  heads(@:: & bookmarks()),
-	  heads(@:: & remote_bookmarks()),
-	  heads(@:: & tags()),
-	  trunk()
-	)" -T "separate(' ', bookmarks, tags)" | cut -d ' ' -f 1)
-	
+    ## jj_at
+    jj log --no-graph --limit 1 -r "coalesce(
+      heads(::@ & bookmarks()),
+      heads(::@ & remote_bookmarks()),
+      heads(::@ & tags()),
+      heads(@:: & bookmarks()),
+      heads(@:: & remote_bookmarks()),
+      heads(@:: & tags()),
+      trunk()
+    )" -T "separate(' ', bookmarks, tags)" | cut -d ' ' -f 1)
+
 
 By combining `--limit 1` with this complicated revset, we get one single change. Let’s talk through the revset.
 
@@ -254,9 +254,9 @@ Now that we have a branch name, let’s find out close we are to it. Typically, 
 
 Since ahead and behind (with up and down arrows) were already taken to track remote status, I landed on “before” and “after” (with left and right arrows) to indicate if our current change is an ancestor or a descendant of the named change. Here’s how we find that number:
 
-	jj log --no-graph \
-	  -r "$branch..@ & (~empty() | merges())" \
-	  -T '"n"' | wc -c | tr -d ' '
+    jj log --no-graph \
+      -r "$branch..@ & (~empty() | merges())" \
+      -T '"n"' | wc -c | tr -d ' '
 
 This revset is simply every commit between our named branch and our current change, with empty commits removed. Since merge commits without conflict resolutions are also technically empty, we add them back in. This revset will return every commit between the named branch and the working copy, “after” the name. Repeating the command with an inverted revset of `@..$branch` returns changes “before” the name, if any.
 
@@ -266,19 +266,19 @@ After this, we run the code shown above in `jj_remote`, fetching the number of c
 
 For me personally, just knowing if I am ahead or behind the remote is enough, and I don’t usually care to show exactly the number of commits in my prompt. As a result, I simply set the name to green by default, cyan if I have commits to push, and magenta if I have commits to pull. In the unlikely case I have both, I set the name to red.
 
-	local status_color=${green}
-	(( VCS_STATUS_COMMITS_AHEAD )) && status_color=${cyan}
-	(( VCS_STATUS_COMMITS_BEHIND )) && status_color=${magenta}
-	(( VCS_STATUS_COMMITS_AHEAD && VCS_STATUS_COMMITS_BEHIND )) \
-	  && status_color=${red}
+    local status_color=${green}
+    (( VCS_STATUS_COMMITS_AHEAD )) && status_color=${cyan}
+    (( VCS_STATUS_COMMITS_BEHIND )) && status_color=${magenta}
+    (( VCS_STATUS_COMMITS_AHEAD && VCS_STATUS_COMMITS_BEHIND )) \
+      && status_color=${red}
 
 Now that we’ve figured out the color of the name and added it to the prompt output, we can use the numbers we gathered a moment ago to print exactly how many commits we are before or after the name we found, with a “is this value nonzero” arithmetic check.
 
-	# ‹42 if before the local bookmark
-	(( VCS_STATUS_COMMITS_BEFORE )) && \
-	  res+="‹${VCS_STATUS_COMMITS_BEFORE}"
-	# ›42 if beyond the local bookmark
-	(( VCS_STATUS_COMMITS_AFTER )) && \
-	  res+="›${VCS_STATUS_COMMITS_AFTER}"
+    # ‹42 if before the local bookmark
+    (( VCS_STATUS_COMMITS_BEFORE )) && \
+      res+="‹${VCS_STATUS_COMMITS_BEFORE}"
+    # ›42 if beyond the local bookmark
+    (( VCS_STATUS_COMMITS_AFTER )) && \
+      res+="›${VCS_STATUS_COMMITS_AFTER}"
 
 And that’s it! We’ve finally calculated everything from the jj prompt you saw at the beginning of this post. If you made it all the way to the end, congratulations! Feel free to grab your own copy of [the prompt segment code](https://github.com/indirect/dotfiles/blob/main/dot_p10k.zsh#L1188-L1331), customize the parts you want or don’t want, and add it to your p10k config.
