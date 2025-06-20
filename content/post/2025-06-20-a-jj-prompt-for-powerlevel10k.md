@@ -78,7 +78,7 @@ The first section is named `jj_add`, and all it does is add changes from the fil
 
 This section, uniquely out of all sections, does not include `--ignore-working-copy`, since that would defeat the point of updating the working copy.
 
-Since this section doesn’t produce any output, so it only contains the command that needs to be run. Every other section is going to contain a different pattern, assigning the output from jj into a shell variable, and then using conditionals on that variable to output the results with various colors and formatting.
+Since this section doesn’t produce any output, it only contains the command that needs to be run. Every other section is going to contain a different pattern, assigning the output from jj into a shell variable, and then using conditionals on that variable to output the results with various colors and formatting.
 
 For the full zsh code, please check out the repo. In this post I’m going to focus on explaining the jj commands, since the shell stuff is less novel (and this post is too long already).
 
