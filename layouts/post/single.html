@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "title" }}{{ .Title | plainify }}{{ end }}
 {{ define "main" }}
 <main id="content" class="post">
   <p class="post-date">{{ .PublishDate | time.Format "02 Jan 2006" }}</p>
