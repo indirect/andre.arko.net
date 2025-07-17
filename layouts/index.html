@@ -3,20 +3,25 @@
   {{ .Content }}
 
   <section class="posts">
-    {{ range (where .Site.RegularPages "Type" "post").GroupByPublishDate "2006" }}
+    {{- $posts := where .Site.RegularPages "Type" "post" }}
+    {{- if (hugo.Store.Get "drafts") }}{{ $posts = where $posts "Draft" true }}{{ end }}
+    {{- range $posts.GroupByPublishDate "2006" }}
       {{ partial "post-year" . }}
-    {{ end }}
+    {{- end }}
   </section>
 
+  {{- if not (hugo.Store.Get "drafts") }}
   <aside class="notes">
     <ul>
-      {{ range where .Site.RegularPages "Type" "note" | first 20 }}
+      {{- $notes := where .Site.RegularPages "Type" "note" | first 20 -}}
+      {{- range $notes }}
       <li>{{ partial "note" . }}</li>
-      {{ end }}
+      {{- end }}
     </ul>
     <div class="note-link">
       <a href='{{ .RelRef (dict "path" "note") }}'>Earlier Notes →</a>
     </div>
   </aside>
+  {{- end }}
 </main>
 {{ end }}

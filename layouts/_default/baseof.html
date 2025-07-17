@@ -15,10 +15,12 @@
   <link rel="me" href="https://instagram.com/indirect">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
+  {{- hugo.Store.Set "drafts" (eq .Site.BaseURL "https://drafts.arko.net") }}
 </head>
 <body>
   <header id="header">
-    <h1><a href="{{ .Site.BaseURL }}">André.Arko.net</a></h1>
+    <h1><a href="{{ .Site.BaseURL }}">{{- if hugo.Store.Get "drafts" -}}DRAFT{{- else -}}André.Arko.net{{- end -}}</a></h1>
+    {{ if not (hugo.Store.Get "drafts") -}}
     <nav>
       <a href='{{ absURL "/note" }}'>Notes</a>
       <a href='{{ absURL "/talks" }}'>Talks</a>
@@ -26,12 +28,15 @@
       <a href='{{ absURL "/resume" }}'>Resumé</a>
       <a href='https://arko.net'>About</a>
     </nav>
+    {{- end }}
   </header>
 
   {{ block "main" . }}{{ end }}
 
   <footer id="footer">
+    {{- if not (hugo.Store.Get "drafts") -}}
     this is the personal blog of <a rel="author" href="http://arko.net">André Arko</a><br>
+    {{- end }}
   </footer>
 
   {{ if hugo.IsProduction }}
