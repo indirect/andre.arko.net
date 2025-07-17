@@ -1,5 +1,6 @@
 +++
 title = 'Chrome “Print to PDF” and headless <code>--print-to-pdf</code> aren’t the same!'
+slug = 'chrome-headless-print-to-pdf'
 date = 2025-05-25T02:39:27-07:00
 +++
 

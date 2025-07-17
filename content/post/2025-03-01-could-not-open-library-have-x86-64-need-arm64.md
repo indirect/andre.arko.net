@@ -1,6 +1,7 @@
 ---
 date: '2025-03-02T02:30:37+00:00'
 title: Could not open library, have <code>x86_64</code>, need <code>arm64</code>
+slug: Could not open library, have x86_64, need arm64
 ---
 This week I re-encountered a problem that has been plaguing me for months, but I never took the time to try to debug it before now. The problem came with a really specific and confusing symptom: any time I installed a newer version of Ruby on my machine, a daily cronjob running a Ruby script would start failing. The specific error was always an FFI exception, with the exact error message `FFI::DynamicLibrary.load_library: Could not open library`.
 
