@@ -72,7 +72,7 @@ h3.subtitle {
 }
 
 #content {
-  margin: 0 4em;
+  margin: 0 2em 0 4em;
   min-width: 25em;
   max-width: 40em;
 }
@@ -89,9 +89,9 @@ h3.subtitle {
 #content.home {
   display: flex;
   flex-direction: row;
-  column-gap: 3em;
+  column-gap: 6em;
   justify-content: space-between;
-  max-width: 100%;
+  max-width: 70em;
 }
 
 h2.year {
@@ -129,8 +129,7 @@ h2.year {
 }
 
 .notes {
-  max-width: 30em;
-  flex: 0.75;
+  max-width: 20em;
 }
 
 .notes ul {
@@ -355,27 +354,17 @@ ul.talk-events {
     padding-bottom: 0.5em;
   }
 
+  .notes {
+    max-width: 100%;
+  }
+
   #footer {
     margin: 0;
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  #content.home {
-    flex-direction: column-reverse;
-  }
-
-  #content.home .notes {
-    margin-bottom: 1em;
-  }
-
-  #content.home .notes ul li:nth-child(n+2) {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   body {
     margin: 1rem;
     padding: 0 10px;
@@ -402,5 +391,20 @@ ul.talk-events {
   #footer {
     margin: 0;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #content.home {
+    flex-direction: column-reverse;
+  }
+
+  #content.home .notes {
+    max-width: 40em;
+    margin-bottom: 1em;
+  }
+
+  #content.home .notes ul li:nth-child(n+2) {
+    display: none;
   }
 }
