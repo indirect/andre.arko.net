@@ -1,4 +1,11 @@
 ---
+- company: Spinel Cooperative
+  title: Founding Member & CEO
+  url: https://spinel.coop
+  location: San Francisco, CA
+  start: July 2025
+  description: Building next-generation Ruby developer tooling and providing retainers for access to core team maintainer expertise that can empower developers and quickly solve problems.
+
 - company: SunChaser
   title: Cofounder & CTO
   url: https://sunchaser.io
@@ -11,6 +18,7 @@
   url: https://cloudcity.io
   location: San Francisco, CA
   start: May 2021
+  end: June 2025
   description: Architecture and principal-level software consulting at many Bay Area startups, solving organizational problems with software and communication; business strategy and engineering management as a director at the consultancy.
   clients: 
     - company: Confident Security
