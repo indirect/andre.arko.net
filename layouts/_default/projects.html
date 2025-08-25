@@ -10,7 +10,7 @@
       <h4 class="project-title">
         {{ if .url }}
         <a class="project-link" href="{{ .url }}">
-          {{ .title }}
+          {{ .title | safeHTML }}
         </a>
         {{ else }}
           {{ .title }}
