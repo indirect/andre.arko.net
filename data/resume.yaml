@@ -13,6 +13,12 @@
   start: May 2021
   description: Architecture and principal-level software consulting at many Bay Area startups, solving organizational problems with software and communication; business strategy and engineering management as a director at the consultancy.
   clients: 
+    - company: Confident Security
+      url: https://confident.security
+      title: Principal Software Consultant
+      location: San Francisco, CA
+      start: January 2025
+      end: June 2025
     - company: Excelligence
       url: https://excelligence.com
       title: Software Management Consultant
