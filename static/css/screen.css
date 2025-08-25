@@ -308,9 +308,9 @@ ul.talk-events {
 
 .resume-body:before {
   content: " ";
-  flex: 0 0 0.2em;
+  flex: 0 0 0.1em;
   background-color: #DDD;
-  margin: 5px 0.4em 8px 0.4em;
+  margin: 3px 0.4em 7px 0.4em;
 }
 
 @media (prefers-color-scheme: dark) {
