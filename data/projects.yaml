@@ -1,4 +1,7 @@
 ---
+- title: "rv"
+  url: "https://spinel.coop/rv"
+  description: "A very fast version and dependency manager for the Ruby programming language."
 - title: "SunChaser"
   url: "https://sunchaser.io"
   description: "The missing Slack integration for PagerDuty. Track who's on call, request shift coverage, and set up automatically updating named groups."
