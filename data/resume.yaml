@@ -13,12 +13,6 @@
   start: May 2021
   description: Architecture and principal-level software consulting at many Bay Area startups, solving organizational problems with software and communication; business strategy and engineering management as a director at the consultancy.
   clients: 
-    - company: Ruby Central
-      url: https://rubycentral.org
-      title: Head of Open Source
-      location: Remote
-      start: January 2022
-      end: August 2024
     - company: Excelligence
       url: https://excelligence.com
       title: Software Management Consultant
@@ -44,6 +38,14 @@
       start: May 2021
       end: July 2022
 
+- company: Ruby Central
+  url: https://rubycentral.org
+  title: Head of Open Source
+  location: Remote
+  start: January 2022
+  end: August 2024
+  description: Ran the Open Source department, managing staff and open source contributors while planning projects, raising funds, handling departmental budgeting, and training hires.
+    
 - company: Ruby Together
   title: Founder & Executive Director
   location: San Francisco, CA
