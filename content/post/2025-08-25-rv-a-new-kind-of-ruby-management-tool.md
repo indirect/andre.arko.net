@@ -16,9 +16,9 @@ About a month ago, I decided that if there was no tool like this for Ruby, I wou
 
 The first and biggest trick is simply how fast everything is because `rv` is written in Rust, like `uv` is. We expect to be able to silently run equivalents of both `rvm install` and `bundle install` at the beginning of every `bundle exec`, with everything still feeling faster than it ever has before.
 
-The next innovation is `rv exec`, inspired by `uv exec`. It’s like `npm exec` or `gem exec`, but with superpowers. Any CLI command can run directly and immediately. No messing around with versions or dependencies, because they get installed as part of running the command. It will also be impossible for a CLI tool to conflict with your current project’s Ruby or gems, because the tool’s Ruby and gems will be installed in a separate and isolated environment.
+The next innovation is `rvx`/`rv tool run`, inspired by `uvx`/`uv tool run`. It’s like `npx`/`npm exec` or `gem exec`, but with superpowers. Any CLI command can run directly and immediately. No messing around with versions or dependencies, because they get installed as part of running the command. It will also be impossible for a CLI tool to conflict with your current project’s Ruby or gems, because the tool’s Ruby and gems will be installed in a separate and isolated environment.
 
-Closely related to `rv exec` is `rv tool install`, which lets you install any gem as a CLI tool with its own separate, isolated Ruby and gems. Want to use the `gist` gem, even while working on an app that needs a different Ruby? No problem. `rv tool install gist`, and then you have a `gist` command that you can run anywhere, whether you’re in another Ruby app or not.
+Closely related to `rv tool run` is `rv tool install`, which lets you install any gem as a CLI tool with its own separate, isolated Ruby and gems. Want to use the `gist` gem, even while working on an app that needs a different Ruby? No problem. `rv tool install gist`, and then you have a `gist` command that you can run anywhere, whether you’re in another Ruby app or not.
 
 Another “powered up” feature is script support, where a single file script contains the information from `.ruby-version`, from `Gemfile`, and from `Gemfile.lock`, together with the code. You can simply `rv run script.rb`, and you get the Ruby you need, the gems with versions you need, and the script runs.
 
@@ -33,3 +33,10 @@ After a few weeks, the team now includes [Samuel Giddins](https://segiddins.me) 
 If you just want to try what we have so far, [check out the `rv` repo](https://github.com/spinel-coop/rv). You can also read more about [our future plans](https://github.com/spinel-coop/rv/blob/main/docs/PLANS.md).
 
 Meanwhile, if your company could use faster, more productive developers, [let’s talk](mailto:hello+introducing-rv@spinel.coop). We can definitely make that happen.
+
+
+<small>
+
+updated 2025-08-26: `uv exec` (which doesn't exist) replaced with `uvx`, which does exist. thanks [@xor.blue](https://bsky.app/profile/xor.blue) and [@edmorley](https://github.com/edmorley) for pointing that out.
+
+</small>
