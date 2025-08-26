@@ -1,8 +1,7 @@
 +++
 title = '<code>rv</code>, a new kind of Ruby management tool'
 slug = 'rv-a-new-kind-of-ruby-management-tool'
-date = 2025-08-25T00:21:07-07:00
-draft = true
+date = 2025-08-25T23:21:07-07:00
 +++
 
 For the last ten years or so of working on Bundler, I’ve had a wish rattling around: I want a better dependency manager. It doesn’t just manage your gems, it manages your ruby versions, too. It doesn’t just manage your ruby versions, it installs pre-compiled rubies so you don’t have to wait for ruby to compile from source every time. And more than all of that, it makes it completely trivial to run any script or tool written in ruby, even if that script or tool needs a different ruby than your application does.
