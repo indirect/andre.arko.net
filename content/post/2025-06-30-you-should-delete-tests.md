@@ -3,7 +3,7 @@ title = 'You should delete tests'
 date = 2025-06-30T02:36:27-07:00
 +++
 
-We’ve had decades of thought leadership around testing, especially coming from wholistic development philosophies like Agile, TDD, and BDD. After all that time and several supposedly superseding movements, the developers I talk to seem to have developed a folk wisdom around tests.
+We’ve had decades of thought leadership around testing, especially coming from holistic development philosophies like Agile, TDD, and BDD. After all that time and several supposedly superseding movements, the developers I talk to seem to have developed a folk wisdom around tests.
 
 That consensus seems to boil down to simple but mostly helpful axioms, like “include tests for your changes” and “write a new test when you fix a bug to prevent regressions”. Unfortunately, one of those consensus beliefs seems to be “it is blasphemy to delete a test”, and that belief is not just wrong but actively harmful.
 
