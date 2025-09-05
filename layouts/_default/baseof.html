@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="{{ absURL "css/screen.css" }}" type="text/css" media="screen">
   <link rel="alternate" href="{{ absURL "atom.xml" }}" type="application/atom+xml" title="{{ $.Site.Title }}">
   <link rel="me" href="https://github.com/indirect">
+  <link rel="me" href="https://bsky.app/profile/indirect.io">
+  <link rel="me" href="https://fiasco.social/@indirect">
   <link rel="me" href="https://instagram.com/indirect">
+  <meta name="fediverse:creator" content="@indirect@fiasco.social">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
   {{- hugo.Store.Set "drafts" (eq .Site.BaseURL "https://drafts.arko.net/") }}
