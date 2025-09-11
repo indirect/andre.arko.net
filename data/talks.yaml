@@ -1,4 +1,12 @@
 ---
+- title: "Rails on SQLite: exciting new ways to cause outages"
+  description: "Between Litestack and the Rails 8 trifecta of Solid Cable, Solid Cache, and Solid Queue, it's easier than ever to spin up a Rails app that doesn't need a database service or a redis service or a storage service. Just as easy are several new ways to break your app or lose your data, especially on containerized hosting services. Learn how to simplify your stack while avoiding new ways things break."
+  post_url: "/2025/09/11/rails-on-sqlite-exciting-new-ways-to-cause-outages"
+  events:
+    - name: "Friendly.rb"
+      date: 2025-09-10
+      url: https://friendlyrb.com
+      slides_url: https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages
 - title: "Securing your Software Supply Chain Panel"
   description: "Composability has rapidly accelerated the pace of software development by allowing engineers to reuse openly shared libraries and packages. But the widespread adoption of these components also makes them an enticing avenue of attack for malicious actors. In this fireside session, André Arko (Head of Open Source, Ruby Central) and Dustin Ingram (Director, Python Software Foundation) will join Emilio Escobar (CISO, Datadog) for a discussion about securing your software supply chain. They’ll share practices to verify the provenance of your dependencies, mitigate the risks of using third party components, and secure the software you share with others."
   events:
