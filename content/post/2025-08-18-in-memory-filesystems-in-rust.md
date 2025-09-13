@@ -36,4 +36,6 @@ At this point, I can only assume that modern SSDs (and macOS filesystem cache) w
 
 If you have examples of performance differences from using an in-memory filesystem in Rust, please let me know the details!
 
+**Update on 2025-09-13:** Thanks to [David Barsky](https://davidbarsky.com) of [ESRC](https://esrc.io), I now have an example of when it could matter a huge amount whether you are using a tmpfs in-memory volume or an AFPS volume on macOS. Please read the follow-up post at [Adventures in CPU contention](/2025/09/21/adventures-in-memory-contention).
+
 In the meantime, it seems like modern SSDs (and modern OS filesystem caches) are so fast that it doesn’t even matter. Eat trash, be free, test directly against the filesystem. Why not.
