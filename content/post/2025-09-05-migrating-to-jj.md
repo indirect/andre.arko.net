@@ -5,7 +5,7 @@ date = 2025-09-05T13:32:46-07:00
 draft = true
 +++
 
-## I just want to use jj with GitHub, please
+### I just want to use jj with GitHub, please
 
 Sure, you can do that. Convert an existing git repo with `jj git init --colocate` or clone a repo with `jj git clone`. Work in the repo like usual, but with no `git add` needed, changes are staged automatically.
 
@@ -13,7 +13,7 @@ Commit with `jj commit`, mark what you want to push with `jj bookmark set my-git
 
 Get changes from the remote with with `jj git fetch`. Set up a local copy of a remote branch with `jj bookmark track branch-name@origin`. Check out a branch with `jj new branch-name`, and then loop back up to the start of the previous paragraph for commit and push. That’s probably all you need to get started, so good luck and have fun!
 
-## concepts
+### concepts
 
 Still here? Cool, let’s talk about how jj is different from git. There’s [a list of differences from git](https://jj-vcs.github.io/jj/v0.13.0/git-comparison/) in the jj docs, but more than specific differences, I found it helpful to think of jj as like git, but every change in the repo creates a commit.
 
@@ -35,12 +35,12 @@ One other genius concept jj offers is **revsets**. In essence, revsets are a que
 
 For more about jj’s design, concepts, and why they are interesting, check out the blog posts [What I’ve Learned From JJ](https://zerowidth.com/2025/what-ive-learned-from-jj/), [jj init](https://v5.chriskrycho.com/essays/jj-init/), and [jj is great for the wrong reason](https://www.felesatra.moe/blog/2024/12/23/jj-is-great-for-the-wrong-reason). For a quick reference you can refer to later, there’s a single page summary in the [jj cheat sheet PDF](https://justinpombrio.net/src/jj-cheat-sheet.pdf).
 
-## commands
+### commands
 
 Now, let’s take a look at the most common jj commands, with a special focus on the way arguments are generally consistent and switches don’t hide totally different additional commands.
 
-### jj log
 The log command is the biggest consumer of revsets, which are passed using `-r` or `--revset`. With `@`, which is the jj version of `HEAD`, you can build a revset for exactly the commits you want to see. The git operator `..` is supported, allowing you to log commits after A and up to B with `-r A..B`, but that’s just the start. Here’s a quick list of some useful revsets to give you the flavor:
+#### jj log
 - `@-` the parent of the current commit
 - `kv+` the first child of the change named `kv`
 - `..A & ..B` changes in the intersection of `A` and `B`’s ancestors
@@ -51,42 +51,42 @@ Using the jj config file, you can give any revset an alias, and then use that al
 
 For a full review of everything that’s possible with revsets, check out [the revset documentation](https://jj-vcs.github.io/jj/latest/revsets/) and the blog post [Understanding Revsets for a Better JJ Log Output](https://willhbr.net/2024/08/18/understanding-revsets-for-a-better-jj-log-output/).
 
-### jj commit / new / edit / split
+#### jj commit / new / edit / split
 The functionality of `git commit` is broken up into three separate jj commands. You use `new` to create a new empty child change, defaulting to `@`, and edit it. You use `edit` to re-open an existing change for amending, and `split` to interactively select a diff to break out into a second change. These are all common git workflows, done by using flags or multiple git commands, made direct and straightforward single commands in jj.
 
-### jj restore / abandon
+#### jj restore / abandon
 What if `checkout` with file arguments had a semantic name? You go back to a previous file version using `restore` or use `abandon` to get files from your immediate parent.
 
-### jj bookmark list / set / track
+#### jj bookmark list / set / track
 Bookmarks are jj’s alternative to named git branches, and can be set up to automatically track a branch in a git remote. While compatibility with git branches is nice, names aren’t required by jj’s model. You can push your current unnamed change instantly with `jj git push --change @`, and jj will use the change ID (which stays the same across amends and rebases) as the git branch name. Now you don’t have to think of a good name for your branch before you can work on it (or push it!).
 
 For more detail comparing and contrasting bookmarks to branches, I recommend the post [Understanding Jujutsu bookmarks](https://neugierig.org/software/blog/2025/08/jj-bookmarks.html).
 
-### jj git push / fetch
+#### jj git push / fetch
 It does what you would expect based on git, but the defaults are different than you might expect. Unless you configure the `git.fetch` and `git.push` settings, jj will only push to or fetch from `origin`. To operate on another remote, pass `--remote NAME`. To operate on all remotes, use `glob:*` as the remote name.
 
-### jj rebase / absorb / squash
+#### jj rebase / absorb / squash
 The rebase command works like you would expect, but better. You can rebase a  single change to a different place with `jj rebase -r id --insert-before A`, or rebase a change and all it’s descendants with `jj rebase -s id --insert-after B`. You can even rebase an entire branch automatically with `jj rebase -b @ --destination C`, moving every ancestor of `@` that is not an ancestor of `C` into a new chain of commits descending from `C`. I do all of these constantly in git, and it’s much more involved.
 
 The absorb and squash commands are just clear, single commands for the common git operations where you move a diff into a commit or move a diff out of a commit, by change ID and/or filename.
 
-### jj undo / restore / op log
+#### jj undo / restore / op log
 The op log is the first half of the big magical-feeling difference from git. Run any jj command, and don’t like the results? You can `jj undo` right back to the commits and files you had before. This magic is accomplished by creating a special kind of commit (an operation) every time a jj command is run. Operations are stored in a separate list, and `undo` is the same as restoring the parent of the current operation. The full list is available with `op log`, which also accepts revsets to filter and select operations.
 
-### jj merge (doesn’t exist)
+#### jj merge (doesn’t exist)
 The git rebase and merge commands (also including apply-patch, cherry-pick, and others) are all a bit special because they can create conflicts that have to be resolved before git will allow the commit to be… committed. This is the other half of the magic of jj: your new commit just holds any conflicts inside it. It’s impossible to lose work in a merge disaster because everything is always committed. You can resolve conflicts immediately, after other merges, or never! The results are always immediately stored, no matter how complete or incomplete your resolution is at the time.
 
 Thanks to this feature, you don’t need a dedicated merge command—any new change can have however many parents you want, regardless of conflicts. It’s just as valid to `jj new A B C D E` as it is to `jj new A`. One pattern that is common in jj but was miserable in git is to create a “megamerge” combining all your current work branches. All editing happens on top of the megamerge, and you move individual changes backwards into a specific branch as you decide where to put them. Compared to git, it feels like magic.
 
-### further command reading
+#### further command reading
 
 The previously mentioned [jj cheat sheet PDF](https://justinpombrio.net/src/jj-cheat-sheet.pdf) has a second page, containing a quick summary of each command, what it does, and the arguments it accepts.
 
-## workflows
+### workflows
 
 Now that you hopefully have an idea of how to operate jj, let’s look at the commands you need to get work done in jj. One great aspect of jj layering on top of git repos is that the git repo is still there underneath, and you can use any git command exactly like you usually would if there’s anything missing from your jj workflows.
 
-### submit a pull request
+#### submit a pull request
 The flow to create and send a PR will probably look pretty familiar: use `jj git clone` to get a copy of the repo, make your changes, use `jj commit` to create your new commits. When you’re ready, use `jj bookmark set NAME` to give your changes a name and `jj git push` to create a new branch on the remote. Use GitHub.com or `gh pr create --head NAME` to open the PR.
 
 If you amend the commits in your PR, you can force-push the new commits with `jj git push`. If you add new changes on top, you’ll need to `jj bookmark set NAME` to update the bookmark to the latest change before you `jj git push` again.
@@ -95,7 +95,7 @@ That’s the whole flow! Congratulations on migrating from git to jj for your ev
 
 If using `bookmark set` all the time gets tedious, there’s a community alias named `jj tug` that finds the closest bookmark and moves it to the closest pushable change. I personally wrote an alias for myself named `jj push` that I use to handle pushing new changes to existing remote branches. We’ll talk about those aliases in the next major section, which is about configuring jj.
 
-### work on multiple PRs at once
+#### work on multiple PRs at once
 
 One situation I often find myself in is working on two (or even more) pull requests at the same time. With the powerful commit-editing primitives provided by jj, there are at least two (and probably more) ways to structure this kind of parallel work.
 
@@ -105,15 +105,15 @@ The second option is to liberally rebase every branch on top of each other, crea
 
 If you want to work on multiple branches at once, you will probably find the post [Jujutsu Megamerges and `jj absorb`](https://v5.chriskrycho.com/journal/jujutsu-megamerges-and-jj-absorb/) interesting.
 
-### further workflow reading
+#### further workflow reading
 
 There are many new workflows that jj users have already developed, and this brief overview is just the tip of the iceberg. The jj docs include a section on [using jj with GitHub or GitLab](https://jj-vcs.github.io/jj/latest/github/), and there are some great reflections on different workflows in the blog posts  [Jujutsu VCS Introduction and Patterns](https://kubamartin.com/posts/introduction-to-the-jujutsu-vcs/), [Git experts should try Jujutsu](https://pksunkara.com/thoughts/git-experts-should-try-jujutsu/), and [jj tips and tricks](https://zerowidth.com/2025/jj-tips-and-tricks/).
 
-## configuration
+### configuration
 
 Just like git, jj offers tiers of configuration that layer on top of one another. Every setting can be set for a single repo, for the current user, or globally for the entire system. Just like git, jj offers the ability to create aliases, either as shortcuts or by building up existing commands and options into new completely new commands. Completely unlike git, jj also allows configuring revset aliases and default templates, extending or replacing built-in functionality.
 
-### Revset aliases
+#### Revset aliases
 
 Building on the earlier section where we talked about [`jj log`](#jj-log "jj log"), creating your own revset aliases is a powerful way to construct views tailored to your personal needs.
 
@@ -134,7 +134,7 @@ With that configuration, jj will extrapolate that it cannot change any commits o
 
 With this power at your disposal, you can change the default revset shown when you run `jj log`, or you can create your own named revsets for your own purposes. You can see [my revset aliases](https://github.com/indirect/dotfiles/blob/main/private_dot_config/private_jj/config.toml#L107) in my dotfiles, and read more about the default aliases in the jj docs.
 
-### Templates
+### templates
 
 The next configuration power that jj offers is templates, the ability to control how jj will display information about commits, diffs, and pretty much everything else. The jj templating language is limited, but pretty powerful! It has types, methods, and the ability to convert values to JSON for other software to read.
 While the [jj template docs](https://jj-vcs.github.io/jj/latest/templates/) are a great reference, they don’t do very much to show off what’s possible by using templates, so we’ll show some examples.
