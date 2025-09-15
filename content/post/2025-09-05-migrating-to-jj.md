@@ -17,7 +17,11 @@ Get changes from the remote with with `jj git fetch`. Set up a local copy of a r
 
 Still here? Cool, let’s talk about how jj is different from git. There’s [a list of differences from git](https://jj-vcs.github.io/jj/v0.13.0/git-comparison/) in the jj docs, but more than specific differences, I found it helpful to think of jj as like git, but every change in the repo creates a commit.
 
-Edit a file? There’s a commit before the edit and after the edit. Run a jj command? There’s a commit before the command and after the command. Some really interesting effects fall out of storing every action as a commit, like no more staging, trivial undo, committed conflicts , and change IDs.
+#### operations
+
+A little bit like git's `reflog`, jj keeps track of not just every checkout but every single command that ever runs in the `jj op log` (which is short for `operation log`). Every op has its own ID, and you can always jump back to a previous repo state, no matter what command you just ran.
+
+Edit a file? There’s a commit before the edit and after the edit. Run a jj command? There’s a commit before the command and after the command. Some really interesting effects fall out of storing every action as a commit, like no more staging, trivial undo, committed conflicts, and change IDs.
 
 When edits are always immediately committed, you don’t need a staging area, or to manually move files into the staging area. It’s just a commit, and you can edit it by editing the files on disk directly.
 
@@ -29,18 +33,23 @@ Ironically, every action being a commit also leads away from commits: how do you
 
 Once you’ve internalized a model where every state is a commit, and change IDs stick around through amending commits, you can do some wild shenanigans that used to be quite hard with git. Five separate PRs open but you want to work with all of them at once? Easy. Have one commit that needs to be split into five different new commits across five branches? Also easy.
 
-One other genius concept jj offers is **revsets**. In essence, revsets are a query language for selecting changes, based on name, message, metadata, parents, children, or several other options. Being able to select lists of changes easily is a huge improvement, especially for commands like log or rebase.
-
-### further conceptual reading
+#### design conceptual reading
 
 For more about jj’s design, concepts, and why they are interesting, check out the blog posts [What I’ve Learned From JJ](https://zerowidth.com/2025/what-ive-learned-from-jj/), [jj init](https://v5.chriskrycho.com/essays/jj-init/), and [jj is great for the wrong reason](https://www.felesatra.moe/blog/2024/12/23/jj-is-great-for-the-wrong-reason). For a quick reference you can refer to later, there’s a single page summary in the [jj cheat sheet PDF](https://justinpombrio.net/src/jj-cheat-sheet.pdf).
+
+#### revsets
+
+One other genius concept jj offers is **revsets**. In essence, revsets are a query language for selecting changes, based on name, message, metadata, parents, children, or several other options. Being able to select lists of changes easily is a huge improvement, especially for commands like log or rebase.
+
+The closest thing `git` has to revsets is the syntax for a range of commits, like `123..456`. That exact syntax is also support by `jj`, although revsets are passed using `-r` or `--revset`. That means you can run `jj log -r 123..456` to see the exact same log as if you had run `git log 123..456`.
 
 ### commands
 
 Now, let’s take a look at the most common jj commands, with a special focus on the way arguments are generally consistent and switches don’t hide totally different additional commands.
 
-The log command is the biggest consumer of revsets, which are passed using `-r` or `--revset`. With `@`, which is the jj version of `HEAD`, you can build a revset for exactly the commits you want to see. The git operator `..` is supported, allowing you to log commits after A and up to B with `-r A..B`, but that’s just the start. Here’s a quick list of some useful revsets to give you the flavor:
 #### jj log
+The log command is the biggest consumer of revsets. With `@`, which is the jj version of `HEAD`, you can build a revset for exactly the commits you want to see. The git operator `..` is supported, but that’s just the start. Here’s a quick list of some useful revsets to give you the flavor:
+
 - `@-` the parent of the current commit
 - `kv+` the first child of the change named `kv`
 - `..A & ..B` changes in the intersection of `A` and `B`’s ancestors
