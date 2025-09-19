@@ -7,5 +7,9 @@
   <p class="post-date">{{ .PublishDate | time.Format "02 Jan 2006" }}</p>
   <h2 class="post-title">{{ .Title | safeHTML }}</h2>
   {{ .Content }}
+
+  <div class="callout" style="margin-top: 6em;">
+    My time to write is sponsored by <a href="https://spinel.coop">Spinel</a>. If your company could use some world-class expertise on gems, Rails, CI, or developer productivity, check out <a href="https://spinel.coop">spinel.coop</a> and hire us!
+  </div>
 </main>
 {{ end }}
