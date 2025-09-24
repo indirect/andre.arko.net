@@ -6,7 +6,7 @@ date = 2025-09-23T10:00:00-07:00
 
 Recently on this blog, I wrote about [in-memory filesystems in Rust](/2025/08/18/in-memory-filesystems-in-rust/), and concluded that I wasn't able to detect a difference between any form of in-memory filesystem and using a regular SSD on macOS. I also asked anyone who found a counterexample to please let me know.
 
-Last week, [David Barsky](https://davidbarsky.com) of [ERSC](https://esrc.io) sent me an extremely compelling counter-example, and I spent several days running benchmarks to understand it better.
+Last week, [David Barsky](https://davidbarsky.com) of [ERSC](https://ersc.io) sent me an extremely compelling counter-example, and I spent several days running benchmarks to understand it better.
 
 The top level summary is that the test suite for the [jj VCS](http://github.com/jj-vcs/jj/) exhibits an absolutely huge difference between running on an SSD and running against a ramdisk. In my first reproduction attempt, I found the SSD took 239 seconds, while the ramdisk took just 37 seconds. That's bananas! How was that even possible?
 
