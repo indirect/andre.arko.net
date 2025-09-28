@@ -7,6 +7,10 @@
       date: 2025-09-10
       url: https://friendlyrb.com
       slides_url: https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages
+    - name: "Kaigi on Rails"
+      date: 2025-09-27
+      url: https://kaigionrails.org/2025/
+      slides_url: https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages-36c8702d-e2ea-43bf-9fc6-a47a6caf7c84
 - title: "Securing your Software Supply Chain Panel"
   description: "Composability has rapidly accelerated the pace of software development by allowing engineers to reuse openly shared libraries and packages. But the widespread adoption of these components also makes them an enticing avenue of attack for malicious actors. In this fireside session, André Arko (Head of Open Source, Ruby Central) and Dustin Ingram (Director, Python Software Foundation) will join Emilio Escobar (CISO, Datadog) for a discussion about securing your software supply chain. They’ll share practices to verify the provenance of your dependencies, mitigate the risks of using third party components, and secure the software you share with others."
   events:

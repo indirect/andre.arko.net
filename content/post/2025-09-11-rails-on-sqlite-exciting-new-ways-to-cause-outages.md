@@ -4,7 +4,7 @@ slug = 'rails-on-sqlite-exciting-new-ways-to-cause-outages'
 date = 2025-09-11T18:29:51+03:00
 +++
 
-<small>This post was originally given as a talk for <a href="https://friendlyrb.com">Friendly.rb</a>. The [slides](https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages) are also available.</small>
+<small>This post was originally given as a talk for <a href="https://friendlyrb.com">Friendly.rb</a> and <a href="https://kaigionrails.org/2025/">Kaigi on Rails</a>. The [slides](https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages) are also available.</small>
 
 <script defer class="speakerdeck-embed" data-id="d8736d6ed87d4daa8ba3631d774f8e32" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
