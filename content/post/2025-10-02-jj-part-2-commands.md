@@ -25,7 +25,11 @@ The functionality of `git commit` is broken up into four separate jj commands. Y
 
 ### jj restore / abandon
 
-What if `checkout` with file arguments had a semantic name? You go back to a previous file version using `restore` or use `abandon` to get files from your immediate parent.
+What if using `checkout` and `reset` to roll back either files or full commits had clearer names?
+
+If you want to get back a file from a previous change, you can use `restore`. Specify which change you want to bring back, and also provide a file name or glob to limit the restoration to specific files.
+
+Where you might have previously used `git reset` or `git checkout` to manipulate which commits are included in the current branch, you can now use `abandon` to remove entire changes from your history. Without any arguments it will remove `@`, the working commit, which is similar to `git reset --hard`. With arguments, `abandon` will remove all changes in the given revset from the local history.
 
 ### jj bookmark list / set / track
 
