@@ -8,7 +8,7 @@ Now, let’s take a look at the most common jj commands, with a special focus on
 
 ### jj log
 
-The log command is the biggest consumer of revsets, which are passed using `-r` or `--revset`. With `@`, which is the jj version of `HEAD`, you can build a revset for exactly the commits you want to see. The git operator `..` is supported, allowing you to log commits after A and up to B with `-r A..B`, but that’s just the start. Here’s a quick list of some useful revsets to give you the flavor:
+The log command is the biggest consumer of revsets, which are passed using `-r` or `--revisions`. With `@`, which is the jj version of `HEAD`, you can build a revset for exactly the commits you want to see. The git operator `..` is supported, allowing you to log commits after A and up to B with `-r A..B`, but that’s just the start. Here’s a quick list of some useful revsets to give you the flavor:
 - `@-` the parent of the current commit
 - `kv+` the first child of the change named `kv`
 - `..A & ..B` changes in the intersection of `A` and `B`’s ancestors
@@ -39,7 +39,7 @@ It does what you would expect based on git, but the defaults are different than 
 
 ### jj rebase / squash
 
-The rebase command works like you would expect, but better. You can rebase a  single change to a different place with `jj rebase -r id --insert-before A`, or rebase a change and all it’s descendants with `jj rebase -s id --insert-after B`. You can even rebase an entire branch automatically with `jj rebase -b @ --destination C`, moving every ancestor of `@` that is not an ancestor of `C` into a new chain of commits descending from `C`. I do all of these constantly in git, and it’s much more involved.
+The rebase command works like you would expect, but better. You can rebase a  single change to a different place with `jj rebase -r id --insert-before A`, or rebase a change and all it’s descendants with `jj rebase -s id --insert-after B`. You can even rebase an entire branch automatically with `jj rebase -b @ --destination C`, moving every ancestor of `@` that is not an ancestor of `C` into a new chain of commits descending from `C`. I did all of these constantly in git, and it’s much more involved.
 
 The squash command is just a clear, single command for the common git operation where you move a diff into a commit or move a diff out of a commit, by change ID and/or filename.
 
