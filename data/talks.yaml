@@ -1,4 +1,16 @@
 ---
+- title: "Operating Rails: what about after you deploy?"
+  description: "There are a million tutorials out there showing you how to build a blog in Rails (in just 15 minutes!) and how to deploy that Rails app to some cloud provider (in just 5 minutes!), but what about after that first half-hour? When the guide says \"this tutorial of course isn't production ready\", what actually is production-ready? Let's talk about operating Rails apps in production."
+  post_url: "/2025/10/07/operating-rails"
+  events:
+    - name: "Rocky Mountain Ruby"
+      date: 2025-10-07
+      url: https://rockymtnruby.dev
+      slides_url: https://speakerdeck.com/indirect/operating-rails
+    - name: "SF Ruby Conference"
+      date: 2025-11-20
+      url: https://sfruby.com
+      slides_url: https://speakerdeck.com/indirect/operating-rails
 - title: "<code>rv</code>: a ruby manager for the future"
   description: There’s a new kind of developer tool, combining version manager, dependency manager, environment manager, and script runner. The biggest “language manager” is `uv` for Python, but we can and should have one for Ruby. In this talk, see how we are building `rv`, including why we're using Rust, the new use-cases it unlocks, and how it can be faster and easier to use Ruby than it has ever been before.
   post_url: "/2025/09/30/rv-a-ruby-manager-for-the-future"
