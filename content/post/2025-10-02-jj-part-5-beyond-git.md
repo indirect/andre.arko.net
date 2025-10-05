@@ -1,10 +1,9 @@
----
-title: "Content Placeholder"
-build:
-  render: never
-  list: never
-  publishResources: false
----
++++
+title = '<code>jj</code> part 5: beyond git'
+slug = 'jj-part-5-beyond-git'
+date = 2025-10-02T10:52:56+09:00
+draft = true
++++
 
 ### commands
 
