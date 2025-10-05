@@ -1,4 +1,12 @@
 ---
+- title: "<code>rv</code>: a ruby manager for the future"
+  description: There’s a new kind of developer tool, combining version manager, dependency manager, environment manager, and script runner. The biggest “language manager” is `uv` for Python, but we can and should have one for Ruby. In this talk, see how we are building `rv`, including why we're using Rust, the new use-cases it unlocks, and how it can be faster and easier to use Ruby than it has ever been before.
+  post_url: "/2025/09/30/rv-a-ruby-manager-for-the-future"
+  events:
+    - name: "SF Ruby Meetup"
+      date: 2025-09-30
+      url: "https://luma.com/sfruby"
+      slides_url: tk
 - title: "Stupid <code>jj</code> tricks"
   description: "A survey of interesting revset aliases, templates, aliases, and other configuration to accomplish common (or not so common) tasks."
   post_url: "/2025/09/28/stupid-jj-tricks/"
