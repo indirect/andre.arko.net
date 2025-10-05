@@ -8,7 +8,7 @@
   <dl class="talks">
     {{ range .Site.Data.talks }}
       <details class="talk">
-        <summary class="talk-title">{{ .title }}</summary>
+        <summary class="talk-title">{{ .title | safeHTML }}</summary>
         <div class="talk-info group">
           {{ if .description }}
             <p class="talk-description">{{ .description }}</p>

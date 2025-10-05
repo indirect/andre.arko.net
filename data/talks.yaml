@@ -1,4 +1,12 @@
 ---
+- title: "Stupid <code>jj</code> tricks"
+  description: "A survey of interesting revset aliases, templates, aliases, and other configuration to accomplish common (or not so common) tasks."
+  post_url: "/2025/09/28/stupid-jj-tricks/"
+  events:
+    - name: "JJ Con"
+      date: 2025-09-28
+      url: http://github.com/jj-vcs/jj/wiki/JJ-Con-2025
+      slides_url: https://speakerdeck.com/indirect/stupid-jj-tricks
 - title: "Rails on SQLite: exciting new ways to cause outages"
   description: "Between Litestack and the Rails 8 trifecta of Solid Cable, Solid Cache, and Solid Queue, it's easier than ever to spin up a Rails app that doesn't need a database service or a redis service or a storage service. Just as easy are several new ways to break your app or lose your data, especially on containerized hosting services. Learn how to simplify your stack while avoiding new ways things break."
   post_url: "/2025/09/11/rails-on-sqlite-exciting-new-ways-to-cause-outages"
