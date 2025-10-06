@@ -1,7 +1,7 @@
 +++
 title = 'Announcing gem.coop, a community gem server'
 slug = 'announcing-gem-coop'
-date = 2025-10-05T21:00:00-08:00
+date = 2025-10-05T19:00:00-08:00
 +++
 
 The team behind the last ten years of rubygems.org, including @deivid-rodriguez, @duckinator, @martinemde, @segiddins, @simi, and myself, is very pleased to announce a new gem server for the Ruby community: [gem.coop](https://gem.coop).
