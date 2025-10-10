@@ -1,0 +1,105 @@
++++
+title = 'The RubyGems “security incident”'
+slug = 'the-rubygems-security-incident'
+date = 2025-10-09T19:45:15-07:00
++++
+
+Ruby Central posted an extremely concerning "[Incident Response Timeline](https://rubycentral.org/news/rubygems-org-aws-root-access-event-september-2025/)" today, in which they make a number of exaggerated or purely misleading claims. Here's my effort to set the record straight.
+
+First, and most importantly: **I was a primary operator of RubyGems.org, securely and successfully, for over ten years. Ruby Central does not accuse me of any harms or damages in their post, in fact stating “we have no evidence to indicate that any RubyGems.org data was copied or retained by unauthorized parties, including Mr. Arko.”**
+
+The actions I took during a time of great confusion and uncertainty (created by Ruby Central!) were careful, specific, and aimed to defend both Ruby Central the organization and RubyGems.org the service from potential threats.
+
+The majority of the team, including developers in the middle of paid full-time work for Ruby Central, had just had all of their permissions on GitHub revoked. And then restored six days later. And then revoked again the next day. Even after the second mass-deletion of team permissions, Marty Haught sent an email to the team within minutes saying he was (direct quote) "terribly sorry" and "I messed up".
+
+The erratic and contradictory communication supplied by Marty Haught, and the complete silence from Shan and the board, made it impossible to tell exactly who had been authorized to take what actions. As this situation occurred, I was the primary on-call. My contractual, paid responsibility to Ruby Central was to defend the RubyGems.org service against potential threats. 
+
+Marty's final email clearly stated "I'll follow up more on this and engage with the governance rfc in good faith.". Marty also posted a public GitHub comment, agreeing to participate in [the proposed governance process](https://github.com/rubygems/rfcs/pull/61). I have had to reproduce a screenshot of this public comment below, because Marty has deleted the comment from GitHub between then and now.
+
+!["I'm committed to find the right governance model that works for us all", says Marty.](marty.png)
+
+Given Marty's claims, the sudden permission deletions made no sense. Worried about the possibility of hacked accounts or some sort of social engineering, I took action as the primary on-call engineer to lock down the AWS account and prevent any actions by possible attackers. I did not change the email addresses on any accounts, leaving them all owned by a team-shared email at rubycentral.org, to ensure the organization retained overall control of the accounts, even if individuals were somehow taking unauthorized actions.
+
+Within a couple of days, Ruby Central made an (unsigned) public statement, and various board members agreed to talk directly to maintainers. At that point, I realized that what I thought might have been a malicious takeover was both legitimate and deliberate, and Marty would never "fix the permissions structure", or "follow up more" as he said.
+
+Once I understood the situation, I backed off to let Ruby Central take care of their "security audit". I left all accounts in a state where they could recover access. I did not alter, or try to alter, anything in the Ruby Central systems or GitHub repository after that. I was confident, at the time, that Ruby Central's security experts would quickly remove all outside access.
+
+My confidence was sorely misplaced.
+
+Almost two weeks later, someone asked if I still had access and I discovered (to my great alarm), that Ruby Central's "security audit" had failed. Ruby Central also had not removed me as an "owner" of the Ruby Central GitHub Organization. They also had not rotated any of the credentials shared across the operational team using the RubyGems 1Password account.
+
+I believe Ruby Central confused themselves into thinking the "Ruby Central" 1Password account was used by operators, and they did revoke my access there. However, that 1Password account was not used by the open source team of RubyGems.org service operators. Instead, we used the "RubyGems" 1Password account, which was full of operational credentials. Ruby Central did not remove me from the "RubyGems" 1Password account, even as of today.
+
+Aware that I needed to disclose this surprising access, but also aware that it was impossible for anyone except former operators to exploit this security failure, I immediately wrote an email to Ruby Central to disclose the problem.
+
+Here is a copy of my disclosure email, in full.
+
+```
+From: André Arko <andre@arko.net>
+Subject: Re: RubyGems.org access
+Date: September 30, 2025 at 10:23:12 AM PDT
+To: Marty Haught <marty@rubycentral.org>
+
+Hi Marty,
+
+It has come to my attention that despite the statements in [your] email, I have had uninterrupted access to RubyGems.org production environments from September 18 until today, September 30, via the root credentials of the Ruby Central AWS account, as well as continued and ongoing access to the full feed of production alerts and logs in DataDog.
+
+It seems that the only permissions I have had removed are from the GitHub organization named "rubygems", which as you know is unrelated to the RubyGems.org production access you mention in your email.
+
+I have also noticed I am still, as of September 30, the owner of the GitHub organizations named "rubycentral" and "rubytogether".
+
+I am unable to transfer the HelpScout or PagerDuty accounts, as you have disabled my andre@rubygems.org Google account.
+
+Please advise as to your desired resolution of this situation.
+
+Thank you,
+André Arko
+```
+
+Ruby Central did not reply to this email for over three days.
+
+When they finally did reply, they seem to have developed some sort of theory that I was interested in "access to PII", which is entirely false. **I have no interest in any PII, commercially or otherwise**. As my private email published by Ruby Central demonstrates, my entire proposal was based solely on company-level information, with no information about individuals included in any way. Here's their response, over three days later.
+
+```
+From: Marty Haught <marty@rubycentral.org>
+Subject: Re: RubyGems.org access
+Date: October 3, 2025 at 6:54:01 PM MDT
+To: André Arko <andre@arko.net>
+
+Hi André,
+
+Please confirm that you cannot access the Ruby Central AWS root account credentials, either through the console or by access keys.
+
+In addition, please confirm whether you are in possession of any RubyGems.org production data,  including, but not limited to, server logs, access logs, PII, or other organizational data.
+
+Thank you,
+Marty
+```
+
+In addition to ignoring the (huge) question of how Ruby Central failed to secure their AWS Root credentials for almost two weeks, and **appearing to only be aware of it because I reported it to them**, their reply also failed to ask whether any other shared credentials might still be valid. There were more.
+
+```
+From: André Arko <andre@arko.net>
+Subject: Re: RubyGems.org access
+Date: October 5, 2025 at 11:59:35 AM PDT
+To: Marty Haught <marty@rubycentral.org>
+
+Hi Marty,
+
+Thanks for letting me know you got my email disclosing my unintended access. I’m concerned that security must not be a very high priority for Ruby Central since no one acknowledged my disclosure for more than three days, but I appreciate the confirmation.
+
+As far as I can tell, I can no longer access the Ruby Central AWS root account either through the console or via access keys.
+
+I confirm I did not download or save any production data after your email of September 18, including server logs, access logs, PII, or other organizational data.
+
+However, while checking AWS credentials in order to write this email, I discovered that several other service credentials have not been rotated, and are still valid for production AWS access. That means both myself and the other former operators all still have access to AWS via those previously-shared credentials.
+
+I would appreciate it if you could answer the request from my first email, and reply with your desired resolution for this remaining unintended production access, as well as the GitHub organization ownership.
+
+Thanks,
+André
+```
+
+Unbeknownst to me, while I was answering Marty's email in good faith, Ruby Central's attorney was sending my lawyer a letter alleging I had committed a federal crime, on the theory that I had "hacked" Ruby Central's AWS account. On the contrary, my actions were taken in defense of the service that Ruby Central was paying me to support and defend.
+
+With my side of the story told, I'll leave it to you to decide whether you think it's true that "Ruby Central remains committed to transparent, responsible stewardship of the RubyGems infrastructure and to maintaining the security and trust that the Ruby ecosystem depends on."
