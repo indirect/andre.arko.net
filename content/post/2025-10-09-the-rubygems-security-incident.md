@@ -10,7 +10,7 @@ First, and most importantly: **I was a primary operator of RubyGems.org, securel
 
 The actions I took during a time of great confusion and uncertainty (created by Ruby Central!) were careful, specific, and aimed to defend both Ruby Central the organization and RubyGems.org the service from potential threats.
 
-The majority of the team, including developers in the middle of paid full-time work for Ruby Central, had just had all of their permissions on GitHub revoked. And then restored six days later. And then revoked again the next day. Even after the second mass-deletion of team permissions, Marty Haught sent an email to the team within minutes saying he was (direct quote) "terribly sorry" and "I messed up".
+The majority of the team, including developers in the middle of paid full-time work for Ruby Central, had just had all of their permissions on GitHub revoked. And then restored six days later. And then revoked again the next day. Even after the second mass-deletion of team permissions, Marty Haught sent an email to the team within minutes, at 12:47pm PDT, saying he was (direct quote) "terribly sorry" and "I messed up".
 
 The erratic and contradictory communication supplied by Marty Haught, and the complete silence from Shan and the board, made it impossible to tell exactly who had been authorized to take what actions. As this situation occurred, I was the primary on-call. My contractual, paid responsibility to Ruby Central was to defend the RubyGems.org service against potential threats. 
 
