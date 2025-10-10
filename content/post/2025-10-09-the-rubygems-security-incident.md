@@ -14,9 +14,9 @@ The majority of the team, including developers in the middle of paid full-time w
 
 The erratic and contradictory communication supplied by Marty Haught, and the complete silence from Shan and the board, made it impossible to tell exactly who had been authorized to take what actions. As this situation occurred, I was the primary on-call. My contractual, paid responsibility to Ruby Central was to defend the RubyGems.org service against potential threats. 
 
-Marty's final email clearly stated "I'll follow up more on this and engage with the governance rfc in good faith.". Marty also posted a public GitHub comment, agreeing to participate in [the proposed governance process](https://github.com/rubygems/rfcs/pull/61). I have had to reproduce a screenshot of this public comment below, because Marty has deleted the comment from GitHub between then and now.
+Marty's final email clearly stated "I'll follow up more on this and engage with the governance rfc in good faith.". Just a few minutes after that email, Marty also posted [a public GitHub comment](https://github.com/rubygems/rfcs/pull/61#issuecomment-3309461815), where he agreed to participate in the proposed governance process and stated "I'm committed to find the right governance model that works for us all. More to come."
 
-!["I'm committed to find the right governance model that works for us all", says Marty.](marty.png)
+<small>**Update**: screenshot of comment removed and replaced with link, since the comment appears to still be visible (at least to logged out users) on GitHub.</small>
 
 Given Marty's claims, the sudden permission deletions made no sense. Worried about the possibility of hacked accounts or some sort of social engineering, I took action as the primary on-call engineer to lock down the AWS account and prevent any actions by possible attackers. I did not change the email addresses on any accounts, leaving them all owned by a team-shared email at rubycentral.org, to ensure the organization retained overall control of the accounts, even if individuals were somehow taking unauthorized actions.
 
