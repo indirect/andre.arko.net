@@ -1,8 +1,7 @@
 +++
 title = '<code>jj</code> part 3: workflows'
 slug = 'jj-part-3-workflows'
-date = 2025-09-30T10:52:56+09:00
-draft = true
+date = 2025-10-12T10:52:56+09:00
 +++
 
 Now that you hopefully have an idea of how to operate jj, let’s look at the commands you need to get work done in jj. One great aspect of jj layering on top of git repos is that the git repo is still there underneath, and you can use any git command exactly like you usually would if there’s anything missing from your jj workflows.
