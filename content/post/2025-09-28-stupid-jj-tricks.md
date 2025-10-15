@@ -324,7 +324,7 @@ tracked="$(jj bookmark list -r ${closest} -t -T 'if(remote == "origin", name)')"
 """]
 ```
 
-This push handles looking for a huggable bookmark, tugging it, doing a git push, and making sure that you’re tracking the origin copy of whatever you just pushed, in case you created a new branch.
+This push handles looking for a tuggable bookmark, tugging it, doing a git push, and making sure that you’re tracking the origin copy of whatever you just pushed, in case you created a new branch.
 
 ### combo tricks
 
