@@ -208,10 +208,22 @@ Use `jj init` to colocate jj into this git repo, and then track any branches fro
 
 ```Toml
 pull = ["util", "exec", "--", "bash", "-c", """
-closest="$(jj log -r 'closest_bookmark(@)' -n 1 -T 'bookmarks' --no-graph | cut -d ' ' -f 1)"
+
+# Find the closest bookmark
+closest="$(jj log -r 'closest_bookmark(@)' \
+  -n 1 -T 'bookmarks' --no-graph | cut -d ' ' -f 1)"
+
+# Remove the trailing * from the name if there is one
 closest="${closest%\\*}"
+
+# Now fetch from the git remote
 jj git fetch
-jj log -n 1 -r "${closest}" 2>&1 > /dev/null && jj rebase -d "${closest}" || jj rebase -d 'trunk()'
+
+# If the closest bookmark still exists, rebase on it (else trunk)
+jj log -n 1 -r "${closest}" 2>&1 > /dev/null \
+  && jj rebase -d "${closest}" || jj rebase -d 'trunk()'
+
+# Show the new state of things after the pull
 jj log -r 'stack()'
 """]
 ```
@@ -220,14 +232,33 @@ Then, you can `jj pull` to find the closest bookmark to `@`, do a git fetch, reb
 
 ```Toml
 push = ["util", "exec", "--", "bash", "-c", """
-tuggable="$(jj log -r 'closest_bookmark(@)..closest_pushable(@)' -T '"n"' --no-graph)"
+
+# Check to see if we can tug a bookmark to @
+tuggable="$(jj log -r 'closest_bookmark(@)..closest_pushable(@)' \
+  -T '"n"' --no-graph)"
+
+# If we can, tug that bookmark as close to @ as possible
 [[ -n "$tuggable" ]] && jj tug
-pushable="$(jj log -r 'remote_bookmarks(remote=origin)..@' -T 'bookmarks' --no-graph)"
+
+# Now find the closest thing that we can push to `origin`
+pushable="$(jj log -r 'remote_bookmarks(remote=origin)..@' \
+  -T 'bookmarks' --no-graph)"
+
+# If we have something to push, run `jj git push`
 [[ -n "$pushable" ]] && jj git push || echo "Nothing to push."
-closest="$(jj log -r 'closest_bookmark(@)' -n 1 -T 'bookmarks' --no-graph | cut -d ' ' -f 1)"
+
+# Now that we have pushed, find the closest bookmark and remove *
+closest="$(jj log -r 'closest_bookmark(@)' -n 1 -T 'bookmarks' \
+  --no-graph | cut -d ' ' -f 1)"
 closest="${closest%\\*}"
-tracked="$(jj bookmark list -r ${closest} -t -T 'if(remote == "origin", name)')"
-[[ "$tracked" == "$closest" ]] || jj bookmark track "${closest}@origin"
+
+# Check to see if that bookmark is already tracking origin
+tracked="$(jj bookmark list -r ${closest} -t \
+  -T 'if(remote == "origin", name)')"
+
+# If that bookmark isn't tracking origin, start to track origin
+[[ "$tracked" == "$closest" ]] \
+  || jj bookmark track "${closest}@origin"
 """]
 ```
 
