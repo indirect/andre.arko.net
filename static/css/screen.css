@@ -321,6 +321,10 @@ ul.talk-events {
 
   a {
     color: #DDD;
+    text-decoration-color: #DDD;
+  }
+  a:visited {
+    text-decoration-color: #BBB;
   }
 
   .callout, code, pre {
