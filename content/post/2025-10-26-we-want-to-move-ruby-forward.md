@@ -2,7 +2,6 @@
 title = 'We want to move Ruby forward'
 slug = 'we-want-to-move-ruby-forward'
 date = 2025-10-26T12:21:18+09:00
-draft = true
 +++
 
 On September 9, without warning, Ruby Central [kicked out the maintainers](https://pup-e.com/blog/goodbye-rubygems/) who have cared for Bundler and RubyGems for over a decade. Ruby Central made these changes against the [established project policies](https://github.com/ruby/rubygems/blob/master/doc/rubygems/POLICIES.md#committer-access), while ignoring all [objections from the maintainers' team](https://gist.github.com/simi/349d881d16d3d86947945615a47c60ca). At the time, [Ruby Central claimed](https://rubycentral.org/news/strengthening-the-stewardship-of-rubygems-and-bundler/) these changes were “temporary". However,
@@ -23,5 +22,5 @@ Once we have entered into a legal agreement to settle any legal claims with Ruby
 
 Although Ruby Central’s actions were not legitimate, our commitment to the Ruby community remains strong. We’re choosing to focus our energy on projects to improve Ruby for everyone, including [rv](https://rv.dev/), [Ruby Butler](https://github.com/RubyElders/ruby-butler), [jim](https://github.com/duckinator/jim), and [gem.coop](https://gem.coop/).
 
-Signed,
-The former maintainers: André, David, Ellen, Josef, Martin, and Samuel
+Signed,  
+The former maintainers: [André](https://github.com/indirect), [David](https://github.com/deivid-rodriguez), [Ellen](https://github.com/duckinator), [Josef](https://github.com/simi), [Martin](https://github.com/martinemde), and [Samuel](https://github.com/segiddins)
