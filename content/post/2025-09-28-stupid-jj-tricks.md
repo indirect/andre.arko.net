@@ -166,6 +166,8 @@ This template produces valid JSON that can then be read and processed by other t
 
 ![json output from jj log, parsed and formatted by jq](json.png)
 
+**Update:** there is now a `json()` template function, which makes it much simpler to output valid JSON, like so: `jj log --no-graph -T 'json(self) ++ "\n"'`.
+
 Templates have vast possibilities that have not yet been touched on, and I encourage you to investigate and experiment yourself.
 
 ### revsets
