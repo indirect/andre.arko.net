@@ -4,6 +4,8 @@ slug = 'jj-part-2-commands'
 date = 2025-10-02T10:52:56+09:00
 +++
 
+Previously on this blog: [`jj` part 1: what is it](/2025/09/28/jj-part-1-what-is-it/)
+
 Now, let’s take a look at the most common jj commands, with a special focus on the way arguments are generally consistent and switches don’t hide totally different additional commands.
 
 ### jj log
@@ -63,4 +65,8 @@ The previously mentioned [jj cheat sheet PDF](https://justinpombrio.net/src/jj-c
 
 ### next time
 
-Now that we have talked about commands, next up is workflows! How can you use jj to work on a pull request? How can you work on multiple branches or PRs at the same time? Coming soon.
+Now that we have talked about commands, next up is workflows! How can you use jj to work on a pull request? How can you work on multiple branches or PRs at the same time?
+
+Continue with [`jj` part 3: workflows](/2025/10/12/jj-part-3-workflows/).
+
+The full series also includes: [part 4: configuration](/2025/10/15/jj-part-4-configuration/)

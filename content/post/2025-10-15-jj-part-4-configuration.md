@@ -4,6 +4,8 @@ slug = 'jj-part-4-configuration'
 date = 2025-10-15T19:52:56-09:00
 +++
 
+Previously in this series: [`jj` part 3: workflows](/2025/10/12/jj-part-3-workflows/)
+
 Just like git, jj offers tiers of configuration that layer on top of one another. Every setting can be set for a single repo, for the current user, or globally for the entire system. Just like git, jj offers the ability to create aliases, either as shortcuts or by building up existing commands and options into new completely new commands.
 
 Completely unlike git, jj also allows configuring revset aliases and default templates, extending or replacing built-in functionality. Let's look at the ways it's possible to customize jj via configurations. We'll cover basic config, custom revsets, custom templates, and custom command aliases.

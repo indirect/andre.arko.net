@@ -39,3 +39,7 @@ For more about jj’s design, concepts, and why they are interesting, check out 
 ### next time
 
 Keep an eye out for the next part of this series in the next few days. We’ll talk about commands in jj, and exactly how they are both different and better than git commands.
+
+Continue with [`jj` part 2: commands & revsets](2025/10/02/jj-part-2-commands/).
+
+The full series also includes: [part 3: workflows](/2025/10/12/jj-part-3-workflows/), [part 4: configuration](/2025/10/15/jj-part-4-configuration/)

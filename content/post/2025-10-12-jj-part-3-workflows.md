@@ -4,6 +4,8 @@ slug = 'jj-part-3-workflows'
 date = 2025-10-12T10:52:56+09:00
 +++
 
+Previously on this blog: [`jj` part 2: commands](/2025/10/02/jj-part-2-commands/)
+
 Now that you hopefully have an idea of how to operate jj, let’s look at the commands you need to get work done in jj. One great aspect of jj layering on top of git repos is that the git repo is still there underneath, and you can use any git command exactly like you usually would if there’s anything missing from your jj workflows.
 
 ### submit a pull request
@@ -33,3 +35,5 @@ There are many new workflows that jj users have already developed, and this brie
 ### next time
 
 Next up, we're going to talk about configuring jj. Want to use a diff tool? A merge tool? Add your own commands? Optimize your day to day work? We've got options.
+
+Continue with [`jj` part 4: configuration](/2025/10/15/jj-part-4-configuration/).
