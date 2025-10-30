@@ -4,7 +4,7 @@ slug = 'stupid-jj-tricks'
 date = 2025-09-28T11:00:00-08:00
 +++
 
-<small>This post was originally given as a talk for <a href="https://github.com/jj-vcs/jj/wiki/JJ-Con-2025">JJ Con</a>. The [slides](https://speakerdeck.com/indirect/stupid-jj-tricks) are also available.</small>
+<small>This post was originally given as a talk for <a href="https://github.com/jj-vcs/jj/wiki/JJ-Con-2025">JJ Con</a>. The [slides](https://speakerdeck.com/indirect/stupid-jj-tricks) and [video](https://www.youtube.com/watch?v=ZnTNFIMjDwg) are also available.</small>
 
 <script defer class="speakerdeck-embed" data-id="f204b260f0ba4c6186ba335b01dbe28d" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
