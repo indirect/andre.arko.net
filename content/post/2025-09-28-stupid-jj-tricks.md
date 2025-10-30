@@ -8,6 +8,8 @@ date = 2025-09-28T11:00:00-08:00
 
 <script defer class="speakerdeck-embed" data-id="f204b260f0ba4c6186ba335b01dbe28d" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
+<b>WARNING: This content was written for (and presented at) the inagural JJ Con, a conference for `jj` enthusiasts and contributors. If you're new to using `jj`, I strongly recommend you read my other posts about `jj` first: [part 1](/2025/09/28/jj-part-1-what-is-it/), [part 2](/2025/10/02/jj-part-2-commands/), [part 3](/2025/10/12/jj-part-3-workflows/), [part 4](/2025/10/15/jj-part-4-configuration/).</b>
+
 Welcome to “stupid jj tricks”. Today, I’ll be taking you on a tour through many different jj configurations that I have collected while scouring the internet. Some of what I’ll show is original research or construction created by me personally, but a lot of these things are sourced from blog post, gists, GitHub issues, Reddit posts, Discord messages, and more.
 
 To kick things off, let me introduce myself. My name is André Arko, and I’m probably best known for spending the last 15 years maintaining the Ruby language dependency manager, Bundler. In the `jj` world, though, my claim to fame is completely different: Steve Klabnik once lived in my apartment for about a year, so I’m definitely an authority on everything about `jj`. Thanks in advance for putting into the official tutorial that whatever I say here is now authoritative and how things should be done by everyone using `jj`, Steve.
