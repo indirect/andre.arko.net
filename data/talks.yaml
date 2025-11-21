@@ -10,7 +10,7 @@
     - name: "SF Ruby Conference"
       date: 2025-11-20
       url: https://sfruby.com
-      slides_url: https://speakerdeck.com/indirect/operating-rails
+      slides_url: https://speakerdeck.com/indirect/operating-rails-what-about-after-you-deploy-1c7b6a98-c411-46e7-87fb-1b74a6398f9d
 - title: "<code>rv</code>: a ruby manager for the future"
   description: There’s a new kind of developer tool, combining version manager, dependency manager, environment manager, and script runner. The biggest “language manager” is `uv` for Python, but we can and should have one for Ruby. In this talk, see how we are building `rv`, including why we're using Rust, the new use-cases it unlocks, and how it can be faster and easier to use Ruby than it has ever been before.
   post_url: "/2025/09/30/rv-a-ruby-manager-for-the-future"
