@@ -32,9 +32,9 @@ To start with, let’s focus on Errors. Conceptually, an error is any time that 
 
 It’s not popular deployment advice, but the most important way to build confidence and in your application is to test it. Test it manually, test it automatically, have other people try it and report back. Each of those things will save you more time debugging than you can even imagine right now.
 
-Next, one of the most popular ways to increase confidence before a deploy is a  second environment where you can deploy your code to test it before it is live on the main site. The test area is usually called “staging”, and the main area is usually called “production”. Rails has built-in support for both of those, as well as “development”, which runs by default on your local development machine.
+Next, one of the most popular ways to increase confidence before a deploy is a second environment where you can deploy your code to test it before it is live on the main site. The test area is usually called “staging”, and the main area is usually called “production”. Rails has built-in support for both of those, as well as “development”, which runs by default on your local development machine.
 
-Use the production environment as a place where you can put code that you aren’t sure about, and try the new version there. After you have confidence (there it is again) in your new changes, you can “promote” them to production. Some platforms even let you bump staging to production without having to wait for a full new production deploy.
+Use the staging environment as a place where you can put code that you aren’t sure about, and try the new version there. After you have confidence (there it is again) in your new changes, you can “promote” them to production. Some platforms even let you bump staging to production without having to wait for a full new production deploy.
 
 After you’re releasing code with manual and automatic tests to staging and then production, the next most common mitigation strategies are exception reporting and uptime monitoring. Exception reporting does exactly what it sounds like, and sends a report to you when there is an exception in your application.
 
