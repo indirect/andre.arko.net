@@ -12,7 +12,7 @@ Sure, you can do that. Convert an existing git repo with `jj git init --colocate
 
 Commit with `jj commit`, mark what you want to push with `jj bookmark set NAME`, and then push it with `jj git push`. If you make any additional changes to that branch, update the branch tip by running `jj bookmark set NAME` again before each push.
 
-Get changes from the remote with with `jj git fetch`. Set up a local copy of a remote branch with `jj bookmark track NAME@REMOTE`. Check out a branch with `jj new NAME`, and then loop back up to the start of the previous paragraph for commit and push. That’s probably all you  need to get started, so good luck and have fun!
+Get changes from the remote with with `jj git fetch`. Set up a local copy of a remote branch with `jj bookmark track NAME@REMOTE`. Check out a branch with `jj new NAME`, and then loop back up to the start of the previous paragraph for commit and push. If you just want a slightly more detailed version of that, try [jj for my workflow](https://matthewkmayer.github.io/blag/public/post/jj-for-my-workflow/). That’s probably all you  need to get started, so good luck and have fun!
 
 ### `jj` concepts
 
