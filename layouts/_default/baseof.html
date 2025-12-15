@@ -18,6 +18,11 @@
   <meta name="fediverse:creator" content="@indirect@fiasco.social">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
+  {{ with .Params.canonical }}
+    <link rel="canonical" href="{{ . }}">
+  {{ else -}}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end -}}
   {{- hugo.Store.Set "drafts" (eq .Site.BaseURL "https://drafts.arko.net/") }}
 </head>
 <body>
