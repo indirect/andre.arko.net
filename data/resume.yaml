@@ -4,14 +4,15 @@
   url: https://spinel.coop
   location: San Francisco, CA
   start: July 2025
-  description: Building next-generation Ruby developer tooling and providing retainers for access to core team maintainer expertise that can empower developers and quickly solve problems.
+  description: Next-generation Ruby developer tooling and consulting to empower developers and multiply engineering teams' output.
 
 - company: SunChaser
   title: Cofounder & CTO
   url: https://sunchaser.io
   location: San Francisco, CA
   start: August 2023
-  description: Designing and building tools for on-call engineers, starting with the missing Slack integration for PagerDuty.
+  end: July 2025
+  description: Tools for on-call engineers, including the missing Slack integration for PagerDuty.
 
 - company: Cloud City
   title: Director of Engineering
