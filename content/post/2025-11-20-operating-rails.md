@@ -4,7 +4,7 @@ slug = 'operating-rails'
 date = 2025-11-20T10:52:56+09:00
 +++
 
-<small>This post was originally given as a talk at <a href="https://rockymtnruby.dev">Rocky Mountain Ruby</a>. The [slides](https://speakerdeck.com/indirect/operating-rails) are also available.</small>
+<small>This post was originally given as a talk at <a href="https://rockymtnruby.dev">Rocky Mountain Ruby</a>. The [slides](https://speakerdeck.com/indirect/operating-rails) and [video](https://www.youtube.com/watch?v=WP2fWUBPGfI) are also available.</small>
 
 <script defer class="speakerdeck-embed" data-id="64254bb94df74086b8ece33274a25524" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
