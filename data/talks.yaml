@@ -20,7 +20,7 @@
     - name: "SF Ruby Meetup"
       date: 2025-09-30
       url: "https://luma.com/sfruby"
-      slides_url: tk
+      slides_url: https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future
 - title: "Stupid <code>jj</code> tricks"
   description: "A survey of interesting revset aliases, templates, aliases, and other configuration to accomplish common (or not so common) tasks."
   post_url: "/2025/09/28/stupid-jj-tricks/"
