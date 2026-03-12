@@ -8,7 +8,7 @@ From the moment RubyGems was first created in 2004, **Ruby Central provided _gov
 
 **Last year, Ruby Central flipped that successful formula on its head**. They now claim _ownership_ of both Bundler and RubyGems, but refuse to provide _governance_. Ruby Central now claims sole control over all code and decisions, despite paying for only a few percent of the work required to create and sustain the projects across 22 years. Instead of providing stable and predictable processes, Ruby Central [suddenly hijacked the Bundler and RubyGems codebases](https://joel.drapper.me/p/rubygems-takeover/) away from the existing maintainers, shut out the community, and started issuing the threats to sue.
 
-When confronted by the former maintainers after the hijacking, Marty Haught of Ruby Central stated (in [a recorded video call](https://youtu.be/FjQKOIf8_Wg)) on September 17 that "yeah, we shouldn’t have changed that". On September 18, Marty went on to write:
+When confronted by the former maintainers after the hijacking, Marty Haught of Ruby Central stated (in [a recorded video call](https://gofile.me/6g3JG/oTY79Vk3b)) on September 17 that "yeah, we shouldn’t have changed that". On September 18, Marty went on to write:
 
 > In the past, we've made the mistake of conflating ownership of the code with ownership of the infra, and vice versa, and we'd like to straighten this out so that we aren't put in a legal bind that requires us to take control of the entire codebase when, we all agree, that is not proper or correct given the existing model.
 
