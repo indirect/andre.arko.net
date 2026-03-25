@@ -1,4 +1,12 @@
 ---
+- title: "How To Install A Gem"
+  description: "if you know the name of a gem, and you want to install it, what has to actually happen before you can `require` and start using the gem? a walk through how gems work, how gem servers work, and how rubygems organizes files on disk so that ruby can find and use them."
+  post_url: "/2026/03/24/how-to-install-a-gem/"
+  events:
+    - name: "SF Ruby Meetup"
+      date: 2026-03-24
+      url: https://sfruby.com
+      slides_url: https://speakerdeck.com/indirect/how-to-install-a-gem/
 - title: "Operating Rails: what about after you deploy?"
   description: "There are a million tutorials out there showing you how to build a blog in Rails (in just 15 minutes!) and how to deploy that Rails app to some cloud provider (in just 5 minutes!), but what about after that first half-hour? When the guide says \"this tutorial of course isn't production ready\", what actually is production-ready? Let's talk about operating Rails apps in production."
   post_url: "/2025/11/20/operating-rails/"
