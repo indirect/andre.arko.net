@@ -8,7 +8,24 @@
   <h2 class="post-title">{{ .Title | safeHTML }}</h2>
   {{ .Content }}
 
-  <div class="callout" style="margin-top: 6em;">
+  <hr style="margin-top: 4em;">
+  <div class="post-navigation" style="display: flex; justify-content: space-between;">
+  {{ $pages := .CurrentSection.Pages.ByWeight }}
+  {{ with $pages.Prev . }}
+    <div class="post-prev">
+      ←
+      <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></span>
+    </div>
+  {{ end }}
+  {{ with $pages.Next . }}
+    <div class="post-next">
+      <span class="post-name"><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></span>
+      →
+    </div>
+  {{ end }}
+  </div>
+
+  <div class="callout" style="margin-top: 2em;">
     My time to write is sponsored by <a href="https://spinel.coop">Spinel</a>. If your company could use some world-class expertise on gems, Rails, CI, or developer productivity, check out <a href="https://spinel.coop">spinel.coop</a> and hire us!
   </div>
 </main>
