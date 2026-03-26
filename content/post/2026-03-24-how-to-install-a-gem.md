@@ -12,7 +12,7 @@ date = 2026-03-24T18:55:18-07:00
 
 Hello, and welcome to _How To Install A Gem_. My name is André Arko, and I go by @indirect on all the internet services. You might know me from being 1/3 of the team that shipped Bundler 1.0, or perhaps the 10+ years I spent trying to keep RubyGems.org up and running for everyone to use.
 
-More recently, I've been working on new projects: [`rv`](https://rv.dev), a CLI to install Ruby versions and gems at unprecedented speeds, and [gem.coop](https://gem.coop), a community gem server designed from the ground up so Bundler an `rv` can install gems faster and more securely than ever before.
+More recently, I've been working on new projects: [`rv`](https://rv.dev), a CLI to install Ruby versions and gems at unprecedented speeds, and [gem.coop](https://gem.coop), a community gem server designed from the ground up so Bundler and `rv` can install gems faster and more securely than ever before.
 
 So, with that introduction out of the way, let’s get started: do you know how to install a gem? Okay, that’s great! You can come up and give this talk instead of me. I’ll just sit over here while you write the rest of this post.
 
@@ -24,7 +24,7 @@ Then, do you know where to put the files from inside the gem? Where do all of th
 
 Once those files have been unpacked into the correct places, the last thing we need to know is how to require them. How do these unpacked files on disk get found by Ruby, so you can `require "rails"` and have that actually work?
 
-This exercise was mostly to show that using gems every day actually skips over most of the way they work underneath. So let’s look at what a gem is, and examine how they work. By the end of this talk, you’ll know what’s inside a gem, where how RubyGems figures out what to download, and where and how that download gets installed so you can use it.
+This exercise was mostly to show that using gems every day actually skips over most of the way they work underneath. So let’s look at what a gem is, and examine how they work. By the end of this talk, you’ll know what’s inside a gem, how RubyGems figures out what to download, and where and how that download gets installed so you can use it.
 
 And if you already everything we just talked about, please feel free to go straight to [rv.dev](https://rv.dev) and start sending us pull requests!
 
