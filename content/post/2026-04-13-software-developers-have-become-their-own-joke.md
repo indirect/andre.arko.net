@@ -1,8 +1,7 @@
 +++
 title = 'Software developers have become their own joke'
 slug = 'software-developers-have-become-their-own-joke'
-date = 2026-04-09T22:17:52-07:00
-draft = true
+date = 2026-04-13T01:17:52-07:00
 +++
 
 Creating software is complicated. It's hard to figure out exactly what you need to build without a lot of trial and error. It almost always requires both exploring possible options _and_ refining something until it works really well. But those things aren’t the same! Your research prototype is _not_ a good product that people will happily pay for.
@@ -11,13 +10,13 @@ Back in the olden days, when software literally came from BigCo R&D departments,
 
 Even years or decades of research wasn't enough, and years (or decades!) of development work also needed to be done before the results was ready for people to use. Early literature about creating software, written by Fred Brooks and his peers, seems to contain the internalized view that both R and D are required. That's not surprising, since R&D departments created most software back then, but we seem to have lost track of that connection.
 
-Even though our jobs are descended from those R&D labs of yore, we somehow lost the industry job of “software researcher”, and only "software developer" remains. Instead, research happens in academia, where an argument and a pseudocode is all you need to publish a paper. In that world, development is effectively non-existent.
+Even though our jobs are descended from those R&D labs of yore, we somehow lost the industry job of “software researcher”, and only "software developer" remains. Instead, research happens in academia, where an argument and some pseudocode is all you need to publish a paper. In that world, development is effectively non-existent.
 
-(I admit the division isn't perfectly clear-cut. Sometimes academics will start companies around their research that create a product or more likely get acquired to add a feature to a product. And sometimes Linus Torvalds will just build a new operating system, without doing any academic research on it, and it will get so popular everyone uses it. The point is that industry and academia have each publicly claimed one half of R&D while disowning the other.)
+(I admit the division isn't perfectly clear-cut. Sometimes academics will start companies around their research that create a product, or more likely get acquired to add a feature to a product. And sometimes Linus Torvalds will just build a new operating system, without doing any academic research on it, and it will get so popular everyone uses it. The point is that industry and academia have each publicly claimed one half of R&D while disowning the other.)
 
 The broader separation of research and development into academia and industry is really unfortunate, because good software needs both research _and_ development as inputs. If you don't do any research, you can’t identify which parts will be hard (or impossible) until after it’s too late. You also won’t have a good idea of what parts are important until after you’ve put in most or all of the work to create the parts that don’t matter. If you don't do development, you won't ever have something robust enough that other people can use it successfully.
 
-Meanwhile, on the other side, it feels like developers work hard to convince themselves there are no research aspects involved in their jobs. We call anything research-ish by a euphemism, like “design”, “user experience”, “prototyping”, “de-risking”, “a spike”, and a lot of other funny euphemisms that avoid referring to the work as research. It seems like we're trying to convince ourselves that we don’t do Research any more, because we are just Developers.
+Meanwhile, on the other side, it feels like developers work hard to convince themselves there are no research aspects involved in their jobs. We call anything research-ish by another name, like “design”, “user experience”, “prototyping”, “de-risking”, “a spike”, and a lot of other funny euphemisms that avoid referring to the work as research. It seems like we're trying to convince ourselves that we don’t do Research any more, because we are just Developers.
 
 This cultural lack of clarity around research in software development spaces really hit hard for me this week, as I read yet another treatise on working with LLM-driven agents for development. The two most popular takes that I have seen are “these tools are a fundamental shift in the nature of software development” and “these tools change nothing about building software at all”. Then the two sides start screaming at each other about how the other side is delusional and time will prove them completely wrong, and I lose interest.
 
