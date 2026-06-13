@@ -4,7 +4,7 @@ slug = 'rv-a-ruby-manager-for-the-future'
 date = 2025-09-30T12:25:36-07:00
 +++
 
-<small>This post was originally given as a talk at the <a href="">SF Ruby Meetup</a>. The [slides](https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future) are also available.</small>
+<small>This post was originally given as a talk at the <a href="https://luma.com/sfruby">SF Ruby Meetup</a>. The [slides](https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future) are also available.</small>
 
 <script defer class="speakerdeck-embed" data-id="4591b4b2d21d42c399dea04572cc8cff" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
