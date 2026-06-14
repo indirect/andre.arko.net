@@ -10,6 +10,8 @@ date = 2026-06-13
 
 It's been a while since I first talked about [`rv`, a Ruby manager for the future](/2025/09/03/rv-a-ruby-manager-for-the-future). I'd like give an update on what we've done since then, but I'm going to recap some of that earlier post first to give context for the updates. If you still remember what I said back then, you can [jump to the new stuff right away](#new-stuff). Either way, I'm excited to update you about the work that we've been doing, and show exactly how far we've gotten.
 
+### bundler isn't enough
+
 For the last ten years or so of working on Bundler, I’ve had a wish rattling around: I want a bigger, better dependency manager. It doesn’t just manage your gems, it manages your ruby versions, too. It doesn’t just manage your ruby versions, it installs pre-compiled rubies so you don’t have to wait for ruby to compile from source over and over. And more than all of that, it makes it completely trivial to run any script or tool written in ruby, even if that script or tool needs a different ruby and gems than your application does.
 
 For the entire ten years of daydreaming, I’ve been hoping someone else would build it and I could just use it. Then I discovered that someone _did_ build it… but for Python. It’s called `uv`. In August 2024, uv version 0.3 shipped, and it had all the features I had wished for, and even more that I hadn’t thought to wish for.
@@ -18,9 +20,13 @@ At this point, I’ve been using `uv` for almost a year and every time I use a p
 
 Whether you want to run a CLI tool, a webapp, or a random script, `uv` always ensures the environment is correct as part of running the command. Need Python? Installed. Need a package? Also installed. Never again run `pip install` on a new package, only to realize later you broke something old. No more setting up dependencies manually, only to discover later that the script stopped working inside cron while you weren't checking on it.
 
+### spinel cooperative
+
 Last year, my long time consulting job disappeared and I found myself looking for something to replace it. One of my ideas was to start a company inspired by [Geomys](https://geomys.org) in the Go language, offering expert advice from open source maintainers, but the idea felt weak to me without a “spotlight” project to show off our expertise. In July of this year, I finally realized that these two ideas could go together extremely well—our company can show our expertise by building this developer tool, and clients paying for our advice to solve their problems can ensure we are able to support and expand the tool.
 
 I talked to some Ruby friends about the idea, and it resonated with them, so we started working on both the company and the open source project. Today, Spinel Cooperative has a website at [spinel.coop](https://spinel.coop), and `rv` has a website at [rv.dev](https://rv.dev). The team has expanded, and now includes [David Rodriguez](https://github.com/deivid-rodriguez), the former lead developer of RubyGems and Bundler, as well as former Rails core team members [Kasper Timm Hanson](https://kaspth.com) and [Sam Stephenson](https://sls.name). Sam has even done some of this work before, as the original creator of [`rbenv`](https://rbenv.org) and the `ruby-build` tool.
+
+### the end goal
 
 Our goal for `rv` is to be a new kind of developer tool. You don’t need to install `rvm` and then pick a Ruby version, install it, and then update RubyGems and Bundler, and then `bundle install` your gems. Instead, you just run the project command you care about, and everything is handled. It's a version manager, and a dependency manager, and more than both of those things. With that vision in place, we were faced with a very practical question: what can we build that would be useful right away? After some prototyping and a lot of discussion, we landed on precompiled rubies for development work as the most useful place to start, and got to work.
 
@@ -29,6 +35,8 @@ After deciding what our first feature would be, we had to pick a language to use
 There are two major things that basically every Ruby program does that you can't do if you are managing gems. First, you can't use any gems. If you want to use code that's inside a gem, you need to copy that code wholesale into Bundler or RubyGems, and then you need to constantly update it anytime that gem has any changes. Second, you can't use anything with native extensions, ever. JSON gem? Psych gem for YAML? Completely impossible, because Bundler and RubyGems need to be installable even if there is no compiler present.
 
 So with those constraints in mind, and with our goal set to "a tool so fast you normally can't even tell it's running", we settled on Rust, and started building a CLI. I've used Rust for smaller personal projects in the past, but I had never created a full CLI tool. I am happy to report that the `clap` library for creating CLIs in Rust is great, and I recommend it to anyone interested in Rust CLIs.
+
+### pre-compiling ruby
 
 The next piece that we needed was the actual precompiled Rubies themselves. To install Ruby quickly, we needed to be able to skip over the `configure && make && make install` dance. There are a couple of big projects out there compiling Ruby in advance, but they are mostly for use on servers. The `setup-ruby` GitHub action, and the official Ruby docker images are both based on the `ruby-build` project originally started as part of `rbenv`. Unfortunately, those aren't usable for our needs because they aren't **statically compiled** and **relocatable**. Statically compiled (as opposed to dynamically compiled) means that Ruby copies the code from a shared library into its own binary.
 
@@ -43,54 +51,65 @@ The `portable` part of `portable-ruby` is about builds being relocatable. Since 
 Using Homebrew's `portable-ruby` as a base, we were able to start with macOS ARM and Ubuntu x86, add Ubuntu on ARM, and then build every version in the Ruby 3.4.x series. Once we had those ready, then we asked ourselves: how much tooling do we need before this is useful for developers? Just linking to a repo with Ruby binaries in it isn't really that helpful, because if it's harder to use than running `rbenv install`, it's not really a better or faster experience.
 
 <a id="new-stuff"></a>
+
+### v0.1 proof of concept
+
 We landed on a small set of useful features for the first version: the latest Ruby minor version, 3.4, built for macOS ARM and Linux x86, with support for `.ruby-version` files, and automatic Ruby version switching just in zsh.
 
 After a few weeks of work, `rv` could switch between installed Ruby versions in zsh, but most importantly it could install precompiled Ruby on macOS and Ubuntu in one second flat. Yes, you heard that right. `rv ruby install`. Wait 1 second. Done. You can run Ruby commands now. With that functionality in place, we released version 0.1.
 
 Immediately after our initial release, we were hit with an extremely nice surprise: someone from the Homebrew core team decided to add `rv` directly to homebrew-core within a few days of `rv` 0.1 being released. That makes it much easier to install `rv` and try it out, and completely removes any need for us to create and maintain our own custom homebrew tap, which is a very nice bonus.
 
+### adding shells, rubies, YJIT, and tools
+
 With proof our concept working and users installing v0.1, we immediately started to expand the core functionality. We added support for bash, fish, and nushell. We spent several weeks working through the issues involved in compiling every single point release of Ruby 3.3 and 3.4. Then we spent another two weeks working through all of the issues compiling all of those Rubies with YJIT turned on. Then we spent another two weeks working through the issues of compiling all of those Rubies for macOS on x86, and for Linux on ARM. Once all of those Ruby versions were available, we shipped version 0.2.
 
-Building on our progress with Ruby versions, we added more versions of Ruby: every 3.2.x version, and all of the 4.0 prereleases and final releases. After hearing from `asdf` and `mise` users who wanted to re-use their .tool-versions file, we added support for that file as well. Automatic Ruby switching will respect .tool-version files, and `rv ruby pin` will update the version written into the .tool-version file if it exists. As a fun easter egg, we also added a precompiled binary of the oldest version of Ruby with published source code, 0.49. All of those features shipped as `rv` version 0.3.
+Building on our progress with Ruby versions, we added more versions of Ruby: every 3.2.x version, and all of the 4.0 prereleases and final releases. After hearing from `asdf` and `mise` users who wanted to re-use their `.tool-versions` file, we added support for that file as well. Automatic Ruby switching will respect `.tool-versions` files, and `rv ruby pin` will update the version written into the `.tool-version` file if it exists. As a fun easter egg, we also added a precompiled binary of the oldest version of Ruby with published source code, 0.49. All of those features shipped as `rv` version 0.3.
+
+### what does it mean to manage gems?
 
 At that point, we took a break to take stock of the project, our goals, and our plan. `rv` 0.3 is a pretty good Ruby version manager, and a viable option in the pantheon of Ruby version managers like `rvm`, `rbenv`, or `chruby`. While precompiled Ruby is great, we want superfast installs for not just Ruby but also all gems and bundles. But Bundler is huge! It took three of us a year to build originally, and has had 15 years of additions by dozens of contributors. We can't build everything we want in a month, or even three. After much brainstorming and discussion, we made a plan to deliver real-world useful tools that would build on each other, so we can work our way up to a complete application dependency management tool.
 
-First, we would need to understand gems themselves, parsing the compact index of gem metadata and then reading gemspecs and .gem files. Then we would need to install gems, not just copy files into the right places but also running the steps to compile native extensions correctly. Once we can install gems into the right places, we need to parse the `Gemfile.lock` format to install bundles. Then we need to build a resolver, the process that transforms a `Gemfile` into a `Gemfile.lock` by taking a list of gems and producing a graph of dependencies that are all compatible with each other. 
-
 First, we would need to understand gems themselves, parsing the compact index of gem metadata and then reading gemspecs and .gem files. Then we would need to install gems, not just copy files into the right places but also running the steps to compile native extensions correctly. Once we can install gems into the right places, we need to parse the `Gemfile.lock` format to install bundles. Then we need to build a resolver, the process that transforms a `Gemfile` into a `Gemfile.lock` by taking a list of gems and producing a graph of dependencies that are all compatible with each other. With that plan, we got back to work.
+
+### the `clean-install` command, windows, powershell, and alpine
 
 The first feature from that plan was `clean-install`, which does the same thing as `bundle install --frozen`. This is the same thing that you use when you're running your tests in CI, or that you use when you're deploying your application to a server. As long as you haven't made any changes to your Gemfile, we can read the lockfile, install all of your gems, and set up the environment so that your application is able to run. To build this, we implemented a compact index client, gemspec parsing, native gem extension compilation, and gem installation. And it works! Starting with `rv` 0.4, you can clone a project, install your gems, and run the project.
 
 The next release included a small sidequest to add Windows and PowerShell support, as well as compiling Ruby binaries against musl libc so they will work on Alpine Linux. We use the precompiled binaries for Windows produced by the ruby-installer project, which turns out to be the only existing project that precompiles Ruby. This release also included the next two steps of our incremental plan: first, automatically managing Ruby version and installation. If you `rv run irb`, you don't even need to have Ruby installed, `rv` will make sure that happens if needed.
 
+### tool management, `rvx`, and ruby-dev
+
 The second part was the next step of our gem management plan, taking a list of gems and resolving dependencies to install. When combined, those two features unlock uv-style "tools", where a gem CLI can also have an auto-managed Ruby version. Have you ever used `gem install` to get a CLI tool only to find out later your Ruby version changed and broke the CLI? `rv` tools completely prevent that problem. With tool support, we could then add gem auto-install to create `rvx`. Run any gem command, even if it's not installed! With `rv` version 0.5, you can go straight from `brew install rv` to a Rails app from `rvx rails new` in 10 seconds flat.
 
 At the SF Ruby conference late last year, a random conversation with Kokubun, the ruby-core member and maintainer of YJIT and ZJIT spawned an idea: what about testing against the latest Ruby? The Ruby version managers that compile Ruby onto your own machine handle this by adding a version of Ruby named "dev" that just means "check out the ruby git repo and compile the newest commit". It was only a few days of effort to get the `rv` ruby compiler handling ruby from git, but it was a few weeks of experimenting before figuring out how to handle a "version" that keeps the same name but changes every day. It was worth it, though, because now you can install and test against the latest daily Ruby build as easily and as often as you want, without ever waiting for Ruby to compile.
 
+### coming up next
+
 It's not quite finished yet, but the next step in our incremental plan is to handle the same responsibilities that the `bundle install` command handles: evaluate the Gemfile, resolve the graph of gem versions, update the Gemfile.lock if needed, and install all of those gems. When I was learning about uv, this part absolutely blew my mind because `uv sync` is so fast that it runs as part of every command! Coming from Bundler, that was completely incredible. I could not imagine running `bundle install` before every `bundle exec` because that would make everything so, so slow. It's very exciting to work toward that for Ruby.
 
-That's not all we have planned, either. The `rv` roadmap includes [next →](#) project setup and [next →](#)  task management, making it easy to run scripts or other commands with your Ruby and gems available. [next →](#) support for scripts means adding a config file as a comment inside the ruby script file that contains the Gemfile-like information needed to install gems. `rv` can then auto-install those gems in order to run the script. [next →](#)
-It's not yet clear how long it will take to finish these items, but after that we have a lot ideas.
+That's not all we have planned, either. The `rv` roadmap includes project setup and task management, making it easy to run scripts or other commands with your Ruby and gems available. Managing gems for scripts means adding a config file as a comment inside the ruby script file, with the Gemfile-like information needed to install gems. `rv` can then auto-install those gems in order to run the script. It's not yet clear how long it will take to finish this initial list, even after it's done we have a ton of additional ideas.
 
-as we wind things up, I want to show off a couple of things that I personally think are the best and coolest uses of rv. this isn't necessarily the stuff that you'll do the most often, which is fine, but these examples are super impressive to me, coming from the nightmare of ruby version building.
+As we wind things up, I want to show off a couple of things that I personally think are the best and coolest uses of rv. this isn't necessarily the stuff that you'll do the most often, which is fine, but these examples are super impressive to me, coming from the nightmare of ruby version building.
 
-first up, rvx: once you have rv, you don't need to think about ruby, you don't need to think about gems, you just run the command that you want to run. immediately. `rv` is fast enough that you can start on a machine with no rubies installed, run `rvx rails new .`, and be generating that app in less than 10 seconds. One command to install Ruby, install Rails, install all 60 gems that Rails depends on, and run the command you originally wanted. It's just an incredibly delightful experience to not need to think about Ruby versions or gem dependencies when you want to run something.
+### example uses
 
-another thing that has come extremely in handy is the ability to write scripts across ruby versions, and know those scripts will work whether or not those ruby versions are installed on the machine where the script runs. you don't need to care about checking for ruby or installing ruby at all, just run the command you want to run and `rv` will take care of all that stuff.
+First up, `rvx`: once you have `rv`, you don't need to think about Ruby, you don't need to think about gems, you just run the command that you want to run, immediately. `rv` is fast enough that you can start on a machine with no Ruby installed, run `rvx rails new .`, and be generating that app in less than 10 seconds. One command to install Ruby, install Rails, install all 60 gems that Rails depends on, and run the command you originally wanted. It's just an incredibly delightful experience to not need to think about Ruby versions or gem dependencies when you want to run something.
 
-	# share scripts using many
-	# rubies, all auto-installed
-	$ `rv` run --ruby 3.3 bench.rb
-	$ `rv` run --ruby 3.4 bench.rb
-	$ `rv` run --ruby 4.0 bench.rb
+Another thing that has come extremely in handy is the ability to write scripts across Ruby versions, and know those scripts will work whether or not those Ruby versions are installed when the script runs. You don't need to care about installing Ruby, or even checking for Ruby at all. Just run the command you want to run and `rv` will take care of all that stuff.
 
-The `rv tool` commands are inspired by `uv tool`, and they allow you to use CLIs without having to think about Ruby versions, or global gems, or bundled gems, or what application directory you are in. Tools always get the Ruby version and the gems that they need to work, regardless of your currently chosen Ruby version and app and gems. For me, `rv tool` has unlocked the ability to use Ruby CLI tools again, and I love that power and flexibility.
+    # share scripts using many rubies, all auto-installed
+    $ rv run --ruby 3.3 bench.rb
+    $ rv run --ruby 3.4 bench.rb
+    $ rv run --ruby 4.0 bench.rb
 
-	# CLIs outside Ruby versions
-	$ `rv` tool install gist
-	$ cd ruby-4-app
-	$ gist
-	$ cd ../ruby-2-app
-	$ gist
+Finally, the `rv tool` commands (inspired by `uv tool`) allow you to use CLIs without having to think about Ruby versions, or global gems, or bundled gems, or what application directory you are in. Tools always get the Ruby version and the gems that they need to work, regardless of your currently chosen Ruby version and app and gems. For me, `rv tool` has unlocked the ability to use Ruby CLI tools again, and I love that power and flexibility.
 
-In the end, we want to live in a future where anyone can run a Ruby command, or tool, or application in a few seconds (or less!). We're building that future for ourselves, and we welcome everyone else. Visit [rv.dev](https://rv.dev) to see the project on GitHub and give it a try! We'd love to have your help building it.
+    # CLIs outisde of app Ruby versions and gems
+    $ rv tool install gist
+    $ cd ruby-4-app
+    $ gist
+    $ cd ../ruby-2-app
+    $ gist
+  
+  In the end, we want to live in a future where anyone can run a Ruby command, or tool, or application in a few seconds (or less!). We're building that future for ourselves, and we welcome everyone else. Visit [rv.dev](https://rv.dev) to see the project on GitHub and give it a try! We'd love to have your help building it.
