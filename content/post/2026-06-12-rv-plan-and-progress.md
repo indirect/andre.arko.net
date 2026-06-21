@@ -4,7 +4,7 @@ slug = 'rv-plan-and-progress'
 date = 2026-06-13
 +++
 
-<small>This post was originally given as a talk at <a href="https://rubycon.it">Rubycon IT 2026</a>. The [slides](https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future-bd5a98e3-9989-444e-805f-b427a6591c09) are also available.</small>
+<small>This post was originally given as a talk at <a href="https://rubycon.it">Rubycon IT 2026</a>. The [slides](https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future-bd5a98e3-9989-444e-805f-b427a6591c09) and [video](https://www.youtube.com/watch?v=F8TZgUBwCYQ) are also available.</small>
 
 <iframe class="speakerdeck-iframe" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" frameborder="0" src="https://speakerdeck.com/player/5432fb8785de421dbbb7a13841fd99ca" title="rv, a ruby manager for the future" allowfullscreen="true" allow="web-share" data-ratio="1.7777777777777777"></iframe>
 

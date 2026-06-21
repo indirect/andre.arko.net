@@ -7,6 +7,7 @@
       date: 2026-02-12
       url: "https://rubycon.it"
       slides_url: https://speakerdeck.com/indirect/rv-a-ruby-manager-for-the-future-bd5a98e3-9989-444e-805f-b427a6591c09
+      video_url: https://www.youtube.com/watch?v=F8TZgUBwCYQ
 - title: "How To Install A Gem"
   description: "if you know the name of a gem, and you want to install it, what has to actually happen before you can `require` and start using the gem? a walk through how gems work, how gem servers work, and how rubygems organizes files on disk so that ruby can find and use them."
   post_url: "/2026/03/24/how-to-install-a-gem/"
