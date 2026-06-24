@@ -50,6 +50,7 @@
       date: 2025-09-28
       url: http://github.com/jj-vcs/jj/wiki/JJ-Con-2025
       slides_url: https://speakerdeck.com/indirect/stupid-jj-tricks
+      video_url: https://www.youtube.com/watch?v=ZnTNFIMjDwg
 - title: "Rails on SQLite: exciting new ways to cause outages"
   description: "Between Litestack and the Rails 8 trifecta of Solid Cable, Solid Cache, and Solid Queue, it's easier than ever to spin up a Rails app that doesn't need a database service or a redis service or a storage service. Just as easy are several new ways to break your app or lose your data, especially on containerized hosting services. Learn how to simplify your stack while avoiding new ways things break."
   post_url: "/2025/09/11/rails-on-sqlite-exciting-new-ways-to-cause-outages"
@@ -58,6 +59,7 @@
       date: 2025-09-10
       url: https://friendlyrb.com
       slides_url: https://speakerdeck.com/indirect/rails-on-sqlite-exciting-new-ways-to-cause-outages
+      video_url: https://www.youtube.com/watch?v=YRX493hg95E
     - name: "Kaigi on Rails"
       date: 2025-09-27
       url: https://kaigionrails.org/2025/
