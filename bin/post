@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "date"
+
+name = ARGV.first.downcase.gsub(" ", "-").gsub("'", "")
+args = ["bin/hugo", "new", "content/post/#{Date.today.iso8601}-#{name}.md"]
+p args
+system *args
