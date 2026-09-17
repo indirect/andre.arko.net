@@ -207,6 +207,17 @@ small, .aside {
   width: 100%;
 }
 
+.dropshadow img {
+  box-shadow: 0 25px 45px rgb(0 0 0 / 0.5),
+   0 0 2px rgb(0 0 0 / 0.4);
+  display: block;
+  margin: 1em auto 15px;
+  &[src$="jpg" i],
+  &[src$="jpeg" i],
+  &[src^="data:image/jpeg"] {
+    border-radius: 5px;
+  }
+}
 
 /* Talks page */
 
